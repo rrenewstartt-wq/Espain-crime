@@ -50,6 +50,7 @@ python3 scripts/check_script.py episodes/<ep> --timeline                     # �
 python3 scripts/check_originality.py episodes/<ep>                           # 레퍼런스와의 문장 겹침
 python3 scripts/check_title.py --file episodes/<ep>/titles.txt               # 제목 공식
 python3 scripts/thumbnail.py episodes/<ep> && python3 scripts/check_thumbnail.py episodes/<ep>
+bash scripts/render.sh episodes/<ep>/video episodes/<ep>/renders/<ep>-visual.mp4   # HyperFrames 렌더 (설정 고정)
 python3 scripts/check_video.py episodes/<ep>/renders/<ep>-visual.mp4 --visual-only   # 화면 품질 (내레이션 전)
 python3 scripts/check_video.py episodes/<ep>/renders/<ep>.mp4                 # 최종 품질 (음량 포함)
 python3 scripts/make_description.py episodes/<ep>                            # 설명란·태그·공개 슬롯

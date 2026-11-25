@@ -24,6 +24,9 @@
 | 9 | 최종 품질 검수 | `video-qa` | `/voice` | `check_video.py` 전체 |
 | 10 | 출고 패키지 | 메인 세션 | `/release` | 설명란·태그·SRT·공개 슬롯 |
 
+## 제작 엔진
+**HyperFrames**(2026-11-25 결정). 같은 장면으로 Remotion 과 비교해 화질은 동급, 렌더는 약 25% 빠르고, 라이선스(Apache-2.0)와 설치 부담에서 유리했다. 렌더는 반드시 `bash scripts/render.sh` 로(헤드리스 셸·worker 4·12 Mbps). 근거와 수치는 `config/format.json → production.engine`.
+
 ## 품질 기준 (`config/format.json → production`)
 
 | 항목 | 기준 | 근거 |

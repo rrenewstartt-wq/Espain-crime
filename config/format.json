@@ -401,6 +401,15 @@
       ],
       "not_now": "실사풍 생성 재연 영상·스톡 영상 (유료 도입 시 사람이 다시 결정, 쓰면 'RECREACIÓN' 필수)",
       "render_note": "CPU 4코어·GPU 없음 → 막 단위로 나눠 렌더, 3D 는 최소한으로"
+    },
+    "engine": {
+      "name": "HyperFrames",
+      "version": "0.9.94",
+      "decided": "2026-11-25 (사용자 지시: 더 효율적·효과적인 쪽)",
+      "why": "같은 12초·60초 장면 비교: 화질 동급, 60초 렌더 61.6초 vs Remotion 80.5초(약 25% 빠름), Apache-2.0(Remotion 은 직원 4명 이상 영리 회사 유료), 프로젝트별 node_modules 없음, 레지스트리 블록 448개",
+      "render": "bash scripts/render.sh <project> <out.mp4>  (headless shell 지정, --workers 4, --video-bitrate 12M)",
+      "estimate": "실측 기준 25분 편 약 26분, 실제 사진·블러 레이어로 40~80분 예상 → 막 단위로 렌더해 ffmpeg concat",
+      "retime": "장면 길이는 data-duration 속성. /voice 에서 data/voice.json 으로 속성을 다시 쓰는 스크립트를 에피소드 구조에 맞춰 만든다"
     }
   }
 }
