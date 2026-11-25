@@ -1,0 +1,569 @@
+{
+ "candidates": [
+  {
+   "slug": "frida-sofia-rebsamen-2017",
+   "case": "Frida Sofía: la niña que nunca existió (sismo 19S, Colegio Enrique Rébsamen)",
+   "country": "MX",
+   "year": 2017,
+   "category": "재난·사고",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2017-09-19 13:14 (sismo M7.1) → 2017-09-21 noche, Ciudad de México: el subsecretario de Marina Ángel Sarmiento admite que 'Frida Sofía' no existe",
+   "one_line": "온 나라가 생중계로 지켜본 '잔해 속 소녀'의 구조 작전, 그런데 그 아이는 처음부터 없었다",
+   "questions": [
+    "¿Cómo un país entero lloró por una niña que nunca existió?",
+    "¿Quién inventó a Frida Sofía y por qué nadie lo verificó?",
+    "Y sobre todo: ¿qué pasó con los niños reales del Rébsamen mientras todos miraban la transmisión?"
+   ],
+   "latam_link": "멕시코 사건(2017 푸에블라-모렐로스 지진, 멕시코시티)",
+   "sources": [
+    "https://expansion.mx/nacional/2017/09/21/la-marina-ofrece-disculpas-por-el-caso-del-colegio-rebsamen",
+    "https://www.lagaceta.com.ar/nota/745557/actualidad/caso-frida-sofia-explicacion-marina-mexicana-sobre-nina-nunca-existio.html",
+    "https://www.chilango.com/ciudad/frida-sofia-la-falsa-esperanza-del-colegio-rebsamen/",
+    "https://amp.milenio.com/espectaculos/television/danielle-dithurbide-recuerda-caso-frida-sofia-19-s-perder",
+    "https://www.laprensa.hn/espectaculos/frida_sofia-rebsamen-televisa-apagatelevisa-emilio_azcarraga-terremoto_mexico-PWLP1110582"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 16,
+    "sources": 16,
+    "question": 14,
+    "latam": 10,
+    "novelty": 12
+   },
+   "risk_notes": "실존 피해 아동 19명·교사 등 사망(학교 붕괴) — 실제 희생자 가족의 사생활과 학교 소유주 재판(별도 형사사건)은 판결 범위 안에서만 언급. 앵커·해군 개인을 '조작범'으로 단정하지 말 것(조작인지 오보인지 공식 결론 없음). 아동 희생 장면 재연 금지.",
+   "open_questions": [
+    "'Frida Sofía'라는 이름이 처음 나온 정확한 시각과 발화자(해군·자원봉사자·방송 중 누구)",
+    "학교 붕괴 희생자 공식 집계(아동 19명+성인 7명으로 알려짐) 1차 자료 확인",
+    "학교 소유주 형사재판 최종 결과"
+   ],
+   "buzz_evidence": "구조 작전이 Televisa 생중계로 전국에 퍼졌고, 존재하지 않았다는 발표 후 SNS에서 #ApagaTelevisa 해시태그 반발이 일었다고 La Prensa(온두라스)가 보도(URL 슬러그에도 apagatelevisa 포함). 5주년에도 '바이럴' 회고 기사가 나옴(posta.com.mx 'Viral: A 5 años del falso rescate de Frida Sofía'). 칠레·아르헨·페루 매체까지 동시 보도 — 범중남미 관심 확인."
+  },
+  {
+   "slug": "bonaire-dana-bulo-2024",
+   "case": "DANA de Valencia y el bulo del parking de Bonaire",
+   "country": "ES",
+   "year": 2024,
+   "category": "재난·사고",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2024-10-29 20:11, Comunitat Valenciana: llega el ES-Alert a los móviles cuando el agua ya inundaba l'Horta Sud; 2024-11-05, La Moncloa: Policía Nacional desmiente cadáveres en Bonaire (Aldaia)",
+   "one_line": "200명 넘게 숨진 홍수 뒤, 인터넷은 '쇼핑몰 지하주차장에 시신 수백 구'를 확신했다 — 그곳엔 한 구도 없었다",
+   "questions": [
+    "¿Cómo llegó la alerta cuando el agua ya estaba dentro de las casas?",
+    "¿Quién fabricó los audios de 'mi amigo buzo' y por qué millones los creyeron?",
+    "Y sobre todo: si el bulo era falso, ¿por qué la desconfianza en las instituciones era tan real?"
+   ],
+   "latam_link": "스페인 사건. 중남미 직접 연결 약함(스페인어권 공통 '재난+가짜뉴스' 주제)",
+   "sources": [
+    "https://maldita.es/malditobulo/20241111/bulos-desinformaciones-parking-centro-comercial-bonaire-aldaia/",
+    "https://maldita.es/malditobulo/20241104/victimas-dana-parking-bonaire/",
+    "https://maldita.es/malditobulo/20241108/fallecidos-parking-bonaire-ocultacion-conspiracion/",
+    "https://es.ara.cat/sociedad/primera-planta-hay-mil-muertos-mentiras-parking-bonaire_1_5192900.html",
+    "https://www.menorca.info/actualidad/nacional/2024/11/04/2269971/dana-valencia-parking-bonaire-policia-halla-cadaveres-tras-inspeccionar-vehiculos.html"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 17,
+    "sources": 16,
+    "question": 13,
+    "latam": 4,
+    "novelty": 13
+   },
+   "risk_notes": "현재진행형 정치 쟁점(발렌시아 주정부 대응, 사법 조사) — 정치인 책임은 공식 조사·법원 결정 범위 안에서만. 실존 피해자 영상 사용 주의. 가짜 오디오 유포자 개인 실명 공개 금지. 실제 희생자 수치는 최신 공식 집계로 확인 필요.",
+   "open_questions": [
+    "ES-Alert 발송 시각 20:11의 1차 자료(Generalitat·112 기록) 확인",
+    "최종 공식 사망자 수",
+    "발렌시아 법원(Catarroja) 조사 현재 상태"
+   ],
+   "buzz_evidence": "팩트체크 매체 Maldita.es가 Bonaire 주차장 관련 허위정보만 '21개'를 정리(2024-11-11 기사)하고 11-03~11-25, 12-26까지 개별 반박 기사를 연속 게재 — '86구', '221구', '811구', 'UME 하사의 200명 아이' 오디오, '우는 잠수부' 이미지 등 다수 바이럴 버전 존재. Ara 기사 제목 'A la primera planta hi ha mil morts'."
+  },
+  {
+   "slug": "momias-nazca-congreso-2023",
+   "case": "Las 'momias no humanas' de Nazca en el Congreso de México",
+   "country": "MX/PE",
+   "year": 2023,
+   "category": "정부 비밀·음모",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2023-09-12, Cámara de Diputados, Ciudad de México: Jaime Maussan presenta dos cuerpos 'no humanos' en la audiencia sobre FANI",
+   "one_line": "멕시코 하원 공청회에 등장한 '외계인 미라' — 페루 법의학자들은 동물 뼈와 접착제로 만든 인형이라고 결론냈다",
+   "questions": [
+    "¿Cómo llegaron unos cuerpos 'extraterrestres' al pleno de un Congreso?",
+    "¿Quién los fabricó, quién los vendió y por qué desde Perú?",
+    "Y sobre todo: ¿qué dice de nosotros que millones quisieran creerlo?"
+   ],
+   "latam_link": "멕시코(하원)·페루(나스카/팔파, 문화부·검찰 수사) 양국 사건",
+   "sources": [
+    "https://elperuano.pe/noticia/223015-mincul-ninguna-entidad-cientifica-peruana-respalda-hallazgo-de-momias-de-seres-no-humanos",
+    "https://diariocorreo.pe/peru/equipo-forense-del-ministerio-publico-expone-fraude-de-momias-alienigenas-en-el-desierto-de-ica-noticia/",
+    "https://www.nmas.com.mx/nacional/jaime-maussan-extraterrestres-congreso-son-de-papel-y-huesos-de-animales/",
+    "https://www.biobiochile.cl/noticias/sociedad/curiosidades/2024/01/13/amp/fraude-investigacion-dice-que-momias-extraterrestres-de-mexico-y-peru-son-falsas.shtml",
+    "https://comunicacion.diputados.gob.mx/sintesis/LINKSIN/15923_P_TVAZTECA_0_LACAMARADEDIPUTADOS_CIRCOMAUSSAN_3DIP.pdf"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 15,
+    "sources": 16,
+    "question": 13,
+    "latam": 10,
+    "novelty": 12
+   },
+   "risk_notes": "Maussan은 공인이지만 '사기범'으로 단정 금지 — 형사 판결 없음. 페루 측 결론(인형, 문화재 불법 반출 고발)을 출처와 함께 서술하고 본인 반론도 병기. 진짜 인간 유해(고대 미라)가 섞였다는 보도가 있어 유해 존중 문제 주의.",
+   "open_questions": [
+    "공청회 정확한 시작 시각(하원 영상 기록)",
+    "페루 검찰 고발의 현재 진행 상태",
+    "2017년 Gaia.com 최초 공개 날짜 확인"
+   ],
+   "buzz_evidence": "하원 공보실 언론 스크랩 PDF 제목 자체가 'La Cámara de Diputados, circo Maussan'(TV Azteca) — 국내 방송이 '서커스'로 다룰 만큼 화제. 칠레 BioBio·페루 El Peruano·Correo, 에콰도르 Primicias 등 국경 넘어 보도. 2017년 Gaia.com 온라인 공개로 처음 퍼진 뒤 2023년 공청회로 재폭발(조회수 수치는 미확인)."
+  },
+  {
+   "slug": "guacamaya-leaks-2022",
+   "case": "Guacamaya Leaks: los hackers que abrieron los correos de los ejércitos de Latinoamérica",
+   "country": "MX/CL/CO/PE/SV",
+   "year": 2022,
+   "category": "인터넷·해킹",
+   "internet_type": "origen_internet",
+   "key_moment": "2022-09-19, Chile (Fiestas Patrias): se publican ~400 mil correos del Estado Mayor Conjunto; 2022-09-29 noche, México: Latinus revela el hackeo de 6 TB a la Sedena",
+   "one_line": "익명의 핵티비스트가 중남미 5개국 군대의 메일함을 통째로 공개했다 — 칠레 합참의장은 사흘 뒤 사임했다",
+   "questions": [
+    "¿Cómo entra un grupo anónimo en los servidores de cinco ejércitos?",
+    "¿Quién es Guacamaya y por qué eligió a los militares?",
+    "Y sobre todo: ¿qué decían esos correos que los gobiernos no querían que leyéramos?"
+   ],
+   "latam_link": "멕시코·칠레·콜롬비아·페루·엘살바도르 군 해킹 — 중남미 자체 사건",
+   "sources": [
+    "https://www.pauta.cl/actualidad/2022/09/22/hackeo-correos-ejercito-renuncia-general-guillermo-paiva-estado-mayor.html",
+    "https://www.emol.com/noticias/Nacional/2022/09/23/1073605/guacamaya-hackers-ciberataque-estado-mayor.html",
+    "https://politica.expansion.mx/mexico/2022/10/17/guacamaya-leaks-mexico-chile-consecuencias-diferencias",
+    "https://therecord.media/mexican-president-confirms-guacamaya-hack-targeting-regional-militaries/",
+    "https://www.theclinic.cl/2022/09/30/claves-hackeo-emco-ciberseguridad/"
+   ],
+   "scores": {
+    "moment": 17,
+    "demand": 16,
+    "sources": 17,
+    "question": 13,
+    "latam": 10,
+    "novelty": 14
+   },
+   "risk_notes": "유출 문서 속 민간인·기자·활동가 개인정보 노출 금지(문서 화면 사용 시 블러). 유출 문서 내용은 언론이 검증 보도한 부분만 인용. 해킹 방법을 따라 할 수 있게 설명하지 말 것. 군-범죄조직 연루 주장은 보도 출처 명시.",
+   "open_questions": [
+    "칠레 유출 정확한 게시 시각과 플랫폼(Enlace Hacktivista 등)",
+    "Guacamaya 자체 성명문 원문",
+    "멕시코 대통령 건강 정보 등 주요 폭로 항목의 1차 보도 목록"
+   ],
+   "buzz_evidence": "멕시코에서 Latinus(Carlos Loret de Mola) 보도 후 대통령이 아침 회견에서 해킹을 인정(The Record 기사). 칠레에선 합참의장 Guillermo Paiva 9-22 사임, 국방장관 의회 소환(Pauta, Expansión). 멕시코 대중 매체(Sopitas, Publimetro)까지 '¿Quiénes son Guacamaya?' 해설 기사 연속 — 일반 인터넷 관심 확인. SNS 트렌드 수치는 미확인."
+  },
+  {
+   "slug": "momo-whatsapp-2018",
+   "case": "Momo: el 'reto' de WhatsApp que aterrorizó a Latinoamérica",
+   "country": "MX/AR/JP",
+   "year": 2018,
+   "category": "인터넷·해킹",
+   "internet_type": "origen_internet",
+   "key_moment": "2018-07-12, Villahermosa (Tabasco, MX): la Unidad de Investigación de Delitos Informáticos de la Fiscalía de Tabasco publica la primera alerta oficial sobre el número 'Momo'",
+   "one_line": "일본 특수효과 공방의 조각상 사진 한 장이 왓츠앱 '자살 게임'이 되어 중남미 경찰을 움직였다 — 그 게임은 실재했을까",
+   "questions": [
+    "¿Cómo una escultura japonesa se convirtió en el rostro de un 'juego mortal'?",
+    "¿Quién estaba detrás del número de WhatsApp, si es que había alguien?",
+    "Y sobre todo: ¿quién hizo más daño, Momo o el pánico que provocamos los adultos?"
+   ],
+   "latam_link": "멕시코(타바스코 검찰 최초 경보, FGR 2019 경보)·아르헨티나(2018-07 사망 사건 수사)·콜롬비아·칠레 경보",
+   "sources": [
+    "https://www.24horas.cl/noticiasbbc/que-es-momo-el-juego-viral-por-whatsapp-que-preocupa-a-las-autoridades-en-america-latina-2773703",
+    "https://www.adn40.mx/noticia/ciencia/notas/2018-07-16-15-00/juego-viral-momo-podria-robar-tus-datos/",
+    "https://www.emol.com/noticias/Tendencias/2018/07/18/913756/Momo-el-supuesto-reto-de-WhatsApp-que-se-hizo-viral-y-que-muchos-comparan-con-el-juego-de-la-ballena-azul.html",
+    "https://fullfact.org/online/momo-challenge-hoax/",
+    "https://chequeado.com/el-explicador/momo-challenge-por-que-este-desafio-es-una-noticia-falsa/",
+    "https://www.eluniversal.com.mx/nacion/emiten-en-mexico-medidas-preventivas-ante-momo-challenge"
+   ],
+   "scores": {
+    "moment": 15,
+    "demand": 17,
+    "sources": 14,
+    "question": 14,
+    "latam": 9,
+    "novelty": 10
+   },
+   "risk_notes": "미성년자 자살 관련 — WHO 자살 보도 권고 준수(방법 묘사 금지, 상담 번호 고지). 2018-07 아르헨티나 12세 소녀 사망 사건은 Momo 연관이 공식 확인되지 않았고 성범죄 수사 정황도 보도됨 → 피해자 신원·세부 사항 사용 금지, '연관 미확인'만 언급. 조각가(Keisuke Aiso)는 피해자 쪽 인물로 다룰 것. 광고 적합성 주의.",
+   "open_questions": [
+    "타바스코 UIDI 경보 원문(트윗/페이스북) 캡처 확보",
+    "아르헨티나 사망 사건 수사 최종 결론",
+    "Momo 이미지가 처음 바이럴된 게시물(인스타그램/레딧) 날짜"
+   ],
+   "buzz_evidence": "BBC Mundo 기사 제목 'Qué es Momo, el juego viral por WhatsApp que preocupa a las autoridades en América Latina'(2018-07, 24horas.cl 재게재). 칠레 Emol 2018-07-18 '바이럴' 보도, 아르헨·멕시코·콜롬비아(Pulzo)·도미니카 매체 동시 보도. 2019-02~03 유튜브 키즈 영상 삽입설로 2차 폭발 → 영국 Full Fact·아르헨 Chequeado가 '미디어가 키운 날조'로 팩트체크. 조회수 수치는 미확인."
+  },
+  {
+   "slug": "oscar-perez-junquito-2018",
+   "case": "Óscar Pérez: la masacre de El Junquito transmitida por Instagram",
+   "country": "VE",
+   "year": 2018,
+   "category": "정부 비밀·음모",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2018-01-15 06:46 (UTC-4), El Junquito, Caracas: primer video en Instagram 'Nos han disparado…'; último video con vida 09:59 '¡Nos vamos a entregar! ¡No sigan disparando!'",
+   "one_line": "포위된 전직 경찰 조종사가 인스타그램에 마지막 5시간을 올렸다 — 오픈소스 수사팀은 그 영상들로 '항복 후 처형' 정황을 재구성했다",
+   "questions": [
+    "¿Cómo se reconstruye una masacre solo con videos de Instagram?",
+    "¿Quién dio la orden y por qué no se aceptó la rendición?",
+    "Y sobre todo: si todo el país lo vio en directo, ¿por qué nadie ha sido juzgado?"
+   ],
+   "latam_link": "베네수엘라 사건",
+   "sources": [
+    "https://www.bellingcat.com/news/americas/2018/05/13/nos-vamos-a-entregar-no-sigan-disparando-reconstruyendo-las-ultimas-horas-de-oscar-perez",
+    "https://theobjective.com/further/espana/2018-01-22/la-muerte-narrada-en-directo-de-oscar-perez-a-traves-de-instagram/",
+    "https://expansion.mx/mundo/2019/03/21/venezuela-ejecuto-al-rambo-opositor-nuevas-fotos-suscitan-dudas",
+    "https://www.ntn24.com/noticias-actualidad/caso-oscar-perez-la-masacre-de-el-junquito-84141",
+    "https://lapatilla.com/2018/01/15/ajusticiado-oscar-perez-por-fuerzas-de-seguridad-segun-fuente-de-alto-rango-afirma-cnn/"
+   ],
+   "scores": {
+    "moment": 19,
+    "demand": 14,
+    "sources": 18,
+    "question": 14,
+    "latam": 10,
+    "novelty": 13
+   },
+   "risk_notes": "정치적으로 첨예(마두로 정부 vs 야권) — 한쪽 영웅화 금지, Óscar Pérez의 2017-06-27 헬기 공격도 사실대로. '처형'은 Bellingcat·Forensic Architecture의 '정황' 결론으로 표현(확정 판결 없음). 피 묻은 영상·시신 사진 사용 금지. 개별 경찰관 실명 지목 금지(공식 지휘관 발언은 출처 명시).",
+   "open_questions": [
+    "유엔 인권최고대표·ICC 보고서에서 El Junquito 언급 여부",
+    "베네수엘라 검찰 공식 발표문 원문",
+    "2017-06-27 헬기 공격 시각"
+   ],
+   "buzz_evidence": "사건 자체가 인스타그램 생중계로 진행(The Objective 2018-01-22 'La muerte narrada en directo… a través de Instagram'). Bellingcat이 영상·사진·오디오·트윗 60건 이상을 오픈소스로 검증해 재구성(2018-05-13) — 인터넷 집단 수사의 대표 사례. 전 검찰총장 Luisa Ortega가 트위터로 '처형' 이미지 공개. 조회수 수치는 미확인."
+  },
+  {
+   "slug": "debanhi-escobar-2022",
+   "case": "Debanhi Escobar: la foto en la carretera que recorrió el mundo",
+   "country": "MX",
+   "year": 2022,
+   "category": "미해결 사건·정체",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2022-04-09 madrugada, carretera a Nuevo Laredo (Escobedo, Nuevo León): el taxista toma la última foto; 2022-04-21, cisterna del Motel Nueva Castilla: hallazgo del cuerpo",
+   "one_line": "길가에 홀로 선 18세의 사진 한 장이 멕시코 실종자 위기의 상징이 됐다 — 13일 뒤 시신은 이미 수색했던 모텔 물탱크에서 나왔다",
+   "questions": [
+    "¿Cómo pudo aparecer el cuerpo en un lugar que ya habían revisado cuatro veces?",
+    "¿Por qué tres autopsias dijeron cosas distintas?",
+    "Y sobre todo: ¿qué dice el caso Debanhi de las miles de desaparecidas que nunca fueron virales?"
+   ],
+   "latam_link": "멕시코 사건",
+   "sources": [
+    "https://cnnespanol.cnn.com/2022/07/19/debanhi-escobar-murio-asfixia-sofocacion",
+    "https://www.telemundo.com/noticias/noticias-telemundo/crimen-y-violencia/la-fiscalia-de-nuevo-leon-revela-nuevos-videos-de-debanhi-escobar-y-as-rcna26381",
+    "https://www.eluniversal.com.mx/estados/debanhi-escobar-a-un-ano-sin-justicia-recuento-del-caso-que-conmociono-al-pais/",
+    "https://www.elcomercio.com/actualidad/mundo/debanhi-escobar-violencia-sexual-autopsia/",
+    "https://www.vice.com/en/article/mexico-nuevo-leon-missing-women/"
+   ],
+   "scores": {
+    "moment": 17,
+    "demand": 15,
+    "sources": 15,
+    "question": 13,
+    "latam": 10,
+    "novelty": 9
+   },
+   "risk_notes": "고위험. 확정 판결 없음 — 택시기사·모텔 관계자 등 민간인을 인터넷이 범인으로 지목한 마녀사냥 사례가 있음 → 실명·얼굴 사용 금지, '누가'보다 검찰 수사 실패(수색 누락, 상반된 부검, 담당 검사 해임)라는 제도 구도로만. 2차 부검의 성폭력 소견은 3차 부검에서 배제됨 → 성범죄 단정 금지, 피해자 존엄 우선. 가족 사생활 주의. 수사 진행 중이라 최신 상태 확인 필수.",
+   "open_questions": [
+    "사진 촬영 정확한 시각(검찰 발표 기준)",
+    "모텔 수색 횟수(4회로 알려짐) 1차 자료",
+    "연방검찰(FGR) 이관 후 현재 수사 상태",
+    "실종일 4-8 vs 4-9 표기 통일"
+   ],
+   "buzz_evidence": "길가 사진이 '멕시코 SNS에서 가장 많이 공유된 실종 전단'이 됐고 국제적으로 바이럴(Vice). 코스타리카대 CIEM 연구가 '소셜네트워크를 뒤덮은 바이럴 현상'으로 분석(repositorio.ciem.ucr.ac.cr PDF). 틱톡 랩 추모곡이 트렌드 기사화(adn40 'rap debanhi tiktoker'). 해시태그 수치는 미확인."
+  },
+  {
+   "slug": "daniel-sancho-arrieta-2023",
+   "case": "Daniel Sancho y el crimen de Edwin Arrieta en Koh Phangan",
+   "country": "ES/CO/TH",
+   "year": 2023,
+   "category": "미해결 사건·정체",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2023-08-02, isla de Koh Phangan (Tailandia): muerte del cirujano colombiano Edwin Arrieta; 2024-08-29, tribunal de Koh Samui: cadena perpetua",
+   "one_line": "스페인 배우의 아들이 태국 섬에서 콜롬비아 외과의를 살해했다 — 재판보다 먼저 틱톡과 TV가 판결을 내린 사건",
+   "questions": [
+    "¿Cómo un viaje a una isla paradisíaca terminó en un juicio en tailandés?",
+    "¿Por qué la defensa construyó una versión que el tribunal no creyó?",
+    "Y sobre todo: ¿por qué la víctima colombiana casi desapareció del relato?"
+   ],
+   "latam_link": "콜롬비아인 피해자(코르도바 출신 외과의) — 스페인·콜롬비아 양국 관심",
+   "sources": [
+    "https://www.lanacion.com.ar/el-mundo/4-claves-sobre-el-caso-del-chef-espanol-daniel-sancho-condenado-a-cadena-perpetua-en-tailandia-por-nid29082024/",
+    "https://www.telemundo.com/noticias/noticias-telemundo/crimen-y-violencia/daniel-sancho-edwin-arrieta-cadena-perpetua-tailandia-aesinato-rcna168791",
+    "https://www.elespectador.com/mundo/mas-paises/en-detalle-la-condena-a-daniel-sancho-en-tailandia-por-asesinato-de-edwin-arrieta/",
+    "https://www.noticiasrcn.com/internacional/confirman-la-condena-a-cadena-perpetua-contra-daniel-sancho-por-asesinar-a-edwin-arrieta-1065119",
+    "https://elespanol.com/corazon/famosos/20230811/caso-daniel-sancho-claves-generar-millones-resultados-exclusiva-euros/785671563_0.html"
+   ],
+   "scores": {
+    "moment": 17,
+    "demand": 14,
+    "sources": 16,
+    "question": 9,
+    "latam": 8,
+    "novelty": 8
+   },
+   "risk_notes": "유죄 확정(1심 2024-08-29, 항소 기각 보도) — 판결 범위 안에서 서술. 시신 훼손 사건이라 고어 묘사 금지(광고 부적합 위험 큼). 피해자 Arrieta에 대한 온라인 동성애혐오·피해자 비난 확산이 있었음 → 피해자 존엄 우선. 아버지(배우 Rodolfo Sancho)는 공인이나 범죄와 무관, 가족 사생활 주의. 미스터리 요소 약함(질문 점수 낮음). 스페인 내 다큐·팟캐스트 다수로 차별성 낮음.",
+   "open_questions": [
+    "상고(대법원) 최종 결과",
+    "사건 당일 시각(검찰 공소장 기준)"
+   ],
+   "buzz_evidence": "El Español(2023-08-11) 집계: 틱톡 #DanielSancho 1,630만 조회, 아버지 인스타그램 팔로워 첫 며칠 3만 증가, '2억 건 검색 결과'(방법론 미상). 2026-09에도 Antena 3 인터뷰가 SNS 논란(Publimetro Colombia 'La víctima es Edwin Arrieta'). 스페인 대학 TFG·논문이 미디어 과열 사례로 분석."
+  },
+  {
+   "slug": "baez-sosa-villa-gesell-2020",
+   "case": "Fernando Báez Sosa: 45 segundos frente a Le Brique",
+   "country": "AR",
+   "year": 2020,
+   "category": "미해결 사건·정체",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2020-01-18 ~04:44–04:45, frente al boliche Le Brique, Villa Gesell (Buenos Aires): ataque de 45 segundos grabado por celulares y cámaras",
+   "one_line": "여름 휴양지 클럽 앞 45초의 폭행이 휴대폰 영상으로 전국에 퍼졌다 — 아르헨티나는 3년 뒤 생중계 재판으로 답을 들었다",
+   "questions": [
+    "¿Cómo 45 segundos grabados por celulares se convirtieron en la prueba central?",
+    "¿Por qué ocho jóvenes atacaron a uno que no conocían?",
+    "Y sobre todo: ¿juzgó el tribunal o juzgaron las redes?"
+   ],
+   "latam_link": "아르헨티나 사건(피해자 파라과이계)",
+   "sources": [
+    "https://www.aljazeera.com/news/2023/2/6/argentina-rugby-players-sentenced-in-high-profile-beating-death",
+    "https://www.biobiochile.cl/noticias/internacional/america-latina/2023/02/06/caso-fernando-baez-sosa-cadena-perpetua-a-5-rugbistas-por-homicidio-a-golpes-en-argentina.shtml",
+    "https://www.lacapital.com.ar/informacion-general/caso-baez-sosa-confirmaron-las-condenas-los-rugbiers-acusados-del-crimen-villa-gesell-n10124955.html",
+    "https://www.lanacion.com.ar/seguridad/la-historia-detras-de-la-historia-llantos-y-reproches-en-el-juicio-que-conmueve-al-pais-nid08012023/",
+    "https://www.diariojudicial.com/news-94208-juicios-por-youtube"
+   ],
+   "scores": {
+    "moment": 17,
+    "demand": 12,
+    "sources": 17,
+    "question": 8,
+    "latam": 10,
+    "novelty": 9
+   },
+   "risk_notes": "유죄 확정(2023-02-06 1심, 카사시온 확인). 폭행 영상 직접 사용 금지(광고·윤리). 피고인 가족·여자친구 등 비피고인 민간인 SNS 논란 언급 금지. 미스터리 요소 약함 — '여론 재판 vs 법정' 구도가 아니면 레퍼런스 형식에 덜 맞음.",
+   "open_questions": [
+    "판결문의 공격 시각(04:44~04:45:15) 1차 확인",
+    "최고법원 유튜브 중계 조회수 원 페이지 확인"
+   ],
+   "buzz_evidence": "부에노스아이레스주 대법원 유튜브 채널의 최종 변론 중계가 100만 회 이상 조회(Diario Judicial 'Juicios por YouTube'). 재판 시작 시 Wanda Nara·China Suárez·Leandro Paredes 등 유명인이 SNS로 정의 촉구(Perfil, C5N). Rebelión·Perfil이 '미디어·SNS 압력' 문제를 별도 분석. 해시태그 수치는 미확인."
+  },
+  {
+   "slug": "ciro-castillo-colca-2011",
+   "case": "Ciro Castillo: 202 días en el Valle del Colca",
+   "country": "PE",
+   "year": 2011,
+   "category": "미해결 사건·정체",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2011-04-04, Valle del Colca (Arequipa): se reporta la desaparición de Ciro Castillo y Rosario Ponce; 2011-10-20: hallazgo del cuerpo tras 202 días de búsqueda",
+   "one_line": "협곡에서 함께 실종된 연인 중 한 명만 살아 돌아왔다 — 페루 전체가 TV와 SNS에서 그녀를 재판했지만 법원은 사건을 종결했다",
+   "questions": [
+    "¿Cómo se pierde un estudiante en un cañón durante 202 días?",
+    "¿Por qué un país entero decidió que la sobreviviente tenía la culpa?",
+    "Y sobre todo: cuando la justicia archiva y la opinión pública no, ¿quién tiene la última palabra?"
+   ],
+   "latam_link": "페루 사건",
+   "sources": [
+    "https://rpp.pe/peru/actualidad/especial-caso-ciro-castillo-rojo-noticia-440845",
+    "https://trome.com/actualidad/ciro-castillo-la-busqueda-incansable-de-202-dias-en-el-canon-del-colca-nndc-noticia/",
+    "https://elpopular.pe/actualidad-policiales/2013-08-07-caso-ciro-castillo-archivado-juez-chivay",
+    "https://globalvoices.org/2011/11/02/peru-student-death-in-the-andes-divides-media-and-social-networks/",
+    "https://revistas.uasb.edu.ec/index.php/uru/article/download/1346/1217/4680"
+   ],
+   "scores": {
+    "moment": 16,
+    "demand": 12,
+    "sources": 14,
+    "question": 14,
+    "latam": 10,
+    "novelty": 13
+   },
+   "risk_notes": "고위험(인터넷 마녀사냥 그 자체가 주제). 생존자 Rosario Ponce는 기소되지 않았고 사건은 종결(2013-08 치바이 판사 기각, 이후 항소 기각 보도) → 범인 암시 금지, 그녀가 겪은 '미디어 괴롭힘'(2013-07 본인 고발)을 제도·언론 문제로 다룸. 실명 대신 역할('la sobreviviente') 권장. 아버지(이후 칼라오 주지사, 뇌물 의혹)는 공인이나 별개 사안 혼입 금지.",
+   "open_questions": [
+    "사망 원인에 대한 공식 법의학 결론(추락사) 1차 문서",
+    "종결 판결 정확한 날짜·심급",
+    "UASB 논문의 SNS 분석 내용 확인"
+   ],
+   "buzz_evidence": "Global Voices(2011-11-02) 기사 제목 'Peru: Student's Death in the Andes Divides Media and Social Networks' — 트위터 #RosarioPonce 해시태그 논쟁 인용. 에콰도르 UASB 학술지가 언론·여론이 만든 '팜므파탈' 서사로 분석. 13주년(Panamericana '…dividió a la opinión pública')까지 회고 보도. 게시물 수치는 미확인."
+  },
+  {
+   "slug": "john-titor-2000",
+   "case": "John Titor: el viajero del tiempo de los foros",
+   "country": "US (global)",
+   "year": 2000,
+   "category": "인터넷·해킹",
+   "internet_type": "origen_internet",
+   "key_moment": "2000-11-02, foros del Time Travel Institute: el usuario 'TimeTravel_0' publica su primer mensaje y menciona la IBM 5100",
+   "one_line": "2036년에서 왔다는 남자가 넉 달 동안 게시판에 미래를 예언하고 사라졌다 — 그의 예언은 하나도 맞지 않았는데 왜 25년째 살아 있나",
+   "questions": [
+    "¿Cómo un usuario anónimo de un foro convenció a miles de que venía de 2036?",
+    "¿Quién estaba detrás de 'John Titor' y por qué lo hizo?",
+    "Y sobre todo: si ninguna profecía se cumplió, ¿por qué seguimos hablando de él?"
+   ],
+   "latam_link": "직접 연결 없음. 스페인어 블로그·유튜브에서 오래 소비된 인터넷 전설(Lifeder, Neoteo, El Diario NY 기사)",
+   "sources": [
+    "https://spectrum.ieee.org/the-curious-case-of-john-titor-time-traveller",
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B673DD9C1E8A741E23A64937AE0AA426/S1477175610000266a.pdf/div-class-title-time-travel-testimony-and-the-john-titor-fiasco-div.pdf",
+    "https://www.snopes.com/articles/464084/time-traveler-john-titor/",
+    "https://www.avclub.com/in-the-year-2000-a-time-traveler-appeared-to-predict-t-1798247490"
+   ],
+   "scores": {
+    "moment": 15,
+    "demand": 17,
+    "sources": 11,
+    "question": 14,
+    "latam": 2,
+    "novelty": 10
+   },
+   "risk_notes": "정체 추정(Hoax Hunter 2009가 플로리다의 형제를 지목)은 증명되지 않은 민간인 지목 → 실명 사용 금지, '한 조사 사이트의 가설'로만. 1차 자료는 게시글 아카이브뿐이고 언론 자료가 얇음(자료 점수 낮음).",
+   "open_questions": [
+    "원 게시글 아카이브(Time Travel Institute, Art Bell Post-2-Post) 원문 확보",
+    "마지막 게시 날짜(2001-03로 알려짐) 1차 확인",
+    "스페인어권 관심 지표(검색량 등) 확인"
+   ],
+   "buzz_evidence": "IEEE Spectrum, Cambridge 학술지 Think('Time Travel Testimony and the John Titor Fiasco'), Snopes, AV Club 등이 '인터넷에서 가장 유명한 시간여행자'로 다룸. 스페인어권: Lifeder, Neoteo('viajeros del tiempo… reales'), El Diario NY 기사 확인. Know Your Meme 항목 존재(Confirmed). 조회수 수치는 미확인."
+  },
+  {
+   "slug": "slender-man-waukesha-2014",
+   "case": "Slender Man: el monstruo de un foro que salió de la pantalla",
+   "country": "US (global)",
+   "year": 2014,
+   "category": "인터넷·해킹",
+   "internet_type": "origen_internet",
+   "key_moment": "2009-06-10, foro Something Awful: 'Victor Surge' publica las dos fotos retocadas; 2014-05-31 mañana, Davids Park, Waukesha (Wisconsin): el ataque",
+   "one_line": "포토샵 대회에 올린 가짜 괴물 사진 두 장이 5년 뒤 열두 살 소녀 둘을 숲으로 이끌었다",
+   "questions": [
+    "¿Cómo una broma de foro se convirtió en una leyenda que niños creían real?",
+    "¿Por qué dos niñas de 12 años creyeron que debían obedecerle?",
+    "Y sobre todo: ¿de quién es la culpa cuando una ficción colectiva cruza a la realidad?"
+   ],
+   "latam_link": "직접 연결 없음. 스페인어권 동시 보도(Primera Hora PR, Sopitas MX, LM Neuquén AR, Panamericana PE)",
+   "sources": [
+    "https://time.com/2817725/slender-man-killing/",
+    "https://www.nbcnews.com/storyline/slender-man-stabbing/slender-man-cited-stabbing-ghoul-internet-age-n121741",
+    "https://www.cbsnews.com/pictures/the-slenderman-legend-everything-you-need-to-know",
+    "https://www.newsweek.com/2014/08/22/girls-who-tried-kill-slender-man-264218.html",
+    "https://www.primerahora.com/noticias/estados-unidos/notas/slenderman-la-leyenda-de-internet-que-llevo-a-dos-ninas-a-apunalar-a-otra/"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 16,
+    "sources": 17,
+    "question": 13,
+    "latam": 2,
+    "novelty": 11
+   },
+   "risk_notes": "가해자·피해자 모두 사건 당시 12세 미성년(성범죄 아님). 생존 피해자는 이니셜·역할로, 가해자도 당시 미성년이므로 실명 최소화. 정신질환(조현병) 관련 낙인 표현 금지. 흉기·상처 묘사 금지. 창작자(Eric Knudsen)를 '원흉'으로 몰지 말 것(2014-06-05 애도 성명).",
+   "open_questions": [
+    "첫 게시 날짜 6-08 vs 6-10 원 스레드 아카이브로 확정",
+    "두 가해자의 최종 처분과 현재 상태(법원 기록)"
+   ],
+   "buzz_evidence": "Something Awful 포토샵 스레드에서 시작해 Creepypasta Wiki·Marble Hornets로 확산된 대표 인터넷 전설(TechCrunch 2014-06-30 'The Internet's Own Monster'). 사건 후 Euronews·CTV·BuzzFeed 등 세계 보도, 스페인어권 Primera Hora·Sopitas·LM Neuquén·Panamericana 보도 확인. HBO 다큐 'Beware the Slenderman'(2016) 존재. 조회수 수치는 미확인."
+  },
+  {
+   "slug": "elisa-lam-cecil-2013",
+   "case": "Elisa Lam y el video del ascensor del Hotel Cecil",
+   "country": "US/CA (global)",
+   "year": 2013,
+   "category": "미해결 사건·정체",
+   "internet_type": "origen_internet",
+   "key_moment": "2013-02 (14 o 15), Los Ángeles: el LAPD publica el video del ascensor del Hotel Cecil; 2013-02-19: el cuerpo aparece en un tanque de agua de la azotea",
+   "one_line": "경찰이 제보를 받으려 공개한 엘리베이터 CCTV 4분이 전 세계 인터넷 탐정들의 집착이 됐다 — 그리고 그들은 무고한 사람을 범인으로 지목했다",
+   "questions": [
+    "¿Cómo llegó una joven a un tanque de agua cerrado en la azotea?",
+    "¿Por qué internet vio un fantasma donde había una crisis de salud mental?",
+    "Y sobre todo: ¿qué hacemos con los detectives de internet cuando se equivocan?"
+   ],
+   "latam_link": "직접 연결 없음. 스페인어 유튜브 미스터리 채널의 단골 소재(차별성 낮음)",
+   "sources": [
+    "https://www.cbsnews.com/news/elisa-lam-update-woman-found-in-la-hotels-water-tank-accidentally-drowned-authorities-say",
+    "https://www.ctvnews.ca/canada/coroner-rules-vancouver-student-s-l-a-death-accidental-drowning-1.1334869",
+    "https://www.theglobeandmail.com/news/british-columbia/vancouver-students-mysterious-la-death-deemed-accidental/article12726013/",
+    "https://www.snopes.com/articles/346221/elisa-lam-mystery-that-wasnt/",
+    "https://refinery29.com/en-gb/2021/02/10312240/vanishing-at-the-cecil-hotel-elisa-lam-viral-video-explained"
+   ],
+   "scores": {
+    "moment": 16,
+    "demand": 16,
+    "sources": 16,
+    "question": 12,
+    "latam": 1,
+    "novelty": 6
+   },
+   "risk_notes": "검시 결론은 사고성 익사(양극성 장애가 중요 요인) — 타살·초자연 단정 금지. 정신질환 낙인 표현 금지. 인터넷 탐정들이 한 음악가를 범인으로 몰아 피해를 준 사례가 Netflix 다큐에 나옴 → 그 민간인 실명·얼굴 사용 금지. Netflix(2021)와 스페인어 유튜브에서 이미 많이 다뤄 차별성 낮음.",
+   "open_questions": [
+    "영상 공개일 2-14 vs 2-15 LAPD 공식 기록으로 확정",
+    "검시 보고서 원문 날짜(2013-06로 보도)"
+   ],
+   "buzz_evidence": "Refinery29(2021): 원본 영상 조회수 '약 2,900만 회'(기사 시점 기준). 2020년 말 틱톡에서 재확산, Netflix 'Crime Scene: The Vanishing at the Cecil Hotel'(2021, 4부작)이 '인터넷 탐정' 현상 자체를 주제로 다룸(Daily Beast, NBC LA). Oxygen이 영상이 낳은 이론들을 별도 정리."
+  },
+  {
+   "slug": "reddit-boston-tripathi-2013",
+   "case": "Reddit y la cacería del 'terrorista' equivocado (Maratón de Boston)",
+   "country": "US (global)",
+   "year": 2013,
+   "category": "인터넷·해킹",
+   "internet_type": "fenomeno_comunidad",
+   "key_moment": "2013-04-15 14:49, línea de meta del Maratón de Boston: explotan dos bombas; 2013-04-19 madrugada: Reddit y Twitter difunden el nombre de un estudiante desaparecido como sospechoso; 2013-04-22: Reddit pide perdón",
+   "one_line": "수천 명의 레딧 탐정이 폭탄 테러범을 찾아냈다고 믿었다 — 그들이 지목한 대학생은 이미 한 달 전 실종된 상태였다",
+   "questions": [
+    "¿Cómo miles de usuarios 'resolvieron' un atentado en horas?",
+    "¿Por qué un estudiante desaparecido terminó señalado como terrorista?",
+    "Y sobre todo: ¿quién responde cuando una multitud de internet se equivoca?"
+   ],
+   "latam_link": "직접 연결 없음(인터넷 집단수사의 원형 사례로 스페인어권 Debanhi·Ciro 사례와 연결 가능)",
+   "sources": [
+    "https://www.cbsnews.com/news/reddit-apologizes-for-boston-online-witch-hunt",
+    "https://www.npr.org/sections/alltechconsidered/2013/04/23/178556269/Social-Medias-Rush-To-Judgment-In-The-Boston-Bombings",
+    "https://www.nbcnews.com/tech/tech-news/reddit-publicly-apologizes-pain-caused-family-falsely-accused-student-flna6c9553154",
+    "https://theworld.org/stories/2016/07/30/reddit-apologizes-falsely-accusing-missing-student-sunil-tripathi",
+    "https://www.buzzfeednews.com/article/charliewarzel/reddit-apologizes-for-fueling-online-witch-hunts"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 13,
+    "sources": 18,
+    "question": 13,
+    "latam": 1,
+    "novelty": 12
+   },
+   "risk_notes": "잘못 지목된 학생은 사망했고 가족이 공개적으로 발언했지만, 이름·사진은 최소한으로(가족 고통 재생산 금지). 같은 시기 오인된 다른 민간인들(신문 1면 'Bag Men' 등) 얼굴 사용 금지. 테러 장면·부상 영상 금지. 레퍼런스가 Reddit(A858)·4chan을 다뤘으므로 각도 차별 필요(집단수사 실패).",
+   "open_questions": [
+    "Reddit 스레드·트윗 확산의 정확한 시각(4-19 새벽, 스캐너 오청취 주장)",
+    "학생 사망 확인 날짜(4-23 보도)"
+   ],
+   "buzz_evidence": "r/findbostonbombers 서브레딧이 테러 직후 개설·운영. Reddit 총괄 Erik Martin이 공식 블로그로 '온라인 마녀사냥' 사과(2013-04-22, CBS·NBC·BuzzFeed·The Register·Channel 4 보도). NPR 'Social Media's Rush To Judgment' 분석. 학생 가족 페이스북 페이지가 혐오 댓글로 일시 폐쇄. 게시물 수치는 미확인."
+  },
+  {
+   "slug": "webdriver-torso-2014",
+   "case": "Webdriver Torso: el canal de YouTube de los rectángulos",
+   "country": "global (Google, Zúrich)",
+   "year": 2014,
+   "category": "인터넷·해킹",
+   "internet_type": "origen_internet",
+   "key_moment": "2014-06-06, Engadget publica la respuesta de la oficina de Google en Zúrich: el canal es una prueba interna de calidad de subida",
+   "one_line": "빨강·파랑 사각형과 삐 소리뿐인 11초 영상이 8만 개 넘게 올라왔다 — 첩보 암호인가, 그냥 테스트인가",
+   "questions": [
+    "¿Cómo un canal sin sentido llegó a subir un video cada pocos minutos?",
+    "¿Quién estaba detrás y por qué no lo dijo antes?",
+    "Y sobre todo: ¿por qué internet prefiere un misterio a una respuesta aburrida?"
+   ],
+   "latam_link": "직접 연결 없음",
+   "sources": [
+    "https://www.engadget.com/2014-06-06-this-is-the-truth-behind-webdriver-torso.html",
+    "https://dailydot.com/webdriver-torso-youtube",
+    "https://wnyc.org/story/were-happy-report-webdriver-torso-not-viral-advertisement/",
+    "https://kotaku.com/nobody-knows-what-these-mysterious-youtube-videos-are-1577645061"
+   ],
+   "scores": {
+    "moment": 12,
+    "demand": 15,
+    "sources": 12,
+    "question": 10,
+    "latam": 1,
+    "novelty": 12
+   },
+   "risk_notes": "위험 낮음. 다만 결말이 '구글 테스트'로 이미 풀려 24~29분을 채우기엔 사건성이 약함 — Unfavorable Semicircle 등 유사 '미스터리 채널'을 묶는 구성이 필요할 수 있음(사건 하나 원칙과 충돌 주의). 레퍼런스의 Red Triangle·A858과 같은 계열이라 차별 각도 필요.",
+   "open_questions": [
+    "첫 업로드 날짜(2013 초 vs 2013-09, 출처 불일치)",
+    "레딧·포럼에서 처음 화제가 된 날짜",
+    "총 업로드 수·조회수의 공식 수치"
+   ],
+   "buzz_evidence": "Kotaku 'Nobody knows what these mysterious YouTube videos are', Daily Dot, AV Club, WNYC, HuffPost UK 'mystery solved' 등 2014-04~06 연속 보도. Engadget: 11초 영상 8만 개 이상, 한때 2분 간격 업로드, '바이럴은 우연'(Google 답변). 조회수 수치는 미확인."
+  }
+ ]
+}

@@ -1,0 +1,540 @@
+{
+ "candidates": [
+  {
+   "slug": "star-dust-1947",
+   "case": "Star Dust: el avión que desapareció en los Andes (STENDEC)",
+   "country": "AR/CL",
+   "year": 1947,
+   "category": "미해결·정체 (항공 실종)",
+   "key_moment": "1947-08-02 17:41 GMT, 칠레 산티아고 착륙 4분 전 마지막 전신 'STENDEC' (안데스 상공, 멘도사-산티아고 항로)",
+   "one_line": "착륙 4분 전 아무도 해독 못 한 단어 'STENDEC'을 남기고 사라진 여객기가 53년 뒤 빙하에서 나왔다",
+   "questions": [
+    "¿Cómo desaparece un avión a cuatro minutos de aterrizar?",
+    "¿Qué quiso decir el radiotelegrafista con 'STENDEC'?",
+    "Y sobre todo, ¿por qué la montaña tardó 53 años en devolverlo?"
+   ],
+   "latam_link": "아르헨티나 부에노스아이레스 → 칠레 산티아고 노선, 아르헨티나 투푼가토 산에서 2000년 아르헨티나 군 원정대가 발견, 아르헨티나 JIAAC 재조사",
+   "sources": [
+    "https://www.pbs.org/wgbh/nova/vanished/sten_report.html",
+    "https://aviation-safety.net/wikibase/336917",
+    "https://www.baaa-acro.com/node/469405",
+    "https://cooperativa.cl/noticias/mundo/accidentes-aereos/la-historia-del-avion-que-iba-a-aterrizar-en-santiago-y-estuvo-50-anos/2014-03-13/111146.html"
+   ],
+   "scores": {
+    "moment": 20,
+    "demand": 17,
+    "sources": 16,
+    "question": 14,
+    "latam": 9,
+    "novelty": 12
+   },
+   "risk_notes": "1차 자료: 영국 민간항공부 사고보고서 C.A.106(1947-12-22, NOVA 게재본)에서 17:41 GMT STENDEC, 13:46 GMT 출발, 예정 도착 17:45 확인. 레퍼런스의 '안데스 비행(1972)'·'Pan Am 914'와 다른 사건이지만 항공 미스터리 결이 겹치므로 제목·각도 차별화 필요.",
+   "open_questions": [
+    "아르헨티나 JIAAC 보고서 43/00 원문 미확보(ASN에 번호만 확인)",
+    "STENDEC 해석은 확정되지 않음 — 가설로만 제시",
+    "현지 시각 환산(14:41 등) 출처간 차이 정리 필요"
+   ]
+  },
+  {
+   "slug": "archivos-del-terror-1992",
+   "case": "Los Archivos del Terror de Paraguay (Operación Cóndor)",
+   "country": "PY",
+   "year": 1992,
+   "category": "정부 비밀",
+   "key_moment": "1992-12-22 10:30경, 아순시온 인근 람바레의 경찰 시설(Departamento de Producción) 2층 잠긴 방 — 판사 호세 아구스틴 페르난데스와 마르틴 알마다가 자물쇠를 따고 진입",
+   "one_line": "잠긴 경찰서 방 하나에서 남미 군사정권들의 공동 작전 '콘도르'의 서류 수십만 장이 쏟아졌다",
+   "questions": [
+    "¿Cómo sobreviven intactos los archivos secretos de una dictadura que ya había caído?",
+    "¿Quién coordinaba a los regímenes de Paraguay, Chile, Argentina, Uruguay, Bolivia y Brasil, y por qué lo dejó por escrito?",
+    "Y sobre todo, ¿qué se hizo con esa verdad 30 años después?"
+   ],
+   "latam_link": "파라과이 발견, 칠레·아르헨티나·우루과이·볼리비아·브라질 군정 공조(콘도르 작전), 1998년 런던 피노체트 체포의 근거 자료",
+   "sources": [
+    "https://www.abc.com.py/edicion-impresa/politica/hay-un-antes-y-un-despues-del-22-de-diciembre-del-92-1777523.html",
+    "https://www.pj.gov.py/images/contenido/m-cdya/archivo_terror1.pdf",
+    "https://www.pj.gov.py/notas/27345-a-32-anos-del-descubrimiento-del-archivo-del-terror-acto-en-homenaje-a-defensores-de-los-derechos-humanos",
+    "https://islandora.wrlc.org/islandora/object/terror%3Aroot?page=5",
+    "https://www.ultimahora.com/la-noche-que-la-prensa-vigilo-que-no-destruyan-la-verdad-n3039954"
+   ],
+   "scores": {
+    "moment": 18,
+    "demand": 16,
+    "sources": 18,
+    "question": 13,
+    "latam": 10,
+    "novelty": 13
+   },
+   "risk_notes": "판사 본인 인터뷰(ABC Color)로 10:30 진입·약 12시간 반출 확인. 파라과이 사법부(Poder Judicial)가 원본 보관·디지털 공개. 고문 피해자 실명·사진은 공개 기록 범위에서만, 가해자는 유죄 판결 확정자만 실명. '정부 비밀' 수요(좋아요율 1위)와 '세계적 사건의 중남미 연결'에 모두 맞음.",
+   "open_questions": [
+    "문서 총량(약 70만 장 등) 1차 수치 확인",
+    "UNESCO 세계기록유산 등재(2009) 공식 페이지 링크",
+    "람바레 시설 명칭 출처간 차이 정리"
+   ]
+  },
+  {
+   "slug": "ara-san-juan-2017",
+   "case": "Submarino ARA San Juan",
+   "country": "AR",
+   "year": 2017,
+   "category": "미해결·정체 (해양 실종)",
+   "key_moment": "2017-11-15 07:19 마지막 교신 / 10:51(아르헨티나 시각, 13:51 GMT) CTBTO 수중음향 이상신호, 아르헨티나 남대서양 산호르헤만 해역",
+   "one_line": "44명을 태운 잠수함이 마지막 교신 3시간 반 뒤 핵실험 감시망에 '소리'로 잡히고 1년 동안 찾지 못했다",
+   "questions": [
+    "¿Cómo se pierde un submarino con 44 personas en aguas propias?",
+    "¿Quién decidió que zarpara y por qué nadie escuchó las alertas sobre su estado?",
+    "Y sobre todo, ¿por qué la búsqueda la terminó una empresa privada un año después?"
+   ],
+   "latam_link": "아르헨티나 해군 사건",
+   "sources": [
+    "https://www.ctbto.org/news-and-events/news/ctbto-hydroacoustic-data-used-aid-search-missing-submarine-ara-san-juan",
+    "https://link.springer.com/content/pdf/10.1007/s00024-020-02445-9.pdf",
+    "https://www.ambito.com/politica/ara-san-juan/bicameral-del-finalizo-su-informe-y-el-oficialismo-firmo-disidencia-n5043033",
+    "https://news.usni.org/2017/11/24/search-argentine-sub-focuses-suspected-explosion-site",
+    "https://www.lanacion.com.ar/politica/fuerte-puja-politica-informe-parlamentario-ara-san-nid2266794"
+   ],
+   "scores": {
+    "moment": 19,
+    "demand": 17,
+    "sources": 16,
+    "question": 13,
+    "latam": 10,
+    "novelty": 11
+   },
+   "risk_notes": "지휘부 형사재판이 진행 중이었음 — 유죄 확정 전 인물을 책임자로 단정 금지. 유가족 사찰 의혹 사건도 별도 재판(정치적 사건)이라 사실관계만. 의회 Bicameral 최종보고서는 여당 반대의견 첨부 → 결론을 두 관점으로 제시.",
+   "open_questions": [
+    "Bicameral 최종보고서 원문 PDF 미확보(보도로 07:19 확인)",
+    "CTBTO 논문은 마지막 교신을 다른 시각으로 기재 — 시간대 정리 필요",
+    "2026년 기준 재판 결과 확인 필요"
+   ]
+  },
+  {
+   "slug": "zona-del-silencio-1970",
+   "case": "La Zona del Silencio y el misil Athena",
+   "country": "MX",
+   "year": 1970,
+   "category": "미스터리 장소",
+   "key_moment": "1970-07-11 새벽(예정 02:40), 미국 유타주 그린리버 발사 Athena 로켓이 두랑고주 마피미 사막(세바요스 인근)에 추락",
+   "one_line": "미군 로켓이 코발트-57을 싣고 멕시코 사막에 떨어진 뒤, 그곳은 '전파가 죽는 땅' 전설이 되었다",
+   "questions": [
+    "¿Cómo cae un misil estadounidense a 700 kilómetros dentro de México?",
+    "¿Quién convirtió un accidente militar en la leyenda de la Zona del Silencio y por qué?",
+    "Y sobre todo, ¿hay algo real en el desierto que 'apaga' las radios?"
+   ],
+   "latam_link": "멕시코 두랑고·치와와 경계 사막, 미-멕 외교 문제(키신저 메모)",
+   "sources": [
+    "https://wsmrmuseum.com/2021/11/10/in-1970-an-athena-missile-went-deep-into-mexico/",
+    "https://unredacted.com/2015/07/13/usaf-accidentally-launched-rocket-into-mexicos-mapimi-desert-45-years-ago",
+    "https://collections.lib.utah.edu/details?id=204907",
+    "https://www.historynewsnetwork.org/article/159994",
+    "https://www.mexconnect.com/?p=3479"
+   ],
+   "scores": {
+    "moment": 16,
+    "demand": 18,
+    "sources": 15,
+    "question": 14,
+    "latam": 10,
+    "novelty": 10
+   },
+   "risk_notes": "레퍼런스 Pan Am 914식 '전설 → 기록으로 해체' 구조에 맞음. 스페인어 영상은 초자연 각도가 많아 기록 기반 해체로 차별화. 1964년 콜로라도 두랑고 Athena 추락과 혼동 주의.",
+   "open_questions": [
+    "실제 발사 시각(예정 02:40만 확인)",
+    "키신저 메모 원문(NSA 아카이브) 직접 확인",
+    "자기 이상(전파 소실) 과학적 측정 자료 — 마피미 생물권보전지역/INECOL 자료 찾기"
+   ]
+  },
+  {
+   "slug": "juarez-cobalto-1984",
+   "case": "Cobalto-60 de Ciudad Juárez",
+   "country": "MX",
+   "year": 1984,
+   "category": "재난·사고 (방사능)",
+   "key_moment": "1984-01-16~17, 미국 뉴멕시코 로스앨러모스 국립연구소 — 길을 잘못 든 철근 트럭이 방사선 경보를 울림",
+   "one_line": "고철상에 10달러에 팔린 방사선 치료기가 멕시코산 철근과 식탁 다리가 되어 미국 핵연구소 경보를 울렸다",
+   "questions": [
+    "¿Cómo termina una fuente radiactiva dentro de las varillas de casas y mesas?",
+    "¿Quién vendió el equipo y quién debía vigilarlo?",
+    "Y sobre todo, ¿cuántos edificios siguen en pie con ese acero?"
+   ],
+   "latam_link": "멕시코 시우다드후아레스 사건 + 미국으로 번진 오염(국경 연결고리, 벤치마크 6장 '체르노빌→CONASUPO'형)",
+   "sources": [
+    "https://www.nrc.gov/docs/ML2010/ML20106B466.pdf",
+    "https://www.osti.gov/biblio/6058761",
+    "https://orau.org/health-physics-museum/collection/accidents/contaminated-rebar-from-juarez.html",
+    "https://www.eltiempo.com/mundo/latinoamerica/chernobyl-mexicano-en-ciudad-juarez-el-gran-accidente-nuclear-de-america-666252",
+    "https://paperspast.natlib.govt.nz/newspapers/CHP19840518.2.95"
+   ],
+   "scores": {
+    "moment": 15,
+    "demand": 16,
+    "sources": 16,
+    "question": 13,
+    "latam": 10,
+    "novelty": 13
+   },
+   "risk_notes": "경보 날짜가 1월 16일/17일로 출처마다 다름(NRC 매뉴얼은 17일 통보). 정확한 시각은 미확인. 피폭자 개인 신원(고철상 직원)은 공식 보고서 표기 범위에서만.",
+   "open_questions": [
+    "NRC NUREG 보고서 원문에서 경보 시각 확인",
+    "멕시코 CNSNS 1985 보고서 원문",
+    "NYT 1984-05-01 Blakeslee 기사 원문",
+    "철거된 건물 수·미회수 철근 수치 1차 확인"
+   ]
+  },
+  {
+   "slug": "aeroperu-603-1996",
+   "case": "Vuelo 603 de Aeroperú",
+   "country": "PE",
+   "year": 1996,
+   "category": "재난·사고 (항공)",
+   "key_moment": "1996-10-02 00:42 리마 호르헤차베스 공항 이륙(05:42 UTC) → 01:11:30 리마 앞바다 추락",
+   "one_line": "세척 때 붙인 테이프 한 조각 때문에 모든 계기가 거짓말을 한 29분",
+   "questions": [
+    "¿Cómo puede un Boeing 757 volar a ciegas con todos los instrumentos encendidos?",
+    "¿Quién dejó la cinta y por qué nadie la vio?",
+    "Y sobre todo, ¿quién pagó realmente por 70 muertos?"
+   ],
+   "latam_link": "페루 사건, 기체 소유사 멕시코 CINTRA, 칠레인 탑승객 다수(칠레 언론 30주년 보도)",
+   "sources": [
+    "https://skybrary.aero/sites/default/files/bookshelf/1719.pdf",
+    "https://avweb.com/?p=118636",
+    "https://aviation-safety.net/wikibase/324365",
+    "https://www.meganoticias.cl/mundo/530998-se-cumplen-30-anos-del-accidente-del-vuelo-603-de-aeroperu-como-una-cinta-olvidada-provoco-una-tragedia-con-31-victimas-chilenas.html"
+   ],
+   "scores": {
+    "moment": 20,
+    "demand": 14,
+    "sources": 17,
+    "question": 11,
+    "latam": 10,
+    "novelty": 9
+   },
+   "risk_notes": "1차 자료: 페루 교통통신부 항공국 사고조사위 최종보고서(영문 번역, SKYbrary) — 이륙 05:42 UTC, 최종 충돌 01:11:38 현지. 정비사 1명 과실치사 유죄(확정 판결)만 언급. 'Mayday' 등 기존 영상이 많아 차별성 낮음.",
+   "open_questions": [
+    "정비사 판결 형량(실형/집행유예) 출처 정리",
+    "보잉 상대 민사소송 결과",
+    "칠레인 희생자 수 31명 1차 확인"
+   ]
+  },
+  {
+   "slug": "conti-costa-rica-2022",
+   "case": "Costa Rica en emergencia nacional por el ransomware Conti",
+   "country": "CR",
+   "year": 2022,
+   "category": "인터넷·해킹",
+   "key_moment": "2022-05-08 취임 당일, 로드리고 차베스 대통령이 행정명령 43542-MP-MICITT로 공공부문 전체 국가비상사태 선포 (공격 시작은 2022-04-17 밤~04-18 재무부 발표)",
+   "one_line": "해커 집단 하나 때문에 한 나라가 새 대통령 취임 첫날 '국가비상사태'를 선포했다",
+   "questions": [
+    "¿Cómo un grupo de hackers paraliza la recaudación y las aduanas de un país entero?",
+    "¿Quién estaba detrás de Conti y por qué eligieron a Costa Rica?",
+    "Y sobre todo, ¿estaba algún gobierno de la región preparado para esto?"
+   ],
+   "latam_link": "코스타리카 사건(중미), 이후 CCSS(사회보장기금) Hive 공격으로 확대",
+   "sources": [
+    "https://radios.ucr.ac.cr/wp-content/uploads/2022/05/ALCA94_11_05_2022.pdf",
+    "https://observador.cr/decreto-de-emergencia-suma-a-presidencia-y-cne-a-atender-crisis-de-los-hackeos-por-conti/",
+    "https://www.nbcnews.com/tech/tech-news/costa-rica-declares-state-emergency-ransomware-attack-rcna28415",
+    "https://expansion.mx/tecnologia/2022/05/11/costa-rica-declara-emergencia-nacional-por-ciberataques",
+    "https://crhoy.com/tecnologia/tres-anos-despues-de-ciberataques-levantan-decreto-de-emergencia/"
+   ],
+   "scores": {
+    "moment": 14,
+    "demand": 16,
+    "sources": 16,
+    "question": 12,
+    "latam": 10,
+    "novelty": 13
+   },
+   "risk_notes": "1차 자료: 관보 La Gaceta Alcance 94(2022-05-11)에 실린 행정명령. 결정적 순간의 시각은 미확인(취임식 당일). Conti 구성원 개인은 기소·유죄 확인 전 실명 단정 금지. 레퍼런스 해킹 소재(개인 해커 중심)와 달리 '국가 대 조직' 구도.",
+   "open_questions": [
+    "재무부(Hacienda) 2022-04-18 첫 공지 원문과 시각",
+    "행정명령 서명·발표 시각",
+    "피해 기관 수(27~30개) 공식 수치",
+    "비상사태 해제 날짜(CRHoy 보도) 확인"
+   ]
+  },
+  {
+   "slug": "sindrome-habana-2016",
+   "case": "El Síndrome de La Habana",
+   "country": "CU/global",
+   "year": 2016,
+   "category": "정부 비밀",
+   "key_moment": "2016년 12월 말, 쿠바 아바나 주재 미국 대사관 의무실 — 첫 피해자(CIA 요원으로 보도)가 '이상한 소리·압박감' 뒤 두통·어지럼증을 호소",
+   "one_line": "아바나의 미국 외교관들이 '소리'를 들은 뒤 쓰러졌고, 미 정보기관 7곳은 지금도 서로 다른 결론을 낸다",
+   "questions": [
+    "¿Cómo enferma a diplomáticos un sonido que nadie más escucha?",
+    "¿Hubo un arma, y si la hubo, quién la usó y por qué?",
+    "Y sobre todo, ¿por qué las propias agencias de EE. UU. no se ponen de acuerdo?"
+   ],
+   "latam_link": "쿠바 아바나에서 시작, 이후 콜롬비아 보고타 등 중남미 대사관 사례로 확대, 미-쿠바 외교 단절(대사관 인력 철수)",
+   "sources": [
+    "https://nsarchive.gwu.edu/briefing-book/cuba/2021-02-02/cdc-report-havana-syndrome-medical-mystery-remains-unresolved",
+    "https://www.npr.org/2023/03/01/1160457170/u-s-intelligence-foreign-rivals-didnt-cause-havana-syndrome",
+    "https://www.cbsnews.com/news/havana-syndrome-cases-directed-energy",
+    "https://www.belfercenter.org/publication/report-havana-syndrome-american-officials-under-attack",
+    "https://www.heritage.org/sites/default/files/2021-08/FS217.pdf"
+   ],
+   "scores": {
+    "moment": 11,
+    "demand": 18,
+    "sources": 17,
+    "question": 15,
+    "latam": 8,
+    "novelty": 10
+   },
+   "risk_notes": "정확한 날짜·시각 없음(2016년 12월 말, NSA 아카이브 CDC 보고서). 러시아 GRU 29155부대 관여 보도는 미확정 → 가설로만, 쿠바 정부 부인 함께 제시. 피해자 의료정보는 공개 진술 범위에서만. 가설 2~3개 병렬 결말(벤치마크 5장 '직접 추리')에 가장 잘 맞는 구조.",
+   "open_questions": [
+    "첫 사례 정확 날짜(12/30 설) 1차 확인",
+    "국무부 ARB 보고서(2018) 원문",
+    "ODNI 2023 평가 원문 링크",
+    "콜롬비아 보고타 사례(2021) 1차 보도"
+   ]
+  },
+  {
+   "slug": "guacamaya-leaks-2022",
+   "case": "Guacamaya Leaks: el hackeo a la Sedena",
+   "country": "MX",
+   "year": 2022,
+   "category": "인터넷·해킹",
+   "key_moment": "2022-09-30 아침 정례 기자회견(멕시코시티 국립궁전), 로페스 오브라도르 대통령이 국방부 6TB 해킹을 인정",
+   "one_line": "중남미 5개국 군의 메일 서버가 한 해커 집단에 털렸고, 멕시코 대통령은 '다 사실'이라고 인정했다",
+   "questions": [
+    "¿Cómo se roban 6 terabytes del ejército de México?",
+    "¿Quiénes son Guacamaya y por qué atacaron a varios ejércitos de América Latina?",
+    "Y sobre todo, ¿qué hizo el Estado con lo que se reveló?"
+   ],
+   "latam_link": "멕시코 + 페루·콜롬비아·엘살바도르·칠레 군·기관 동시 피해",
+   "sources": [
+    "https://therecord.media/mexican-president-confirms-guacamaya-hack-targeting-regional-militaries/",
+    "https://politica.expansion.mx/mexico/2022/09/30/lo-que-debes-saber-del-hackeo-a-la-sedena",
+    "https://zetatijuana.com/2023/02/titular-de-sedena-afirma-ante-diputados-que-hackeo-de-guacamaya-no-puso-en-riesgo-seguridad-nacional/",
+    "https://www.xataka.com.mx/seguridad/alguien-hackeo-a-secretaria-defensa-nacional-mexico-a-sedena-le-robaron-6-tb-documentos-esto-que-sabemos"
+   ],
+   "scores": {
+    "moment": 13,
+    "demand": 17,
+    "sources": 13,
+    "question": 12,
+    "latam": 10,
+    "novelty": 12
+   },
+   "risk_notes": "유출 문서 속 개인정보(대통령 건강 등)·미확인 의혹을 사실처럼 인용 금지. 해커 집단 미화 금지. 유출물 직접 게시는 피하고 보도·공식 반응 중심. 결정적 순간 시각 미확정(회견 07시대).",
+   "open_questions": [
+    "대통령 정례회견 공식 속기록(gob.mx) 링크와 해당 발언 시각",
+    "유출 공개 정확한 날짜(9월 19일경)",
+    "칠레 합동참모본부 피해 공식 확인"
+   ]
+  },
+  {
+   "slug": "guadalajara-1992",
+   "case": "Explosiones de Guadalajara (22 de abril)",
+   "country": "MX",
+   "year": 1992,
+   "category": "재난·사고",
+   "key_moment": "1992-04-22 10:05경, 과달라하라 아날코(Sector Reforma) 동부 하수 집수관 연쇄 폭발",
+   "one_line": "주민들이 휘발유 냄새를 신고한 다음 날 아침, 하수도 아래 도시가 연쇄 폭발했다",
+   "questions": [
+    "¿Cómo explota una ciudad desde abajo?",
+    "¿Quién sabía del olor a gasolina la víspera y por qué nadie evacuó?",
+    "Y sobre todo, ¿por qué 30 años después no hay un solo responsable?"
+   ],
+   "latam_link": "멕시코 사건",
+   "sources": [
+    "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/1994/REC_1994_057.pdf",
+    "https://www.cec.org/wp-content/uploads/wpallimport/files/98-1-rsub-s.pdf",
+    "https://expansion.mx/nacional/2012/04/22/las-dudas-por-las-explosiones-de-guadalajara-continuan-20-anos-despues",
+    "https://www.eluniversal.com.mx/articulo/estados/2017/04/22/la-manana-en-que-guadalajara-parecia-zona-de-guerra",
+    "https://scielo.org.mx/pdf/cer/v35n130/0187-7674-cer-35-130-59.pdf"
+   ],
+   "scores": {
+    "moment": 16,
+    "demand": 14,
+    "sources": 15,
+    "question": 12,
+    "latam": 10,
+    "novelty": 9
+   },
+   "risk_notes": "기소된 PEMEX 관계자 4명은 모두 무죄 → 특정인을 범인으로 그리지 말고 제도(PEMEX·시 당국) 구조로. 사망자 수 206~212명 출처별 차이.",
+   "open_questions": [
+    "10:05 시각의 1차 출처(당시 신문·주정부 보고) 확보",
+    "전날(4/21) 신고·폭발성 측정 기록 원문",
+    "CNDH 1992 권고 028이 이 사건인지 확인(PDF 텍스트 추출 실패)"
+   ]
+  },
+  {
+   "slug": "armero-1985",
+   "case": "Tragedia de Armero (Nevado del Ruiz)",
+   "country": "CO",
+   "year": 1985,
+   "category": "재난·사고",
+   "key_moment": "1985-11-13 밤, 네바도델루이스 분화 약 2시간 뒤 라하르가 톨리마주 아르메로를 덮침",
+   "one_line": "위험지도는 한 달 전에 아르메로가 잠긴다고 그려져 있었고, 그날 밤 시장은 '안전하다'고 말했다",
+   "questions": [
+    "¿Cómo desaparece un pueblo de 29.000 habitantes en minutos?",
+    "¿Quién tenía el mapa que lo advertía y por qué no evacuaron?",
+    "Y sobre todo, ¿podría volver a pasar hoy?"
+   ],
+   "latam_link": "콜롬비아 사건",
+   "sources": [
+    "https://www.nationalacademies.org/read/1784/chapter/6",
+    "https://www.nap.edu/read/1784/chapter/2",
+    "https://www.usgs.gov/center-news/volcano-watch-lessons-learned-armero-colombia-tragedy"
+   ],
+   "scores": {
+    "moment": 15,
+    "demand": 15,
+    "sources": 16,
+    "question": 13,
+    "latam": 10,
+    "novelty": 7
+   },
+   "risk_notes": "오마이라 산체스(13세) 장면은 미성년 사망 영상 — 선정적 사용 금지, 맥락만. 스페인어 다큐·기념 보도 매우 많음 → 차별성 낮음, '지도와 경고' 제도 각도 필요.",
+   "open_questions": [
+    "라하르 도달 정확 시각(흔히 23:30경) 1차 확인",
+    "INGEOMINAS 위험지도(1985-10-07 예비판) 원본",
+    "콜롬비아 정부 측 공식 사망자 수"
+   ]
+  },
+  {
+   "slug": "colosio-1994",
+   "case": "Asesinato de Luis Donaldo Colosio (Lomas Taurinas)",
+   "country": "MX",
+   "year": 1994,
+   "category": "정부 비밀",
+   "key_moment": "1994-03-23 17:12(연방사법경찰 첫 보고서는 17:05), 티후아나 로마스타우리나스 유세장",
+   "one_line": "판결은 '단독범'인데, 30년 뒤 검찰이 '두 번째 총잡이'를 말하기 시작했다",
+   "questions": [
+    "¿Cómo llega un hombre con un revólver a centímetros del candidato más protegido del país?",
+    "¿Por qué el propio Estado no se pone de acuerdo sobre lo que pasó?",
+    "Y sobre todo, ¿qué cambia si Aburto no estuvo solo?"
+   ],
+   "latam_link": "멕시코 사건",
+   "sources": [
+    "https://politica.expansion.mx/mexico/2022/07/08/fgr-reabre-caso-luis-donaldo-solosio",
+    "https://www.milenio.com/politica/las-ultimas-palabras-de-colosio",
+    "https://hist.cndh.org.mx/sites/default/files/documentos/2025-11/COM_2025_225.pdf",
+    "https://vanguardia.com.mx/noticias/frena-juez-el-intento-de-la-fgr-de-revivir-en-ano-electoral-la-teoria-del-complot-en-caso-colosio-CA10894215",
+    "https://www.adn40.mx/politica/2026-04-01/caso-colosio-juez-ordena-reabrir-investigacion-mario-aburto/"
+   ],
+   "scores": {
+    "moment": 17,
+    "demand": 15,
+    "sources": 14,
+    "question": 14,
+    "latam": 10,
+    "novelty": 6
+   },
+   "risk_notes": "높은 위험: FGR가 2024년 지목한 '두 번째 사수'(전 CISEN 요원)는 확정 판결 없음 → 실명·범인 단정 금지, '검찰 주장'으로만. 유죄 확정자는 마리오 아부르토 1명. 넷플릭스 시리즈 등 기존 콘텐츠 많음 → 차별성 낮음. 정치 인물 다수 — 음모론은 가설로만 병렬 제시.",
+   "open_questions": [
+    "FGR 2019 공개 수사기록(11권) 원문 링크 확보",
+    "2000년 특별검사 최종보고서 원문",
+    "2026년 법원 재조사 명령의 정확한 내용"
+   ]
+  },
+  {
+   "slug": "manises-1979",
+   "case": "El incidente OVNI de Manises",
+   "country": "ES",
+   "year": 1979,
+   "category": "정부 비밀 (UFO 기밀 해제)",
+   "key_moment": "1979-11-11 23:08(현지), 팔마발 테네리페행 TAE 수퍼카라벨 JK-297 조종실이 바르셀로나 관제에 '미확인 트래픽' 보고 → 23:50 발렌시아 마니세스 비상착륙",
+   "one_line": "승객 109명을 태운 여객기가 '점보기 두 배 크기 불빛'에 쫓겨 회항했고, 공군 전투기가 출격했다",
+   "questions": [
+    "¿Cómo obliga una luz a desviar un avión comercial con 109 pasajeros?",
+    "¿Qué sabía el Ejército del Aire y por qué tardó años en desclasificarlo?",
+    "Y sobre todo, ¿qué había realmente en el cielo de Valencia esa noche?"
+   ],
+   "latam_link": "스페인 사건(중남미 직접 연결 없음). 스페인어권 공통 'OVNI 기밀 해제' 관심사",
+   "sources": [
+    "https://www.congreso.es/public_oficiales/L1/CONG/BOCG/E/E_378-I.PDF",
+    "https://www.eldebate.com/espana/comunidad-valenciana/20241209/siete-expedientes-ovni-comunidad-valenciana-desclasificados-ministerio-defensa_250947_amp.html",
+    "https://theobjective.com/general/2016-10-24/el-ministerio-de-defensa-saca-a-luz-80-expedientes-clasificados-sobre-ovnis-en-espana/",
+    "https://maldita.es/malditateexplica/20230331/ovnis-espana-notificacion-tratamiento-ejercito/"
+   ],
+   "scores": {
+    "moment": 20,
+    "demand": 16,
+    "sources": 15,
+    "question": 14,
+    "latam": 2,
+    "novelty": 8
+   },
+   "risk_notes": "1차 자료: 스페인 의회 관보 BOCG Serie E 378-I(1980-10-14, 무히카 의원 질의) — 22:47 이륙, 23:05 SAR 교신, 23:08 보고, 23:08~23:16 접근, 23:50 착륙, 02시경 로스야노스 기지 미라주 F-1 출격 기록. 공식 조사(1994 기밀 해제)는 화학공장 불꽃·천체 오인 가설 → Pan Am 914식 해체 구조 가능. 스페인어 초자연 콘텐츠가 매우 많아 차별성 낮음. 조종사 실명 표기 출처마다 다름.",
+   "open_questions": [
+    "국방부 Biblioteca Virtual 공식 기밀해제 파일 원문 링크",
+    "1994년 공식 결론 문구 원문 확인",
+    "정부의 의회 답변(구두) 기록"
+   ]
+  },
+  {
+   "slug": "mh370-2014",
+   "case": "Vuelo MH370 de Malaysia Airlines",
+   "country": "global",
+   "year": 2014,
+   "category": "미해결·정체 (항공 실종)",
+   "key_moment": "2014-03-08 01:19:30 MYT, 남중국해 IGARI 웨이포인트 부근 — 마지막 교신 'Good night Malaysian three seven zero'",
+   "one_line": "239명이 탄 보잉 777이 '굿나잇' 한마디 뒤 레이더에서 사라졌고, 위성 신호만 7시간 더 남았다",
+   "questions": [
+    "¿Cómo desaparece un Boeing 777 en la era de los satélites?",
+    "¿Quién apagó el transpondedor y por qué el avión dio la vuelta?",
+    "Y sobre todo, ¿por qué después de tres búsquedas sigue sin aparecer?"
+   ],
+   "latam_link": "직접 연결 없음. 벤치마크 댓글 최다 반복 요청 소재(수요 최상)",
+   "sources": [
+    "https://atsb.gov.au/node/5608",
+    "https://infrastructure.gov.au/infrastructure-transport-vehicles/vehicles/aviation/joint-agency-coordination-centre/timeline",
+    "https://flightsafety.org/asw-article/manual-inputs/",
+    "https://www.aljazeera.com/news/2018/7/30/mh370-probe-fails-to-find-disappearance-cause-foul-play-likely"
+   ],
+   "scores": {
+    "moment": 19,
+    "demand": 20,
+    "sources": 18,
+    "question": 14,
+    "latam": 0,
+    "novelty": 3
+   },
+   "risk_notes": "말레이시아 안전조사보고서(2018-07-30)·호주 ATSB 최종보고로 01:19:30 마지막 교신 확인. 조종사 범인설은 확정 근거 없음 → 가설로만 병렬. 스페인어 장편(넷플릭스 2023 포함)이 매우 많아 차별성 최저. 중남미 연결 없음 — 수요만으로 넣은 후보.",
+   "open_questions": [
+    "말레이시아 교통부 SIR 원문 PDF 링크",
+    "Ocean Infinity 재수색(2025~2026) 최신 결과",
+    "스페인어권 기존 장편 수·조회수 확인(유튜브 차단으로 미확인)"
+   ]
+  },
+  {
+   "slug": "cueva-de-los-tayos-1976",
+   "case": "La Cueva de los Tayos y Neil Armstrong",
+   "country": "EC",
+   "year": 1976,
+   "category": "미스터리 장소",
+   "key_moment": "1976년 8월 초(7월 31일 예정에서 하루 연기), 에콰도르 모로나산티아고주 코앙고스 — 닐 암스트롱이 참가한 영국·에콰도르 군 합동 원정대 동굴 진입",
+   "one_line": "'금속 도서관' 전설을 확인하러 달에 간 첫 인간이 아마존 동굴로 내려갔다",
+   "questions": [
+    "¿Cómo termina el primer hombre en pisar la Luna dentro de una cueva de la Amazonía ecuatoriana?",
+    "¿Quién inventó la 'biblioteca metálica' y por qué tantos la creyeron?",
+    "Y sobre todo, ¿qué encontraron realmente allí abajo?"
+   ],
+   "latam_link": "에콰도르 사건, 헝가리-아르헨티나 탐험가 후안 모리츠·폰 데니켄 전설",
+   "sources": [
+    "https://www.vistazo.com/2026-04-10-primer-hombre-piso-luna-resbalo-cueva-tayos-ecuador-1976-CM10853111",
+    "https://www.yrc.org.uk/?p=4401",
+    "https://explorersweb.com/sounds-cool-but-ecuadors-legendary-golden-library/",
+    "https://skeptoid.com/episodes/637"
+   ],
+   "scores": {
+    "moment": 8,
+    "demand": 16,
+    "sources": 8,
+    "question": 13,
+    "latam": 10,
+    "novelty": 11
+   },
+   "risk_notes": "출처 대부분 2차(잡지·회고·팟캐스트). 준1차: 원정 참가자 J.C. Whalley 기록(Yorkshire Ramblers' Club), Vistazo 1976년 호 인용. 진입 날짜·시각 미확정 → 결정적 순간 약함. 위키·블로그 의존 위험 — 1976년 당시 신문(El Comercio 등)이나 BCRA Bulletin 14 확보 전에는 제작 보류 권장.",
+   "open_questions": [
+    "원정대 동굴 진입 정확 날짜·시각(1차)",
+    "BCRA Bulletin 14(1976) 원문",
+    "에콰도르 군 원정 기록",
+    "암스트롱 발언 원출처"
+   ]
+  }
+ ]
+}
