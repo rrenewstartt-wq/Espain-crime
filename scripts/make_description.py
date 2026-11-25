@@ -31,15 +31,24 @@ def next_slot(taken):
     return t
 
 
-def table_col(path, col):
+def table_col(path, header):
+    """표의 머리행에서 header 로 시작하는 칸을 찾아 그 열 값을 모은다(칸 수가 달라도 머리행 기준)."""
     out = []
     if not os.path.exists(path):
         return out
+    col = None
     for line in open(path, encoding="utf-8"):
+        if not line.lstrip().startswith("|"):
+            col = None
+            continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) > col and cells[0] not in ("#", "---", "") and not set(cells[0]) <= set("-"):
-            if cells[col] and not set(cells[col]) <= set("-"):
-                out.append(cells[col])
+        if cells[0] == "#":
+            col = next((i for i, c in enumerate(cells) if c.startswith(header)), None)
+            continue
+        if col is None or not cells[0] or set(cells[0]) <= set("-:"):
+            continue
+        if len(cells) > col and cells[col] and not set(cells[col]) <= set("-"):
+            out.append(cells[col])
     return out
 
 
@@ -60,9 +69,9 @@ def main():
     q = meta.get("comment_question", "")
     r.ok(q.startswith("¿") and q.endswith("?"), "💬 질문 형식", q)
 
-    sources = [c for c in table_col(f"{ep}/facts.md", 2)]
+    sources = [c for c in table_col(f"{ep}/facts.md", "출처")]
     sources = sorted(set(s for s in sources if s and not s.startswith("출처")))
-    credits = sorted(set(c for c in table_col(f"{ep}/shots.md", 6) if c and not c.startswith("출처")))
+    credits = sorted(set(c for c in table_col(f"{ep}/shots.md", "출처") if c))
     r.ok(bool(sources), "Fuentes (facts.md 출처)", f"{len(sources)}개")
     r.ok(bool(credits), "Créditos (shots.md 출처·라이선스)", f"{len(credits)}개", fail="WARN")
 
