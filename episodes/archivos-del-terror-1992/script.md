@@ -14,9 +14,9 @@ Adentro entra un juez en lo criminal, José Agustín Fernández, con una orden e
 El expediente que lo trae hasta aquí lleva un nombre corto: "Martín Almada sobre Hábeas Data"[^52].
 Almada es un educador que pide ver lo que la policía guarda sobre él[^17][^39].
 Lo hace con una herramienta que la nueva Constitución creó en junio de ese mismo año[^38].
-Han pasado 102 días desde que presentó el pedido[^39].
+Han pasado 99 días desde que el juzgado recibió su pedido[^39].
 Y la respuesta oficial, según recuerda el juez, es que esos documentos desaparecieron con el golpe de febrero de 1989[^40].
-Según la Policía, en este edificio no queda nada que buscar[^40].
+Según la Policía, ya no queda nada que buscar[^40].
 Todo encaja con esa versión.
 Hasta que, al final de una escalera, un cerrajero rompe el candado de una puerta cerrada[^43].
 Detrás aparece una montaña desordenada de libros, carpetas y fichas[^45].
@@ -24,12 +24,12 @@ Detrás aparece una montaña desordenada de libros, carpetas y fichas[^45].
 > CONTADOR (cifras grandes, #2EC4B6): 800.000 PÁGINAS → 200 METROS → 11.225 FICHAS → 20.000 FOTOS → 543 CASETES → 1927–1989
 
 Con los años, el inventario hablará de cerca de 800.000 páginas[^7].
-Son doscientos metros lineales de papel[^7].
+Son unos doscientos metros lineales de papel[^7].
 Hay 11.225 fichas de personas detenidas[^7].
 Hay unas 20.000 fotografías y 543 casetes de audio[^7].
-Los documentos más antiguos son de 1927, y los más recientes, de febrero de 1989[^7].
+El inventario los fecha entre 1927 y febrero de 1989[^7].
 Solo sacarlos de este lugar va a llevar unas doce horas[^4].
-¿Cómo sobreviven intactos los papeles que una policía decía haber perdido?
+¿Cómo sobreviven casi intactos los papeles que una policía decía haber perdido?
 ¿Qué hacen en un depósito de Lambaré las fichas de detenidos argentinos, uruguayos y chilenos[^34]?
 Y sobre todo, ¿por qué un aparato que negaba cada detención se tomaba el trabajo de anotarlas todas?
 Esta es la historia de los Archivos del Terror.
@@ -38,11 +38,11 @@ Esta es la historia de los Archivos del Terror.
 Para entender por qué existe esa habitación, hay que volver a mayo de 1954[^26].
 Ese mes, un golpe militar lleva al poder al general Alfredo Stroessner[^26].
 Va a gobernar treinta y cinco años seguidos, el equivalente a siete períodos presidenciales[^26].
-Cuando llega, los países vecinos todavía no han caído en manos de juntas militares[^26].
+Según los autores del libro sobre el archivo, llega muchos años antes de que los países vecinos rompan sus órdenes constitucionales en los años sesenta y setenta[^26].
 Cuando se va, en 1989, casi toda la región ya camina hacia gobiernos civiles[^26].
 Tampoco llega a un país con larga práctica democrática: antes de él ya hubo una larga lista de gobiernos autoritarios[^26].
 Por fuera, el régimen cuida las formas de una democracia[^27].
-Convoca elecciones en fecha, mantiene abierto el Congreso y deja funcionar a los tribunales[^27].
+Convoca elecciones puntuales, aunque fraudulentas, y mantiene el Congreso y los tribunales funcionando a su medida[^27].
 Por debajo, el país vive en estado de sitio casi permanente[^27].
 La Constitución de la época le permite al Ejecutivo renovarlo cada noventa días[^27].
 Según la Corte Interamericana, ese estado de sitio crea un clima de inseguridad y de temor[^27].
@@ -50,7 +50,7 @@ Y la renovación llega una y otra vez, hasta que la excepción se vuelve costumb
 En plena Guerra Fría, Stroessner se presenta como un campeón del anticomunismo[^72].
 Miles de paraguayos son detenidos por motivos políticos, y el exilio, sobre todo hacia Argentina, es masivo[^72].
 La propaganda oficial descansa en tres ideas: paz interna, estabilidad económica y contención del comunismo[^72].
-Y una parte de la población, como reconocen los historiadores del archivo, apoya al régimen[^72].
+Y una parte de la población, como reconocen los autores de la historia del archivo, apoya al régimen[^72].
 
 > MAPA de Asunción y Lambaré, trazo #2EC4B6. Rótulos: DEPARTAMENTO DE INVESTIGACIONES · DNAT (MINISTERIO DEL INTERIOR)
 
@@ -106,7 +106,7 @@ Si la policía anota hasta a los invitados de una boda, ¿quién lleva la cuenta
 A finales de noviembre de 1975, en Santiago de Chile, se reúnen responsables de inteligencia de varios países[^33].
 El encuentro se llama Primera Reunión de Trabajo de Inteligencia Nacional[^33].
 Entre los papeles de la policía paraguaya aparecerán, años después, las invitaciones a esa cita[^33].
-Según la investigación publicada por la justicia paraguaya, la idea original es del jefe de la DINA chilena, Manuel Contreras[^33][^25].
+Según los investigadores que estudiaron el archivo, la idea original es del jefe de la DINA chilena, Manuel Contreras[^33][^25].
 Sobre la mesa hay tres piezas: un centro coordinador, un banco de datos centralizado y un sistema de comunicaciones cifradas[^33].
 El cifrado es un alfabeto de sustitución simple[^33].
 Cada letra se cambia por otra según una clave fija[^33].
@@ -142,7 +142,7 @@ Para ver cómo funciona esa red de cerca, basta seguir un expediente.
 
 Agustín Goiburú es un médico cirujano paraguayo y opositor al régimen[^35].
 En noviembre de 1969 lo secuestran en Argentina, junto al río Paraná, y lo llevan a Asunción[^35].
-Según esa misma obra, logra fugarse de una comisaría por un túnel[^35].
+Según la historia del archivo de Boccia Paz, Palau y Salerno, logra fugarse de una comisaría por un túnel[^35].
 Por seguridad, termina instalándose en la provincia argentina de Entre Ríos[^35].
 La vigilancia sobre él y su familia no se detiene[^35].
 El Archivo del Terror guarda una nota escrita en papel con membrete de un hotel de Asunción[^35].
@@ -150,7 +150,7 @@ La nota describe sus medidas de seguridad y el trayecto entre su clínica y su c
 Prevé un grupo de cuatro hombres, con dos vehículos, para cuando él vuelva de vacaciones[^35].
 El 9 de febrero de 1977, a la salida del hospital donde está de guardia, lo suben por la fuerza a un auto[^35].
 Desde ese día, Goiburú es un desaparecido[^35].
-De acuerdo con los historiadores del archivo, el operativo lo ejecuta un comando conjunto de agentes paraguayos y argentinos[^35].
+De acuerdo con esos mismos autores, el operativo lo ejecuta un comando conjunto de agentes paraguayos y argentinos[^35].
 El mismo cuidado por el papel aparece en los casos de detenidos dentro del país.
 El 25 de noviembre de 1974, la policía detiene a Carlos José Mancuello cuando entra a Paraguay desde Argentina[^71].
 Ese mismo día detiene también a los hermanos Rodolfo y Benjamín Ramírez Villalba[^71].
@@ -187,10 +187,10 @@ Uno de ellos es Pastor Coronel, que en los años setenta dirigía Investigacione
 Un mes después, el 20 de junio de 1992, se promulga la nueva Constitución[^38].
 Trae una figura jurídica que el país no tenía: el hábeas data[^38].
 La idea es simple: si el Estado guarda datos sobre ti, tienes derecho a conocerlos[^38].
-El 11 de septiembre de 1992, Martín Almada presenta su pedido ante un juzgado de Asunción[^39].
-Lo acompañan dos abogados del Comité de Iglesias[^39].
+El 14 de septiembre de 1992, el juzgado recibe el pedido de Martín Almada[^39].
+Lo firman dos abogados del Comité de Iglesias[^39].
 Durante semanas, la respuesta que recibe se parece a una pared[^40].
-Pero ¿qué pasa si el archivo que todos dan por perdido sigue intacto en un cuarto cerrado, a cuatro kilómetros de la capital?
+Pero ¿qué pasa si el archivo que todos dan por perdido sigue casi completo en un cuarto cerrado, a cuatro kilómetros de la capital?
 
 ## regreso
 > TARJETA DE FECHA, misma tipografía que la apertura: "22 · XII · 1992 — LAMBARÉ"
@@ -198,7 +198,7 @@ Pero ¿qué pasa si el archivo que todos dan por perdido sigue intacto en un cua
 Es otra vez la mañana del 22 de diciembre de 1992, en Lambaré[^1].
 Antes de llegar, el juez Fernández ha recibido de Almada una denuncia verbal: los archivos están en este depósito policial[^52].
 Cuando el juez le pide el origen del dato, Almada responde que se lo confió la esposa de un policía[^6].
-Según la publicación del Poder Judicial, el nombre de esa mujer sigue, hasta hoy, en el anonimato[^6].
+Según el libro de Boccia Paz, Palau y Salerno, el nombre de esa mujer sigue, hasta hoy, en el anonimato[^6].
 Con los años circularán otras versiones sobre quién habló, distintas y hasta contradictorias, y ninguna se ha comprobado[^6].
 La noche anterior, la prensa ya está alerta.
 El entonces director del Diario Noticias recuerda que ubicaron un móvil de cada medio en las cuatro esquinas[^41].
@@ -226,7 +226,7 @@ Según el juez, entre los papeles sueltos aparece ese día la ficha de los herma
 Los dos figuran como desaparecidos[^47].
 Cerca del depósito, alguien desentierra una gran cantidad de cédulas y pasaportes de antiguos detenidos[^46].
 El inventario contará 1.888 documentos de identidad y pasaportes, la mayoría hallados bajo tierra[^7].
-Y los propios registros muestran que estos libros se usaban hasta pocos meses antes del hallazgo[^11].
+Y los propios registros muestran que estos libros se usaban hasta pocos meses antes del hallazgo[^11][^77].
 Afuera, la escena cambia de ritmo.
 Se forma una larga cadena humana que pasa libros y carpetas de mano en mano hasta los camiones[^48].
 El traslado dura unas doce horas[^4].
@@ -235,8 +235,8 @@ Allí, durante varios días, voluntarios montan guardia por miedo a que alguien 
 Durante semanas, las primeras seis u ocho páginas de los diarios de Asunción se llenan de reproducciones del hallazgo[^51].
 A la mañana siguiente, según contó el juez años después, lo llama el presidente de la Corte Suprema[^49].
 Le transmite un pedido del Poder Ejecutivo: que esos documentos no se ventilen[^49].
-Para entonces, dice Fernández, eso ya es imposible[^49].
-Años más tarde lo resumirá con una frase: hay un antes y un después del 22 de diciembre del 92[^42].
+Para entonces, según ese relato, eso ya es imposible[^49].
+Años más tarde lo resumirá así: hay un antes y un después en el Paraguay a partir del hallazgo de los Archivos del Terror[^42].
 El 24 de diciembre, Benítez Riera ordena allanar otro edificio: la Dirección Nacional de Asuntos Técnicos[^50].
 En el escritorio de su director aparecen los documentos personales de Derlis Villagra, uno de los desaparecidos de la dictadura[^50].
 Esos papeles se suman al archivo en enero de 1993[^50].
@@ -249,7 +249,7 @@ El papel ya está a salvo, en manos de la justicia.
 Lo primero es ordenar el caos.
 A comienzos de 1993, la Corte Suprema y la Fiscalía disponen que sus funcionarios trabajen con documentalistas de dos organizaciones civiles, el CDE y el CIPAE[^53].
 Esas dos organizaciones también representan a víctimas de la dictadura y a sus familias[^53].
-En el primer proyecto de consolidación del centro participan también el Comité de Iglesias y la Comisión de Derechos Humanos del Parlamento[^54].
+A ellos se suman representantes de la Comisión de Derechos Humanos del Senado, víctimas y familiares de víctimas[^54].
 Después de varios intentos de prueba y error, los documentalistas adoptan el mismo sistema de clasificación que usaban los antiguos dueños del archivo[^54].
 Una vez comprendido, ese sistema resulta sencillo y eficaz[^54].
 El 26 de marzo de 1993, la Corte Suprema crea por resolución el Centro de Documentación y Archivo para la Defensa de los Derechos Humanos[^53].
@@ -264,14 +264,14 @@ El caso Schaerer Prono sube por todas las instancias[^19].
 El 26 de marzo de 1996, la segunda instancia confirma la condena[^19].
 El 7 de mayo de 1999, la Corte Suprema la deja firme[^19].
 Así, Pastor Coronel queda condenado en forma definitiva a veinticinco años de prisión[^18][^19].
-Según la obra judicial, los procesos se destraban y numerosos represores terminan presos[^75].
+Según esos investigadores, los procesos se destraban y numerosos represores terminan presos[^75].
 Otros procesos tienen un final distinto.
 En la causa de los hermanos Ramírez Villalba, Coronel recibe en 1999 una condena de primera instancia[^20].
 Pero muere antes de que la apelación se resuelva, y la acción penal se extingue[^20].
 Mientras tanto, los papeles vuelven a cruzar la frontera, esta vez en dirección contraria.
 Investigadores paraguayos localizan documentos para abogados y jueces de España, Italia, Francia, Chile, Argentina y Uruguay[^56].
 El juez español Baltasar Garzón, dentro del proceso contra Augusto Pinochet, pide a Paraguay los documentos sobre el Operativo Cóndor[^56].
-Según la obra publicada por la Corte Suprema paraguaya, varios centenares de folios llegan a sus manos[^56].
+Según el libro editado con apoyo de la Corte Suprema, varios centenares de folios llegan a sus manos[^56].
 En otros procesos, los mismos papeles sirven de apoyo en juicios contra represores argentinos y chilenos por desapariciones ligadas al Cóndor[^75].
 El 22 de septiembre de 2006, la Corte Interamericana de Derechos Humanos dicta sentencia en el caso Goiburú y otros contra Paraguay[^57].
 Declara que el Estado paraguayo violó los derechos a la vida, a la integridad y a la libertad de cuatro hombres[^57].
@@ -289,24 +289,24 @@ Muere en Brasilia el 16 de agosto de 2006, todavía con la etiqueta de prófugo 
 Mientras tanto, el país construye sus propias fechas de memoria.
 El 28 de abril de 1995, la Ley 561 declara el 22 de diciembre "Día de la Dignidad Nacional"[^58].
 En 2003, otra ley crea la Comisión de Verdad y Justicia[^59].
-En 2005, el edificio de la antigua Sección Técnica, allanado aquel 24 de diciembre, pasa a albergar un Museo de las Memorias[^74].
+Con los años, el edificio de la antigua Sección Técnica, allanado aquel 24 de diciembre, se convierte en el Museo de las Memorias[^74].
 El informe final de la comisión se presenta en agosto de 2008[^8].
 Allí identifica por nombre a 423 víctimas de violaciones al derecho a la vida, y aclara que la lista sigue abierta[^9].
 En 2009, la UNESCO inscribe el archivo en su registro Memoria del Mundo[^60].
-En 2008, la Corte Suprema publica una historia del archivo en varios cuadernos, que es la base de buena parte de este relato[^1].
+La historia del archivo escrita por Alfredo Boccia Paz, Rosa Palau y Osvaldo Salerno, publicada en 2007 con apoyo de la Corte Suprema, es la base de buena parte de este relato[^1].
 El hallazgo cambia también la imagen pública del dictador.
 Hasta diciembre de 1992, Stroessner aparece para muchos como un anciano apacible que ignoraba lo que hacían sus colaboradores[^76].
 Después de los archivos, esa imagen ya no se sostiene, y las violaciones de derechos humanos ya no pueden negarse[^76].
 Aun así, quedan preguntas que los papeles no responden.
 La más evidente es por qué nadie los quemó.
 Hay al menos tres explicaciones posibles, y conviene ponerlas una al lado de la otra.
-Para los autores de la publicación judicial, la policía conservó sus papeles porque suponía que podían volver a serle útiles en un futuro próximo[^61].
+Para Boccia Paz, Palau y Salerno, la policía conservó sus papeles porque suponía que podían volver a serle útiles en un futuro próximo[^61].
 Una segunda hipótesis, nuestra, es la simple inercia de una burocracia que archiva por costumbre.
 Una tercera, también nuestra, es que la orden de destruirlos nunca llegara a darse.
 Ninguna de las tres está probada, y no se excluyen entre sí.
 Lo único documentado es el resultado: la mayor parte del papel sigue ahí, en Lambaré, el día que llega el juez[^7][^11].
 Hay otra sospecha: que algunos documentos se filtraran antes del hallazgo para borrar rastros[^61].
-El informe de la comisión menciona esa versión con cautela, y la publicación judicial afirma que nada de eso se ha probado[^12][^61].
+El informe de la comisión menciona esa versión con cautela, y los autores del libro afirman que nada de eso se ha probado[^12][^61].
 En el desorden de los primeros días también se denuncia la desaparición de algunos papeles, aunque esa pérdida habría sido mínima[^61].
 Y hay un nombre que nunca aparece en ningún inventario: el de la mujer que dio el dato[^6].
 
@@ -325,12 +325,12 @@ Dice que son 33 años en los que la gente busca respuestas y no las encuentra[^6
 La historia deja una paradoja difícil de esquivar.
 Un aparato construido para vigilar termina fabricando, hoja por hoja, la prueba en su contra.
 Pero esa prueba no sale a la luz por una política de Estado.
-Según Boccia Paz, Palau y Salerno, las autoridades de la transición guardan distancia y miran el archivo con indiferencia[^66].
+Según esa misma investigación, las autoridades de la transición guardan distancia y miran el archivo con indiferencia[^66].
 Lo que lo sostiene es la persistencia de organizaciones ciudadanas y de personas empeñadas en no olvidar[^66].
 Los mismos autores admiten que la investigación local ha aprovechado poco el archivo, y que muchos temas siguen esperando a quien los lea[^66].
 Para que la puerta de Lambaré se abra hacen falta varias piezas al mismo tiempo[^38][^6].
 Un derecho recién escrito, un juez dispuesto a usarlo, una prensa que pasa la noche en vela y una informante sin nombre[^38][^41][^6].
 Con una sola pieza menos, el candado probablemente sigue cerrado.
-Y el mismo papel que sirvió para vigilar es, todavía, lo único que permite a muchas familias reconstruir lo que pasó[^55].
+Y el mismo papel que sirvió para vigilar es, todavía, una de las pocas vías que tienen muchas familias para reconstruir lo que pasó[^55].
 Hoy los registros sobre cada persona ya no ocupan estantes, sino servidores que nadie ve.
 Si en Paraguay la verdad dependió de un candado, de un cerrajero y de una mujer cuyo nombre nadie conoce, ¿quién tiene hoy la llave de los archivos que se escriben sobre ti?
