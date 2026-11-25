@@ -1,10 +1,13 @@
 # 레퍼런스 원자료: 분석용, 커밋 금지 (docs/originality.md)
 data/benchmark/raw/
 # 렌더·음성 결과물
-episodes/*/renders/
-episodes/*/audio/
-episodes/*/video/.hyperframes/
-episodes/*/video/node_modules/
+episodes/**/renders/
+episodes/**/audio/
+episodes/**/video/.hyperframes/
+episodes/**/video/node_modules/
+# 영상 프로젝트 안에 복사·링크한 소재(원본은 assets/, 라이선스는 assets/LICENSES.md)
+episodes/**/video/assets/
+episodes/**/video/media/
 # 소재 원본은 용량이 커서 커밋하지 않는다. 출처·라이선스 기록만 커밋
 episodes/*/assets/*
 !episodes/*/assets/LICENSES.md
