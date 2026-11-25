@@ -9,15 +9,15 @@ subject: "los Archivos del Terror"  # 연결 문장 'Esta es la historia de …'
 Es la mañana del 22 de diciembre de 1992 en Lambaré, a cuatro kilómetros del centro de Asunción[^1][^5].
 Faltan tres días para Navidad y el día amanece caluroso[^1].
 Hace casi cuatro años que cayó la dictadura de Alfredo Stroessner[^26].
-Frente a una dependencia policial, el Departamento de Producciones, empiezan a juntarse curiosos, fotógrafos y camarógrafos[^52].
-Adentro entra un juez en lo criminal, José Agustín Fernández, con una orden en la mano[^52].
+Ante una dependencia policial de nombre administrativo, el Departamento de Producciones, llega un juez con una orden[^52].
+Se llama José Agustín Fernández y es juez en lo criminal[^52].
 El expediente que lo trae hasta aquí lleva un nombre corto: "Martín Almada sobre Hábeas Data"[^52].
-Almada es un educador que pide ver lo que la policía guarda sobre él[^17][^39].
-Lo hace con una herramienta que la nueva Constitución creó en junio de ese mismo año[^38].
+Almada es un educador que, amparado en la Constitución de junio, pide ver lo que la policía guarda sobre él[^17][^38][^39].
 Han pasado 99 días desde que el juzgado recibió su pedido[^39].
 Y la respuesta oficial, según recuerda el juez, es que esos documentos desaparecieron con el golpe de febrero de 1989[^40].
 Según la Policía, ya no queda nada que buscar[^40].
-Todo encaja con esa versión.
+En la puerta, el oficial de guardia no quiere dejarlo pasar sin su jefe[^42].
+Por ahora, nada contradice esa versión.
 Hasta que, al final de una escalera, un cerrajero rompe el candado de una puerta cerrada[^43].
 Detrás aparece una montaña desordenada de libros, carpetas y fichas[^45].
 
@@ -31,7 +31,7 @@ El inventario los fecha entre 1927 y febrero de 1989[^7].
 Solo sacarlos de este lugar va a llevar unas doce horas[^4].
 ¿Cómo sobreviven casi intactos los papeles que una policía decía haber perdido?
 ¿Qué hacen en un depósito de Lambaré las fichas de detenidos argentinos, uruguayos y chilenos[^34]?
-Y sobre todo, ¿por qué un aparato que negaba cada detención se tomaba el trabajo de anotarlas todas?
+Y sobre todo, ¿por qué un aparato que negaba haber detenido a ciertos desaparecidos los tenía fichados, con foto y huellas[^46]?
 Esta es la historia de los Archivos del Terror.
 
 ## origen
@@ -203,25 +203,26 @@ Cuando el juez le pide el origen del dato, Almada responde que se lo confió la 
 Según el libro de Boccia Paz, Palau y Salerno, el nombre de esa mujer sigue, hasta hoy, en el anonimato[^6].
 Con los años circularán otras versiones sobre quién habló, distintas y hasta contradictorias[^6].
 Ninguna se ha comprobado[^6].
-La noche anterior, la prensa ya está alerta.
-El entonces director del Diario Noticias recuerda que ubicaron un vehículo de cada medio en las cuatro esquinas[^41].
+El entonces director del Diario Noticias sostiene que, desde la noche anterior, algunos medios vigilaban el lugar[^41].
+Recuerda que ubicaron un vehículo de cada medio en las cuatro esquinas[^41].
 Según su relato, llegan algunos autos a retirar cosas, ven a los periodistas y se vuelven a ir[^41].
-Por la mañana, un rumor empieza a correr por las radios de Asunción[^52].
+Es el recuerdo de un solo testigo[^41].
+El resto de la ciudad se entera ese mismo día, por un rumor en las radios de Asunción[^52].
 Dicen que en una oscura dependencia policial de Lambaré han aparecido los archivos de la dictadura[^52].
 En poco tiempo, decenas de curiosos y la prensa se agolpan en la puerta[^52].
 Ahora el juez está en la entrada, rodeado de fotógrafos y camarógrafos[^52].
-El oficial de guardia le dice que hay que esperar a su jefe[^42].
-Según recuerda Fernández, su respuesta es un "no" rotundo, y el oficial termina cediendo[^42].
+Ahí sigue el oficial de guardia que quiere esperar a su jefe[^42].
+Según recuerda Fernández, él le contesta con un "no" rotundo, y el oficial termina cediendo[^42].
 El juez pide que venga también el magistrado de turno, Luis María Benítez Riera[^44].
 Es el mismo juez que, siete meses antes, firmó la condena del caso Schaerer Prono[^18][^44].
 Suben una escalera.
 Arriba está la puerta con candado[^43].
 Llaman a un cerrajero y el candado se rompe[^43].
-Por primera vez, la cámara entra en la habitación.
+Esta vez, el relato cruza ese umbral y sigue adentro.
 
 > COLLAGE 2.5D, RECREACIÓN: pilas de libros y carpetas hasta media pared, polvo en suspensión, luz lateral. Rótulo: RECREACIÓN.
 
-Lo que aparece es una montaña de libros, carpetas y papeles sin ningún orden a la vista[^45].
+Es la misma montaña de antes, solo que de cerca se mide en toneladas[^45].
 El secretario del juzgado recordará décadas después un detalle: algunos papeles estaban húmedos[^43].
 Ya en ese primer momento, los dos jueces entienden el valor de lo que tienen delante y ordenan el traslado[^46].
 En las horas siguientes aparecen fichas de personas desaparecidas, con foto, huellas digitales y firma[^46].
@@ -231,8 +232,7 @@ Los dos figuran como desaparecidos[^47].
 Cerca del depósito, alguien desentierra una gran cantidad de cédulas y pasaportes de antiguos detenidos[^46].
 El inventario contará 1.888 documentos de identidad y pasaportes, la mayoría hallados bajo tierra[^7].
 Y los propios registros muestran que estos libros se usaban hasta pocos meses antes del hallazgo[^11][^77].
-Afuera, la escena cambia de ritmo.
-Se forma una larga cadena humana que pasa libros y carpetas de mano en mano hasta los camiones[^48].
+Afuera, una larga cadena humana pasa libros y carpetas de mano en mano hasta los camiones[^48].
 El traslado dura unas doce horas[^4].
 El destino es la secretaría de un juzgado en el Palacio de Justicia, en Asunción[^48].
 Allí, durante varios días, voluntarios montan guardia por miedo a que alguien destruya los papeles[^48].
@@ -316,7 +316,7 @@ Hay otra sospecha: que algunos documentos se filtraran antes del hallazgo para b
 El informe de la comisión menciona esa versión con cautela[^12].
 Los autores del libro, por su parte, afirman que nada de eso se ha probado[^61].
 En el desorden de los primeros días también se denuncia la desaparición de algunos papeles, aunque esa pérdida habría sido mínima[^61].
-Y hay un nombre que nunca aparece en ningún inventario: el de la mujer que dio el dato[^6].
+Y hay un nombre que no figura en ningún inventario: el de la informante que, según contó Almada, le pasó el dato[^6].
 
 ## hoy
 > PLANO del Palacio de Justicia, rótulo: MUSEO DE LA JUSTICIA · CDyA · LUNES A VIERNES 7:00–13:00
@@ -330,16 +330,19 @@ Muere el 30 de marzo de 2024, a los 87 años[^64].
 Cada 22 de diciembre, la ley sigue marcando la fecha del hallazgo como Día de la Dignidad Nacional[^58].
 En diciembre de 2025, José Agustín Fernández, ahora director del Museo de la Justicia, habla en el aniversario del hallazgo[^65].
 Dice que son 33 años en los que la gente busca respuestas y no las encuentra[^65].
+La contradicción de aquel depósito tiene, al menos en parte, una explicación.
+Para la policía, la ficha era una herramienta: con ella, un nuevo arresto empezaba con ventaja[^31][^32].
+La negación iba dirigida a los tribunales y a las familias; el registro se quedaba en los estantes[^37].
 La historia deja una paradoja difícil de esquivar.
 Un aparato construido para vigilar termina fabricando, hoja por hoja, la prueba en su contra.
 Pero esa prueba no sale a la luz por una política de Estado.
-Según esa misma investigación, las autoridades de la transición guardan distancia y miran el archivo con indiferencia[^66].
+Según los investigadores que estudian el archivo, las autoridades de la transición guardan distancia y miran el archivo con indiferencia[^66].
 Lo que lo sostiene es la persistencia de organizaciones ciudadanas y de personas empeñadas en no olvidar[^66].
 Los mismos autores admiten que la investigación local ha aprovechado poco el archivo[^66].
 Muchos temas, dicen, siguen esperando a quien los lea[^66].
 Para que la puerta de Lambaré se abra hacen falta varias piezas al mismo tiempo[^38][^6].
-Un derecho recién escrito, un juez dispuesto a usarlo, una prensa que pasa la noche en vela y una informante sin nombre[^38][^41][^6].
+Un derecho recién escrito, un juez dispuesto a usarlo, una prensa pendiente de esa puerta y una fuente cuyo nombre no se ha hecho público[^38][^52][^6].
 Con una sola pieza menos, el candado probablemente seguiría cerrado.
 Y el mismo papel que sirvió para vigilar es, todavía, una de las pocas vías que tienen muchas familias para reconstruir lo que pasó[^55].
-Hoy los registros sobre cada persona ya no ocupan estantes, sino servidores que nadie ve.
-Si en Paraguay la verdad dependió de un candado, de un cerrajero y de una mujer cuyo nombre nadie conoce, ¿quién tiene hoy la llave de los archivos que se escriben sobre ti?
+Hoy, muchos de los datos que se guardan sobre la gente viven en servidores, no en estantes.
+Si en Paraguay la verdad dependió de un candado, de un cerrajero y de una persona que sigue en el anonimato, ¿quién tiene hoy la llave de los archivos que se escriben sobre ti?
