@@ -58,7 +58,7 @@
     "¿Quién coordinaba a los regímenes de Paraguay, Chile, Argentina, Uruguay, Bolivia y Brasil, y por qué lo dejó por escrito?",
     "Y sobre todo, ¿qué se hizo con esa verdad 30 años después?"
    ],
-   "latam_link": "파라과이 발견, 칠레·아르헨티나·우루과이·볼리비아·브라질 군정 공조(콘도르 작전), 1998년 런던 피노체트 체포의 근거 자료",
+   "latam_link": "파라과이 발견, 칠레·아르헨티나·우루과이·볼리비아·브라질 군정 공조(콘도르 작전). 스페인 가르손 판사의 피노체트 재판에 관련 문서 수백 폴리오 제공(체포 근거라는 1차 자료는 없음)",
    "sources": [
     "https://www.abc.com.py/edicion-impresa/politica/hay-un-antes-y-un-despues-del-22-de-diciembre-del-92-1777523.html",
     "https://www.pj.gov.py/images/contenido/m-cdya/archivo_terror1.pdf",
@@ -84,11 +84,14 @@
     "고문 피해자 실명·사진은 공개 기록 범위에서만"
    ],
    "score": 88,
-   "status": "검증됨",
+   "status": "선정",
    "source_brief": "general",
    "risk_grade": 3,
    "risk_review": "실명은 유죄 확정자만, 고문 방법 묘사 금지, 정당 평가 없이 제도 초점",
-   "verification": "대본 가능 — 분량은 UNESCO 신청서 'cerca de 800.000 páginas'로 통일. 압수수색은 12-22·24 두 번. 시설명 'Departamento de Producción de la Policía, en Lambaré'"
+   "verification": "대본 가능 — 분량은 UNESCO 신청서 'cerca de 800.000 páginas'로 통일. 압수수색은 12-22·24 두 번. 시설명 'Departamento de Producción de la Policía, en Lambaré'",
+   "notes": [
+    "2026-11-25 사용자 /plan 지시, 추천 1순위로 진행"
+   ]
   },
   {
    "slug": "ara-san-juan-2017",
