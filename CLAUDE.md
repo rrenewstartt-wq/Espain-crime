@@ -34,7 +34,7 @@
 5. **화면 소재는 라이선스가 확인된 것만.** 다른 유튜브·다큐 화면을 쓰지 않는다. 모든 소재는 `shots.md` 와 설명란 `Créditos:` 에.
 6. **목소리는 본인 또는 허락받은 목소리만.** 타인 목소리를 복제하지 않는다.
 7. **업로드는 사람이 한다.** 이 하네스는 출고 패키지까지만 만든다.
-8. **사람이 정할 것:** 채널명(`config/channel.json → own_channel.name`, `name_variants`), 구독 문구(`subscribe_line`), 썸네일 강조색(`config/format.json → thumbnail.accent`, 기본 앰버). 비어 있으면 묻는다.
+8. **채널명은 ARCHIVO OSCURO.** 사람이 정할 것: 구독 문구(`config/channel.json → own_channel.subscribe_line`), 썸네일 강조색(`config/format.json → thumbnail.accent`, 기본 앰버). 비어 있으면 묻는다.
 9. YouTube 가 막히면(봇 확인, IP 차단) 우회하지 않는다. 자막은 Supadata API(`SUPADATA_API_KEY`, 월 100크레딧)로 받는다.
 
 ## 자주 쓰는 명령

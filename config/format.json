@@ -102,7 +102,7 @@
 
   "tags": {
     "count": [8, 11],
-    "structure": ["주제 고유명사와 철자 변형 3~5개 (악센트 있음/없음 모두)", "주제 분야 1~2개 (hacking, fraude…)", "공통 2개: misterio, casos reales", "자기 채널명 2표기 (악센트 있음/없음)"]
+    "structure": ["주제 고유명사와 철자 변형 3~5개 (악센트 있음/없음 모두)", "주제 분야 1~2개 (hacking, fraude…)", "공통 2개: misterio, casos reales", "자기 채널명 (악센트 차이 등 표기 변형이 있으면 모두)"]
   },
 
   "schedule": {

@@ -10,10 +10,13 @@
     "format_note": "2025-04~10월 영상은 8~20분에 영상 중간 구독 요청이 있던 초기 포맷. 2025-11 이후가 현재 포맷(21~37분, 요청 없음)"
   },
   "own_channel": {
-    "name": null,
-    "name_variants": [],
+    "name": "ARCHIVO OSCURO",
+    "name_variants": [
+      "archivo oscuro"
+    ],
     "subscribe_line": null,
-    "note": "사람이 정한다. 레퍼런스 채널명·'SUSCRÍBETE para más historias como esta'와 겹치면 안 된다 (docs/originality.md). name_variants 에는 악센트 있음/없음 두 표기"
+    "note": "사람이 정한다. 레퍼런스 채널명·'SUSCRÍBETE para más historias como esta'와 겹치면 안 된다 (docs/originality.md). name_variants 에는 악센트 있음/없음 두 표기",
+    "name_note": "2026-11-25 확인: 같은 이름 채널 14개 이상(같은 장르, 최대 구독자 5.1만 @archivooscuro-z3p), @archivooscuro 핸들은 사용 중. 비어 있던 핸들: @archivo_oscuro, @archivo.oscuro"
   },
   "upload_slot": {
     "weekday": "sáb",
