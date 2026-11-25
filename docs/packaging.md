@@ -28,7 +28,7 @@ Créditos:                                                  ← 쓰인 영상·�
 1. 주제 고유명사와 철자 변형 3~5개: 악센트 있음/없음, 약칭, 별명 (`explosiones de guadalajara`, `guadalajara 1992`, `22 de abril`)
 2. 주제 분야 1~2개 (`hacking`, `fraude`, `desastres`)
 3. 공통 2개: `misterio`, `casos reales`
-4. 자기 채널명 2표기(악센트 있음/없음)
+4. 자기 채널명 `archivo oscuro` (표기 변형이 있으면 모두. 레퍼런스는 악센트 있음/없음 2표기)
 
 ## 업로드 일정
 - **매주 토요일 16:00 (멕시코시티)**. 레퍼런스는 토요일이 31편 중 9편으로 가장 많고 게시 시각 중앙값이 16시다.

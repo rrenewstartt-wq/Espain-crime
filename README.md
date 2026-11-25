@@ -1,4 +1,4 @@
-# espain-crime
+# espain-crime — ARCHIVO OSCURO
 
 스페인어권(멕시코·중남미·스페인) 시청자를 위한 **단일 사건 다큐 롱폼 채널** 하네스.
 레퍼런스 채널 [Detrás del Enigma](https://www.youtube.com/@detrasdelenimga)의 형식·공식·스타일을 실측 수치로 고정하고,
@@ -39,7 +39,7 @@
 대본은 1차 자료로 쓰고, `check_originality.py` 가 레퍼런스 자막 25편과의 문장 겹침을 막는다. 자세히는 [docs/originality.md](docs/originality.md).
 
 ## 사람이 정하고 하는 일
-- 채널명과 표기 변형, 구독 문구: `config/channel.json → own_channel`
+- 채널명: **ARCHIVO OSCURO** (결정됨) · 구독 문구: **Suscríbete para no perderte el próximo expediente.** (결정됨)
 - 썸네일 강조색: `config/format.json → thumbnail.accent` (기본 앰버 `#E0A526`)
 - 내레이션 녹음(본인 목소리), 영상 편집·렌더, 업로드
 
