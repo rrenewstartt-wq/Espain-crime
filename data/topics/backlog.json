@@ -600,7 +600,7 @@
    "year": 2017,
    "category": "재난·사고",
    "internet_type": "fenomeno_comunidad",
-   "key_moment": "2017-09-19 13:14 (sismo M7.1) → 2017-09-21 noche, Ciudad de México: el subsecretario de Marina Ángel Sarmiento admite que 'Frida Sofía' no existe",
+   "key_moment": "2017-09-19 13:14:40 M7.1 지진 → 2017-09-21 오후 해군차관이 존재 부정, 같은 날 밤 사과",
    "one_line": "온 나라가 생중계로 지켜본 '잔해 속 소녀'의 구조 작전, 그런데 그 아이는 처음부터 없었다",
    "questions": [
     "¿Cómo un país entero lloró por una niña que nunca existió?",
@@ -613,28 +613,31 @@
     "https://www.lagaceta.com.ar/nota/745557/actualidad/caso-frida-sofia-explicacion-marina-mexicana-sobre-nina-nunca-existio.html",
     "https://www.chilango.com/ciudad/frida-sofia-la-falsa-esperanza-del-colegio-rebsamen/",
     "https://amp.milenio.com/espectaculos/television/danielle-dithurbide-recuerda-caso-frida-sofia-19-s-perder",
-    "https://www.laprensa.hn/espectaculos/frida_sofia-rebsamen-televisa-apagatelevisa-emilio_azcarraga-terremoto_mexico-PWLP1110582"
+    "https://www.laprensa.hn/espectaculos/frida_sofia-rebsamen-televisa-apagatelevisa-emilio_azcarraga-terremoto_mexico-PWLP1110582",
+    "https://www.iingen.unam.mx/es-mx/Investigacion/Proyecto/PublishingImages/Paginas/ReporteSismos/SSNMX_rep_esp_20170919_Puebla-Morelos_M71.pdf"
    ],
    "scores": {
-    "moment": 18,
+    "moment": 16,
     "demand": 16,
-    "sources": 16,
+    "sources": 15,
     "question": 14,
     "latam": 10,
     "novelty": 12
    },
    "risk_notes": "실존 피해 아동 19명·교사 등 사망(학교 붕괴) — 실제 희생자 가족의 사생활과 학교 소유주 재판(별도 형사사건)은 판결 범위 안에서만 언급. 앵커·해군 개인을 '조작범'으로 단정하지 말 것(조작인지 오보인지 공식 결론 없음). 아동 희생 장면 재연 금지.",
    "open_questions": [
-    "'Frida Sofía'라는 이름이 처음 나온 정확한 시각과 발화자(해군·자원봉사자·방송 중 누구)",
-    "학교 붕괴 희생자 공식 집계(아동 19명+성인 7명으로 알려짐) 1차 자료 확인",
-    "학교 소유주 형사재판 최종 결과"
+    "해군 성명 원문(gob.mx/semar 2017-09-21)과 오후 발언 정확한 시각",
+    "소유주 형량 일수 22일 vs 2일(판결문)",
+    "AMLO 2021-12-21 아침 회견 속기록",
+    "'Frida Sofía' 이름 최초 발화자: 1차 미해결 → 'nunca se estableció oficialmente quién…'"
    ],
    "buzz_evidence": "구조 작전이 Televisa 생중계로 전국에 퍼졌고, 존재하지 않았다는 발표 후 SNS에서 #ApagaTelevisa 해시태그 반발이 일었다고 La Prensa(온두라스)가 보도(URL 슬러그에도 apagatelevisa 포함). 5주년에도 '바이럴' 회고 기사가 나옴(posta.com.mx 'Viral: A 5 años del falso rescate de Frida Sofía'). 칠레·아르헨·페루 매체까지 동시 보도 — 범중남미 관심 확인.",
-   "score": 86,
-   "status": "후보",
+   "score": 83,
+   "status": "검증됨",
    "source_brief": "internet",
    "risk_grade": 4,
-   "risk_review": "사람 판단 필요: 아동 19명 사망 중심(광고 제한), Televisa 화면 사용 불가, 당시 틀랄판 구청장=현 대통령 언급 범위, 조작 단정 금지"
+   "risk_review": "사람 판단 필요: 아동 19명 사망 중심(광고 제한), Televisa 화면 사용 불가, 당시 틀랄판 구청장=현 대통령 언급 범위, 조작 단정 금지",
+   "verification": "대본 가능(조건부) — 학교 사망 26명(아동 19·성인 7, 판결 기준). 소유주 29년 5개월 복역 중. 앵커·제독 조작자 단정 금지"
   },
   {
    "slug": "bonaire-dana-bulo-2024",
@@ -685,7 +688,7 @@
    "category": "정부 비밀·음모",
    "internet_type": "fenomeno_comunidad",
    "key_moment": "2023-09-12, Cámara de Diputados, Ciudad de México: Jaime Maussan presenta dos cuerpos 'no humanos' en la audiencia sobre FANI",
-   "one_line": "멕시코 하원 공청회에 등장한 '외계인 미라' — 페루 법의학자들은 동물 뼈와 접착제로 만든 인형이라고 결론냈다",
+   "one_line": "멕시코 하원에서 '비인간 미라'가 공개됐고, 몇 달 뒤 페루가 같은 계열의 압수 인형을 감정해 새·짐승 뼈와 접착제로 만든 것임을 밝혔다",
    "questions": [
     "¿Cómo llegaron unos cuerpos 'extraterrestres' al pleno de un Congreso?",
     "¿Quién los fabricó, quién los vendió y por qué desde Perú?",
@@ -697,28 +700,34 @@
     "https://diariocorreo.pe/peru/equipo-forense-del-ministerio-publico-expone-fraude-de-momias-alienigenas-en-el-desierto-de-ica-noticia/",
     "https://www.nmas.com.mx/nacional/jaime-maussan-extraterrestres-congreso-son-de-papel-y-huesos-de-animales/",
     "https://www.biobiochile.cl/noticias/sociedad/curiosidades/2024/01/13/amp/fraude-investigacion-dice-que-momias-extraterrestres-de-mexico-y-peru-son-falsas.shtml",
-    "https://comunicacion.diputados.gob.mx/sintesis/LINKSIN/15923_P_TVAZTECA_0_LACAMARADEDIPUTADOS_CIRCOMAUSSAN_3DIP.pdf"
+    "https://comunicacion.diputados.gob.mx/sintesis/LINKSIN/15923_P_TVAZTECA_0_LACAMARADEDIPUTADOS_CIRCOMAUSSAN_3DIP.pdf",
+    "https://andina.pe/agencia/noticia-peru-peritaje-desmiente-momias-humanoides-sean-reales-970153.aspx",
+    "https://politica.expansion.mx/congreso/2023/09/12/jaime-maussan-presenta-cuerpos-de-seres-extraterrestres-en-camara-de-diputados"
    ],
    "scores": {
-    "moment": 18,
+    "moment": 16,
     "demand": 15,
-    "sources": 16,
+    "sources": 14,
     "question": 13,
     "latam": 10,
     "novelty": 12
    },
    "risk_notes": "Maussan은 공인이지만 '사기범'으로 단정 금지 — 형사 판결 없음. 페루 측 결론(인형, 문화재 불법 반출 고발)을 출처와 함께 서술하고 본인 반론도 병기. 진짜 인간 유해(고대 미라)가 섞였다는 보도가 있어 유해 존중 문제 주의.",
    "open_questions": [
-    "공청회 정확한 시작 시각(하원 영상 기록)",
-    "페루 검찰 고발의 현재 진행 상태",
-    "2017년 Gaia.com 최초 공개 날짜 확인"
+    "압수일 2023-09-22 vs 10-10 (문화부 원문)",
+    "형사고발 피고발인·담당 검찰·현재 상태",
+    "하원 공식 기록(Canal del Congreso, 시신 공개 시각)",
+    "하원 시신 2구의 현재 위치와 독립 감정 여부",
+    "2024 페루 의회 문화위원회 공청회 자료",
+    "레퍼런스 나스카 라인 영상과의 차별 각도"
    ],
    "buzz_evidence": "하원 공보실 언론 스크랩 PDF 제목 자체가 'La Cámara de Diputados, circo Maussan'(TV Azteca) — 국내 방송이 '서커스'로 다룰 만큼 화제. 칠레 BioBio·페루 El Peruano·Correo, 에콰도르 Primicias 등 국경 넘어 보도. 2017년 Gaia.com 온라인 공개로 처음 퍼진 뒤 2023년 공청회로 재폭발(조회수 수치는 미확인).",
-   "score": 84,
+   "score": 80,
    "status": "후보",
    "source_brief": "internet",
    "risk_grade": 3,
-   "risk_review": "Maussan 사기범 단정 금지·반론 병기, Gaia·Maussan 화면 금지, 하원 화면은 이용 조건 확인. 제목·썸네일에서 'Nazca' 전면 배치 금지(레퍼런스 나스카 라인 영상)"
+   "risk_review": "Maussan 사기범 단정 금지·반론 병기, Gaia·Maussan 화면 금지, 하원 화면은 이용 조건 확인. 제목·썸네일에서 'Nazca' 전면 배치 금지(레퍼런스 나스카 라인 영상)",
+   "verification": "자료 보강 필요 — 정정: 페루 IML 이 감정한 것은 리마 공항 DHL 에서 압수된 다른 인형 2구. 하원의 두 시신을 페루가 감정한 기록은 없음. 'UNAM 연대 측정' 단정 금지(LEMA 측정, 시료 출처 판단 안 함)"
   },
   {
    "slug": "momo-whatsapp-2018",
@@ -782,28 +791,35 @@
     "https://theobjective.com/further/espana/2018-01-22/la-muerte-narrada-en-directo-de-oscar-perez-a-traves-de-instagram/",
     "https://expansion.mx/mundo/2019/03/21/venezuela-ejecuto-al-rambo-opositor-nuevas-fotos-suscitan-dudas",
     "https://www.ntn24.com/noticias-actualidad/caso-oscar-perez-la-masacre-de-el-junquito-84141",
-    "https://lapatilla.com/2018/01/15/ajusticiado-oscar-perez-por-fuerzas-de-seguridad-segun-fuente-de-alto-rango-afirma-cnn/"
+    "https://lapatilla.com/2018/01/15/ajusticiado-oscar-perez-por-fuerzas-de-seguridad-segun-fuente-de-alto-rango-afirma-cnn/",
+    "https://www.ohchr.org/sites/default/files/Documents/Countries/VE/VenezuelaReport2018_SP.pdf",
+    "https://summa.cejil.org/api/files/170724232451695f5td0b2y4.pdf",
+    "https://www.amnesty.org/es/latest/news/2018/01/venezuela-state-must-respond-for-deadly-security-operation/",
+    "https://eldiario.com/2026/06/17/audiencia-cidh-oscar-perez/"
    ],
    "scores": {
     "moment": 19,
     "demand": 14,
-    "sources": 18,
+    "sources": 19,
     "question": 14,
     "latam": 10,
     "novelty": 13
    },
    "risk_notes": "정치적으로 첨예(마두로 정부 vs 야권) — 한쪽 영웅화 금지, Óscar Pérez의 2017-06-27 헬기 공격도 사실대로. '처형'은 Bellingcat·Forensic Architecture의 '정황' 결론으로 표현(확정 판결 없음). 피 묻은 영상·시신 사진 사용 금지. 개별 경찰관 실명 지목 금지(공식 지휘관 발언은 출처 명시).",
    "open_questions": [
-    "유엔 인권최고대표·ICC 보고서에서 El Junquito 언급 여부",
-    "베네수엘라 검찰 공식 발표문 원문",
-    "2017-06-27 헬기 공격 시각"
+    "미주인권재판소 판결 여부, 보도자료 cp_41_2026 원문 (수동 확인)",
+    "CIDH 본안 보고서 272/22 원문, 회부일 10-11 vs 10-24",
+    "ICC Venezuela I 수사에 El Junquito 포함 여부",
+    "2026년 정세 변화 후 국내 수사 재개 여부",
+    "Lisbeth 성 표기(Ramírez Montilla/Mantilla)"
    ],
    "buzz_evidence": "사건 자체가 인스타그램 생중계로 진행(The Objective 2018-01-22 'La muerte narrada en directo… a través de Instagram'). Bellingcat이 영상·사진·오디오·트윗 60건 이상을 오픈소스로 검증해 재구성(2018-05-13) — 인터넷 집단 수사의 대표 사례. 전 검찰총장 Luisa Ortega가 트위터로 '처형' 이미지 공개. 조회수 수치는 미확인.",
-   "score": 88,
-   "status": "후보",
+   "score": 89,
+   "status": "검증됨",
    "source_brief": "internet",
    "risk_grade": 4,
-   "risk_review": "사람 판단 필요·보류 권고: 미주인권재판소 판결 전, 베네수엘라 정세 유동적(국가 민감성 5), 핵심 소재(인스타그램 영상) 사용 불가, 광고 제한 가능성 높음"
+   "risk_review": "사람 판단 필요·보류 권고: 미주인권재판소 판결 전, 베네수엘라 정세 유동적(국가 민감성 5), 핵심 소재(인스타그램 영상) 사용 불가, 광고 제한 가능성 높음",
+   "verification": "대본 가능 — 마지막 영상은 Bellingcat 09:59 권장('hacia las 10 de la mañana'), 투입 병력 'entre 400 y 500', 처형은 CIDH·ACNUDH 결론으로 서술(국내 판결 없음)"
   },
   {
    "slug": "debanhi-escobar-2022",
