@@ -38,7 +38,8 @@ Esta es la historia de los Archivos del Terror.
 Para entender por qué existe esa habitación, hay que volver a mayo de 1954[^26].
 Ese mes, un golpe militar lleva al poder al general Alfredo Stroessner[^26].
 Va a gobernar treinta y cinco años seguidos, el equivalente a siete períodos presidenciales[^26].
-Según los autores del libro sobre el archivo, llega muchos años antes de que los países vecinos rompan sus órdenes constitucionales en los años sesenta y setenta[^26].
+Según los autores del libro sobre el archivo, llega al poder muchos años antes que sus vecinos[^26].
+Los países de la región, en cambio, rompen su orden constitucional en los años sesenta y setenta[^26].
 Cuando se va, en 1989, casi toda la región ya camina hacia gobiernos civiles[^26].
 Tampoco llega a un país con larga práctica democrática: antes de él ya hubo una larga lista de gobiernos autoritarios[^26].
 Por fuera, el régimen cuida las formas de una democracia[^27].
@@ -69,7 +70,7 @@ La P controla a los partidos políticos, la Q a los centros de estudiantes y la 
 De esos libros con letra se conservarán unos 600, encuadernados[^73].
 A ellos se suman 115 libros de novedades de guardia, con lo que ocurre cada día en el edificio[^73].
 Y 574 carpetas sobre partidos, sindicatos, mapas y personas vigiladas[^73].
-Ahora imagina que tú vives en el Paraguay de esos años.
+Ahora imagina que vives en el Paraguay de esos años.
 Si vas al velorio de un dirigente opositor, tu nombre puede terminar en una lista[^30].
 Si dejas el auto cerca de una reunión, la placa aparece en un informe[^30].
 Si cruzas la frontera, el puesto de control registra la salida y la vuelta[^30].
@@ -81,7 +82,7 @@ Ni siquiera hace falta que te detengan.
 El archivo guarda fichas de personas que nunca estuvieron presas, pero que la policía considera sospechosas[^32].
 Esas fichas se actualizan con el domicilio, el trabajo y cada viaje fuera del país[^32].
 El día que alguien decide arrestarte, buena parte del trabajo ya está hecho[^32].
-Con un solo nombre, un empleado encuentra a mano, en pocos minutos, la ficha anterior y la foto[^31].
+Con un solo nombre y a mano, un empleado encuentra en pocos minutos la ficha anterior y la foto[^31].
 En la misma búsqueda aparecen la declaración del detenido y los resúmenes de inteligencia de su caso[^31].
 No hay computadoras en esta historia.
 Hay libros encuadernados, carpetas, cajas de cartón y una disciplina casi obsesiva por anotar[^7][^29].
@@ -94,23 +95,23 @@ En 1974 lo detienen[^17].
 La etiqueta que le ponen es la de "terrorista intelectual"[^17].
 Pasa cerca de tres años privado de libertad[^17].
 En 1977 sale libre y parte al exilio en Panamá[^17].
-Lo que la policía escribió sobre él, Almada no tiene forma de leerlo.
+Almada no tiene forma de leer lo que la policía escribió sobre él.
 En el Paraguay de entonces no existe ninguna ley que obligue al Estado a mostrarle a un ciudadano sus propios datos[^38].
-Esa puerta legal recién se abrirá quince años después de su salida de prisión[^38].
+Esa puerta legal no se abrirá hasta quince años después de su salida de prisión[^38].
 Pero el sistema que lo fichó no se queda dentro de las fronteras paraguayas.
-Si la policía anota hasta a los invitados de una boda, ¿quién lleva la cuenta de lo que pasa del otro lado de la frontera?
+Si la policía anota incluso a los invitados de una boda, ¿quién lleva la cuenta de lo que pasa al otro lado de la frontera?
 
 ## escalada
 > MAPA DEL CONO SUR, papel envejecido. Línea #2EC4B6 de Asunción a Santiago. Rótulo: SANTIAGO DE CHILE · NOVIEMBRE DE 1975
 
 A finales de noviembre de 1975, en Santiago de Chile, se reúnen responsables de inteligencia de varios países[^33].
 El encuentro se llama Primera Reunión de Trabajo de Inteligencia Nacional[^33].
-Entre los papeles de la policía paraguaya aparecerán, años después, las invitaciones a esa cita[^33].
+Años después, las invitaciones a esa cita aparecerán entre los papeles de la policía paraguaya[^33].
 Según los investigadores que estudiaron el archivo, la idea original es del jefe de la DINA chilena, Manuel Contreras[^33][^25].
 Sobre la mesa hay tres piezas: un centro coordinador, un banco de datos centralizado y un sistema de comunicaciones cifradas[^33].
 El cifrado es un alfabeto de sustitución simple[^33].
 Cada letra se cambia por otra según una clave fija[^33].
-Si tú escribes "viajaré mañana", la a pasa a ser D, la i pasa a ser X y la v pasa a ser N[^33].
+Si escribes "viajaré mañana", la a se convierte en D, la i en X y la v en N[^33].
 En el papel queda una fila de letras sin sentido: NXDBDTCADJDJD[^33].
 
 > TABLA DE SUSTITUCIÓN animada: V→N, I→X, A→D … resultado NXDBDTCADJDJD (fuente: Repositorio Operación Cóndor, Poder Judicial)
@@ -181,7 +182,8 @@ Pero esos juicios se traban por falta de pruebas[^37].
 La defensa policial repite un argumento: los supuestos desaparecidos nunca estuvieron presos en dependencias del Estado[^37].
 Mientras tanto, durante los tres primeros años de la transición, la policía sigue usando el esquema de información de la dictadura[^11].
 Hay un caso que sí avanza.
-El 21 de mayo de 1992, el juez Luis María Benítez Riera dicta sentencia de primera instancia en una causa por muerte y torturas, el caso Schaerer Prono[^18].
+El 21 de mayo de 1992, el juez Luis María Benítez Riera dicta sentencia de primera instancia en el caso Schaerer Prono[^18].
+Es una causa por muerte y torturas[^18].
 Condena a cuatro hombres a veinticinco años de prisión[^18].
 Uno de ellos es Pastor Coronel, que en los años setenta dirigía Investigaciones de la policía de la capital[^18][^67].
 Un mes después, el 20 de junio de 1992, se promulga la nueva Constitución[^38].
@@ -199,11 +201,13 @@ Es otra vez la mañana del 22 de diciembre de 1992, en Lambaré[^1].
 Antes de llegar, el juez Fernández ha recibido de Almada una denuncia verbal: los archivos están en este depósito policial[^52].
 Cuando el juez le pide el origen del dato, Almada responde que se lo confió la esposa de un policía[^6].
 Según el libro de Boccia Paz, Palau y Salerno, el nombre de esa mujer sigue, hasta hoy, en el anonimato[^6].
-Con los años circularán otras versiones sobre quién habló, distintas y hasta contradictorias, y ninguna se ha comprobado[^6].
+Con los años circularán otras versiones sobre quién habló, distintas y hasta contradictorias[^6].
+Ninguna se ha comprobado[^6].
 La noche anterior, la prensa ya está alerta.
-El entonces director del Diario Noticias recuerda que ubicaron un móvil de cada medio en las cuatro esquinas[^41].
+El entonces director del Diario Noticias recuerda que ubicaron un vehículo de cada medio en las cuatro esquinas[^41].
 Según su relato, llegan algunos autos a retirar cosas, ven a los periodistas y se vuelven a ir[^41].
-Por la mañana, en las radios de Asunción empieza a correr un rumor: en una oscura dependencia policial de Lambaré han aparecido los archivos de la dictadura[^52].
+Por la mañana, un rumor empieza a correr por las radios de Asunción[^52].
+Dicen que en una oscura dependencia policial de Lambaré han aparecido los archivos de la dictadura[^52].
 En poco tiempo, decenas de curiosos y la prensa se agolpan en la puerta[^52].
 Ahora el juez está en la entrada, rodeado de fotógrafos y camarógrafos[^52].
 El oficial de guardia le dice que hay que esperar a su jefe[^42].
@@ -218,7 +222,7 @@ Por primera vez, la cámara entra en la habitación.
 > COLLAGE 2.5D, RECREACIÓN: pilas de libros y carpetas hasta media pared, polvo en suspensión, luz lateral. Rótulo: RECREACIÓN.
 
 Lo que aparece es una montaña de libros, carpetas y papeles sin ningún orden a la vista[^45].
-El secretario del juzgado lo resumirá décadas después con un detalle: algunos papeles estaban húmedos[^43].
+El secretario del juzgado recordará décadas después un detalle: algunos papeles estaban húmedos[^43].
 Ya en ese primer momento, los dos jueces entienden el valor de lo que tienen delante y ordenan el traslado[^46].
 En las horas siguientes aparecen fichas de personas desaparecidas, con foto, huellas digitales y firma[^46].
 Son personas que la policía negaba haber detenido alguna vez[^46].
@@ -247,16 +251,18 @@ El papel ya está a salvo, en manos de la justicia.
 > LÍNEA DE TIEMPO horizontal, hitos en #2EC4B6: 1993 CDyA · 1995 LEY 561 · 1999 SCHAERER PRONO FIRME · 2006 CORTE IDH · 2008 CVJ · 2009 UNESCO
 
 Lo primero es ordenar el caos.
-A comienzos de 1993, la Corte Suprema y la Fiscalía disponen que sus funcionarios trabajen con documentalistas de dos organizaciones civiles, el CDE y el CIPAE[^53].
+A comienzos de 1993, la Corte Suprema y la Fiscalía disponen que sus funcionarios trabajen con documentalistas de dos organizaciones civiles[^53].
+Son el CDE y el CIPAE[^53].
 Esas dos organizaciones también representan a víctimas de la dictadura y a sus familias[^53].
 A ellos se suman representantes de la Comisión de Derechos Humanos del Senado, víctimas y familiares de víctimas[^54].
-Después de varios intentos de prueba y error, los documentalistas adoptan el mismo sistema de clasificación que usaban los antiguos dueños del archivo[^54].
+Tras varios intentos de prueba y error, los documentalistas adoptan el mismo sistema de clasificación que usaban los antiguos dueños del archivo[^54].
 Una vez comprendido, ese sistema resulta sencillo y eficaz[^54].
-El 26 de marzo de 1993, la Corte Suprema crea por resolución el Centro de Documentación y Archivo para la Defensa de los Derechos Humanos[^53].
+El 26 de marzo de 1993, la Corte Suprema crea por resolución un nuevo centro[^53].
+Se llama Centro de Documentación y Archivo para la Defensa de los Derechos Humanos[^53].
 Funciona dentro del Palacio de Justicia, abierto al público y a investigadores[^53].
 Los libros terminan alineados en estantes del octavo piso del mismo edificio, bajo custodia judicial[^48].
 Con el tiempo, el centro incorpora microfilm y un sistema digitalizado para proteger los originales[^53].
-Entre 1993 y 2008, ese centro recibe 9.236 pedidos entre hábeas data, oficios judiciales y ampliaciones[^55].
+Entre 1993 y 2008, ese centro recibe 9.236 pedidos: hábeas data, oficios judiciales y ampliaciones[^55].
 El recurso que empezó con el pedido de un solo hombre se convierte en una vía para miles.
 Para cientos de antiguos presos, una copia de su ficha pasa a ser la prueba que les faltaba en los juicios de reparación[^75].
 Con las pruebas sobre la mesa, los juicios que estaban detenidos vuelven a moverse[^37].
@@ -272,7 +278,7 @@ Mientras tanto, los papeles vuelven a cruzar la frontera, esta vez en dirección
 Investigadores paraguayos localizan documentos para abogados y jueces de España, Italia, Francia, Chile, Argentina y Uruguay[^56].
 El juez español Baltasar Garzón, dentro del proceso contra Augusto Pinochet, pide a Paraguay los documentos sobre el Operativo Cóndor[^56].
 Según el libro editado con apoyo de la Corte Suprema, varios centenares de folios llegan a sus manos[^56].
-En otros procesos, los mismos papeles sirven de apoyo en juicios contra represores argentinos y chilenos por desapariciones ligadas al Cóndor[^75].
+Los mismos papeles también sirven de apoyo en juicios contra represores argentinos y chilenos por desapariciones ligadas al Cóndor[^75].
 El 22 de septiembre de 2006, la Corte Interamericana de Derechos Humanos dicta sentencia en el caso Goiburú y otros contra Paraguay[^57].
 Declara que el Estado paraguayo violó los derechos a la vida, a la integridad y a la libertad de cuatro hombres[^57].
 Son Agustín Goiburú, Carlos José Mancuello y los hermanos Rodolfo y Benjamín Ramírez Villalba[^57].
@@ -293,7 +299,8 @@ Con los años, el edificio de la antigua Sección Técnica, allanado aquel 24 de
 El informe final de la comisión se presenta en agosto de 2008[^8].
 Allí identifica por nombre a 423 víctimas de violaciones al derecho a la vida, y aclara que la lista sigue abierta[^9].
 En 2009, la UNESCO inscribe el archivo en su registro Memoria del Mundo[^60].
-La historia del archivo escrita por Alfredo Boccia Paz, Rosa Palau y Osvaldo Salerno, publicada en 2007 con apoyo de la Corte Suprema, es la base de buena parte de este relato[^1].
+La historia del archivo escrita por Alfredo Boccia Paz, Rosa Palau y Osvaldo Salerno se publica en 2007 con apoyo de la Corte Suprema[^1].
+Ese libro es la base de buena parte de este relato[^1].
 El hallazgo cambia también la imagen pública del dictador.
 Hasta diciembre de 1992, Stroessner aparece para muchos como un anciano apacible que ignoraba lo que hacían sus colaboradores[^76].
 Después de los archivos, esa imagen ya no se sostiene, y las violaciones de derechos humanos ya no pueden negarse[^76].
@@ -306,7 +313,8 @@ Una tercera, también nuestra, es que la orden de destruirlos nunca llegara a da
 Ninguna de las tres está probada, y no se excluyen entre sí.
 Lo único documentado es el resultado: la mayor parte del papel sigue ahí, en Lambaré, el día que llega el juez[^7][^11].
 Hay otra sospecha: que algunos documentos se filtraran antes del hallazgo para borrar rastros[^61].
-El informe de la comisión menciona esa versión con cautela, y los autores del libro afirman que nada de eso se ha probado[^12][^61].
+El informe de la comisión menciona esa versión con cautela[^12].
+Los autores del libro, por su parte, afirman que nada de eso se ha probado[^61].
 En el desorden de los primeros días también se denuncia la desaparición de algunos papeles, aunque esa pérdida habría sido mínima[^61].
 Y hay un nombre que nunca aparece en ningún inventario: el de la mujer que dio el dato[^6].
 
@@ -327,10 +335,11 @@ Un aparato construido para vigilar termina fabricando, hoja por hoja, la prueba 
 Pero esa prueba no sale a la luz por una política de Estado.
 Según esa misma investigación, las autoridades de la transición guardan distancia y miran el archivo con indiferencia[^66].
 Lo que lo sostiene es la persistencia de organizaciones ciudadanas y de personas empeñadas en no olvidar[^66].
-Los mismos autores admiten que la investigación local ha aprovechado poco el archivo, y que muchos temas siguen esperando a quien los lea[^66].
+Los mismos autores admiten que la investigación local ha aprovechado poco el archivo[^66].
+Muchos temas, dicen, siguen esperando a quien los lea[^66].
 Para que la puerta de Lambaré se abra hacen falta varias piezas al mismo tiempo[^38][^6].
 Un derecho recién escrito, un juez dispuesto a usarlo, una prensa que pasa la noche en vela y una informante sin nombre[^38][^41][^6].
-Con una sola pieza menos, el candado probablemente sigue cerrado.
+Con una sola pieza menos, el candado probablemente seguiría cerrado.
 Y el mismo papel que sirvió para vigilar es, todavía, una de las pocas vías que tienen muchas familias para reconstruir lo que pasó[^55].
 Hoy los registros sobre cada persona ya no ocupan estantes, sino servidores que nadie ve.
 Si en Paraguay la verdad dependió de un candado, de un cerrajero y de una mujer cuyo nombre nadie conoce, ¿quién tiene hoy la llave de los archivos que se escriben sobre ti?
