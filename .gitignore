@@ -3,6 +3,11 @@ data/benchmark/raw/
 # 렌더·음성 결과물
 episodes/*/renders/
 episodes/*/audio/
+episodes/*/video/.hyperframes/
+episodes/*/video/node_modules/
+# 소재 원본은 용량이 커서 커밋하지 않는다. 출처·라이선스 기록만 커밋
+episodes/*/assets/*
+!episodes/*/assets/LICENSES.md
 *.wav
 *.mp3
 *.mp4

@@ -15,6 +15,7 @@ tools: Bash, Read, Write, Edit, Grep, Glob
 2. `python3 scripts/benchmark.py analyze`
 3. 이전 `data/benchmark/summary.json`(git 의 직전 버전)과 비교해 바뀐 값을 표로: 길이, 말 속도, 연결 문장 시점, 영상 안 요청 비율, 제목 길이·훅, 설명란 줄, 태그, 업로드 요일·시각.
 4. 새 영상이 있으면 썸네일을 한 장에 모아 보고(`raw/thumbs/`) `data/benchmark/thumbnails.json` 에 글자·유형을 추가한다.
+4-1. **화면 스타일:** `data/benchmark/raw/clips/` 에 클립이 있으면 `python3 scripts/benchmark_frames.py data/benchmark/raw/clips/*.mp4` 로 측정하고, 접촉 시트를 직접 보고 `docs/visual-style.md`(색보정, 타이포, 날짜 카드·지도·숫자 카드·이름 자막 디자인, 전환 방식, 막별 화면 구성)를 우리 말로 쓴다. 측정한 컷 길이·전환 빈도로 `config/format.json → production.pacing` 갱신안을 낸다.
 5. **형식이 바뀌었다고 판단되면** `config/format.json` 수정안을 diff 로 보고한다. 직접 고치는 것은 메인 세션이 승인한 뒤에.
 
 ## 지킬 것

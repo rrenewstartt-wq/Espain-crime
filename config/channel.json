@@ -25,5 +25,20 @@
   },
   "budget": {
     "supadata_free_credits_per_month": 100
+  },
+  "voice": {
+    "consent": null,
+    "source": null,
+    "note": "사람이 정한다: 'own'(본인 녹음 또는 본인 목소리 복제) 또는 'licensed'(서면 허락). 비어 있으면 /voice 는 진행하지 않는다. 타인 목소리 복제 금지"
+  },
+  "quality_peers": {
+    "reference": "@detrasdelenimga",
+    "competitors": [
+      "@CriminalistaNocturno",
+      "@Pauletteeoficial",
+      "@AnatomiaDeUnHackeo",
+      "@HistoriaIncomprendida"
+    ],
+    "note": "영상 품질은 이 5채널과 최소 동급 (docs/production-style.md). 클립을 확보하면 data/benchmark/raw/clips/ 에 두고 check_video.py --measure"
   }
 }

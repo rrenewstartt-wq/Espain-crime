@@ -1,13 +1,17 @@
 {
   "_source": "data/benchmark/summary.json + data/benchmark/thumbnails.json (2026-11-25). 레퍼런스 현재 포맷(2025-11-01 이후) 31편, 자막 18편. /benchmark 로 갱신한다.",
-
   "runtime": {
-    "target_min": [24, 29],
-    "allowed_min": [20, 37],
+    "target_min": [
+      24,
+      29
+    ],
+    "allowed_min": [
+      20,
+      37
+    ],
     "reference_median_min": 26.3,
     "note": "소재 크기에 맞춘다. 단일 미스터리 20~25분, 대형 사건(체르노빌·사토시급) 30~37분"
   },
-
   "narration": {
     "wpm": 168,
     "wpm_tolerance": 12,
@@ -16,95 +20,274 @@
     "spanish": "español neutro latinoamericano. vosotros 금지, 지역 속어 금지",
     "sentence_words_median_max": 20
   },
-
   "opening": {
     "first_sentence_date_or_time": true,
-    "turn_sec": [15, 60],
-    "turn_markers": ["sin embargo", "hasta que", "pero (nadie|lo que|eso|en realidad|todo|esta vez|ese d[ií]a|esa ma[nñ]ana|esa noche|a las)", "nadie (lo )?(sabe|imagina|sospecha)", "en realidad", "la realidad es", "todo encaja", "ya es tarde", "eso cambia"],
+    "turn_sec": [
+      15,
+      60
+    ],
+    "turn_markers": [
+      "sin embargo",
+      "hasta que",
+      "pero (nadie|lo que|eso|en realidad|todo|esta vez|ese d[ií]a|esa ma[nñ]ana|esa noche|a las)",
+      "nadie (lo )?(sabe|imagina|sospecha)",
+      "en realidad",
+      "la realidad es",
+      "todo encaja",
+      "ya es tarde",
+      "eso cambia"
+    ],
     "turn_note": "전환은 기능(평범함을 깨는 한 문장)만 가져온다. 레퍼런스의 전환 문형은 banned.reference_catchphrases 에 있다",
-    "question_triplet": {"min": 2, "max": 4, "last_starts_with": "Y sobre todo", "within_sec_before_bridge": 40},
-    "bridge_sec": [45, 130],
-    "bridge_markers": ["esta es la historia de", "este es el misterio de", "esto es lo que pasó con", "así empieza el caso de"],
+    "question_triplet": {
+      "min": 2,
+      "max": 4,
+      "last_starts_with": "Y sobre todo",
+      "within_sec_before_bridge": 40
+    },
+    "bridge_sec": [
+      45,
+      130
+    ],
+    "bridge_markers": [
+      "esta es la historia de",
+      "este es el misterio de",
+      "esto es lo que pasó con",
+      "así empieza el caso de"
+    ],
     "after_bridge": "rebobinar: 'Para entender …, hay que volver a …' 또는 인물의 출생·배경부터 시간순"
   },
-
   "body": {
     "acts": [
-      {"id": "apertura", "share": [0.04, 0.08], "job": "결정적 순간(현재형) → 평범함 → 전환 → 규모 숫자 → 질문 3개 → 연결 문장"},
-      {"id": "origen", "share": [0.15, 0.25], "job": "되감기. 인물·조직·장소의 배경, 기술 개념은 tú 예시로 쉽게"},
-      {"id": "escalada", "share": [0.20, 0.30], "job": "수법·규모가 커지는 과정. 숫자로 단계를 보여 줌"},
-      {"id": "regreso", "share": [0.10, 0.15], "job": "도입의 그 순간으로 돌아옴(loopback). 영상의 35~65% 지점"},
-      {"id": "consecuencias", "share": [0.15, 0.25], "job": "수사·재판·폭로·반증. 진위 소재는 여기서 출처를 추적해 해체"},
-      {"id": "hoy", "share": [0.05, 0.10], "job": "현재 상황 → 제도·구조의 교훈 → 마무리 재구성 질문"}
+      {
+        "id": "apertura",
+        "share": [
+          0.04,
+          0.08
+        ],
+        "job": "결정적 순간(현재형) → 평범함 → 전환 → 규모 숫자 → 질문 3개 → 연결 문장"
+      },
+      {
+        "id": "origen",
+        "share": [
+          0.15,
+          0.25
+        ],
+        "job": "되감기. 인물·조직·장소의 배경, 기술 개념은 tú 예시로 쉽게"
+      },
+      {
+        "id": "escalada",
+        "share": [
+          0.2,
+          0.3
+        ],
+        "job": "수법·규모가 커지는 과정. 숫자로 단계를 보여 줌"
+      },
+      {
+        "id": "regreso",
+        "share": [
+          0.1,
+          0.15
+        ],
+        "job": "도입의 그 순간으로 돌아옴(loopback). 영상의 35~65% 지점"
+      },
+      {
+        "id": "consecuencias",
+        "share": [
+          0.15,
+          0.25
+        ],
+        "job": "수사·재판·폭로·반증. 진위 소재는 여기서 출처를 추적해 해체"
+      },
+      {
+        "id": "hoy",
+        "share": [
+          0.05,
+          0.1
+        ],
+        "job": "현재 상황 → 제도·구조의 교훈 → 마무리 재구성 질문"
+      }
     ],
-    "loopback_share": [0.35, 0.65],
-    "questions_per_min": [0.1, 0.6]
+    "loopback_share": [
+      0.35,
+      0.65
+    ],
+    "questions_per_min": [
+      0.1,
+      0.6
+    ]
   },
-
   "ending": {
-    "present_day_markers": ["hoy", "a día de hoy", "años después", "todavía", "sigue"],
+    "present_day_markers": [
+      "hoy",
+      "a día de hoy",
+      "años después",
+      "todavía",
+      "sigue"
+    ],
     "final_question_required": true,
     "reframe_pattern": "진짜 질문은 '~인가'가 아니라 '~인가'이다 (표현은 매번 새로)",
     "no_cta": true
   },
-
   "banned": {
-    "cta_in_video": ["suscr[ií]b", "campanita", "notificaciones", "dale like", "deja(r)? (tu|un) like", "s[ií]gueme", "redes sociales del canal", "este canal es nuevo", "link en la descripci[oó]n"],
-    "greeting": ["\\bhola\\b", "bienvenid", "buenas noches a todos", "qu[eé] tal"],
-    "reference_catchphrases": ["y eso lo cambia todo", "eso lo cambia todo", "que lo cambia todo", "la pregunta de verdad no es", "la duda de verdad no es", "la pregunta real es", "o al menos eso es lo que parece", "lo que (ella |el |nadie )?(todav[ií]a )?no sabe(n)? es que", "esta es la historia y la verdad", "en este preciso momento", "este canal es nuevo", "m[aá]s historias como esta", "detr[aá]s del enigma"],
+    "cta_in_video": [
+      "suscr[ií]b",
+      "campanita",
+      "notificaciones",
+      "dale like",
+      "deja(r)? (tu|un) like",
+      "s[ií]gueme",
+      "redes sociales del canal",
+      "este canal es nuevo",
+      "link en la descripci[oó]n"
+    ],
+    "greeting": [
+      "\\bhola\\b",
+      "bienvenid",
+      "buenas noches a todos",
+      "qu[eé] tal"
+    ],
+    "reference_catchphrases": [
+      "y eso lo cambia todo",
+      "eso lo cambia todo",
+      "que lo cambia todo",
+      "la pregunta de verdad no es",
+      "la duda de verdad no es",
+      "la pregunta real es",
+      "o al menos eso es lo que parece",
+      "lo que (ella |el |nadie )?(todav[ií]a )?no sabe(n)? es que",
+      "esta es la historia y la verdad",
+      "en este preciso momento",
+      "este canal es nuevo",
+      "m[aá]s historias como esta",
+      "detr[aá]s del enigma"
+    ],
     "catchphrase_note": "레퍼런스 자막 2편 이상에서 같은 문형으로 나온 표현. /benchmark 때 summary.json → signature_4grams 를 보고 갱신",
-    "unverifiable_superlatives": ["el m[aá]s grande de la historia(?! de)", "nunca antes visto", "nadie en la historia"]
+    "unverifiable_superlatives": [
+      "el m[aá]s grande de la historia(?! de)",
+      "nunca antes visto",
+      "nadie en la historia"
+    ]
   },
-
   "title": {
     "pipe_required": true,
-    "length": [50, 70],
+    "length": [
+      50,
+      70
+    ],
     "length_max": 81,
-    "left_words": [5, 10],
+    "left_words": [
+      5,
+      10
+    ],
     "left_no_proper_noun": true,
     "right": "고유명사만, 또는 '¿Quién es X?' · 'El Misterio de X' · '¿Qué Pasó en X?'",
     "case": "Title Case (스페인어 단어마다 첫 글자 대문자, 이모지·전체 대문자 단어 금지)",
     "hooks": {
-      "danger_fear": {"pattern": "peligros|temid|oscur|terror|aterr|siniestr", "lift": 1.75, "use": "prefer"},
-      "question": {"pattern": "¿", "lift": 1.5, "use": "prefer"},
-      "superlative": {"pattern": "\\bm[aá]s\\b|\\bmayor\\b|\\b[uú]nic[oa]\\b|\\bpeor\\b", "lift": 0.9, "use": "max_one"},
-      "person_subject": {"pattern": "^(el|la) (hombre|mujer|niñ[oa]|hacker|jugador|estafador)\\b", "lift": 0.52, "use": "only_with_twist"},
-      "number": {"pattern": "\\d", "lift": 0.45, "use": "avoid_left"}
+      "danger_fear": {
+        "pattern": "peligros|temid|oscur|terror|aterr|siniestr",
+        "lift": 1.75,
+        "use": "prefer"
+      },
+      "question": {
+        "pattern": "¿",
+        "lift": 1.5,
+        "use": "prefer"
+      },
+      "superlative": {
+        "pattern": "\\bm[aá]s\\b|\\bmayor\\b|\\b[uú]nic[oa]\\b|\\bpeor\\b",
+        "lift": 0.9,
+        "use": "max_one"
+      },
+      "person_subject": {
+        "pattern": "^(el|la) (hombre|mujer|niñ[oa]|hacker|jugador|estafador)\\b",
+        "lift": 0.52,
+        "use": "only_with_twist"
+      },
+      "number": {
+        "pattern": "\\d",
+        "lift": 0.45,
+        "use": "avoid_left"
+      }
     }
   },
-
   "thumbnail": {
-    "size": [1280, 720],
+    "size": [
+      1280,
+      720
+    ],
     "grade": "어두운 바탕 + 강조색 한 가지(단색 톤). 그림자는 거의 검정, 하이라이트만 강조색",
     "accent": "#E0A526",
     "accent_note": "레퍼런스의 빨강(#D10F0F 계열)은 채널 정체성이라 쓰지 않는다. 바꾸려면 사람이 docs/originality.md 를 읽고 결정",
-    "forbidden_accents": ["#D10F0F", "#E50914", "#C8102E"],
+    "forbidden_accents": [
+      "#D10F0F",
+      "#E50914",
+      "#C8102E"
+    ],
     "subject": "중앙 인물(상반신·얼굴) 또는 상징 사물 1개. 확정 판결 없는 실존 인물·생존자·미성년자는 눈을 검은 띠로 가림",
     "background": "사건 문서·화면·사진 콜라주 + 비네트",
-    "text": {"words": [1, 4], "style": "굵은 압축 산세리프 대문자, 강조색 글자 + 흰 테두리·발광, 중앙~중하단 가로 1줄",
-             "types": {"number": "결정적 숫자 ('37 AÑOS' 같은 기간·규모)", "question": "¿QUIÉN ES? 같은 2~3단어 질문",
-                       "name": "고유명사", "hook": "2~3단어 단정 ('TE MINTIERON' 류)"},
-             "type_priority": ["number", "question", "name", "hook"],
-             "not_in_title": "썸네일 글자는 제목 왼쪽 훅의 단어를 반복하지 않는다(고유명사형은 예외)"},
-    "reference_text_type_median_views": {"number": 5797992, "name": 1720158, "question": 1569983, "hook": 1177999}
+    "text": {
+      "words": [
+        1,
+        4
+      ],
+      "style": "굵은 압축 산세리프 대문자, 강조색 글자 + 흰 테두리·발광, 중앙~중하단 가로 1줄",
+      "types": {
+        "number": "결정적 숫자 ('37 AÑOS' 같은 기간·규모)",
+        "question": "¿QUIÉN ES? 같은 2~3단어 질문",
+        "name": "고유명사",
+        "hook": "2~3단어 단정 ('TE MINTIERON' 류)"
+      },
+      "type_priority": [
+        "number",
+        "question",
+        "name",
+        "hook"
+      ],
+      "not_in_title": "썸네일 글자는 제목 왼쪽 훅의 단어를 반복하지 않는다(고유명사형은 예외)"
+    },
+    "reference_text_type_median_views": {
+      "number": 5797992,
+      "name": 1720158,
+      "question": 1569983,
+      "hook": 1177999
+    }
   },
-
   "description": {
-    "structure": ["hook_line: 날짜·장소가 든 장면 한두 문장", "context: 사건 요지 1~2문단", "bridge_line: 'Esta es la historia de X.'",
-                  "subscribe_line: 채널 고유 문구 1줄(🔔)", "comment_question: 💬 + 판단을 묻는 질문 1개", "sources: 'Fuentes:' 1차 자료 목록", "credits: 'Créditos:' 영상·이미지 출처"],
+    "structure": [
+      "hook_line: 날짜·장소가 든 장면 한두 문장",
+      "context: 사건 요지 1~2문단",
+      "bridge_line: 'Esta es la historia de X.'",
+      "subscribe_line: 채널 고유 문구 1줄(🔔)",
+      "comment_question: 💬 + 판단을 묻는 질문 1개",
+      "sources: 'Fuentes:' 1차 자료 목록",
+      "credits: 'Créditos:' 영상·이미지 출처"
+    ],
     "subscribe_line_share": 0.97,
     "comment_question_share": 0.84,
-    "comment_question_kinds": ["판단(¿Tú lo habrías…? / ¿héroe o criminal?)", "가설(¿Qué crees que pasó?)", "재발(¿Crees que volverá a pasar?)"],
+    "comment_question_kinds": [
+      "판단(¿Tú lo habrías…? / ¿héroe o criminal?)",
+      "가설(¿Qué crees que pasó?)",
+      "재발(¿Crees que volverá a pasar?)"
+    ],
     "comment_question_prefer": "제도의 선택을 묻는 판단 질문 (레퍼런스 댓글에서 '제도 비판' 반응이 가장 큼)",
     "hashtags": 0,
-    "length_chars": [400, 1500]
+    "length_chars": [
+      400,
+      1500
+    ]
   },
-
   "tags": {
-    "count": [8, 11],
-    "structure": ["주제 고유명사와 철자 변형 3~5개 (악센트 있음/없음 모두)", "주제 분야 1~2개 (hacking, fraude…)", "공통 2개: misterio, casos reales", "자기 채널명 (악센트 차이 등 표기 변형이 있으면 모두)"]
+    "count": [
+      8,
+      11
+    ],
+    "structure": [
+      "주제 고유명사와 철자 변형 3~5개 (악센트 있음/없음 모두)",
+      "주제 분야 1~2개 (hacking, fraude…)",
+      "공통 2개: misterio, casos reales",
+      "자기 채널명 (악센트 차이 등 표기 변형이 있으면 모두)"
+    ]
   },
-
   "schedule": {
     "weekday": "sáb",
     "time": "16:00",
@@ -112,16 +295,90 @@
     "every_days": 7,
     "reference": "토요일 9/31, 게시 시각 중앙값 16시, 간격 중앙값 10.5일"
   },
-
   "categories": {
     "mix_note": "도달용(재난·미스터리 장소)과 팬 결속용(해킹·정부 비밀·미해결)을 섞는다. 스캠·금융은 조회수 하위권",
-    "reference_median_views": {"미스터리 장소": 3000000, "재난·사고": 2044975, "인터넷·해킹": 1408308, "미해결 사건·정체": 1407532, "정부 비밀·음모": 1189266, "고대 미스터리": 1104774, "금융사기·스캠": 598141},
-    "reference_like_rate": {"정부 비밀·음모": 2.58, "미해결 사건·정체": 2.44, "인터넷·해킹": 2.35, "고대 미스터리": 2.05, "금융사기·스캠": 1.87, "재난·사고": 1.5, "미스터리 장소": 0.9}
+    "reference_median_views": {
+      "미스터리 장소": 3000000,
+      "재난·사고": 2044975,
+      "인터넷·해킹": 1408308,
+      "미해결 사건·정체": 1407532,
+      "정부 비밀·음모": 1189266,
+      "고대 미스터리": 1104774,
+      "금융사기·스캠": 598141
+    },
+    "reference_like_rate": {
+      "정부 비밀·음모": 2.58,
+      "미해결 사건·정체": 2.44,
+      "인터넷·해킹": 2.35,
+      "고대 미스터리": 2.05,
+      "금융사기·스캠": 1.87,
+      "재난·사고": 1.5,
+      "미스터리 장소": 0.9
+    }
   },
-
   "originality": {
     "max_shared_run_words": 7,
     "max_5gram_overlap": 0.01,
     "note": "우리 대본과 레퍼런스 자막 사이에 8단어 이상 연속 일치가 있거나 5-gram 겹침이 1%를 넘으면 불합격. 기준선: 레퍼런스 자막끼리 0.2~1.6% (scripts/check_originality.py)"
+  },
+  "production": {
+    "_note": "영상 품질 기준. 레퍼런스·경쟁 4채널(Criminalista Nocturno, Paulettee, Anatomía de un Hackeo, Historia Incomprendida)과 최소 동급. 'measured' 는 실측, 'provisional' 은 레퍼런스 영상 프레임을 아직 못 받아 다큐 채널 관행으로 잡은 잠정값 — 레퍼런스 클립을 확보하면 scripts/check_video.py --measure 로 재서 갱신한다",
+    "order": [
+      "대본 확정",
+      "장면표·소재",
+      "화면 제작(임시 타이밍: 분당 168단어)",
+      "화면 품질 검수",
+      "출고 전 검수",
+      "목소리 내레이션(마지막)",
+      "음성 길이로 재타이밍·믹스·최종 렌더",
+      "최종 품질 검수",
+      "출고 패키지"
+    ],
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": [
+        24,
+        30
+      ],
+      "codec": "h264",
+      "min_bitrate_mbps": 8,
+      "reference": "레퍼런스·경쟁 4채널 상위 영상 HD 100% (API contentDetails.definition, measured)"
+    },
+    "audio": {
+      "integrated_lufs": -14,
+      "lufs_tolerance": 1.0,
+      "true_peak_max_dbtp": -1.0,
+      "sample_rate": 48000,
+      "music_under_narration_db": -20,
+      "max_silence_sec": 2.5,
+      "note": "YouTube 정규화 기준 -14 LUFS (provisional: 레퍼런스 음량 미측정)"
+    },
+    "pacing": {
+      "max_static_sec": 6.0,
+      "scene_changes_per_min": [
+        8,
+        24
+      ],
+      "max_black_sec": 1.5,
+      "status": "provisional"
+    },
+    "required_elements": {
+      "date_card": "도입·되돌아오기의 날짜·시각 카드 (같은 디자인)",
+      "map": "장소가 나올 때마다 지도 (직접 제작)",
+      "number_card": "핵심 숫자 카드 (막마다 1개 이상)",
+      "document_zoom": "문서·신문 확대 + 강조 표시",
+      "lower_third": "실명 인물·기관 첫 등장 시 이름·역할 자막",
+      "timeline": "origen·consecuencias 막의 연표",
+      "motion_on_stills": "모든 정지 이미지에 움직임(줌·패닝·패럴랙스). 6초 이상 정지 화면 금지",
+      "recreation_label": "재연·생성 이미지는 'Recreación' 표시",
+      "music_sfx": "배경 음악 + 전환·질문·되돌아오기 지점 효과음",
+      "act_transition": "막 전환 효과 (1.5초 이하 암전 허용)"
+    },
+    "captions": {
+      "burned_in": false,
+      "srt": true,
+      "note": "레퍼런스·경쟁 채널 모두 수동 자막 0% → 화면에 굽지 않고 업로드용 SRT 만 만든다"
+    }
   }
 }

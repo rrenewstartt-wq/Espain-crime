@@ -2,7 +2,8 @@
 
 스페인어권(멕시코·중남미·스페인) 시청자를 위한 **단일 사건 다큐 롱폼 채널** 하네스.
 레퍼런스 채널 [Detrás del Enigma](https://www.youtube.com/@detrasdelenimga)의 형식·공식·스타일을 실측 수치로 고정하고,
-팀 단위 Claude 에이전트가 소재 → 기획 → 대본 → 패키징 → 장면표 → 검수 → 출고 패키지까지 만든다.
+팀 단위 Claude 에이전트가 소재 → 기획 → 대본 → 패키징 → 화면 제작 → 검수 → **내레이션(맨 마지막)** → 최종 렌더 → 출고 패키지까지 만든다.
+영상 품질은 레퍼런스·경쟁 4채널과 최소 동급이 기준이다([docs/production-style.md](docs/production-style.md)).
 
 `cd espain-crime && claude` 로 실행하고 `/make-episode` 로 한 편을 만든다. 운영 지침은 [CLAUDE.md](CLAUDE.md).
 
@@ -20,6 +21,7 @@
 | 설명란 | 장면 → 요지 → 연결 문장 → 🔔 → 💬 판단 질문 → 출처·크레디트 | `make_description.py` |
 | 태그 | 8~11개 (고유명사 변형 + 분야 + 공통 2 + 채널명 2) | `make_description.py` |
 | 일정 | 토요일 16:00 (멕시코시티), 주 1회 | `make_description.py` |
+| 영상 품질 | 1080p·24~30fps, -14 LUFS, 6초 넘는 정지 화면 금지, 필수 화면 요소 10가지 | `check_video.py`, `video-qa` |
 
 근거: [docs/benchmark-report.md](docs/benchmark-report.md) · 수치: [config/format.json](config/format.json)
 
@@ -31,8 +33,8 @@
 | 기획·소재 | case-scout, source-verifier, risk-reviewer, episode-planner | `/scout`, `/plan` |
 | 대본 | scriptwriter, fact-checker, spanish-editor, format-auditor | `/write` |
 | 패키징 | title-writer, thumbnail-director, packaging-critic | `/package` |
-| 제작 | scene-planner | `/produce` |
-| 검수·출고 | (독립 검수 3명) | `/audit`, `/release` |
+| 제작 | scene-planner, video-editor, video-qa, voice-producer | `/produce`, `/voice`(맨 마지막) |
+| 검수·출고 | (독립 검수 4명) | `/audit`, `/release` |
 
 ## 같은 것과 다른 것
 형식은 같게, 표현은 새로 만든다. 대본 문장, 썸네일 이미지, 채널명, 빨간 대표색, 말버릇은 가져오지 않는다.
@@ -41,7 +43,8 @@
 ## 사람이 정하고 하는 일
 - 채널명: **ARCHIVO OSCURO** (결정됨) · 구독 문구: **Suscríbete para no perderte el próximo expediente.** (결정됨)
 - 썸네일 강조색: `config/format.json → thumbnail.accent` (기본 앰버 `#E0A526`)
-- 내레이션 녹음(본인 목소리), 영상 편집·렌더, 업로드
+- 목소리 동의: `config/channel.json → voice.consent` (`own` 본인 / `licensed` 서면 허락)
+- 본인 녹음을 고르면 녹음, 그리고 업로드
 
 ## 설치
 ```bash
