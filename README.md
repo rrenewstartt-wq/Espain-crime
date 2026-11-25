@@ -39,7 +39,7 @@
 대본은 1차 자료로 쓰고, `check_originality.py` 가 레퍼런스 자막 25편과의 문장 겹침을 막는다. 자세히는 [docs/originality.md](docs/originality.md).
 
 ## 사람이 정하고 하는 일
-- 채널명: **ARCHIVO OSCURO** (결정됨) · 구독 문구: `config/channel.json → own_channel.subscribe_line`
+- 채널명: **ARCHIVO OSCURO** (결정됨) · 구독 문구: **Suscríbete para no perderte el próximo expediente.** (결정됨)
 - 썸네일 강조색: `config/format.json → thumbnail.accent` (기본 앰버 `#E0A526`)
 - 내레이션 녹음(본인 목소리), 영상 편집·렌더, 업로드
 
