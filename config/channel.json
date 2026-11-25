@@ -1,0 +1,26 @@
+{
+  "language": "es",
+  "locale_note": "español neutro latinoamericano (tuteo, sin vosotros ni regionalismos fuertes)",
+  "timezone": "America/Mexico_City",
+  "reference": {
+    "handle": "@detrasdelenimga",
+    "name": "Detrás del Enigma",
+    "why": "구독자 대비 조회 효율 275%. 단일 사건 다큐 포맷의 검증된 공식",
+    "current_format_since": "2025-11-01",
+    "format_note": "2025-04~10월 영상은 8~20분에 영상 중간 구독 요청이 있던 초기 포맷. 2025-11 이후가 현재 포맷(21~37분, 요청 없음)"
+  },
+  "own_channel": {
+    "name": null,
+    "name_variants": [],
+    "subscribe_line": null,
+    "note": "사람이 정한다. 레퍼런스 채널명·'SUSCRÍBETE para más historias como esta'와 겹치면 안 된다 (docs/originality.md). name_variants 에는 악센트 있음/없음 두 표기"
+  },
+  "upload_slot": {
+    "weekday": "sáb",
+    "time": "16:00",
+    "every_days": 7
+  },
+  "budget": {
+    "supadata_free_credits_per_month": 100
+  }
+}

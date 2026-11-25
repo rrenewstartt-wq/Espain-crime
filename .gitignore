@@ -1,0 +1,10 @@
+# 레퍼런스 원자료: 분석용, 커밋 금지 (docs/originality.md)
+data/benchmark/raw/
+# 렌더·음성 결과물
+episodes/*/renders/
+episodes/*/audio/
+*.wav
+*.mp3
+*.mp4
+__pycache__/
+.env

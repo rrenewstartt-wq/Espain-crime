@@ -1,0 +1,247 @@
+{
+ "coded_by": "수작업(썸네일 30개를 보고 글자·유형 기록), 2026-11-25",
+ "scope": "최근 30편",
+ "visual_grammar": {
+  "grade": "어두운 바탕 + 빨강 단색 톤(그림자 검정, 하이라이트 빨강)",
+  "subject": "중앙 인물 상반신·얼굴(실존 피의자·생존자는 눈을 검은 띠로 가림) 또는 상징 사물 1개",
+  "background": "사건 관련 문서·화면·사진 콜라주, 가장자리 어둡게(비네트)",
+  "text": "굵은 압축 산세리프 대문자, 빨강 글자 + 흰 테두리·발광, 화면 중앙~중하단 가로 1줄(가끔 2줄)",
+  "text_words": "1~4단어",
+  "faces_share": "약 절반"
+ },
+ "text_type_views": {
+  "name": {
+   "n": 15,
+   "median_views": 1720158
+  },
+  "hook": {
+   "n": 6,
+   "median_views": 1177999.5
+  },
+  "question": {
+   "n": 6,
+   "median_views": 1569983.0
+  },
+  "number": {
+   "n": 2,
+   "median_views": 5797992.5
+  },
+  "none": {
+   "n": 1,
+   "median_views": 457297
+  }
+ },
+ "words_median": 2,
+ "rows": [
+  {
+   "id": "Wfi94INPsk8",
+   "views": 499532,
+   "text": "NAVINDER SARAO",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "M6NZ8qFJZBk",
+   "views": 1251187,
+   "text": "EL VIRUS SIGUE CRECIENDO",
+   "type": "hook",
+   "words": 4
+  },
+  {
+   "id": "AaZy5CmL5co",
+   "views": 1104812,
+   "text": "TE HAN MENTIDO",
+   "type": "hook",
+   "words": 3
+  },
+  {
+   "id": "qbkln4yjLAk",
+   "views": 1820392,
+   "text": "WIKILEAKS",
+   "type": "name",
+   "words": 1
+  },
+  {
+   "id": "2NJLfgNeRKA",
+   "views": 598141,
+   "text": "¿DÓNDE ESTÁ AHORA?",
+   "type": "question",
+   "words": 3
+  },
+  {
+   "id": "KnByN7f7RvA",
+   "views": 887455,
+   "text": "¿DÓNDE ESTÁ?",
+   "type": "question",
+   "words": 2
+  },
+  {
+   "id": "wzJqqUkBpBI",
+   "views": 908563,
+   "text": "SALVÓ INTERNET",
+   "type": "hook",
+   "words": 2
+  },
+  {
+   "id": "Rzkm2XKWRvc",
+   "views": 939945,
+   "text": "SIGUEN APARECIENDO",
+   "type": "hook",
+   "words": 2
+  },
+  {
+   "id": "kY-BDRTvr7M",
+   "views": 1565619,
+   "text": "THE PIRATE BAY",
+   "type": "name",
+   "words": 3
+  },
+  {
+   "id": "alROZURLUdY",
+   "views": 356071,
+   "text": "CAMBRIDGE ANALYTICA",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "p3ZcVs6q4fw",
+   "views": 632533,
+   "text": "GARY MCKINNON",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "-APQtJH1GN4",
+   "views": 1914542,
+   "text": "CONCORDIA",
+   "type": "name",
+   "words": 1
+  },
+  {
+   "id": "oL0Cx-A9HD4",
+   "views": 1780694,
+   "text": "SIN LEYES",
+   "type": "hook",
+   "words": 2
+  },
+  {
+   "id": "oU9Mvz3lNkc",
+   "views": 766332,
+   "text": "RICKY MCCORMICK",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "cF1zLeRgUaE",
+   "views": 2999760,
+   "text": "TRIÁNGULO DE LAS BERMUDAS",
+   "type": "name",
+   "words": 4
+  },
+  {
+   "id": "ZGL8Lg6lwo4",
+   "views": 1936443,
+   "text": "RASPUTÍN",
+   "type": "name",
+   "words": 1
+  },
+  {
+   "id": "mMggTkdN3Eo",
+   "views": 3926977,
+   "text": "¿POR QUÉ?",
+   "type": "question",
+   "words": 2
+  },
+  {
+   "id": "qGrRrudgQzE",
+   "views": 1856946,
+   "text": "VUELO 571",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "2YMHkdQms18",
+   "views": 4877570,
+   "text": "15 AÑOS",
+   "type": "number",
+   "words": 2
+  },
+  {
+   "id": "h9c-vZ22I50",
+   "views": 1189287,
+   "text": "MK ULTRA",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "ScSGTK5Brjo",
+   "views": 6718415,
+   "text": "37 AÑOS",
+   "type": "number",
+   "words": 2
+  },
+  {
+   "id": "DxPyH6j70uU",
+   "views": 2211347,
+   "text": "PROHIBIDO",
+   "type": "hook",
+   "words": 1
+  },
+  {
+   "id": "-XetggwiGP4",
+   "views": 1720158,
+   "text": "PASO DYATLOV",
+   "type": "name",
+   "words": 2
+  },
+  {
+   "id": "21ipMLh21V8",
+   "views": 2044978,
+   "text": "¿ENCUBIERTO?",
+   "type": "question",
+   "words": 1
+  },
+  {
+   "id": "QnSXAFdYzXM",
+   "views": 2977536,
+   "text": "CHERNOBYL",
+   "type": "name",
+   "words": 1
+  },
+  {
+   "id": "dIO8PvVxC44",
+   "views": 457297,
+   "text": "",
+   "type": "none",
+   "words": 0
+  },
+  {
+   "id": "Kq7-CE3gU1I",
+   "views": 1094988,
+   "text": "¿A DÓNDE FUERON?",
+   "type": "question",
+   "words": 3
+  },
+  {
+   "id": "mAOVSSvcVj8",
+   "views": 3722110,
+   "text": "¿QUIÉN ES?",
+   "type": "question",
+   "words": 2
+  },
+  {
+   "id": "cuT895jcInU",
+   "views": 2167931,
+   "text": "EL ASESINO DEL ZODIACO",
+   "type": "name",
+   "words": 4
+  },
+  {
+   "id": "sZw-548sU-o",
+   "views": 717993,
+   "text": "RED TRIANGLE",
+   "type": "name",
+   "words": 2
+  }
+ ]
+}

@@ -1,0 +1,648 @@
+{
+ "handle": "@detrasdelenimga",
+ "channel": "Detrás del Enigma",
+ "subscribers": 597000,
+ "analyzed_at": "2026-11-25T13:28:01+00:00",
+ "format_since": "2025-11-01",
+ "videos": {
+  "total": 51,
+  "current_format": 31,
+  "median_views": 1565619,
+  "duration_min": {
+   "median": 26.3,
+   "p25": 23.9,
+   "p75": 29.1
+  }
+ },
+ "titles": {
+  "pipe_share": 1.0,
+  "len_median": 64,
+  "len_p90": 81,
+  "left_words_median": 7,
+  "question_share": 0.39,
+  "emoji_share": 0.0,
+  "allcaps_word_share": 0.03,
+  "hooks": {
+   "superlative": {
+    "n": 15,
+    "share": 0.48,
+    "lift": 0.9
+   },
+   "question": {
+    "n": 6,
+    "share": 0.19,
+    "lift": 1.5
+   },
+   "danger_fear": {
+    "n": 6,
+    "share": 0.19,
+    "lift": 1.75
+   },
+   "secret_truth": {
+    "n": 4,
+    "share": 0.13,
+    "lift": 0.86
+   },
+   "mystery": {
+    "n": 7,
+    "share": 0.23,
+    "lift": 0.61
+   },
+   "person_subject": {
+    "n": 9,
+    "share": 0.29,
+    "lift": 0.52
+   },
+   "number": {
+    "n": 4,
+    "share": 0.13,
+    "lift": 0.45
+   }
+  },
+  "left_openers": [
+   [
+    "El Hombre",
+    5
+   ],
+   [
+    "El Misterio",
+    3
+   ],
+   [
+    "¿Por qué",
+    2
+   ],
+   [
+    "El Lugar",
+    2
+   ],
+   [
+    "El Jugador",
+    1
+   ],
+   [
+    "El Mayor",
+    1
+   ],
+   [
+    "La Filtración",
+    1
+   ],
+   [
+    "¿Dónde Está",
+    1
+   ],
+   [
+    "El Hacker",
+    1
+   ],
+   [
+    "El Escándalo",
+    1
+   ],
+   [
+    "El Crucero",
+    1
+   ],
+   [
+    "El Mercado",
+    1
+   ]
+  ],
+  "right_patterns": [
+   [
+    "X",
+    18
+   ],
+   [
+    "X de X",
+    2
+   ],
+   [
+    "¿X es X?",
+    2
+   ],
+   [
+    "X que X",
+    1
+   ],
+   [
+    "¿X las X?",
+    1
+   ],
+   [
+    "¿X de X?",
+    1
+   ],
+   [
+    "X de las X",
+    1
+   ],
+   [
+    "X de la X",
+    1
+   ]
+  ]
+ },
+ "schedule": {
+  "weekday": {
+   "jue": 5,
+   "lun": 2,
+   "sáb": 9,
+   "vie": 4,
+   "mar": 5,
+   "dom": 2,
+   "mié": 4
+  },
+  "hour_median": 16,
+  "gap_days_median": 10.5
+ },
+ "description": {
+  "len_median": 1076,
+  "boilerplate_lines": [
+   [
+    "🔔 SUSCRÍBETE para más contenido como este.",
+    7
+   ]
+  ],
+  "hashtags": [],
+  "paragraphs_median": 7,
+  "subscribe_line_share": 0.97,
+  "share_with_comment_question": 0.84
+ },
+ "tags": {
+  "per_video_median": 9,
+  "common": [
+   [
+    "misterio",
+    31
+   ],
+   [
+    "casos reales",
+    31
+   ],
+   [
+    "detrás del enigma",
+    30
+   ],
+   [
+    "detras del enigma",
+    29
+   ],
+   [
+    "historias reales",
+    8
+   ],
+   [
+    "documental",
+    7
+   ],
+   [
+    "hacker",
+    6
+   ],
+   [
+    "hacking",
+    3
+   ],
+   [
+    "misterios sin resolver",
+    3
+   ],
+   [
+    "misterios",
+    3
+   ],
+   [
+    "bitcoin",
+    2
+   ],
+   [
+    "titanic",
+    2
+   ],
+   [
+    "navinder sarao",
+    1
+   ],
+   [
+    "sarao",
+    1
+   ],
+   [
+    "nav sarao",
+    1
+   ]
+  ]
+ },
+ "transcripts": {
+  "n": 18,
+  "wpm_median": 168.0,
+  "opens_with_date_share": 0.89,
+  "turn_sec_median": 25,
+  "bridge_sec_median": 80.5,
+  "bridge_found_share": 0.78,
+  "cta_share": 0.0,
+  "greeting_share": 0.0,
+  "questions_per_min_median": 0.235,
+  "change_phrase_per_video_median": 3.0,
+  "signature_4grams": [
+   [
+    "la idea de que",
+    10
+   ],
+   [
+    "este es el misterio",
+    9
+   ],
+   [
+    "una y otra vez",
+    9
+   ],
+   [
+    "se convierte en un",
+    9
+   ],
+   [
+    "en todo el mundo",
+    9
+   ],
+   [
+    "esta es la historia",
+    9
+   ],
+   [
+    "es el misterio de",
+    8
+   ],
+   [
+    "el problema es que",
+    8
+   ],
+   [
+    "en cuestión de horas",
+    8
+   ],
+   [
+    "lo que acaba de",
+    7
+   ],
+   [
+    "es uno de los",
+    7
+   ],
+   [
+    "millones de dólares en",
+    7
+   ],
+   [
+    "de todo el mundo",
+    7
+   ],
+   [
+    "cientos de miles de",
+    7
+   ],
+   [
+    "es la primera vez",
+    7
+   ],
+   [
+    "no es solo una",
+    7
+   ],
+   [
+    "a lo largo de",
+    7
+   ],
+   [
+    "es la historia de",
+    7
+   ],
+   [
+    "en uno de los",
+    7
+   ],
+   [
+    "de millones de dólares",
+    6
+   ],
+   [
+    "está a punto de",
+    6
+   ],
+   [
+    "a partir de ese",
+    6
+   ],
+   [
+    "eso es lo que",
+    6
+   ],
+   [
+    "la primera vez que",
+    6
+   ],
+   [
+    "y a partir de",
+    6
+   ],
+   [
+    "que lo cambia todo",
+    6
+   ],
+   [
+    "a partir de ahí",
+    6
+   ],
+   [
+    "gobierno de estados unidos",
+    5
+   ],
+   [
+    "en cuestión de segundos",
+    5
+   ],
+   [
+    "000 millones de dólares",
+    5
+   ],
+   [
+    "se convierte en el",
+    5
+   ],
+   [
+    "desde el primer día",
+    5
+   ],
+   [
+    "más grandes del mundo",
+    5
+   ],
+   [
+    "decenas de millones de",
+    5
+   ],
+   [
+    "y en cuestión de",
+    5
+   ],
+   [
+    "en el centro de",
+    5
+   ],
+   [
+    "es exactamente lo que",
+    5
+   ],
+   [
+    "se da cuenta de",
+    5
+   ],
+   [
+    "en la historia de",
+    5
+   ],
+   [
+    "el hecho de que",
+    5
+   ]
+  ],
+  "per_video": {
+   "Wfi94INPsk8": {
+    "title": "El Hombre que Hizo Desaparecer 1 Billón de Dólares en 36 Minutos | Navinder Sarao",
+    "views": 499532,
+    "wpm": 177,
+    "words": 5534,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": null,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.29,
+    "change_phrase_count": 6
+   },
+   "M6NZ8qFJZBk": {
+    "title": "El Jugador de Minecraft que Paralizó Internet | Lo que Creó Es Ahora 30 Veces Peor",
+    "views": 1251187,
+    "wpm": 167,
+    "words": 4616,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": null,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.18,
+    "change_phrase_count": 1
+   },
+   "AaZy5CmL5co": {
+    "title": "El Mayor Misterio sin Resolver de la Humanidad | ¿Cómo Construyeron las Pirámides?",
+    "views": 1104812,
+    "wpm": 165,
+    "words": 4513,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": null,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.33,
+    "change_phrase_count": 3
+   },
+   "qbkln4yjLAk": {
+    "title": "La Filtración que Cambió el Mundo Para Siempre | Wikileaks",
+    "views": 1820392,
+    "wpm": 168,
+    "words": 5602,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 75,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.15,
+    "change_phrase_count": 3
+   },
+   "2NJLfgNeRKA": {
+    "title": "El Hombre que Estafó 10 Mil Millones solo con Tinder | Simon Leviev",
+    "views": 598141,
+    "wpm": 176,
+    "words": 4488,
+    "opens_with_date": true,
+    "turn_sec": 55,
+    "bridge_sec": 121,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.24,
+    "change_phrase_count": 5
+   },
+   "KnByN7f7RvA": {
+    "title": "¿Dónde Está La Mujer Más Buscada del Mundo? | Ruja Ignatova",
+    "views": 887455,
+    "wpm": 168,
+    "words": 4745,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 93,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.11,
+    "change_phrase_count": 6
+   },
+   "wzJqqUkBpBI": {
+    "title": "El Hacker Que Salvó Internet | Marcus Hutchins",
+    "views": 908563,
+    "wpm": 170,
+    "words": 4385,
+    "opens_with_date": true,
+    "turn_sec": 27,
+    "bridge_sec": 88,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.23,
+    "change_phrase_count": 1
+   },
+   "Rzkm2XKWRvc": {
+    "title": "El Misterio Que Lleva 2.000 Años Sin Respuesta | ¿Cómo Dibujaron Las Líneas de Nazca?",
+    "views": 939945,
+    "wpm": 169,
+    "words": 4035,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 76,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.5,
+    "change_phrase_count": 2
+   },
+   "kY-BDRTvr7M": {
+    "title": "¿Por qué Nadie Ha Conseguido Cerrar este Sitio Web? | The Pirate Bay",
+    "views": 1565619,
+    "wpm": 168,
+    "words": 4865,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 106,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.17,
+    "change_phrase_count": 2
+   },
+   "alROZURLUdY": {
+    "title": "El Escándalo Que Facebook Intentó Ocultar | Cambridge Analytica",
+    "views": 356071,
+    "wpm": 158,
+    "words": 3449,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 60,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.14,
+    "change_phrase_count": 2
+   },
+   "cF1zLeRgUaE": {
+    "title": "El Lugar Más Peligroso Del Mundo | El Triángulo de las Bermudas",
+    "views": 2999760,
+    "wpm": 165,
+    "words": 4567,
+    "opens_with_date": false,
+    "turn_sec": 0,
+    "bridge_sec": 74,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.18,
+    "change_phrase_count": 3
+   },
+   "mMggTkdN3Eo": {
+    "title": "¿Por qué es el Cuadro Más Famoso del Mundo? | El Misterio de la Mona Lisa",
+    "views": 3926977,
+    "wpm": 158,
+    "words": 3930,
+    "opens_with_date": false,
+    "turn_sec": 23,
+    "bridge_sec": 50,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.68,
+    "change_phrase_count": 2
+   },
+   "2YMHkdQms18": {
+    "title": "El Niño Que Hackeó la NASA y Pagó con Su Vida por Ello | Jonathan James",
+    "views": 4877570,
+    "wpm": 167,
+    "words": 4555,
+    "opens_with_date": true,
+    "turn_sec": 25,
+    "bridge_sec": 50,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.48,
+    "change_phrase_count": 4
+   },
+   "ScSGTK5Brjo": {
+    "title": "El Avión Que Desapareció y Aterrizó 37 Años Después | Pan Am 914",
+    "views": 6718415,
+    "wpm": 165,
+    "words": 2724,
+    "opens_with_date": true,
+    "turn_sec": 39,
+    "bridge_sec": 49,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.24,
+    "change_phrase_count": 4
+   },
+   "DxPyH6j70uU": {
+    "title": "La Pagina Web Más Temida del Mundo | 4chan",
+    "views": 2211347,
+    "wpm": 161,
+    "words": 3981,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 85,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.44,
+    "change_phrase_count": 1
+   },
+   "QnSXAFdYzXM": {
+    "title": "¿Quién Fue el Verdadero Culpable? | El Misterio de Chernobyl",
+    "views": 2977536,
+    "wpm": 168,
+    "words": 6216,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": null,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.13,
+    "change_phrase_count": 5
+   },
+   "mAOVSSvcVj8": {
+    "title": "El Hombre Más Buscado del Mundo | ¿Quién es Satoshi Nakamoto?",
+    "views": 3722110,
+    "wpm": 173,
+    "words": 6202,
+    "opens_with_date": true,
+    "turn_sec": 21,
+    "bridge_sec": 101,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.33,
+    "change_phrase_count": 1
+   },
+   "cuT895jcInU": {
+    "title": "El Asesino Más Temido de la Historia | ¿Quién es El Zodiaco?",
+    "views": 2167931,
+    "wpm": 182,
+    "words": 6161,
+    "opens_with_date": true,
+    "turn_sec": null,
+    "bridge_sec": 94,
+    "cta_sec": null,
+    "greeting_sec": null,
+    "questions_per_min": 0.18,
+    "change_phrase_count": 3
+   }
+  }
+ }
+}
