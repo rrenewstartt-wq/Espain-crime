@@ -6,7 +6,7 @@
    "country": "AR/CL",
    "year": 1947,
    "category": "미해결·정체 (항공 실종)",
-   "key_moment": "1947-08-02 17:41 GMT, 칠레 산티아고 착륙 4분 전 마지막 전신 'STENDEC' (안데스 상공, 멘도사-산티아고 항로)",
+   "key_moment": "1947-08-02 17:41 GMT(아르헨티나 14:41, 환산값) 'ETA Santiago 1745 hrs… STENDEC' 전신 (영국 보고서 C.A.106)",
    "one_line": "착륙 4분 전 아무도 해독 못 한 단어 'STENDEC'을 남기고 사라진 여객기가 53년 뒤 빙하에서 나왔다",
    "questions": [
     "¿Cómo desaparece un avión a cuatro minutos de aterrizar?",
@@ -18,27 +18,32 @@
     "https://www.pbs.org/wgbh/nova/vanished/sten_report.html",
     "https://aviation-safety.net/wikibase/336917",
     "https://www.baaa-acro.com/node/469405",
-    "https://cooperativa.cl/noticias/mundo/accidentes-aereos/la-historia-del-avion-que-iba-a-aterrizar-en-santiago-y-estuvo-50-anos/2014-03-13/111146.html"
+    "https://cooperativa.cl/noticias/mundo/accidentes-aereos/la-historia-del-avion-que-iba-a-aterrizar-en-santiago-y-estuvo-50-anos/2014-03-13/111146.html",
+    "https://www.pbs.org/wgbh/nova/vanished/sten_report2.html",
+    "https://www.pbs.org/wgbh/nova/vanished/sten_report3.html"
    ],
    "scores": {
-    "moment": 20,
+    "moment": 18,
     "demand": 17,
-    "sources": 16,
+    "sources": 11,
     "question": 14,
     "latam": 9,
     "novelty": 12
    },
    "risk_notes": "1차 자료: 영국 민간항공부 사고보고서 C.A.106(1947-12-22, NOVA 게재본)에서 17:41 GMT STENDEC, 13:46 GMT 출발, 예정 도착 17:45 확인. 레퍼런스의 '안데스 비행(1972)'·'Pan Am 914'와 다른 사건이지만 항공 미스터리 결이 겹치므로 제목·각도 차별화 필요.",
    "open_questions": [
-    "아르헨티나 JIAAC 보고서 43/00 원문 미확보(ASN에 번호만 확인)",
-    "STENDEC 해석은 확정되지 않음 — 가설로만 제시",
-    "현지 시각 환산(14:41 등) 출처간 차이 정리 필요"
+    "2000년 발견·육군 원정 결과 1차 자료(Clarín·La Nación 당시 기사, 육군 발표, JIAAC/JST 43/00 원문)",
+    "2002년 유해 수습·DNA 확인(8명 중 5명) 1차 출처",
+    "1947년 당시 신문 원문(Papers Past ODT 1947-08-05 등, 사람이 브라우저로 열람)",
+    "'53년'은 2000년 공식 확인 기준, 1998년 엔진 발견은 최초 단서로 분리",
+    "STENDEC 해석은 가설로만"
    ],
-   "score": 88,
+   "score": 81,
    "status": "후보",
    "source_brief": "general",
    "risk_grade": 2,
-   "risk_review": "레퍼런스 Pan Am 914·안데스와 결이 겹침: 'desapareció… años después' 문형 금지, '실제로 일어났고 빙하 물리로 풀린 사건' 각도"
+   "risk_review": "레퍼런스 Pan Am 914·안데스와 결이 겹침: 'desapareció… años después' 문형 금지, '실제로 일어났고 빙하 물리로 풀린 사건' 각도",
+   "verification": "자료 보강 필요 — 탑승 11명(승무원 5·승객 6). 1947년 결론 '원인 불명'. 도입은 강하지만 결말(발견·원인)이 2차 자료뿐"
   },
   {
    "slug": "archivos-del-terror-1992",
@@ -58,28 +63,32 @@
     "https://www.abc.com.py/edicion-impresa/politica/hay-un-antes-y-un-despues-del-22-de-diciembre-del-92-1777523.html",
     "https://www.pj.gov.py/images/contenido/m-cdya/archivo_terror1.pdf",
     "https://www.pj.gov.py/notas/27345-a-32-anos-del-descubrimiento-del-archivo-del-terror-acto-en-homenaje-a-defensores-de-los-derechos-humanos",
-    "https://islandora.wrlc.org/islandora/object/terror%3Aroot?page=5",
-    "https://www.ultimahora.com/la-noche-que-la-prensa-vigilo-que-no-destruyan-la-verdad-n3039954"
+    "https://www.ultimahora.com/la-noche-que-la-prensa-vigilo-que-no-destruyan-la-verdad-n3039954",
+    "https://media.unesco.org/sites/default/files/webform/mow001/paraguay_terror.pdf",
+    "https://www.pj.gov.py/images/contenido/m-cdya/archivo_terror3.pdf",
+    "https://www.pj.gov.py/notas/2697-archivo-del-terror-forma-parte-del-registro-memorias-del-mundo",
+    "https://www.pj.gov.py/notas/29087-disponible-el-repositorio-digital-del-archivo-del-terror-en-el-marco-del-cincuentenario-del-operativo-condor"
    ],
    "scores": {
-    "moment": 18,
+    "moment": 17,
     "demand": 16,
-    "sources": 18,
+    "sources": 19,
     "question": 13,
     "latam": 10,
     "novelty": 13
    },
    "risk_notes": "판사 본인 인터뷰(ABC Color)로 10:30 진입·약 12시간 반출 확인. 파라과이 사법부(Poder Judicial)가 원본 보관·디지털 공개. 고문 피해자 실명·사진은 공개 기록 범위에서만, 가해자는 유죄 판결 확정자만 실명. '정부 비밀' 수요(좋아요율 1위)와 '세계적 사건의 중남미 연결'에 모두 맞음.",
    "open_questions": [
-    "문서 총량(약 70만 장 등) 1차 수치 확인",
-    "UNESCO 세계기록유산 등재(2009) 공식 페이지 링크",
-    "람바레 시설 명칭 출처간 차이 정리"
+    "1992-12-23 당시 신문 원문(Última Hora, ABC Color)으로 10:30 교차 확인",
+    "피노체트 연결은 '가르손 재판에 수백 폴리오 제공'으로만(체포 근거라는 1차 자료 없음)",
+    "고문 피해자 실명·사진은 공개 기록 범위에서만"
    ],
    "score": 88,
-   "status": "후보",
+   "status": "검증됨",
    "source_brief": "general",
    "risk_grade": 3,
-   "risk_review": "실명은 유죄 확정자만, 고문 방법 묘사 금지, 정당 평가 없이 제도 초점"
+   "risk_review": "실명은 유죄 확정자만, 고문 방법 묘사 금지, 정당 평가 없이 제도 초점",
+   "verification": "대본 가능 — 분량은 UNESCO 신청서 'cerca de 800.000 páginas'로 통일. 압수수색은 12-22·24 두 번. 시설명 'Departamento de Producción de la Policía, en Lambaré'"
   },
   {
    "slug": "ara-san-juan-2017",
@@ -87,7 +96,7 @@
    "country": "AR",
    "year": 2017,
    "category": "미해결·정체 (해양 실종)",
-   "key_moment": "2017-11-15 07:19 마지막 교신 / 10:51(아르헨티나 시각, 13:51 GMT) CTBTO 수중음향 이상신호, 아르헨티나 남대서양 산호르헤만 해역",
+   "key_moment": "2017-11-15 07:19 마지막 교신 → 10:51(13:51 GMT) CTBTO HA10·HA04가 수중 충격 탐지, 좌표 −46.12, −59.69",
    "one_line": "44명을 태운 잠수함이 마지막 교신 3시간 반 뒤 핵실험 감시망에 '소리'로 잡히고 1년 동안 찾지 못했다",
    "questions": [
     "¿Cómo se pierde un submarino con 44 personas en aguas propias?",
@@ -100,27 +109,33 @@
     "https://link.springer.com/content/pdf/10.1007/s00024-020-02445-9.pdf",
     "https://www.ambito.com/politica/ara-san-juan/bicameral-del-finalizo-su-informe-y-el-oficialismo-firmo-disidencia-n5043033",
     "https://news.usni.org/2017/11/24/search-argentine-sub-focuses-suspected-explosion-site",
-    "https://www.lanacion.com.ar/politica/fuerte-puja-politica-informe-parlamentario-ara-san-nid2266794"
+    "https://www.lanacion.com.ar/politica/fuerte-puja-politica-informe-parlamentario-ara-san-nid2266794",
+    "https://www.mpf.gob.ar/pia/rio-gallegos-comenzo-el-juicio-a-cuatro-exjefes-de-la-armada-por-el-hundimiento-del-submarino-ara-san-juan/",
+    "https://www.mpf.gob.ar/pia/rio-gallegos-solicitaron-hasta-cinco-anos-de-prision-efectiva-para-cuatro-exjefes-de-la-armada-por-el-hundimiento-del-submarino-ara-san-juan/",
+    "https://www.argentina.gob.ar/node/120436",
+    "https://www.lacapitalmdp.com/que-dijo-la-organizacion-que-detecto-una-explosion-en-la-ultima-posicion-del-san-juan/",
+    "https://meetingorganizer.copernicus.org/EGU2018/EGU2018-18559.pdf"
    ],
    "scores": {
     "moment": 19,
     "demand": 17,
-    "sources": 16,
+    "sources": 18,
     "question": 13,
     "latam": 10,
     "novelty": 11
    },
    "risk_notes": "지휘부 형사재판이 진행 중이었음 — 유죄 확정 전 인물을 책임자로 단정 금지. 유가족 사찰 의혹 사건도 별도 재판(정치적 사건)이라 사실관계만. 의회 Bicameral 최종보고서는 여당 반대의견 첨부 → 결론을 두 관점으로 제시.",
    "open_questions": [
-    "Bicameral 최종보고서 원문 PDF 미확보(보도로 07:19 확인)",
-    "CTBTO 논문은 마지막 교신을 다른 시각으로 기재 — 시간대 정리 필요",
-    "2026년 기준 재판 결과 확인 필요"
+    "의회 Bicameral 최종보고서 PDF 원문(07:19, 23:42 직접 확인)",
+    "2026-08-21 판결 이유서와 파기법원 상고 여부. Villamide 는 '1심 유죄(집행유예), 확정 아님', 무죄 3명은 책임자로 묘사 금지",
+    "유족 사찰 사건은 별도 확인 필요"
    ],
-   "score": 86,
-   "status": "후보",
+   "score": 88,
+   "status": "검증됨",
    "source_brief": "general",
    "risk_grade": 3,
-   "risk_review": "명예훼손 4: 1심(2026-07-08) 미확정·상고 예고. 질문 2를 제도 쪽으로, Macri 사찰 사건은 면소 확정 병기. 공개 직전 Casación 재확인"
+   "risk_review": "명예훼손 4: 1심(2026-07-08) 미확정·상고 예고. 질문 2를 제도 쪽으로, Macri 사찰 사건은 면소 확정 병기. 공개 직전 Casación 재확인",
+   "verification": "대본 가능(판결 표현 조건부) — 44명. 2018-11-17 수심 907m 발견. 정비 후 44개월(규정 24개월). 수색 19개국·4,000명 이상"
   },
   {
    "slug": "zona-del-silencio-1970",
