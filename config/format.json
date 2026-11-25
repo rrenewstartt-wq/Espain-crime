@@ -361,10 +361,16 @@
         24
       ],
       "max_black_sec": 1.5,
-      "status": "provisional"
+      "status": "opening measured / body provisional",
+      "opening_sec": 120,
+      "opening_scene_changes_per_min_min": 25,
+      "opening_note": "레퍼런스 도입부 실측: 컷 길이 중앙값 0.78~0.92초, 분당 28.5~31컷(피라미드·Navinder). Wikileaks 는 연속 패럴랙스라 컷 탐지 불가 → 연속 장면은 video-qa 가 눈으로 판정",
+      "opening_black_card_max_sec": 5.0,
+      "body_status": "provisional (본문 중반 클립 미측정)",
+      "measured_from": "data/benchmark/video_style.json (화면 녹화 5개, 도입부 각 약 11초)"
     },
     "required_elements": {
-      "date_card": "도입·되돌아오기의 날짜·시각 카드 (같은 디자인)",
+      "date_card": "도입·되돌아오기의 날짜·시각 카드(같은 디자인). 검은 화면 위 타이핑 또는 장면 위 직접, 날짜는 강조색 (docs/visual-style.md)",
       "map": "장소가 나올 때마다 지도 (직접 제작)",
       "number_card": "핵심 숫자 카드 (막마다 1개 이상)",
       "document_zoom": "문서·신문 확대 + 강조 표시",
@@ -373,12 +379,14 @@
       "motion_on_stills": "모든 정지 이미지에 움직임(줌·패닝·패럴랙스). 6초 이상 정지 화면 금지",
       "recreation_label": "재연·생성 이미지는 'Recreación' 표시",
       "music_sfx": "배경 음악 + 전환·질문·되돌아오기 지점 효과음",
-      "act_transition": "막 전환 효과 (1.5초 이하 암전 허용)"
+      "act_transition": "막 전환 효과 (1.5초 이하 암전 허용)",
+      "source_labels": "재연은 'RECREACIÓN', 실제 자료는 출처 라벨 (Anatomía 방식)"
     },
     "captions": {
       "burned_in": false,
       "srt": true,
       "note": "레퍼런스·경쟁 채널 모두 수동 자막 0% → 화면에 굽지 않고 업로드용 SRT 만 만든다"
-    }
+    },
+    "visual_style_doc": "docs/visual-style.md"
   }
 }

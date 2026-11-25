@@ -44,6 +44,11 @@ def measure(path, audio=True):
     sc = run(["ffmpeg", "-hide_banner", "-i", path, "-vf", "select='gt(scene,0.25)',showinfo", "-an", "-f", "null", "-"])
     cuts = len(re.findall(r"pts_time:", sc))
     m["scene_changes"] = cuts
+    times = [float(x) for x in re.findall(r"pts_time:([\d.]+)", sc)]
+    ow = min(P["pacing"].get("opening_sec", 120), dur)
+    m["opening_scene_changes_per_min"] = round(sum(t < ow for t in times) / (ow / 60), 1) if ow else 0
+    body = dur - ow
+    m["body_scene_changes_per_min"] = round(sum(t >= ow for t in times) / (body / 60), 1) if body > 30 else None
     m["scene_changes_per_min"] = round(cuts / (dur / 60), 1) if dur else 0
     fz = run(["ffmpeg", "-hide_banner", "-i", path, "-vf", f"freezedetect=n=0.003:d={P['pacing']['max_static_sec']}",
               "-an", "-f", "null", "-"])
@@ -51,8 +56,12 @@ def measure(path, audio=True):
     m["static_over_limit"] = len(freezes)
     m["longest_static_sec"] = round(max(freezes), 1) if freezes else 0
     bk = run(["ffmpeg", "-hide_banner", "-i", path, "-vf", "blackdetect=d=0.3:pic_th=0.98", "-an", "-f", "null", "-"])
-    blacks = [float(x) for x in re.findall(r"black_duration:([\d.]+)", bk)]
-    m["longest_black_sec"] = round(max(blacks), 1) if blacks else 0
+    spans = [(float(a), float(b)) for a, b in re.findall(r"black_start:([\d.]+) black_end:[\d.]+ black_duration:([\d.]+)", bk)]
+    card = P["pacing"].get("opening_black_card_max_sec", 0)
+    # a date card on black at the very start (reference cold open) is allowed up to opening_black_card_max_sec
+    m["opening_black_sec"] = round(next((d for s0, d in spans if s0 < 0.5), 0), 1)
+    rest = [d for s0, d in spans if not (s0 < 0.5 and d <= card)]
+    m["longest_black_sec"] = round(max(rest), 1) if rest else 0
     if audio and a is not None:
         eb = run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-filter_complex", "ebur128=peak=true", "-f", "null", "-"])
         il = re.findall(r"I:\s+(-?[\d.]+) LUFS", eb)
@@ -84,10 +93,18 @@ def main():
     r.ok(m["bitrate_mbps"] >= vq["min_bitrate_mbps"], "비트레이트", f"{m['bitrate_mbps']} Mbps (최소 {vq['min_bitrate_mbps']})", fail="WARN")
     tag = " (잠정 기준)" if pc.get("status") == "provisional" else ""
     lo, hi = pc["scene_changes_per_min"]
-    r.ok(lo <= m["scene_changes_per_min"] <= hi, "화면 전환 빈도" + tag, f"분당 {m['scene_changes_per_min']}회 (기준 {lo}~{hi})")
+    if m["body_scene_changes_per_min"] is None:
+        r.add("WARN", "본문 화면 전환 빈도", "도입부보다 짧은 영상이라 본문 기준은 판정 안 함")
+    else:
+        r.ok(lo <= m["body_scene_changes_per_min"] <= hi, "본문 화면 전환 빈도 (잠정)",
+             f"분당 {m['body_scene_changes_per_min']}회 (기준 {lo}~{hi}, 도입 {pc.get('opening_sec', 120)}초 이후)")
+    omin = pc.get("opening_scene_changes_per_min_min")
+    if omin:
+        r.ok(m["opening_scene_changes_per_min"] >= omin, f"도입부({pc.get('opening_sec', 120)}초) 화면 전환 (레퍼런스 실측)",
+             f"분당 {m['opening_scene_changes_per_min']}회 (최소 {omin}). 연속 패럴랙스 구간이면 video-qa 가 눈으로 판정", fail="WARN")
     r.ok(m["static_over_limit"] == 0, f"{pc['max_static_sec']:.0f}초 넘는 정지 화면 없음" + tag,
          f"{m['static_over_limit']}곳, 최장 {m['longest_static_sec']}초")
-    r.ok(m["longest_black_sec"] <= pc["max_black_sec"], "암전 길이", f"최장 {m['longest_black_sec']}초 (최대 {pc['max_black_sec']})")
+    r.ok(m["longest_black_sec"] <= pc["max_black_sec"], "암전 길이", f"최장 {m['longest_black_sec']}초 (최대 {pc['max_black_sec']}, 도입부 날짜 카드 {m['opening_black_sec']}초는 {pc.get('opening_black_card_max_sec', 0)}초까지 허용)")
     if a.expect_min:
         r.ok(abs(m["duration_sec"] / 60 - a.expect_min) <= 1.0, "길이가 대본 예상과 맞음", f"{m['duration_sec'] / 60:.1f}분 vs 예상 {a.expect_min:.1f}분", fail="WARN")
     if not a.visual_only:
