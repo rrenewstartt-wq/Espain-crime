@@ -42,7 +42,7 @@
 
 ## 사람이 정하고 하는 일
 - 채널명: **ARCHIVO OSCURO** (결정됨) · 구독 문구: **Suscríbete para no perderte el próximo expediente.** (결정됨)
-- 썸네일 강조색: `config/format.json → thumbnail.accent` (기본 앰버 `#E0A526`)
+- 강조색: **청록 `#2EC4B6`** (결정됨) · 재연 장면: **2.5D 사진·문서 콜라주 + 인포그래픽** (결정됨)
 - 목소리 동의: `config/channel.json → voice.consent` (`own` 본인 / `licensed` 서면 허락)
 - 본인 녹음을 고르면 녹음, 그리고 업로드
 

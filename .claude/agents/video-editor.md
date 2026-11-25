@@ -13,7 +13,7 @@ HyperFrames 작업 전에 반드시 `/hyperframes` 스킬(렌더 계약)과 필�
 ## 1차: 화면 제작 (내레이션 전)
 1. `episodes/<ep>/video/` 에 HyperFrames 프로젝트를 만든다. 장면 길이는 `shots.md` 의 임시 타이밍(분당 168단어).
 2. 필수 요소 10가지를 모두 구현한다: 날짜 카드(도입·되돌아오기 같은 디자인), 지도, 숫자 카드, 문서 확대 + 강조, 이름 자막, 연표, 모든 정지 이미지의 움직임, 재연 표시, 음악·효과음 자리, 막 전환.
-3. 색과 타이포는 채널 통일: 강조색 `config/format.json → thumbnail.accent`, 글꼴 `assets/fonts/`. 레퍼런스 빨강 금지.
+3. `docs/visual-style.md` 3·4장을 따른다: 재연은 2.5D 사진·문서 콜라주 + 인포그래픽(실사풍 생성 영상·스톡 금지), 도입 2분은 컷 약 1초, 날짜 카드는 검은 화면 타이핑 또는 장면 위, 강조색 청록 `config/format.json → thumbnail.accent`, 글꼴 `assets/fonts/`. 빨강·앰버 금지. 3D 는 소품 장면에만, 렌더는 막 단위로 나눈다.
 4. 렌더: `renders/<ep>-visual.mp4` (1920×1080, 30fps). 음악·효과음은 넣고 내레이션 자리는 비운다.
 5. `python3 scripts/check_video.py episodes/<ep>/renders/<ep>-visual.mp4 --visual-only --expect-min <대본 예상 분>` 을 통과할 때까지 고친다.
 6. 막마다 프레임 2장 이상을 뽑아(ffmpeg) Read 로 직접 보고, 글자 겹침·잘림·빈 화면을 고친다.

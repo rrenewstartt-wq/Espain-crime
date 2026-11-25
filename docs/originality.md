@@ -28,5 +28,5 @@
    레퍼런스가 이미 다룬 사건은 `scripts/topics.py check` 가 경고한다. 다룰 수는 있지만 **다른 관점**이 있어야 하고(`episode-planner` 가 기록), 그 영상은 대본 작성 중에 보지 않는다.
 2. **기계 검사:** `scripts/check_originality.py` 가 우리 대본과 레퍼런스 자막 25편을 비교한다. 8단어 이상 연속 일치, 또는 5-gram 겹침 1% 초과면 불합격(레퍼런스 자막끼리의 기준선이 0.2~1.6%다).
 3. **레퍼런스 원자료**(`data/benchmark/raw/`: 자막·썸네일·설명란)는 분석용으로만 쓰고 **커밋하지 않는다**(`.gitignore`). 커밋하는 것은 측정 수치(`summary.json`: 영상 ID·제목과 수치)와 썸네일 유형 분류(`thumbnails.json`)뿐이다. 대본 문장·설명란·썸네일 이미지는 들어가지 않는다.
-4. **강조색과 채널명은 사람이 정한다.** `config/format.json → thumbnail.accent`(기본 앰버), `config/channel.json → own_channel`. 레퍼런스의 빨강 계열은 `forbidden_accents` 로 막혀 있다.
+4. **강조색과 채널명은 사람이 정한다.** `config/format.json → thumbnail.accent`(청록 `#2EC4B6`로 결정), `config/channel.json → own_channel`. 레퍼런스의 빨강 계열과 Anatomía 의 앰버 계열은 `forbidden_accents` 로 막혀 있다.
 5. **실존 인물:** 확정 판결이 없는 사람을 범인처럼 쓰지 않는다. 생존 피해자·미성년자는 실명 대신 이니셜이나 역할로, 썸네일에서는 눈을 가린다.

@@ -216,12 +216,15 @@
       720
     ],
     "grade": "어두운 바탕 + 강조색 한 가지(단색 톤). 그림자는 거의 검정, 하이라이트만 강조색",
-    "accent": "#E0A526",
-    "accent_note": "레퍼런스의 빨강(#D10F0F 계열)은 채널 정체성이라 쓰지 않는다. 바꾸려면 사람이 docs/originality.md 를 읽고 결정",
+    "accent": "#2EC4B6",
+    "accent_note": "2026-11-25 사람이 결정: 청록. 레퍼런스 빨강(채널 정체성)과 Anatomía de un Hackeo 앰버를 모두 피한 우리 색. 썸네일과 본편 글자·선·강조 박스에 같이 쓴다",
     "forbidden_accents": [
+      "#C8102E",
       "#D10F0F",
+      "#E0A526",
       "#E50914",
-      "#C8102E"
+      "#F2B705",
+      "#FFB000"
     ],
     "subject": "중앙 인물(상반신·얼굴) 또는 상징 사물 1개. 확정 판결 없는 실존 인물·생존자·미성년자는 눈을 검은 띠로 가림",
     "background": "사건 문서·화면·사진 콜라주 + 비네트",
@@ -250,7 +253,8 @@
       "name": 1720158,
       "question": 1569983,
       "hook": 1177999
-    }
+    },
+    "forbidden_note": "빨강 계열 = 레퍼런스 Detrás del Enigma, 앰버 계열 = Anatomía de un Hackeo (docs/visual-style.md)"
   },
   "description": {
     "structure": [
@@ -387,6 +391,16 @@
       "srt": true,
       "note": "레퍼런스·경쟁 채널 모두 수동 자막 0% → 화면에 굽지 않고 업로드용 SRT 만 만든다"
     },
-    "visual_style_doc": "docs/visual-style.md"
+    "visual_style_doc": "docs/visual-style.md",
+    "reenactment": {
+      "method": "2.5D 사진·문서 콜라주 + 인포그래픽 (2026-11-25 사람이 결정)",
+      "allowed": [
+        "1차 자료 사진·문서의 2.5D 패럴랙스",
+        "직접 만든 지도·연표·숫자 카운터·도식",
+        "필요한 곳에만 가벼운 3D 소품 장면"
+      ],
+      "not_now": "실사풍 생성 재연 영상·스톡 영상 (유료 도입 시 사람이 다시 결정, 쓰면 'RECREACIÓN' 필수)",
+      "render_note": "CPU 4코어·GPU 없음 → 막 단위로 나눠 렌더, 3D 는 최소한으로"
+    }
   }
 }
