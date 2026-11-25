@@ -51,7 +51,7 @@
    "country": "PY",
    "year": 1992,
    "category": "정부 비밀",
-   "key_moment": "1992-12-22 10:30경, 아순시온 인근 람바레의 경찰 시설(Departamento de Producción) 2층 잠긴 방 — 판사 호세 아구스틴 페르난데스와 마르틴 알마다가 자물쇠를 따고 진입",
+   "key_moment": "1992-12-22 오전(미주인권재판소 Goiburú 판결 ¶61.121), 람바레 Departamento de Producción de la Policía 의 자물쇠 걸린 방. 진입 시각은 회고끼리 10:30/11:00 으로 엇갈려 대본에 쓰지 않음",
    "one_line": "잠긴 경찰서 방 하나에서 남미 군사정권들의 공동 작전 '콘도르'의 서류 수십만 장이 쏟아졌다",
    "questions": [
     "¿Cómo sobreviven intactos los archivos secretos de una dictadura que ya había caído?",
@@ -67,23 +67,26 @@
     "https://media.unesco.org/sites/default/files/webform/mow001/paraguay_terror.pdf",
     "https://www.pj.gov.py/images/contenido/m-cdya/archivo_terror3.pdf",
     "https://www.pj.gov.py/notas/2697-archivo-del-terror-forma-parte-del-registro-memorias-del-mundo",
-    "https://www.pj.gov.py/notas/29087-disponible-el-repositorio-digital-del-archivo-del-terror-en-el-marco-del-cincuentenario-del-operativo-condor"
+    "https://www.pj.gov.py/notas/29087-disponible-el-repositorio-digital-del-archivo-del-terror-en-el-marco-del-cincuentenario-del-operativo-condor",
+    "https://www.dhnet.org.br/verdade/mundo/paraguai/informe_final_paraguai_paraguay.pdf",
+    "https://www.cnj.jus.br/wp-content/uploads/2016/04/15934c4d6d9ca1cf602e165fc5afa3cf.pdf",
+    "https://www.pj.gov.py/notas/6650-la-justicia-paraguaya-y-el-caso-mario-schaerer-prono"
    ],
    "scores": {
-    "moment": 17,
+    "moment": 16,
     "demand": 16,
     "sources": 19,
     "question": 13,
     "latam": 10,
     "novelty": 13
    },
-   "risk_notes": "판사 본인 인터뷰(ABC Color)로 10:30 진입·약 12시간 반출 확인. 파라과이 사법부(Poder Judicial)가 원본 보관·디지털 공개. 고문 피해자 실명·사진은 공개 기록 범위에서만, 가해자는 유죄 판결 확정자만 실명. '정부 비밀' 수요(좋아요율 1위)와 '세계적 사건의 중남미 연결'에 모두 맞음.",
+   "risk_notes": "진입 시각 10:30 은 판사 2019 회고 단독(다른 회고는 11시 전후). 약 12시간 반출은 사법부 출판으로 확인. 파라과이 사법부(Poder Judicial)가 원본 보관·디지털 공개. 고문 피해자 실명·사진은 공개 기록 범위에서만, 가해자는 유죄 판결 확정자만 실명. '정부 비밀' 수요(좋아요율 1위)와 '세계적 사건의 중남미 연결'에 모두 맞음.",
    "open_questions": [
-    "1992-12-23 당시 신문 원문(Última Hora, ABC Color)으로 10:30 교차 확인",
-    "피노체트 연결은 '가르손 재판에 수백 폴리오 제공'으로만(체포 근거라는 1차 자료 없음)",
-    "고문 피해자 실명·사진은 공개 기록 범위에서만"
+    "1992-12-23 당일 지면으로 진입 시각 확인(현지 아카이브 필요)",
+    "제보자 버전 차이(경찰관의 아내 / 경호원의 아내 / 부국장 주장): 대본은 사법부 출판으로 귀속",
+    "Cóndor 회의 시작일 11-25 (NSA 해설 단독)"
    ],
-   "score": 88,
+   "score": 87,
    "status": "제작",
    "source_brief": "general",
    "risk_grade": 3,

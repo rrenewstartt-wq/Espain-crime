@@ -36,7 +36,7 @@
 > 판사 José Agustín Fernández 가 'Martín Almada s/ Hábeas Data' 사건 영장으로 들어가 당직 경찰에게 문을 열게 하고, 자물쇠공이 자물쇠를 부순다. 안에는 바닥까지 쌓인 서류·장부·사진. (S1, S2, S9)
 
 - 날짜 22일: ✅ S1·S2·S3(Ley 561 "22 de diciembre — día del descubrimiento"). UNESCO 신청서 S4 요약에는 "23 y 24"로 적혀 있으나 사법부 출판(S2)·법률(S3)·판사(S1)가 모두 22일 → **22일로 통일**, 메모만 남긴다.
-- 10:30: ⚠️ 판사 2019년 인터뷰(S1) 단독. 1992-12-23 Última Hora·ABC Color·Noticias 지면으로 교차 확인 전까지 대본에는 **대체 문장**도 함께 준비: "Es la mañana del 22 de diciembre de 1992."(S2의 "calurosa mañana" ✅)
+- 시각: ⚠️ 10:30 은 판사 2019년 회고(S1) 단독이고 다른 회고는 "alrededor de las 11", "a las 11:00", "al final de aquella mañana"로 엇갈린다. 당일 지면 미확보. **대본은 시각을 쓰지 않는다:** "Es la mañana del 22 de diciembre de 1992."(S2 "calurosa mañana" ✅). 시각을 쓰려면 "hacia las diez y media, según recuerda el juez"처럼 회고로 밝힌다. 날짜 22일은 미주인권재판소 Goiburú 판결 ¶61.121 로 ✅ (UNESCO 신청서의 "23 y 24"는 신청서 자체 모순, 오기).
 - 자물쇠공·2층 잠긴 방: ✅ S1, S2, S9(당시 서기 증언) 세 출처 일치.
 - 4km: ✅ S2 ("solo a 4 kilómetros del centro capitalino").
 
@@ -46,7 +46,7 @@
 
 | 시점 | 내용 | 출처 |
 |---|---|---|
-| 0~5초 | **첫 문장(날짜·시각·장소, 현재형):** "22 de diciembre de 1992. Son las diez y media de la mañana en Lambaré, a cuatro kilómetros del centro de Asunción." | S1 ⚠️(시각) · S2 ✅ |
+| 0~5초 | **첫 문장(날짜·시각·장소, 현재형):** "Es la mañana del 22 de diciembre de 1992 en Lambaré, a cuatro kilómetros del centro de Asunción." | 날짜: Corte IDH ¶61.121 ✅ · 장소: S2 ✅ (시각은 쓰지 않음) |
 | 5~25초 | **평범함의 숫자:** 크리스마스 사흘 전 / 독재가 무너진 지 거의 4년(1989-02-03) / 한 교육자가 자기 경찰 기록을 달라고 법원에 청구한 지 **102일**(1992-09-11 → 12-22) / 경찰의 공식 답: 그런 서류는 1989년 쿠데타 때 다 사라졌다 | S2 ✅ · S5 ✅ · S1 ✅ |
 | 25~35초 | **전환 문장(아이디어):** "Según la Policía, en este edificio no queda nada que buscar. Todo encaja. Hasta que un cerrajero hace saltar el candado de una puerta del primer piso." (`turn_markers`: todo encaja / hasta que) | S1, S2, S9 ✅ |
 | 35~60초 | **규모 숫자:** cerca de 800.000 páginas · 200 metros de estanterías · 11.225 fichas de detenidos · unas 20.000 fotografías · 543 casetes · documentos de 1927 a 1989 · el traslado dura casi 12 horas | S4 ✅ · S1/S2 ✅ |
@@ -80,21 +80,21 @@
 1. 1954년 5월 군사 쿠데타로 스트로에스네르 장군 집권, 1989년 2월까지 **35년** — "7번의 정상 임기"에 해당. 이웃 나라들이 군정에 들어가기 훨씬 전에 시작해, 이웃들이 민정으로 돌아갈 때까지 버틴다. ✅ S2
 2. 형식은 민주주의: 정기 선거, 의회·법원 가동, 그리고 거의 상시적인 계엄(estado de sitio). 억압의 중심은 아순시온 도심의 **Departamento de Investigaciones**, 1957년 내무부 결의로 반공 전담 **Dirección Nacional de Asuntos Técnicos(DNAT)** 신설. ✅ S2, S4 (정당 평가는 하지 않는다)
 3. **"Funciona así. Si tú…" 설명:** 서류는 A~Z 글자로 분류(A 입·출감, F 반대파 자택 감시, P 정당, Q 학생회, Z 노조…). 네가 야당 인사의 장례식에 가면 이름이 명단에, 모임 근처에 차를 세우면 번호판이 보고서에, 국경을 넘으면 출입국 기록에. 등사기·복사기 구매자까지 관리. 이름 하나로 "몇 분 만에" 과거 카드·사진·진술서·정보 요약이 나온다. ✅ S2, S4
-4. 마르틴 알마다(공개 증언한 고인, 실명 가능): 교육자, 1974년 산 로렌소에서 체포. ✅ S5 / 구금 기간(1974~1977)·"terrorista intelectual" 혐의 ⚠️(S1·ABC 특집, 1차 판결문·본인 저서 *Paraguay, la cárcel olvidada*(1993)로 확인)
+4. 마르틴 알마다(공개 증언한 고인, 실명 가능): 교육자, 1974년 체포, "terrorista intelectual"로 낙인, 1977년 석방 후 망명 ✅ (Right Livelihood 공식 소개, 워싱턴포스트 부고, 본인 PBS 인터뷰). 체포 일자·생일은 출처마다 달라 **쓰지 않는다.**
 5. 막 끝 질문(1개): 서류가 이렇게 촘촘하다면, 국경 밖의 사람은 누가 기록했을까? → escalada 로 넘김
 
 ### escalada (6.5분) — 서류가 국경을 넘다 (단계마다 숫자 하나)
-1. **1975년 11월 말, 산티아고:** "Primera Reunión de Trabajo de Inteligencia Nacional". 파라과이 경찰 서류 안에서 초청장이 나온다. 조정센터·중앙 데이터뱅크·암호 통신 구상. ✅ S3, S12 / 폐회 의정서 1975-11-28, 창립 5개국(아르헨티나·볼리비아·칠레·파라과이·우루과이) ⚠️ S13(NSA 원문 PDF 직접 확인 필요). 브라질 가입 시점은 ⚠️ → 확인 전에는 대본에서 빼거나 "más tarde" 로만.
+1. **1975년 11월 말, 산티아고:** "Primera Reunión de Trabajo de Inteligencia Nacional". 파라과이 경찰 서류 안에서 초청장이 나온다. 조정센터·중앙 데이터뱅크·암호 통신 구상. ✅ S3, S12 / 폐회 의정서 날짜 1975-11-28, 대표단 5개국(아르헨티나·볼리비아·칠레·파라과이·우루과이) ✅ (DINA 원문 스캔, NSA Doc.1). 의정서 9항의 서명 비준 시한 1976-01-30. 브라질은 "en 1976" 까지만 ✅ (CIA 전문 1976-07-28). 회의 시작일 11-25 는 NSA 해설 단독 ⚠️ → "a finales de noviembre".
    - **tú 예시:** "Si tú escribes 'viajaré mañana' con su alfabeto de sustitución, en el papel queda NXDBDTCADJDJD." ✅ S12
 2. **국경 없는 감시:** 문서가 보여 주는 것 — 파라과이에서 체포된 아르헨티나·우루과이·칠레인 교환, 그 나라 심문관의 Departamento de Investigaciones 출입, 파라과이 경찰의 아르헨티나 출장 심문, 정보 교환. 아르헨티나 당국에 넘겨진 외국인 수감자 명단 — "Todos ellos se encuentran desaparecidos."(도판 설명) ✅ S3
 3. **1977년 2월:** 망명한 파라과이 의사 아구스틴 고이부루(실종, 공개 판결 피해자)를 아르헨티나 파라나의 진료실에서 양국 합동조가 납치 → 실종. 이 사건은 경찰 문서에 "완벽하게" 남는다. ✅ S3, S11 (방법·고문 묘사 없음)
-4. **규모 숫자:** 진실정의위원회(2008) 기준 실종 336명·초법적 처형 59명·불법 구금 약 2만 명, 망명 3,470명 ⚠️ S16(최종보고서 원문 대조 전). 대조 전 대체: "entre 200 y 300 muertos y desaparecidos, según los informes previos"(S2 ✅, 2008년 이전 집계)
+4. **규모 숫자:** 진실정의위원회(2008) 최종보고서 ¶64(인쇄 p.27, 표 p.29): 실종 336명·초법적 처형 59명·불법 구금 **19.862명("casi 20.000")**·고문 18.772명, 직접 피해자 합계 20.090명(구금 수치와 섞지 않는다), 망명 3.470명(위원회 스스로 "tentativo", ¶67 → "al menos 3.470, según una cifra que la propia comisión llamó provisional") ✅
 5. **1989년 2월 3일:** 정권 내부 인사였던 안드레스 로드리게스 장군의 쿠데타로 스트로에스네르는 브라질리아로 망명. 전환기는 옛 정권 인물들이 이끈다 → 피해자들이 소송을 내도 "증거 없음", 경찰은 "그 사람들은 우리에게 잡힌 적 없다". 1992-05-21 Schaerer Prono 사건 1심 유죄(당시 수사국장 Pastor Coronel 등, 각 25년 — **1999 대법원 확정이므로 실명 가능**). 1992-06-20 새 헌법이 **hábeas data**(내 정보를 국가에 요구할 권리) 도입, 1992-09-11 알마다가 청구. 경찰의 답: 문서는 쿠데타 때 사라졌다. ✅ S1, S2, S5, S10
    - 막 끝 질문: "¿Y si los papeles no hubieran desaparecido?" 성격의 한 줄 → regreso
 
 ### regreso (3.5분) — 다시, 12월 22일 (영상 53% 지점)
-- **되돌아오기 첫 문장:** "22 de diciembre de 1992. Volvemos a Lambaré. Son las diez y media de la mañana." (⚠️ 시각 · 대체: "Es otra vez la mañana del 22 de diciembre.")
-1. 전날 밤: 알마다가 판사에게 장소를 알린 근거는 **한 경찰관의 아내** — 이름은 지금도 비공개. 언론사 차량이 건물 네 모퉁이를 밤새 지키고, 짐을 빼러 온 차들이 기자를 보고 돌아간다. ✅ S2·S4(제보자) / ⚠️ S5(편집국장 회고 단독)
+- **되돌아오기 첫 문장:** "Es otra vez la mañana del 22 de diciembre de 1992. Volvemos a Lambaré." (도입과 같은 날짜·장소 표지, 시각은 쓰지 않음)
+1. 전날 밤: 알마다가 판사에게 장소를 알린 근거는 사법부 출판(S2)에 따르면 **한 경찰관의 아내** — 이름은 지금도 비공개. 다른 버전도 있다(워싱턴포스트 부고 "옛 정권 경호원의 아내", 당시 시설 부국장 Ismael Aguilera 의 "내가 했다" 주장, Última Hora 2022) → 대본은 "según la publicación del Poder Judicial" 로 귀속하고 단정하지 않는다. 언론사 차량이 건물 네 모퉁이를 밤새 지키고, 짐을 빼러 온 차들이 기자를 보고 돌아간다. ✅ S2·S4(제보자) / ⚠️ S5(편집국장 회고 단독)
 2. 당직 경찰 "상관을 기다려야 한다" → 판사가 권한을 내세워 문을 열게 함. 계단 위 자물쇠 문, 자물쇠공. 바닥의 책·장부, "algunos estaban húmedos". 두 번째 판사 Luis María Benítez Riera(당직) 호출. ✅ S1, S2, S9
 3. 안에서 바로 나온 것: 경찰이 "체포한 적 없다"던 실종자들의 카드(사진·지문·서명), 근처 땅속에서 파낸 신분증·여권(목록상 1,888점). 판사는 그날 라미레스 비야바 형제의 카드를 봤다고 회고 ⚠️ S1(단독 회고) → consecuencias의 미주인권재판소 판결(S11 ✅)과 연결. 기록상 이 서류들은 **발견 몇 달 전까지 쓰이고 있었다.** ✅ S2, S4
 4. **인간 사슬:** 기자·시민·피해자 가족이 손에서 손으로 서류를 넘겨 트럭과 방송사 차량에 싣는다. 거의 12시간. 행선지는 법원(Palacio de Justicia), 며칠간 자원봉사 철야. ✅ S1, S2, S4
@@ -103,9 +103,9 @@
 
 ### consecuencias (6.0분) — 종이가 법정에 들어가다 (+ 모르는 것 정리)
 1. **보존 제도화:** 1993-01 DNAT 서류 합류 → 1993-03-26 대법원 결의 81호로 **Centro de Documentación y Archivo para la Defensa de los Derechos Humanos(CDyA)** 설립, 누구나 열람. 분류는 NGO 두 곳(CDE, CIPAE)·상원 인권위·피해자 가족이 함께. 1993~2008년 하베아스 데이터·법원 조회 **9,236건** 처리. ✅ S2, S3, S4
-2. **국내 재판:** "멈춰 있던 재판이 풀렸다". Schaerer Prono 사건 1996 항소 확인, **1999-05-07 대법원 확정**(Pastor Coronel 등). ✅ S3, S10
+2. **국내 재판:** "멈춰 있던 재판이 풀렸다". Schaerer Prono 사건: 1992-05-21 1심 25년(S.D. Nº 25) → 1996-03-26 2심 → **1999-05-07 대법원 확정**(Pastor Coronel 등) ✅ S10, Corte IDH. 라미레스 비야바 사건은 1999 1심 후 피고 사망으로 공소 소멸(¶61.105, ¶61.109) → Pastor Coronel 의 "확정"은 Schaerer Prono 사건으로만 쓴다.
 3. **국경 밖 법정:** 스페인·이탈리아·프랑스·칠레·아르헨티나·우루과이의 변호사·판사에게 문서 제공. 가르손 판사가 피노체트 사건 절차에서 요청하자 **"varios centenares de folios"** 가 그의 손에 넘어감 — **체포 근거였다고 말하지 않는다.** ✅ S3, S4
-4. **국가 책임:** 2006-09-22 미주인권재판소 *Goiburú y otros vs. Paraguay* — 고이부루, 카를로스 호세 만쿠에요, 라미레스 비야바 형제의 강제실종에 대해 파라과이 국가 책임 인정(Cóndor 틀). 같은 해 2006-08-16 스트로에스네르는 브라질리아에서 사망, 파라과이 법정에 서지 않음. ✅ S11, S15 (인도 거부 횟수 ⚠️)
+4. **국가 책임:** 2006-09-22 미주인권재판소 *Goiburú y otros vs. Paraguay* — 고이부루, 카를로스 호세 만쿠에요, 라미레스 비야바 형제의 강제실종에 대해 파라과이 국가 책임 인정(Cóndor 틀). 스트로에스네르: 브라질이 1989-05-24 망명 허가, 파라과이 법원이 1993·2000년 인도 목적 구금 명령, 2001년 인도 청구 결정 — 그러나 청구가 브라질에 실제 전달됐는지는 재판소 기록에 "no consta"(¶61.110–61.120). **"브라질이 거부했다"는 1차 근거 없음(❌, 쓰지 않는다).** 대본: "Brasil le concedió asilo en 1989; jueces paraguayos ordenaron su detención con fines de extradición; nunca fue entregado ni juzgado. Murió en Brasilia el 16 de agosto de 2006." ✅
 5. **기억의 제도:** 1995-04-28 Ley 561 — 12월 22일 "Día de la Dignidad Nacional". 2003 진실정의위원회 법 → 2008-08-28 최종보고서. 2009-07-30 UNESCO 세계기록유산. ✅ S3, S4, S6 / 보고서 수치 ⚠️ S16
 6. **우리가 모르는 것(가설을 나란히, 단정 금지):** (a) 왜 태우지 않았나 — 사법부 출판은 "다시 쓸모 있을 것이라 여겨서"라고 본다(S2 ✅ 저자 해석으로 귀속), (b) 단순한 관료적 관성, (c) 파기 명령이 끝내 내려지지 않음 — (b)(c)는 우리 가설로 표시. 발견 전 일부가 걸러졌다는 의심도 있었으나 "증명된 것은 없다"(S2 ✅). 제보자의 이름은 지금도 모른다(S2 ✅). 선거 국면과 연결한 당시 추측은 **정당 평가가 되므로 다루지 않는다.**
 
@@ -126,7 +126,7 @@
 
 ## 4. 되돌아오기 지점
 - **13:15 / 25:00 = 53%** (기준 35~65% ✅). regreso 막 전체가 53~67% 구간.
-- 다시 말할 장면: 같은 날짜·시각(1992-12-22, 10:30 ⚠️)·장소(Lambaré, Departamento de Producción de la Policía, 1층 위 자물쇠 문). 도입에서는 문이 열리는 순간에서 끊고, regreso 에서 문 안쪽(젖은 종이, 실종자 카드, 땅속 신분증, 인간 사슬 12시간)을 처음으로 보여 준다.
+- 다시 말할 장면: 같은 날짜(1992-12-22 오전)·장소(Lambaré, Departamento de Producción de la Policía, 1층 위 자물쇠 문). 도입에서는 문이 열리는 순간에서 끊고, regreso 에서 문 안쪽(젖은 종이, 실종자 카드, 땅속 신분증, 인간 사슬 12시간)을 처음으로 보여 준다.
 
 ---
 
@@ -154,20 +154,25 @@
 ---
 
 ## 8. 실명·표현 규칙 (risk_review 반영)
-- **실명 가능:** 마르틴 알마다(고인, 공개 증언), 판사 José Agustín Fernández·Luis María Benítez Riera(공직 수행), 알프레도 스트로에스네르·안드레스 로드리게스·아우구스토 피노체트·발타사르 가르손(국가원수·공직 사실에 한정, 개인 범죄 단정 없음), Pastor Coronel(1999 대법원 확정), 실종·사망 피해자로 공개 판결·공식 출판에 나온 이름(고이부루, 만쿠에요, 라미레스 비야바 형제, 데를리스 비야그라, 마리오 셰레르 프로노).
-- **역할로만:** DNAT 책임자, 당직 경찰, 제보한 경찰관의 아내, 생존 피해자(공개 증언 확인 전), DINA 책임자(칠레 확정 판결 출처 확인 전 ⚠️).
+- **실명 가능:** 마르틴 알마다(고인, 공개 증언), 판사 José Agustín Fernández·Luis María Benítez Riera(공직 수행), 알프레도 스트로에스네르·안드레스 로드리게스·아우구스토 피노체트·발타사르 가르손(국가원수·공직 사실에 한정, 개인 범죄 단정 없음), Pastor Coronel(Schaerer Prono 사건 1999 대법원 확정), Manuel Contreras(DINA 책임자, 칠레 대법원 확정 판결 Rol 30.174-1994·Rol 517-2004, 의정서 칠레 대표 서명), 실종·사망 피해자로 공개 판결·공식 출판에 나온 이름(고이부루, 만쿠에요, 라미레스 비야바 형제, 데를리스 비야그라, 마리오 셰레르 프로노).
+- **역할로만:** DNAT 책임자, 당직 경찰, 제보한 경찰관의 아내, 생존 피해자(공개 증언 확인 전), Benito Guanes Serrano 등 파라과이 측 의정서 서명자(확정 판결 미확인, 사망으로 공소 소멸).
 - 고문 방법·장소의 구체 묘사 금지("pileta" 등 포함). 정당명·정당 평가 금지 — "régimen", "aparato policial", "Estado" 로 쓴다.
 - 질문·엔딩은 기관·제도를 겨냥, 미확정 개인을 겨냥하지 않는다.
 - 화면 소재 주의(scene-planner): ABC Color·Última Hora 1992 사진은 저작권 → 라이선스 확인 전 사용 불가. Poder Judicial 저장소 이미지 이용 조건 ⚠️. NSA 게시 문서 중 미국 정부 문서만 퍼블릭 도메인.
 
 ## 9. 남은 ⚠️ (공개 전 1차 확인)
-1. **10:30 진입** — S1(2019 판사 인터뷰) 단독. 1992-12-23 Última Hora·ABC Color·Noticias 지면 대조. 실패 시 "Es la mañana…" 대체문.
+1. **진입 시각** — 회고끼리 10:30/11:00 으로 엇갈림. 대본은 시각 없이 "Es la mañana…". 당일 지면(1992-12-23)은 현지 아카이브 필요, 범위 밖.
 2. UNESCO 신청서의 "23 y 24 de diciembre" 표기 — 22일로 통일(S1·S2·S3 근거), facts.md 에 불일치 메모.
 3. 판사 회고 단독 사항: 첫날 라미레스 비야바 형제 카드 목격, 다음 날 아침 "공개하지 말라" 요청 전화 → "según el juez" 귀속.
 4. 전날 밤 언론 감시·차량 회귀 — S5 편집국장 30주년 회고 단독.
-5. 진실정의위원회 수치(336/59/약 2만/3,470) — 최종보고서 원문 대조. 대체: S2 "200~300".
-6. Cóndor 창립 의정서 날짜·서명 5개국 — NSA 원문 PDF 확인. 브라질 가입 시점.
-7. 알마다 구금 기간(1974~1977)·혐의 명칭·출생연도 — 본인 저서·판결 기록으로.
-8. 스트로에스네르 인도 청구 거부 횟수 — 확인 전에는 "nunca fue juzgado en Paraguay" 까지만(S15).
-9. DINA 책임자 실명 여부 — 칠레 확정 판결 출처 확인 전 역할로.
+5. ~~진실정의위원회 수치~~ ✅ 해결 (¶64, ¶67).
+6. ~~Cóndor 의정서·5개국·브라질 1976~~ ✅ 해결. 회의 시작일 11-25 만 ⚠️.
+7. ~~알마다 1974 체포·1977 석방·"terrorista intelectual"~~ ✅ 해결. 일자는 쓰지 않음.
+8. 스트로에스네르 "인도 거부 횟수" ❌ 근거 없음 → 삭제, Corte IDH ¶61.110–61.120 문장으로 대체.
+9. ~~DINA 책임자~~ ✅ Manuel Contreras 실명 가능(칠레 대법원 확정 2건).
 10. "왜 태우지 않았나" 가설 (b)(c)는 우리 추론 — 대본에서 가설로 명시.
+
+
+## 출처 보강 반영 (2026-11-25)
+- 추가 1차 자료: CVJ 최종보고서(https://www.dhnet.org.br/verdade/mundo/paraguai/informe_final_paraguai_paraguay.pdf), NSA Doc.1·Doc.4, 미주인권재판소 Goiburú 판결 CNJ 포르투갈어본(https://www.cnj.jus.br/wp-content/uploads/2016/04/15934c4d6d9ca1cf602e165fc5afa3cf.pdf, 문단 번호 원문과 동일), Poder Judicial nota 6650.
+- 사실별 상태는 facts.md 25줄.
