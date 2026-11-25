@@ -36,7 +36,9 @@
    ],
    "score": 88,
    "status": "후보",
-   "source_brief": "general"
+   "source_brief": "general",
+   "risk_grade": 2,
+   "risk_review": "레퍼런스 Pan Am 914·안데스와 결이 겹침: 'desapareció… años después' 문형 금지, '실제로 일어났고 빙하 물리로 풀린 사건' 각도"
   },
   {
    "slug": "archivos-del-terror-1992",
@@ -75,7 +77,9 @@
    ],
    "score": 88,
    "status": "후보",
-   "source_brief": "general"
+   "source_brief": "general",
+   "risk_grade": 3,
+   "risk_review": "실명은 유죄 확정자만, 고문 방법 묘사 금지, 정당 평가 없이 제도 초점"
   },
   {
    "slug": "ara-san-juan-2017",
@@ -114,7 +118,9 @@
    ],
    "score": 86,
    "status": "후보",
-   "source_brief": "general"
+   "source_brief": "general",
+   "risk_grade": 3,
+   "risk_review": "명예훼손 4: 1심(2026-07-08) 미확정·상고 예고. 질문 2를 제도 쪽으로, Macri 사찰 사건은 면소 확정 병기. 공개 직전 Casación 재확인"
   },
   {
    "slug": "zona-del-silencio-1970",
@@ -626,7 +632,9 @@
    "buzz_evidence": "구조 작전이 Televisa 생중계로 전국에 퍼졌고, 존재하지 않았다는 발표 후 SNS에서 #ApagaTelevisa 해시태그 반발이 일었다고 La Prensa(온두라스)가 보도(URL 슬러그에도 apagatelevisa 포함). 5주년에도 '바이럴' 회고 기사가 나옴(posta.com.mx 'Viral: A 5 años del falso rescate de Frida Sofía'). 칠레·아르헨·페루 매체까지 동시 보도 — 범중남미 관심 확인.",
    "score": 86,
    "status": "후보",
-   "source_brief": "internet"
+   "source_brief": "internet",
+   "risk_grade": 4,
+   "risk_review": "사람 판단 필요: 아동 19명 사망 중심(광고 제한), Televisa 화면 사용 불가, 당시 틀랄판 구청장=현 대통령 언급 범위, 조작 단정 금지"
   },
   {
    "slug": "bonaire-dana-bulo-2024",
@@ -708,7 +716,9 @@
    "buzz_evidence": "하원 공보실 언론 스크랩 PDF 제목 자체가 'La Cámara de Diputados, circo Maussan'(TV Azteca) — 국내 방송이 '서커스'로 다룰 만큼 화제. 칠레 BioBio·페루 El Peruano·Correo, 에콰도르 Primicias 등 국경 넘어 보도. 2017년 Gaia.com 온라인 공개로 처음 퍼진 뒤 2023년 공청회로 재폭발(조회수 수치는 미확인).",
    "score": 84,
    "status": "후보",
-   "source_brief": "internet"
+   "source_brief": "internet",
+   "risk_grade": 3,
+   "risk_review": "Maussan 사기범 단정 금지·반론 병기, Gaia·Maussan 화면 금지, 하원 화면은 이용 조건 확인. 제목·썸네일에서 'Nazca' 전면 배치 금지(레퍼런스 나스카 라인 영상)"
   },
   {
    "slug": "momo-whatsapp-2018",
@@ -791,7 +801,9 @@
    "buzz_evidence": "사건 자체가 인스타그램 생중계로 진행(The Objective 2018-01-22 'La muerte narrada en directo… a través de Instagram'). Bellingcat이 영상·사진·오디오·트윗 60건 이상을 오픈소스로 검증해 재구성(2018-05-13) — 인터넷 집단 수사의 대표 사례. 전 검찰총장 Luisa Ortega가 트위터로 '처형' 이미지 공개. 조회수 수치는 미확인.",
    "score": 88,
    "status": "후보",
-   "source_brief": "internet"
+   "source_brief": "internet",
+   "risk_grade": 4,
+   "risk_review": "사람 판단 필요·보류 권고: 미주인권재판소 판결 전, 베네수엘라 정세 유동적(국가 민감성 5), 핵심 소재(인스타그램 영상) 사용 불가, 광고 제한 가능성 높음"
   },
   {
    "slug": "debanhi-escobar-2022",
