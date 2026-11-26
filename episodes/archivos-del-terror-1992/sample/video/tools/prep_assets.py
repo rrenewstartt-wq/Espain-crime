@@ -22,7 +22,7 @@ EP = os.path.abspath(os.path.join(VIDEO, "..", ".."))
 REPO = os.path.abspath(os.path.join(EP, "..", ".."))
 SRC = os.path.join(EP, "assets")
 OUT = os.path.join(VIDEO, "assets")
-for d in ("img", "tex", "fonts", "audio", "map"):
+for d in ("img", "tex", "fonts", "audio", "map", "fig"):
     os.makedirs(os.path.join(OUT, d), exist_ok=True)
 
 
@@ -56,7 +56,7 @@ def save(arr, path, mode="RGB", q=90):
 
 
 # ---------------------------------------------------------------- fonts
-FONTS = ["Anton-Regular.ttf", "CourierPrime-Regular.woff2", "CourierPrime-Bold.woff2", "BarlowCondensed-Bold.woff2",
+FONTS = ["Caveat-Bold.woff2", "Anton-Regular.ttf", "CourierPrime-Regular.woff2", "CourierPrime-Bold.woff2", "BarlowCondensed-Bold.woff2",
          "BarlowCondensed-ExtraBold.woff2", "IBMPlexMono-Regular.ttf", "IBMPlexMono-Bold.ttf", "WorkSans-Regular.ttf",
          "WorkSans-Bold.ttf", "WorkSans-BoldItalic.ttf"]
 for f in FONTS:
@@ -227,6 +227,12 @@ mapdata = {"w": MW, "h": MH, "countries": countries, "rivers": rivers,
                                                 "CHILE": (-71.6, -29.0), "PARAGUAY": (-58.6, -22.6),
                                                 "BRASIL": (-51.0, -12.0), "BOLIVIA": (-64.5, -17.0)}.items()}}
 json.dump(mapdata, open(out("map", "southamerica.json"), "w"))
+
+exec(open(os.path.join(HERE, "prep_textures_v2.py")).read())
+import sys
+if "--no-audio" in sys.argv:
+    print("ok (no audio) →", OUT)
+    sys.exit(0)
 
 # ---------------------------------------------------------------- audio (all 48 kHz stereo)
 SFX = os.path.join(SRC, "sfx")
