@@ -134,7 +134,7 @@ for name, t0, dur, step in (("k21", 36.85, 0.85, 0.09), ("k39", 67.55, 1.0, 0.09
         t += step * (1 + i * 0.06)
         i += 1
 # mix gains (offline ffmpeg sum of these cues: about -15 LUFS, peaks under -1 dBFS; hits 6–10 dB over the bed)
-GAIN = {"bed": 2.4, "impact": 0.5, "lock": 0.55, "riser": 0.8, "whoosh": 1.0, "typewriter": 0.45, "tick": 1.0}
+GAIN = {"bed": 1.7, "impact": 0.75, "lock": 0.6, "riser": 0.8, "whoosh": 1.0, "typewriter": 0.45, "tick": 1.0}
 
 
 def gain(f):
