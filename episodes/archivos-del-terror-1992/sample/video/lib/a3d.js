@@ -184,14 +184,14 @@ async function boxes(canvas, o) {
   const sun = new THREE.SpotLight(0xfff2de, 90, 16, 0.5, 0.5, 1.0); sun.position.set(0, 2.2, -7.2); sun.target.position.set(0, 0, 2); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); s.add(sun, sun.target);
   const lamp = new THREE.PointLight(0xffa058, 3, 6, 1.6); lamp.position.set(1.4, 2.6, 0.5); s.add(lamp);
   s.add(new THREE.AmbientLight(0x1a1008, 0.5));
-  const card = new THREE.MeshStandardMaterial({ map: await tex("cardboard.jpg"), roughness: 0.9 });
+  const card = new THREE.MeshStandardMaterial({ map: await tex("cardboard.jpg"), color: 0x9c8a74, roughness: 0.92 });
   const figTex = await new THREE.TextureLoader().loadAsync("assets/fig/worker.png"); figTex.colorSpace = THREE.SRGBColorSpace;
   const figMat = new THREE.MeshBasicMaterial({ map: figTex, transparent: true, alphaTest: 0.05, color: 0x2a2420, side: THREE.DoubleSide });
   const items = [];
   for (let i = 0; i < 6; i++) {
     const g = new THREE.Group();
-    const f = new THREE.Mesh(new THREE.PlaneGeometry(0.95, 1.7), figMat); f.position.y = 0.85; g.add(f);
-    const b = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.36, 0.4), card); b.position.set(0, 1.05, 0.25); b.castShadow = true; g.add(b);
+    const b = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.36, 0.4), card); b.position.set(0, 0.18, 0); b.castShadow = true; g.add(b);
+    const b2 = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.32, 0.38), card); b2.position.set(0.02, 0.52, 0.01); b2.rotation.y = 0.08; b2.castShadow = true; g.add(b2);
     s.add(g); items.push(g);
   }
   const dust = await dustPoints(140, [-1, 0.2, -6.5, 1, 2.6, 1], 48, 0xffe8c8, 0.035); s.add(dust);
@@ -200,7 +200,7 @@ async function boxes(canvas, o) {
     dust.userData.update(t);
     items.forEach((g, i) => {
       const u = ((t + i * 0.55) % 3.3) / 3.3;              // walking away from camera to the door
-      g.position.set((i % 2 ? 0.28 : -0.22) + Math.sin(u * 9 + i) * 0.03, Math.abs(Math.sin(u * 30)) * 0.03, lerp(-0.6, -6.4, u));
+      g.position.set(0.05 + Math.sin(i * 1.7) * 0.06, 0, lerp(-0.6, -6.4, u));
       g.rotation.y = Math.PI;
       g.visible = u < 0.97;
     });

@@ -180,7 +180,7 @@ shot('B', 1.25, {d}, [1.0,0,0], [1.05,-40,0]); tag(0.05);"""
 def ficha(p, k, x, y, rot, stamp=None, photo=False, finger=False, w=520, h=330, pal="tung"):
     st = f'<div id="{p}-st{k}" class="ao-stamp" style="position:absolute;right:26px;bottom:22px;font-size:50px;transform:rotate(-8deg)">{stamp}</div>' if stamp else ""
     ph = (f'<div style="position:absolute;left:24px;top:84px;width:{int(w * .3)}px;height:{int(h * .62)}px;border:3px solid #4a4236;background:#cdbf9f">'
-          f'<svg id="{p}-ph{k}" viewBox="-100 -170 200 200" width="100%" height="100%" style="opacity:0"><g fill="#5b5246"><circle cx="0" cy="-100" r="38"/><path d="M-70,30 Q-70,-50 0,-50 Q70,-50 70,30Z"/></g></svg></div>') if photo else ""
+          f'<div id="{p}-ph{k}" style="width:100%;height:100%;opacity:0;background:radial-gradient(ellipse 34% 26% at 50% 34%,rgba(40,34,28,.85),rgba(40,34,28,0) 100%),radial-gradient(ellipse 60% 40% at 50% 100%,rgba(40,34,28,.8),rgba(40,34,28,0) 100%),url(assets/tex/paper_grey.jpg) center/300% auto;filter:blur(2.5px) sepia(.4)"></div></div>') if photo else ""
     fp = (f'<div style="position:absolute;right:24px;top:84px;width:{int(w * .26)}px;height:{int(h * .62)}px;border:3px solid #4a4236">'
           f'<div id="{p}-fp{k}" style="width:100%;height:100%;opacity:0;background:url(assets/tex/fingerprint.png) center/contain no-repeat"></div></div>') if finger else ""
     return f'''<div id="{p}-f{k}" style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{h}px;background:#e2d2ae url(assets/tex/paper_{pal}.jpg) {k * 300}px 0;background-blend-mode:multiply;transform:rotate({rot}deg);box-shadow:0 16px 34px rgba(0,0,0,.65)">
@@ -356,7 +356,7 @@ def s51(p, d):
     js += f"/*cut*/ tl.set(q('cam'), {{ x: {bx0}, y: {by0}, scale: 0.85 }}, 1.0); tl.to(q('cam'), {{ x: {bx1}, y: {by1}, scale: 0.89, duration: {d - 1.0:.2f}, ease: 'none' }}, 1.0);"
     js += "".join(f"tl.set(q('c-{c}'), {{ attr: {{ class: '{p}hi on' }} }}, {0.2 + i * 0.3:.2f});" for i, c in enumerate(("argentina", "uruguay", "chile")))
     js += "tag(0.05);"
-    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth", src=True))
+    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth; base: mapa de 1856 (LOC)", src=True))
 
 
 @scene(52)
@@ -368,7 +368,7 @@ def s52(p, d):
     js += "".join(f"tl.set(q('c-{c}'), {{ attr: {{ class: '{p}hi on' }} }}, 0);" for c in ("argentina", "uruguay", "chile"))
     js += "".join(f"tl.to(q('ln{i}'), {{ attr: {{ 'stroke-dashoffset': 0 }}, duration: 0.8, ease: 'power2.inOut' }}, {0.1 + i * 0.15:.2f});" for i in range(3))
     js += "tag(0.05);"
-    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth", src=True))
+    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth; base: mapa de 1856 (LOC)", src=True))
 
 
 @scene(53)
@@ -518,7 +518,7 @@ def s62(p, d):
     html = f'''<div id="{p}-cam" class="ao-cam" style="{DESK()}" data-layout-allow-overflow>{print_html(p, 660, 0, 640, 1000, 1.5, "50% 0%", "cover")}</div>'''
     js = f"""shot('cam', 0, 1.1, [1.0,0,0], [1.04,-10,0]); /*cut*/ shot('cam', 1.1, {d}, [1.65,0,360,-2], [1.7,0,370,-2]); tag(0.05);
 tl.fromTo(q('print'), {{ x: 20 }}, {{ x: -20, duration: {d}, ease: 'none' }}, 0);"""
-    return S(html, js, fg=tag_html(p, "IMAGEN REAL · Retrato oficial, agosto de 1954", src=True))
+    return S(html, js, fg=tag_html(p, "IMAGEN REAL · Alfredo Stroessner, agosto de 1954 (Casa Resck)", src=True))
 
 
 @scene(63)

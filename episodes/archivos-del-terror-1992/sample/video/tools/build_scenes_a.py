@@ -63,8 +63,8 @@ def map_svg(p, hi=(), extra="", labels=True):
                   for n, (x, y) in MAP["labels"].items()) if labels else ""
     return f'''<svg viewBox="0 0 {MAP["w"]} {MAP["h"]}" width="{MAP["w"]}" height="{MAP["h"]}" style="position:absolute;left:0;top:0;overflow:visible">
 <defs><pattern id="{p}-pl" patternUnits="userSpaceOnUse" width="2048" height="2048"><image href="assets/tex/oldmap_land.jpg" width="2048" height="2048"/></pattern>
-<pattern id="{p}-ps" patternUnits="userSpaceOnUse" width="2048" height="2048"><image href="assets/tex/oldmap_sea.jpg" width="2048" height="2048"/></pattern>
-<pattern id="{p}-hatch" patternUnits="userSpaceOnUse" width="26" height="26" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="26" stroke="{ACC}" stroke-width="5"/></pattern></defs>
+<pattern id="{p}-ps" patternUnits="userSpaceOnUse" x="-4000" y="-4000" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}"><image href="assets/tex/oldmap_sea.jpg" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}" preserveAspectRatio="none"/></pattern>
+<pattern id="{p}-hatch" patternUnits="userSpaceOnUse" width="26" height="26" patternTransform="rotate(45)"><rect width="26" height="26" fill="#efe2c2"/><line x1="0" y1="0" x2="0" y2="26" stroke="{ACC}" stroke-width="5"/></pattern></defs>
 <rect x="-4000" y="-4000" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}" fill="url(#{p}-ps)"/>
 <g stroke="rgba(30,40,44,.28)" stroke-width="2">{"".join(grat)}</g>
 <g style="filter:drop-shadow(0 0 6px rgba(20,30,34,.5))">{"".join(paths)}</g>
@@ -75,8 +75,8 @@ def map_svg(p, hi=(), extra="", labels=True):
 def map_css(p):
     return f"""
 .{p}ld,.{p}hi{{fill:url(#{p}-pl);stroke:#2f2a22;stroke-width:2.4;stroke-dasharray:10 6}}
-.{p}pg{{fill:url(#{p}-hatch);fill-opacity:.32;stroke:{ACC};stroke-width:6}}
-.{p}hi.on{{fill:url(#{p}-hatch);fill-opacity:.28;stroke:{ACC};stroke-width:5;stroke-dasharray:none}}
+.{p}pg{{fill:url(#{p}-hatch);stroke:{ACC};stroke-width:6}}
+.{p}hi.on{{fill:url(#{p}-hatch);stroke:{ACC};stroke-width:5;stroke-dasharray:none}}
 .{p}lb{{font:700 84px "Caveat",cursive;fill:#2b261e;text-anchor:middle;opacity:.85}}
 """
 
@@ -100,7 +100,7 @@ tl.to(q('cam'), {{ x: {x1}, y: {y1}, scale: 1.15, duration: 0.62, ease: 'expo.in
 tl.fromTo(q('cam'), {{ filter: 'blur(0px)' }}, {{ filter: 'blur(9px)', duration: 0.3, ease: 'power2.in', yoyo: true, repeat: 1 }}, 0.06);
 tl.to(q('cam'), {{ x: {x2}, y: {y2}, scale: 1.3, duration: {d - 0.67:.2f}, ease: 'none' }}, 0.67);
 tl.fromTo(q('ring'), {{ attr: {{ r: 13 }}, opacity: 1 }}, {{ attr: {{ r: 90 }}, opacity: 0, duration: 0.7, ease: 'power2.out' }}, 0.62); tag(0.5);"""
-    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth", src=True))
+    return S(html, js, map_css(p), fg=tag_html(p, "MAPA · elaboración propia, datos Natural Earth; base: mapa de 1856 (LOC)", src=True))
 
 
 @scene(4)
@@ -118,7 +118,7 @@ def s04(p, d):
 <circle id="{p}-circ" cx="{cx}" cy="{cy}" r="{R4}" fill="none" stroke="{ACC}" stroke-width="5" stroke-dasharray="2910" stroke-dashoffset="2910" transform="rotate(80 {cx} {cy})"/>
 <line id="{p}-rad" x1="{cx}" y1="{cy}" x2="{ex:.0f}" y2="{ey:.0f}" stroke="{ACC}" stroke-width="4" stroke-dasharray="463" stroke-dashoffset="463"/>
 <circle cx="{cx}" cy="{cy}" r="11" fill="{ACC}" stroke="#061413" stroke-width="4"/><circle cx="{ex:.0f}" cy="{ey:.0f}" r="9" fill="{ACC}" stroke="#061413" stroke-width="4"/>
-<text x="{cx + 26}" y="{cy - 22}" style="font:700 30px 'IBM Plex Mono';fill:#f2f4f3;letter-spacing:.12em;paint-order:stroke;stroke:#05080a;stroke-width:8px">CENTRO DE ASUNCIÓN</text>
+<text x="{cx - 26}" y="{cy + 50}" text-anchor="end" style="font:700 30px 'IBM Plex Mono';fill:#f2f4f3;letter-spacing:.12em;paint-order:stroke;stroke:#05080a;stroke-width:8px">CENTRO DE ASUNCIÓN</text>
 <text id="{p}-km" x="{(cx + ex) / 2 + 24:.0f}" y="{(cy + ey) / 2:.0f}" style="font:700 40px 'IBM Plex Mono';fill:{ACC};paint-order:stroke;stroke:#05080a;stroke-width:9px">4 km</text>
 <text id="{p}-lam" x="{ex + 30:.0f}" y="{ey + 14:.0f}" style="font:800 60px 'Barlow Condensed';fill:#fff;letter-spacing:.05em;paint-order:stroke;stroke:#05080a;stroke-width:10px">LAMBARÉ</text>
 </svg></div>'''
@@ -181,7 +181,7 @@ def s07(p, d):
 <div style="position:absolute;left:200px;top:120px;width:600px;height:860px;{PAPER()};transform:rotate(-8deg);opacity:.55;box-shadow:0 30px 60px rgba(0,0,0,.6)"></div>
 {print_html(p, 660, 40, 620, 940, -2, "50% 10%", "cover")}</div>'''
     js = f"""shot('cam', 0, 0.8, [1.0,0,0], [1.04,0,0]); /*cut*/ shot('cam', 0.8, {d}, [1.9,40,560], [1.96,40,575]); lt(0.15); tag(0.05);"""
-    return S(html, js, fg=tag_html(p, "IMAGEN REAL · Retrato oficial, 1954", src=True) + lt_html(p, "Alfredo Stroessner", "gobernó Paraguay 1954–1989"))
+    return S(html, js, fg=tag_html(p, "IMAGEN REAL · Alfredo Stroessner, agosto de 1954 (Casa Resck)", src=True) + lt_html(p, "Alfredo Stroessner", "gobernó Paraguay 1954–1989"))
 
 
 TL_CSS = f"""
@@ -203,7 +203,7 @@ def s08(p, d):
 <div class="tl-lab" style="left:1560px;top:650px">22 DIC 1992</div>
 <div style="position:absolute;left:0;width:1920px;top:250px;text-align:center"><span class="ao-unit" style="font-size:120px;color:#1c1b18">CASI </span><span id="{p}-n" class="ao-num" style="font-size:230px">0</span><span class="ao-unit" style="font-size:120px;color:#1c1b18"> AÑOS</span></div></div>'''
     js = f"""tl.fromTo(q('rip'), {{ x: 0, rotation: 0 }}, {{ x: -2200, rotation: -6, duration: 0.45, ease: 'power3.in' }}, 0.1);
-tl.fromTo(q('g'), {{ opacity: 0 }}, {{ opacity: 1, duration: 0.2 }}, 0.35);
+tl.fromTo(q('g'), {{ opacity: 0 }}, {{ opacity: 1, duration: 0.15 }}, 0.52);
 tl.fromTo(q('axis'), {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.5, ease: 'power2.out' }}, 0.4);
 tl.fromTo(q('fill'), {{ scaleX: 0 }}, {{ scaleX: 1, duration: 1.0, ease: 'power1.inOut' }}, 0.7); count('n', 0, 4, 0.7, 1.0);
 shot('cam', 0, {d}, [1.0,0,0], [1.03,0,0]);"""
@@ -316,14 +316,14 @@ def s16(p, d):
     words = "derecho a ver los datos que el Estado guarda sobre ti".split()
     spans = " ".join(f'<span id="{p}-w{i}" style="display:inline-block;opacity:0">{w}</span>' for i, w in enumerate(words))
     html = f'''<div id="{p}-cam" class="ao-cam" style="background:#05080a" data-layout-allow-overflow>
-<img src="assets/img/const1992_p42_art135_habeas_data.jpg" style="position:absolute;left:-120px;top:-520px;width:2160px;height:2796px;filter:blur(7px) brightness(.32) contrast(1.2)" alt=""></div>'''
+<img src="assets/img/const1992_p42_art135_habeas_data.jpg" style="position:absolute;left:40px;top:-420px;width:1840px;height:2381px;filter:blur(7px) brightness(.32) contrast(1.2)" alt=""></div>'''
     fg = f'''<div id="{p}-A" class="ao-full"><div style="position:absolute;left:0;width:1920px;top:360px;text-align:center;font:400 230px/1 Anton;color:#f3f1ea;letter-spacing:.02em">HÁBEAS DATA</div>
 <div style="position:absolute;left:520px;width:880px;top:640px;height:12px;background:{ACC}"></div></div>
 <div id="{p}-B" class="ao-full" style="opacity:0"><div style="position:absolute;left:200px;top:250px;font:400 92px/1 Anton;color:{ACC};letter-spacing:.03em">HÁBEAS DATA =</div>
 <div style="position:absolute;left:200px;width:1500px;top:400px;font:400 78px/1.25 'Work Sans';color:#f3f1ea">{spans}</div></div>'''
     js = f"""tl.fromTo(q('A'), {{ opacity: 0, filter: 'blur(10px)' }}, {{ opacity: 1, filter: 'blur(0px)', duration: 0.2 }}, 0.0);
 shot('cam', 0, 0.95, [1.0,0,0], [1.04,0,0]); /*cut*/ tl.set(q('A'), {{ opacity: 0 }}, 0.95); tl.set(q('B'), {{ opacity: 1 }}, 0.95);
-shot('cam', 0.95, {d}, [1.6,500,-300,2], [1.64,490,-310,2]);
+shot('cam', 0.95, {d}, [1.0,0,0], [1.0,0,-20]);
 {"".join(f"tl.fromTo(q('w{i}'), {{ opacity: 0, filter: 'blur(6px)' }}, {{ opacity: 1, filter: 'blur(0px)', duration: 0.13 }}, {1.0 + i * 0.07:.3f});" for i in range(len(words)))}"""
     return S(html, js, fg=fg)
 
@@ -365,7 +365,7 @@ def s19(p, d):
 <div id="{p}-hl2" style="position:absolute;left:370px;top:671px;width:674px;height:5px;background:{ACC};transform-origin:0 50%"></div></div>'''
     html = f'<div id="{p}-cam" class="ao-cam" style="transform-origin:0 0;{DESK()}" data-layout-allow-overflow>{doc_page(p, "const1992_p42_art135_habeas_data.jpg", 1227, 1588, 0, 0)}</div>'
     js = f"""shot('cam', 0, 0.8, [1.05,315,-90], [1.1,290,-120]); shot('fgc', 0, 0.8, [1.05,315,-90], [1.1,290,-120]);
-/*cut*/ shot('cam', 0.8, {d}, [2.15,-545,-836], [2.25,-615,-900]); shot('fgc', 0.8, {d}, [2.15,-545,-836], [2.25,-615,-900]);
+/*cut*/ shot('cam', 0.8, {d}, [1.42,-35,-370], [1.48,-75,-405]); shot('fgc', 0.8, {d}, [1.42,-35,-370], [1.48,-75,-405]);
 tl.fromTo(q('box'), {{ opacity: 0 }}, {{ opacity: 1, duration: 0.2 }}, 0.15);
 tl.fromTo(q('hl1'), {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.45, ease: 'power1.inOut' }}, 0.9);
 tl.fromTo(q('hl2'), {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.45, ease: 'power1.inOut' }}, 1.3); tag(0.05);"""

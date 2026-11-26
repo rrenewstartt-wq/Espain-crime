@@ -80,7 +80,7 @@ function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35,
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
 tl.fromTo(q('rip'), { x: 0, rotation: 0 }, { x: -2200, rotation: -6, duration: 0.45, ease: 'power3.in' }, 0.1);
-tl.fromTo(q('g'), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.35);
+tl.fromTo(q('g'), { opacity: 0 }, { opacity: 1, duration: 0.15 }, 0.52);
 tl.fromTo(q('axis'), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: 'power2.out' }, 0.4);
 tl.fromTo(q('fill'), { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: 'power1.inOut' }, 0.7); count('n', 0, 4, 0.7, 1.0);
 shot('cam', 0, 2.3, [1.0,0,0], [1.03,0,0]);

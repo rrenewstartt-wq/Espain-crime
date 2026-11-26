@@ -168,9 +168,10 @@ MUSIC_PLAN = [  # id, file, start, end, offset in the track, volume, fade in, fa
     ("m02r", M + "M02_ondrosik_calm_before_the_storm.wav", 101.4, 103.9, 14.6, 0.062, 0.0, 0.05),  # +3 dB rise into the title, cut
     ("m05", M + "M05_ondrosik_waves_of_longing.wav", 108.1, END, 0.0, 0.050, 1.5, 0.8),
 ]
-# synthesized drone (own work) only as a support layer where there is no music, about -40 LUFS
-DRONE = [("dr1", "assets/audio/bed.wav", 56.1, 65.0, 56.1, vol(-40.0), 0.05, 1.1),
-         ("dr2", "assets/audio/bed.wav", 103.9, 107.6, 103.9, vol(-40.0), 0.3, 0.5)]
+# synthesized drone (own work) only as a support layer where there is no music, about -45 LUFS (below the music)
+# the music stops dead; about a second of near silence, then the drone creeps in at -46 (never louder than the music was)
+DRONE = [("dr1", "assets/audio/bed.wav", 57.1, 65.0, 57.1, vol(-46.0), 1.2, 1.1),
+         ("dr2", "assets/audio/bed.wav", 104.7, 107.6, 104.7, vol(-46.0), 1.0, 0.5)]
 AUD = [(a, f, s_, round(e - s_, 3), ms, v, fi, fo) for a, f, s_, e, ms, v, fi, fo in MUSIC_PLAN + DRONE]
 SFX = [
     ("tw1", TW, 0.30, 1.85, 0.4, 0.9), ("tw2", TW, 2.42, 1.0, 5.2, 0.9),
@@ -269,5 +270,9 @@ for n in range(1, 66):
 json.dump({"shot_starts": sorted(shots), "end": END}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
 real = sum(DUR[n - 1] for n in REAL_ROWS)
 json.dump({"shot_starts": sorted(shots), "end": END, "real_rows": sorted(REAL_ROWS), "real_sec": round(real, 1)}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
+_mx = max(m for v in MAGS.values() for _, m in v)
+assert _mx <= 1.5 + 1e-6, MAGS
+missing = sorted(n for n in REAL_ROWS if n not in MAGS)
+print("magnification checked on", len(MAGS), "rows, max", _mx, "; real rows without a check:", missing)
 print("real-photo rows:", len(REAL_ROWS), f"{real:.1f} s = {100 * real / END:.1f}%")
 print("built", len(SC), "scenes;", len(shots), "shots;", "photo slots missing:", [k for k, v in HAVE.items() if not v])

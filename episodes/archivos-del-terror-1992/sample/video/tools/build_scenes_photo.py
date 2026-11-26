@@ -35,7 +35,15 @@ def rays(p, key="rays", angle=115, color="255,236,200", op=0.5):
             f'background:repeating-linear-gradient({angle}deg,rgba({color},0) 0px,rgba({color},0) 120px,rgba({color},.35) 180px,rgba({color},0) 260px);filter:blur(18px)"></div>')
 
 
+def tag2(p, text, key="tag2", top=122, hidden=False):
+    return tag_html(p, text, src=True).replace(f'id="{p}-tag"', f'id="{p}-{key}"').replace('class="ao-tag src"', f'class="ao-tag src" style="top:{top}px;{"opacity:0;" if hidden else ""}"')
+
+
+MAGS = {}
+
+
 def check_mag(n, key, s):
+    MAGS.setdefault(n, []).append((key, round(mag(key, s), 2)))
     m = mag(key, s)
     assert m <= 1.5 + 1e-6, f"row {n}: {key} shown at {m:.2f}x of its source pixels"
 
@@ -72,6 +80,7 @@ tl.fromTo(q('man2'), {{ x: -40, y: 18 }}, {{ x: 20, y: 0, duration: {d - 1.1:.2f
         st = f'<div id="{p}-st" class="ao-stampT" style="position:absolute;left:600px;top:250px;font-size:96px;background:rgba(5,7,9,.6)">VERSIÓN POLICIAL</div>'
         html = f'<div id="{p}-cam" class="ao-cam" style="background:#030507">{cover(p, "comandancia", extra="filter:brightness(.5) contrast(1.15)")}</div>'
         js = f"shot('cam', 0, {d}, [1.0,0,0], [1.09,-20,0]); stampIn('st', 0.2, -3); tag(0.05);"
+        check_mag(26, "comandancia", 1.09)
         REAL_ROWS.add(26)
         return S(html, js, fg=st + tag_html(p, "RECREACIÓN"))
 
@@ -79,22 +88,28 @@ tl.fromTo(q('man2'), {{ x: -40, y: 18 }}, {{ x: 20, y: 0, duration: {d - 1.1:.2f
         return (cover(p, "arch") + glow(1080, 640, 380, f"rgba(236,242,246,{glowop})") +
                 f'<div style="position:absolute;left:760px;top:330px;width:640px;height:700px;background:radial-gradient(ellipse at 50% 60%,rgba(232,240,244,{glowop}),rgba(232,240,244,0) 70%)"></div>')
 
+    def _shadow(p, key, fig, x, y, h, skew, op=0.62, blur=4):
+        w = h * 900 / 1600
+        return (f'<img id="{p}-{key}" src="assets/fig/{fig}.png" style="position:absolute;left:{x}px;top:{y}px;width:{w:.0f}px;height:{h:.0f}px;'
+                f'transform:skewX({skew}deg);filter:blur({blur}px) brightness(0);opacity:{op};mix-blend-mode:multiply" alt="">')
+
     @scene(28)
     def s28(p, d):
-        rim = "filter:drop-shadow(0 0 10px rgba(236,244,248,.6)) drop-shadow(0 0 2px rgba(255,255,255,.8))"
-        html = f'''<div id="{p}-cam" class="ao-cam" style="background:#05080a" data-layout-allow-overflow>{_doorway_photo(p, .85)}
-{fig_img(p, "g", "guard", 830, 300, 720, rim)}{fig_img(p, "j", "man_back", -340, 160, 1500, "filter:blur(14px) brightness(.5)")}{smoke_html(p, 1, 0.16, "mix-blend-mode:screen")}</div>'''
-        js = f"""tl.fromTo(q('g'), {{ y: 30 }}, {{ y: 0, duration: 0.4, ease: 'power3.out' }}, 0.2); shot('cam', 0, 1.25, [1.0,0,0], [1.04,0,0]);
-/*cut*/ shot('cam', 1.25, {d}, [2.3,-430,700], [2.36,-445,715]); lt(0.2); tag(0.05);"""
+        # no figure: the guard stands behind the camera, low sun; his shadow lands on the planks and raises a hand
+        check_mag(28, "arch", 1.04); check_mag(28, "arch", 1.25)
+        html = f'''<div id="{p}-cam" class="ao-cam" style="background:#05080a" data-layout-allow-overflow>{cover(p, "arch")}
+{_shadow(p, "g", "guard", 840, 250, 900, -8)}{glow(1250, 520, 260, "rgba(236,242,246,.35)")}{smoke_html(p, 1, 0.12, "mix-blend-mode:screen")}</div>'''
+        js = f"""tl.fromTo(q('g'), {{ x: -40, opacity: 0 }}, {{ x: 0, opacity: .62, duration: 0.45, ease: 'power2.out' }}, 0.15); shot('cam', 0, 1.25, [1.0,0,0], [1.04,0,0]);
+/*cut*/ shot('cam', 1.25, {d}, [1.25,-230,310], [1.25,-240,325]); lt(0.2); tag(0.05);"""
         REAL_ROWS.add(28)
         return S(html, js, fg=tag_html(p, "RECREACIÓN") + lt_html(p, "Oficial de guardia", "Policía · entrada del depósito"))
 
     @scene(29)
     def s29(p, d):
         base = SC_PREV[29](p, d)
-        rim = "filter:drop-shadow(0 0 12px rgba(236,244,248,.55))"
-        html = f'''<div id="{p}-cam" class="ao-cam" style="background:#05080a" data-layout-allow-overflow>{_doorway_photo(p, 1.0)}
-{fig_img(p, "g", "guard", 880, 360, 640, "filter:blur(5px) brightness(.8)")}{fig_img(p, "j", "judge", 140, 120, 1300, rim)}{smoke_html(p, 1, 0.18, "mix-blend-mode:screen")}</div>'''
+        check_mag(29, "arch", 1.04)
+        html = f'''<div id="{p}-cam" class="ao-cam" style="background:#05080a" data-layout-allow-overflow>{cover(p, "arch")}
+{_shadow(p, "g", "guard", 1060, 300, 820, -6, .45, 6)}{_shadow(p, "j", "judge", 620, 160, 960, -10, .66, 3)}{smoke_html(p, 1, 0.12, "mix-blend-mode:screen")}</div>'''
         paper = base["html"][base["html"].index(f'<div id="{p}-B"'):]
         REAL_ROWS.add(29)
         return S(html + paper, base["js"], fg=base["fg"])
@@ -122,6 +137,7 @@ if has("typewriter"):
         fg = f'''<div id="{p}-g" class="ao-full" style="transform-origin:50% 50%"><div style="position:absolute;left:{(1920 - w) / 2:.0f}px;top:470px;font:700 150px 'Courier Prime';color:#f1ede2;white-space:nowrap;text-shadow:0 4px 30px rgba(0,0,0,.8)">{t}<span id="{p}-cur" style="display:inline-block;width:80px;height:130px;background:{ACC};vertical-align:-14px"></span></div></div>'''
         js = f"""type('t', {n}, 0.05, 0.05); blink('cur', 0, {d}, 0.25); shot('cam', 0, 0.85, [1.0,0,0], [1.03,0,0]); shot('g', 0, 0.85, [1.0,0,0], [1.03,0,0]);
 /*cut*/ shot('cam', 0.85, {d}, [1.4,-300,100,-2], [1.44,-320,100,-2]); shot('g', 0.85, {d}, [2.2,-640,-60,-2], [2.26,-680,-60,-2]); tag(0.05);"""
+        check_mag(27, "typewriter", 1.44)
         REAL_ROWS.add(27)
         return S(html, js, fg=fg + tag_html(p, "IMAGEN ILUSTRATIVA · Máquina de escribir (OWI, 1942)", src=True))
 
@@ -148,6 +164,7 @@ if has("stairdoor"):
         html = f'''<div id="{p}-cam" class="ao-cam" style="background:#020101" data-layout-allow-overflow>{cover(p, "stairdoor")}{lock}
 <div id="{p}-beam" class="ao-full" style="background:radial-gradient(circle at 48% 66%,rgba(0,0,0,0) 14%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.95) 64%)"></div></div>'''
         js = f"shot('cam', 0, {d}, [1.0,0,0], [1.12,-40,-60], 'power1.inOut'); tl.fromTo(q('beam'), {{ x: -220, y: 80 }}, {{ x: 0, y: 0, duration: 0.7, ease: 'power2.out' }}, 0); tag(0.05);"
+        check_mag(32, "stairdoor", 1.12)
         REAL_ROWS.add(32)
         return S(html, js, fg=tag_html(p, "RECREACIÓN"))
 
@@ -157,6 +174,7 @@ if has("vault"):
         html = f'''<div id="{p}-cam" class="ao-cam" style="background:#020101" data-layout-allow-overflow>{cover(p, "vault")}
 {dust_html(p, 40, (500, 200, 1500, 900), 35)}<div id="{p}-fl" class="ao-full" style="background:radial-gradient(circle at 50% 45%,#fff8ec,#ffe6c4 40%,rgba(255,220,180,.6) 80%)"></div></div>'''
         js = f"""tl.fromTo(q('fl'), {{ opacity: 1 }}, {{ opacity: 0, duration: 0.55, ease: 'power2.out' }}, 0.05); shot('cam', 0, {d}, [1.15,0,0], [1.06,0,10]); dust(40, 0, {d}); tag(0.05);"""
+        check_mag(35, "vault", 1.15)
         REAL_ROWS.add(35)
         return S(html, js, fg=tag_html(p, "RECREACIÓN"))
 
@@ -166,6 +184,7 @@ if has("records", "records_tall"):
         html = f'''<div id="{p}-cam" class="ao-cam" style="background:#030201" data-layout-allow-overflow>{cover(p, "records")}
 {glow(1100, 160, 360, "rgba(255,214,150,.45)")}{smoke_html(p, 0, 0.12, "mix-blend-mode:screen;filter:sepia(1)")}{dust_html(p, 34, (500, 100, 1500, 700), 36)}</div>'''
         js = f"shot('cam', 0, {d}, [1.04,40,0], [1.14,-30,10]); tl.fromTo(q('smk0'), {{ x: 0 }}, {{ x: -100, duration: {d}, ease: 'none' }}, 0); dust(34, 0, {d}); whipIn('cam', 0, 320); tag(0.05);"
+        check_mag(36, "records", 1.14)
         REAL_ROWS.add(36)
         return S(html, js, fg=tag_html(p, "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)", src=True))
 
@@ -175,8 +194,9 @@ if has("records", "records_tall"):
         a = f'<div id="{p}-A" class="ao-full" style="background:#030201">{cover(p, "records", extra="filter:blur(6px) brightness(.38)")}</div>'
         b = f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#030201">{cover(p, "records_tall", "pb", "filter:brightness(.8)", 1.0, 420, 300)}</div>'
         js = base["js"].replace("shot('B', 1.1, {d}, [1.05,0,0,-3], [1.1,0,-40,-3]);".format(d=d), f"shot('B', 1.1, {d}, [1.2,0,0], [1.26,0,-20]);")
+        check_mag(39, "records", 1.0); check_mag(39, "records_tall", 1.26)
         REAL_ROWS.add(39)
-        return S(a + b, js, fg=base["fg"])
+        return S(a + b, js, fg=base["fg"] + tag2(p, "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)"))
 
     @scene(40)
     def s40(p, d):
@@ -185,9 +205,10 @@ if has("records", "records_tall"):
         html = f'''<div id="{p}-cam" class="ao-cam" style="background:#030201" data-layout-allow-overflow>
 <img id="{p}-pl" src="assets/ph/records_tall.jpg" style="position:absolute;left:0;top:0;width:1920px;height:{h:.0f}px" alt="">{glow(960, 200, 400, "rgba(255,214,150,.35)")}</div>'''
         fg = f'<div style="position:absolute;left:0;width:1920px;top:250px;text-align:center;text-shadow:0 6px 40px rgba(0,0,0,.9)"><span class="ao-unit" style="font-size:130px;color:{ACC}">≈ </span><span class="ao-num" style="font-size:240px">800.000</span><div class="ao-unit" style="font-size:96px">PÁGINAS</div></div>'
-        js = f"tl.fromTo(q('pl'), {{ y: {1080 - h:.0f} }}, {{ y: -120, duration: {d}, ease: 'power1.inOut' }}, 0); tag(0.0);"
+        js = f"tl.fromTo(q('pl'), {{ y: {1080 - h:.0f} }}, {{ y: -120, duration: {d}, ease: 'none' }}, 0);"
+        check_mag(40, "records_tall", 1.0)
         REAL_ROWS.add(40)
-        return S(html, js, fg=fg + tag_html(p, UNESCO, src=True))
+        return S(html, js, fg=fg + tag_html(p, UNESCO, src=True) + tag2(p, "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)"))
 
 if has("catalog"):
     @scene(37)
@@ -210,17 +231,20 @@ if has("catalog"):
 <div class="ao-full" style="background:radial-gradient(ellipse at 50% 50%,rgba(3,2,1,.85) 0,rgba(3,2,1,.4) 45%,rgba(3,2,1,.05) 80%)"></div></div>'''
         js = re.sub(r"tl\.set\(q\('g\d+'\), \{ opacity: 1 \}, [\d.]+\);", "", base["js"])
         js += f"shot('A', 0, 1.1, [1.0,0,0], [1.06,0,0]);"
+        js += "tl.set(q('tag2'), { opacity: 0 }, 1.1);"
+        check_mag(42, "catalog", 1.06)
         REAL_ROWS.add(42)
-        return S(h[:i0] + a + h[i1:], js, fg=base["fg"].replace(tag_html(p, UNESCO, src=True), "") + tag_html(p, UNESCO, src=True))
+        return S(h[:i0] + a + h[i1:], js, fg=base["fg"] + tag2(p, "IMAGEN ILUSTRATIVA · Fichero, EE. UU. (HABS, 1996)"))
 
     @scene(56)
     def s56(p, d):
         base = SC_PREV[56](p, d)
         bg = f'<div id="{p}-ph" class="ao-full" style="opacity:0">{cover(p, "catalog", extra="filter:brightness(.42)")}</div>'
-        js = base["js"] + f"tl.set(q('ph'), {{ opacity: 1 }}, 1.3); tl.set(q('wall'), {{ opacity: 0 }}, 1.3);"
+        js = base["js"] + f"tl.set(q('ph'), {{ opacity: 1 }}, 1.3); tl.set(q('wall'), {{ opacity: 0 }}, 1.3); tl.set(q('tag'), {{ opacity: 0 }}, 0); tl.set(q('tag'), {{ opacity: 1 }}, 1.3);"
+        check_mag(56, "catalog", 1.85)
         html = base["html"].replace('<div class="ao-full" style="background:rgba(5,3,2,.62)"></div>', bg + '<div class="ao-full" style="background:rgba(5,3,2,.45)"></div>')
         REAL_ROWS.add(56)
-        return S(html, js, fg=base["fg"])
+        return S(html, js, fg=base["fg"] + tag_html(p, "IMAGEN ILUSTRATIVA · Fichero, EE. UU. (HABS, 1996)", src=True))
 
 if has("ledger"):
     @scene(38)
@@ -240,6 +264,7 @@ if has("ledger"):
         a = f'''<div id="{p}-A" class="ao-full" style="background:#050302"><div id="{p}-pa" class="ao-full">{cover(p, "ledger", extra="filter:brightness(.9)")}{stains}</div>
 <div class="ao-full" style="background:linear-gradient(180deg,rgba(5,3,2,.75),rgba(5,3,2,0) 30%,rgba(5,3,2,0) 70%,rgba(5,3,2,.8))"></div></div>'''
         i1 = h.index(f'<div id="{p}-B"')
+        check_mag(49, "ledger", 1.32)
         REAL_ROWS.add(49)
         return S(a + h[i1:], base["js"], fg=base["fg"])
 
@@ -252,11 +277,14 @@ if has("aisle"):
         a = f'''<div id="{p}-A" class="ao-full" style="background:#030201">{cover(p, "aisle")}{glow(1300, 380, 300, "rgba(255,214,150,.3)")}
 <div class="ao-full" style="background:linear-gradient(180deg,rgba(3,2,1,.1),rgba(3,2,1,.55) 60%,rgba(3,2,1,.85))"></div></div>'''
         fg = base["fg"].replace(f'''<div style="position:absolute;left:0;top:500px;width:1920px;height:12px"><div id="{p}-tape" style="position:absolute;left:160px;top:0;width:1600px;height:10px;background:{ACC};transform-origin:0 50%"></div></div>''',
-                                f'''<svg width="1920" height="1080" style="position:absolute;left:0;top:0"><path id="{p}-tp" d="M120,1000 L1300,470" stroke="{ACC}" stroke-width="10" stroke-dasharray="1300" stroke-dashoffset="1300"/></svg>''')
+                                f'''<svg width="1920" height="1080" style="position:absolute;left:0;top:0"><path id="{p}-tp" d="M150,610 L1290,452" stroke="{ACC}" stroke-width="10" stroke-dasharray="1300" stroke-dashoffset="1300"/></svg>''')
         js = base["js"].replace("tl.fromTo(q('tape'), { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: 'power2.inOut' }, 0.1);", "tl.to(q('tp'), { attr: { 'stroke-dashoffset': 0 }, duration: 1.0, ease: 'power2.inOut' }, 0.1);")
         js = js.replace("tl.fromTo(q('sh'), { x: 0 }, { x: -500, duration: 1.25, ease: 'none' }, 0);", "shot('A', 0, 1.25, [1.08,0,0], [1.16,-40,0]);")
+        hb = h[i1:].replace(f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#060302">', f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#060302">{cover(p, "aisle", "pb", "filter:blur(5px) brightness(.45)")}', 1)
+        js += "tl.set(q('tag2'), { opacity: 0 }, 1.25);"
+        check_mag(41, "aisle", 1.16)
         REAL_ROWS.add(41)
-        return S(a + h[i1:], js, fg=fg.replace('top:560px;text-align:center', 'top:640px;text-align:center'))
+        return S(a + hb, js, fg=fg.replace('top:560px;text-align:center', 'top:660px;text-align:center') + tag2(p, "IMAGEN ILUSTRATIVA · Fichero dactiloscópico, EE. UU. (1932)"))
 
 if has("fpcab"):
     @scene(55)
@@ -265,6 +293,7 @@ if has("fpcab"):
         b = f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#030201">{cover(p, "fpcab")}</div>'
         js = base["js"].replace(f"/*cut*/ shot('cam', 1.25, {d}, [2.6,-1130,-110], [2.66,-1160,-115]);", f"/*cut*/ tl.set(q('B'), {{ opacity: 1 }}, 1.25); shot('B', 1.25, {d}, [1.05,0,0], [1.12,-30,0]); tl.set(q('tag'), {{ opacity: 0 }}, 1.25); tl.set(q('tag2'), {{ opacity: 1 }}, 1.25);")
         t2 = tag_html(p, "IMAGEN ILUSTRATIVA · Archivo de huellas, EE. UU. (1930)", src=True).replace(f'id="{p}-tag"', f'id="{p}-tag2" style="opacity:0"')
+        check_mag(55, "fpcab", 1.12)
         REAL_ROWS.add(55)
         return S(base["html"] + b, js, fg=base["fg"] + t2)
 
@@ -281,6 +310,7 @@ if has("nasa96"):
         js += f"""shot('N', 0, 0.6, [1.0,0,0], [1.12,40,-30]); /*cut*/ tl.set(q('N'), {{ opacity: 0 }}, 0.6); tl.set(q('tagn'), {{ opacity: 0 }}, 0.6);
 tl.set(q('tag'), {{ opacity: 0 }}, 0); tl.set(q('tag'), {{ opacity: 1 }}, 0.6);"""
         tn = tag_html(p, "IMAGEN REAL · NASA, misión STS-72 (1996)", src=True).replace(f'id="{p}-tag"', f'id="{p}-tagn"')
+        check_mag(4, "nasa96", 1.12)
         REAL_ROWS.add(4)
         return S(base["html"] + a, js, fg=base["fg"] + tn)
 
@@ -288,8 +318,11 @@ if has("map1856"):
     _old_map_svg = map_svg
 
     def map_svg(p, hi=(), extra="", labels=True):
-        return _old_map_svg(p, hi, extra, labels).replace('href="assets/tex/oldmap_land.jpg" width="2048" height="2048"', 'href="assets/ph/map1856.jpg" width="1600" height="900"').replace(
-            'patternUnits="userSpaceOnUse" width="2048" height="2048"><image href="assets/ph/map1856.jpg"', 'patternUnits="userSpaceOnUse" width="1600" height="900"><image href="assets/ph/map1856.jpg"')
+        # one sheet stretched over the whole continent: no tile seams (texture only, the 1856 borders are blurred away)
+        W, H = MAP["w"], MAP["h"]
+        return _old_map_svg(p, hi, extra, labels).replace(
+            f'<pattern id="{p}-pl" patternUnits="userSpaceOnUse" width="2048" height="2048"><image href="assets/tex/oldmap_land.jpg" width="2048" height="2048"/>',
+            f'<pattern id="{p}-pl" patternUnits="userSpaceOnUse" width="{W}" height="{H}"><image href="assets/ph/map1856.jpg" width="{W}" height="{H}" preserveAspectRatio="none"/>')
 
 if has("palacio"):
     @scene(60)
@@ -298,7 +331,8 @@ if has("palacio"):
         html = f'<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow style="background:#050302">{cover(p, "palacio", extra="filter:brightness(.42)", scale=1.3)}</div>'
         tg = tag_html(p, "IMAGEN REAL · Asunción, c. 1910 (Library of Congress)", src=True)
         REAL_ROWS.add(60)
-        return S(html, base["js"] + "tag(1.0);", base["css"], fg=base["fg"] + tg)
+        check_mag(60, "palacio", 1.3 * 1.25)
+        return S(html, base["js"], base["css"], fg=base["fg"] + tg)
 
 if has("cia1954"):
     @scene(63)
@@ -321,3 +355,12 @@ if has("condor76"):
         html = base["html"].replace(f'style="{DESK()}" data-layout-allow-overflow>', f'style="{DESK()}" data-layout-allow-overflow>{doc}', 1)
         REAL_ROWS.add(53)
         return S(html, base["js"], fg=base["fg"])
+
+
+# rows whose real images are placed in build_scenes_a/b (fixed geometry, source magnification computed by hand):
+# s07/s08 print 576x896 over the 1206x1813 scan (x0.494) x camera 1.96 / 1.03; s16 page 1840 px for 1227 (x1.5), camera 1.0;
+# s18 page x0.82; s19 page 1227 px x camera 1.48; s32 padlock 2280/2000 x 1.12; s33/s34 padlock 3000/2000;
+# s62 print x0.527 x camera 1.7; s04 OSM tiles 1536 px x 1.25.
+for _n, _k, _m in ((7, "A1", 0.97), (8, "A1", 0.51), (16, "D2", 1.5), (18, "D1", 0.82), (19, "D2", 1.48), (33, "A6", 1.5), (34, "A6", 1.5),
+                   (62, "A1", 0.9), (4, "M2", 1.25), (53, "condor76", 0.32), (63, "cia1954", 0.19)):
+    MAGS.setdefault(_n, []).append((_k, _m))

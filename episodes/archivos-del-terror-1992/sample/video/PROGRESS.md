@@ -28,3 +28,11 @@ bash scripts/render.sh episodes/archivos-del-terror-1992/sample/video episodes/a
 - 실사 사진(§8-1) 오버라이드: `tools/build_scenes_photo.py`, 사진 가공 `tools/prep_photos.py`(크롭·톤·간판/행인 흐림). 사진이 없으면 그래픽 판으로 자동 복귀. 실사 행 32개, 58.2초(47.9%).
 - 음악(§7, music-plan.md 기본 조합): M01 0–56.1 / 드론만 56.1–63.9 / M03 63.9 / M02 86.8 (101.4 +3 dB) / 103.9 끊김(드론) / M05 108.1. 곡 파일은 prep 가 `assets/music/` 로 복사, 배치표는 `build.py → MUSIC_PLAN`.
 - 음악 스템 -45.0 LUFS(내레이션 -16 가정 시 -29 dB), 드론 -40.2, 효과음 -35.2(음악 +9.8 dB). 쉬는 2초+ 구간은 임시 타이밍에 없음 → /voice 에서 `music_segments()` 로.
+
+## 2차 검수 '수정' 반영 (2026-11-26 저녁)
+- IMAGEN ILUSTRATIVA 라벨 추가(39·40·41A·42A·56B), 로페스 궁 라벨 첫 프레임부터.
+- 경비·판사(28·29): 인물 대신 문 판자 위 그림자(사진 질감 multiply). 상자 행렬(48, three.js): 인물 제거, 갈색 판지.
+- 확대 배율: 모든 실사 행에 check_mag(`MAGS`), 최대 1.50. 28행 펀치인 1.25(원본 대비 1.5), 19행 B 1.42~1.48, 16행 배경 1.5.
+- 투손 간판: 흐림 대신 같은 벽의 회벽 질감으로 아치 테두리를 메움(`prep_photos.clean_sign`).
+- 지도: 1856 지도를 한 장으로(이음매 없음), 바다도 한 장. 강조 국가는 밝은 바탕 + 청록 빗금. 라벨에 "base: mapa de 1856 (LOC)".
+- 드론: -46 LUFS, 끊긴 뒤 약 1초 무음 후 페이드인(57.1, 104.7).

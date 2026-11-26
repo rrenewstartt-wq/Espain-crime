@@ -14,8 +14,8 @@ TONES = {
 }
 # key: (file, crop box in source px, tone, [blur boxes in source px], contrast, extra blur radius)
 PH = {
-    "comandancia": ("habs_az0060_tucson_comandancia_policia_1937.jpg", (150, 300, 4750, 2800), "cold", [(1150, 850, 2800, 1560)], 1.25, 0),
-    "arch": ("habs_az0060_tucson_comandancia_policia_1937.jpg", (1300, 1480, 2900, 2640), "cold", [(1150, 850, 2800, 1700)], 1.3, 0),
+    "comandancia": ("habs_az0060_tucson_comandancia_policia_1937.jpg", (150, 300, 4750, 2800), "cold", [], 1.25, 0),
+    "arch": ("habs_az0060_tucson_comandancia_policia_1937.jpg", (1300, 1480, 2900, 2640), "cold", [], 1.3, 0),
     "cabinets": ("habs_pa2957_file_cabinets_record_vault_1994.jpg", (1000, 600, 4600, 2625), "cold", [], 1.25, 0),
     "typewriter": ("owi_1942_battle_scarred_typewriter_liberman.jpg", (900, 700, 4100, 2500), "cold", [], 1.35, 0),
     "stairway": ("habs_pa1976_basement_stairway.jpg", (250, 350, 4800, 3450), "tung", [], 1.3, 0),
@@ -29,11 +29,31 @@ PH = {
     "fpcab": ("hec_1930_fingerprint_sheet_file_cabinet.jpg", (1950, 650, 3850, 1719), "tung", [], 1.25, 5),
     "palacio": ("loc_asuncion_palacio_lopez_1908-1919_npco.jpg", (300, 700, 5600, 3681), "sepia", [], 1.2, 0),
     "nasa96": ("nasa_sts072-730-079_asuncion_1996.jpg", (1000, 1600, 3600, 3062), None, [], 1.15, 0),
-    "map1856": ("map_loc_1856_basin_la_plata_page_usn.jpg", (1500, 2600, 3100, 3500), "sepia", [], 1.0, 5),
+    "map1856": ("map_loc_1856_basin_la_plata_page_usn.jpg", (300, 300, 4150, 5400), "sepia", [], 0.55, 34),
     "cia1954": ("doc_cia_1954-05-07_paraguayan_political_crisis_p1.png", (0, 0, 2544, 4118), "sepia", [], 1.0, 9),
     "condor76": ("doc_cia_1976-07-21_condor_cable_p1.png", (0, 0, 2544, 3301), "tung", [], 1.0, 9),
 }
 PHINFO = {}
+
+
+def clean_sign(im):
+    """Cover the 'COMANDANCIA DE POLICIA' lettering on the arch rim with clean stucco from the same wall
+    (x 2750–3400, y 950–1500), mirrored tiles, soft ring mask: no lettering, no blur smudge."""
+    cx, cy, r_in, r_out = 2177, 1724, 440, 610
+    box = (cx - r_out - 20, cy - r_out - 20, cx + r_out + 20, cy - 40)
+    src = im.crop((2750, 950, 3400, 1500))
+    tile = Image.new(im.mode, (src.size[0] * 2, src.size[1] * 2))
+    tile.paste(src, (0, 0)); tile.paste(ImageOps.mirror(src), (src.size[0], 0))
+    tile.paste(ImageOps.flip(src), (0, src.size[1])); tile.paste(ImageOps.flip(ImageOps.mirror(src)), src.size)
+    w, h = box[2] - box[0], box[3] - box[1]
+    fill = tile.resize((w, h), Image.BICUBIC)
+    mask = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(mask)
+    d.ellipse([cx - r_out - box[0], cy - r_out - box[1], cx + r_out - box[0], cy + r_out - box[1]], fill=255)
+    d.ellipse([cx - r_in - box[0], cy - r_in - box[1], cx + r_in - box[0], cy + r_in - box[1]], fill=0)
+    im.paste(fill, box[:2], mask.filter(ImageFilter.GaussianBlur(10)))
+    return im
+
 for key, (fname, box, tone, blurs, con, rad) in PH.items():
     src = os.path.join(PHD, fname)
     if fname not in _LIC or not os.path.exists(src):
@@ -41,6 +61,8 @@ for key, (fname, box, tone, blurs, con, rad) in PH.items():
     im = Image.open(src)
     rgb = im.mode == "RGB" and tone is None
     im = im.convert("RGB" if rgb else "L")
+    if fname.startswith("habs_az0060"):
+        im = clean_sign(im)
     for b in blurs:                                     # sign lettering / bystanders
         patch = im.crop(b).filter(ImageFilter.GaussianBlur(40 if key in ("comandancia", "arch") else 14))
         mask = Image.new("L", patch.size, 0)
