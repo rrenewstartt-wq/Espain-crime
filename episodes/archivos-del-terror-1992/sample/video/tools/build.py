@@ -89,7 +89,7 @@ FX = f"""<template>
 <script>
 (function () {{
 const tl = gsap.timeline({{ paused: true }});
-{LEAKS}.forEach(([t, s]) => {{
+{json.dumps([list(x) for x in LEAKS])}.forEach(([t, s]) => {{
   tl.fromTo('#fx-leak', {{ opacity: 0, x: s ? 1300 : -200, y: s ? -100 : 200 }}, {{ opacity: 0.55, x: s ? 900 : 200, y: 0, duration: 0.2, ease: 'power2.out' }}, t - 0.1);
   tl.to('#fx-leak', {{ opacity: 0, duration: 0.4, ease: 'power2.in' }}, t + 0.1);
 }});
@@ -108,9 +108,55 @@ hosts = [f'<div id="s{n:02d}" data-composition-id="s{n:02d}" data-composition-sr
 
 TW = "assets/audio/typewriter.wav"
 IMP = "assets/audio/impact.wav"
-AUD = [
-    ("bed1", "assets/audio/bed.wav", 0.0, 56.1, 0.0, 0.62),            # drone stops on «Por ahora, nada contradice esa versión.»
-    ("bed2", "assets/audio/bed.wav", 62.9, round(END - 62.9, 2), 8.0, 0.62),
+# music bed: a licensed track converted by prep_assets.py to assets/audio/music.wav replaces the synthesized drone
+MUSIC = "assets/audio/music.wav" if os.path.exists(os.path.join(ASSETS, "audio", "music.wav")) else "assets/audio/bed.wav"
+MUSIC_FILE_LUFS = -19.0           # both files are loudness-normalized to this in prep_assets.py
+# config/format.json → production.audio (user, 2026-11-26): music ~28 dB under the narration, up to -20 dB only in pauses >= 2 s.
+# No narration yet: preview with narration assumed at -16 LUFS → music -44 LUFS under lines, -36 LUFS in pauses.
+NARRATION_LUFS = -16.0
+MUSIC_UNDER_DB, MUSIC_PAUSE_DB, PAUSE_MIN = -28.0, -20.0, 2.0
+SFX_MASTER = 0.123                  # all effects together; tuned so the effect stem sits 6–10 dB over the music stem
+
+
+def vol(lufs):
+    return round(10 ** ((lufs - MUSIC_FILE_LUFS) / 20), 4)
+
+
+# narration windows: provisional = words at 168 wpm from each line start (replace with data/voice.json in /voice)
+SPEECH = [(t0, t0 + len(txt.split()) / 168 * 60) for t0, txt in LINES]
+MUSIC_OFF = [(56.1, 62.9)]        # the drone stops on «Por ahora, nada contradice esa versión.» and returns with the door
+
+
+def music_segments():
+    """(start, end, lufs) runs: under-narration level, pause level where the voice rests >= PAUSE_MIN."""
+    marks = []
+    for i, (a, b) in enumerate(SPEECH):
+        nxt = SPEECH[i + 1][0] if i + 1 < len(SPEECH) else END
+        b = min(b, nxt)
+        if nxt - b >= PAUSE_MIN:
+            marks.append((a, b, NARRATION_LUFS + MUSIC_UNDER_DB))
+            marks.append((b, nxt, NARRATION_LUFS + MUSIC_PAUSE_DB))
+        else:
+            marks.append((a, nxt, NARRATION_LUFS + MUSIC_UNDER_DB))
+    runs = []
+    for a, b, l in marks:
+        for oa, ob in MUSIC_OFF:              # cut the silences out
+            if a < ob and b > oa:
+                if a < oa:
+                    runs.append((a, oa, l))
+                a = max(a, ob)
+        if b > a:
+            if runs and runs[-1][2] == l and a <= runs[-1][1] + 1e-6:
+                runs[-1] = (runs[-1][0], b, l)
+            else:
+                runs.append((a, b, l))
+    return runs
+
+
+AUD = []
+for i, (a, b, l) in enumerate(music_segments()):
+    AUD.append((f"mus{i}", MUSIC, round(a, 3), round(b - a, 3), round(a if b <= 119.5 else max(0.0, 119.5 - (b - a)), 3), vol(l)))
+SFX = [
     ("tw1", TW, 0.30, 1.85, 0.4, 0.9), ("tw2", TW, 2.42, 1.0, 5.2, 0.9),
     ("tw3", TW, 20.05, 0.85, 9.0, 0.6), ("tw4", TW, 23.98, 1.55, 12.0, 0.85),
     ("tw5", TW, 49.52, 0.85, 15.3, 0.85), ("tw6", TW, 89.03, 0.55, 2.0, 0.8),
@@ -118,7 +164,7 @@ AUD = [
     ("wh1", "assets/audio/whoosh.wav", 3.5, 1.2, 0.0, 0.8), ("wh2", "assets/audio/whoosh_b.wav", 31.5, 0.9, 0.0, 0.6),
     ("wh3", "assets/audio/whoosh_b.wav", 62.82, 0.9, 0.0, 0.9), ("wh4", "assets/audio/whoosh.wav", 107.55, 1.2, 0.0, 0.9),
     ("wh5", "assets/audio/whoosh_b.wav", 66.2, 0.9, 0.0, 0.45),
-    ("st1", IMP, 22.45, 1.6, 0.0, 0.5), ("st2", IMP, 44.05, 1.6, 0.0, 0.45),
+    ("st1", IMP, 22.45, 1.6, 0.0, 1.1), ("st2", IMP, 44.05, 1.6, 0.0, 1.0),
     ("pz", IMP, 57.4, 2.0, 0.0, 1.0),
     ("lk", "assets/audio/lock.wav", 61.95, 0.8, 0.0, 1.0), ("lki", IMP, 61.95, 2.0, 0.0, 1.6),
     ("q1", IMP, 86.85, 2.0, 0.0, 1.6), ("q2", IMP, 91.15, 2.0, 0.0, 1.6),
@@ -130,25 +176,25 @@ AUD = [
 for name, t0, dur, step in (("k21", 36.85, 0.85, 0.09), ("k39", 67.55, 1.0, 0.09), ("k42", 73.95, 0.95, 0.08), ("k64", 116.45, 1.15, 0.1)):
     i, t = 0, t0
     while t < t0 + dur:
-        AUD.append((f"{name}_{i}", "assets/audio/tick.wav", round(t, 3), 0.06, 0.0, 0.7))
+        SFX.append((f"{name}_{i}", "assets/audio/tick.wav", round(t, 3), 0.06, 0.0, 0.7))
         t += step * (1 + i * 0.06)
         i += 1
-# mix gains (offline ffmpeg sum of these cues: about -15 LUFS, peaks under -1 dBFS; hits 6–10 dB over the bed)
-GAIN = {"bed": 1.7, "impact": 0.75, "lock": 0.6, "riser": 0.8, "whoosh": 1.0, "typewriter": 0.45, "tick": 1.0}
+# balance between effects (relative); SFX_MASTER moves them together
+GAIN = {"impact": 0.6, "lock": 0.6, "riser": 0.9, "whoosh": 1.6, "typewriter": 2.2, "tick": 2.0}
 
 
 def gain(f):
-    return next((g for k, g in GAIN.items() if k in f), 1.0)
+    return next((g for k, g in GAIN.items() if k in f), 1.0) * SFX_MASTER
 
 
 def LANE(a):
-    for pre, ln in (("bed", 3), ("tw", 4), ("wh", 5), ("st", 6), ("pz", 6), ("q", 6), ("tt", 6), ("lki", 6), ("lk", 7), ("rs", 8), ("k", 9)):
+    for pre, ln in (("mus", 3), ("tw", 4), ("wh", 5), ("st", 6), ("pz", 6), ("q", 6), ("tt", 6), ("lki", 6), ("lk", 7), ("rs", 8), ("k", 9)):
         if a.startswith(pre):
             return ln
     return 10
 
 
-AUD = [(a, f, s_, du, ms, round(v * gain(f), 3)) for a, f, s_, du, ms, v in AUD]
+AUD += [(a, f, s_, du, ms, round(v * gain(f), 3)) for a, f, s_, du, ms, v in SFX]
 audio = "\n".join(f'<audio id="a-{a}" class="clip" src="{f}" data-start="{s}" data-duration="{du}" data-media-start="{ms}" data-volume="{v}" data-track-index="{LANE(a)}"></audio>'
                   for a, f, s, du, ms, v in AUD)
 caps = []

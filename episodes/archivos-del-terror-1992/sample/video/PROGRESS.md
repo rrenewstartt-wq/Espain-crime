@@ -17,3 +17,9 @@ bash scripts/render.sh episodes/archivos-del-terror-1992/sample/video episodes/a
 - 2026-11-26: 컷 감지 보강(샷마다 노출 그레이드 교대: 밝은 장면은 비네트, 어두운 장면은 안개 리프트), 색 온기 보강, 믹스 게인 조정(`GAIN`, 오프라인 합산으로 -15.1 LUFS · 피크 -1.7 dBFS 확인).
   최종: `renders/sample-visual.mp4`(347초 렌더), `renders/sample-review.mp4`(397초), 대표 프레임 `renders/sample-frames/`.
   check_video --visual-only: FAIL 0 (WARN 2: 본문 기준 미적용, 음향 생략). benchmark_frames --compare: FAIL 0 (WARN 1: 단색 톤 0.94 vs 0.65).
+
+## 2차 수정 (video-qa 불합격 대응, 2026-11-26)
+- 노출 교대(VG_DARK/VG_LIFT) 삭제. 내부 컷은 `/*cut*/` 표시가 있는 곳만, 모두 다른 소재·크롭·인서트. 계획 샷 103개(`shots.json`).
+- 소스 분리: `tools/build_head.py`(타이밍·팔레트·공통 스타일), `tools/build_scenes_a.py`(1–30), `tools/build_scenes_b.py`(31–65), `lib/a3d.js`(three.js 소품), `tools/prep_textures_v2.py`(질감·실루엣).
+- 팔레트: 1992 차가운 아침(cold), 문서고 텅스텐(tung), 1954 세피아(sepia). 그레이드(비네트·그레인)는 장면 안, 청록 그래픽은 그 위 `-fg` 층.
+- 음향: config `production.audio` 새 기준(음악은 내레이션 -28 dB, 쉬는 2초+ 구간 -20 dB, 효과음은 음악 +6~10 dB). 내레이션 -16 LUFS 가정 → 음악 스템 -43.8 LUFS, 효과음 스템 -35.2 LUFS. 음악 교체: `assets/music/` 에 LICENSES 기록된 곡 → `prep_assets.py` 가 `assets/audio/music.wav` 로 만들고 `build.py → MUSIC` 이 자동 사용.

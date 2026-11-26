@@ -82,3 +82,77 @@ art. 8 근거: Ley N° 1.328/98 "De Derecho de Autor y Derechos Conexos", BACN h
 
 - 사진 A2·A4·A5·A7 은 2026-11-25 `fetch_pending_assets.sh` 를 한 번 더 돌렸지만 네 파일 모두 HTTP 429 였다(우회 안 함). 샘플은 shots.md 의 대체 그래픽으로 만들었다: A2 → 타자 카드 + 이름 자막, A4 → 제목을 흐린 서류 더미 위에, A5 → 직접 그린 카세트 격자(`RECREACIÓN`), A7 → A6 자물쇠 사진 전체 프레임을 잠긴 문으로 사용. 파일을 받으면 `prep_assets.py` → `build.py` 를 다시 돌리면 사진 판으로 자동 전환된다.
 - 화면에 쓰인 출처 라벨: 사진·문서·지도는 `IMAGEN REAL`·`DOCUMENTO REAL`·`MAPA`·`FUENTE` 라벨, 재연은 `RECREACIÓN`. OSM 도시 지도에는 "© OpenStreetMap contributors" 를 장면 내내 표시.
+
+### 6-1. 샘플 2차 수정(video-qa 불합격 후, 2026-11-26)에서 추가
+
+| 파일 | 출처 | 저작자 | 라이선스 | 변경 | 크레딧 문구 |
+|---|---|---|---|---|---|
+| three.js r170 (`sample/video/lib/three.module.min.js`, 라이선스 `lib/three-LICENSE.txt`) | npm `three@0.170.0` | three.js authors | MIT | 없음(조명 소품 렌더용 라이브러리) | 표시 의무 없음(라이선스 파일 동봉) |
+| 3D 소품 코드 `sample/video/lib/a3d.js` (서류장·계단·문·상자 행렬·경찰 건물 외관) | — 직접 작성 | ARCHIVO OSCURO | 우리 저작물 | — | "Gráficos y recreaciones: elaboración propia" |
+| 시대별 질감(`desk_*`, `paper_*`), 콘크리트·나무 문·철판·골판지·하늘·옛 지도 종이·나무 실루엣·빛 번짐, 인물 실루엣 4종(`video/assets/fig/*`) | — `tools/prep_textures_v2.py` 로 numpy·PIL 생성 | ARCHIVO OSCURO | 우리 저작물 | — | 위와 같음 |
+| 글꼴 Caveat Bold (`assets/fonts/Caveat-Bold.woff2`, 지도 손글씨 지명) | HyperFrames 레지스트리 번들(`registry/components/hw-underline`), 원 프로젝트 https://github.com/googlefonts/caveat | The Caveat Project Authors | SIL OFL 1.1 (`assets/fonts/Caveat-OFL.txt`) | 없음 | 표시 의무 없음 |
+
+- `assets/photos/` 의 새 사진·문서(CIA 1954, 콘도르 1976, 국무부 1977, 로페스 궁, 1856 지도, NASA 항공 사진)는 이 파일에 행이 생기기 전까지 쓰지 않는다. `prep_assets.py` 가 파일명이 이 문서에 있는 것만 `video/assets/img/` 로 가져가고, `build.py → NEWPH` 의 자리(로페스 궁 → 1954 날짜 카드 배경)가 자동으로 바뀐다.
+
+## 7. 음악 (배경 음악, 무료 라이선스 — 2026-11-26 scene-planner)
+
+조건: CC0 또는 CC BY(3.0/4.0)만. CC BY-NC·ND·SA, 그리고 작곡가가 YouTube Content ID 에 등록한 곡은 쓰지 않는다. 보컬 없는 곡만.
+파일: `assets/music/original/`(받은 형식 그대로, `SHA256SUMS.txt`), `assets/music/wav48k/`(같은 곡을 48 kHz·24bit·스테레오 WAV 로 바꾸기만 함, 음량 손대지 않음). 둘 다 `.gitignore`(커밋 안 됨).
+측정: ffmpeg `ebur128`(통합 LUFS·LRA·트루 피크), 스펙트럼 에너지 비율(200 Hz 미만 / 200 Hz~4 kHz / 4 kHz 이상). **분위기 칸은 제목·작곡가 설명·스펙트로그램·음량 곡선에서 읽은 것이다. 사람이 아직 귀로 듣지 않았다.** 쓰기 전에 들어 볼 것.
+배치 기준: `config/format.json → production.audio`(내레이션보다 약 28 dB 낮게, 허용 -32~-25, 내레이션이 2초 이상 쉴 때만 -20 까지). 배치안은 `sample/music-plan.md`.
+
+| # | 파일 (`assets/music/original/`) | 곡명 · 작곡가 | 출처 URL | 라이선스와 원문 근거 | 길이 · I(LUFS) · LRA(LU) · TP(dBTP) · 저/중/고(%) | 분위기 · 용도 | Content ID 메모 |
+|---|---|---|---|---|---|---|---|
+| M01 | `M01_ondrosik_be_careful.flac` (44.1 kHz FLAC) | "be careful" · Ondrosik (Ondrej Rosik, 슬로바키아) | https://archive.org/details/Ondrosik-Free-music-catalog (파일 https://archive.org/download/Ondrosik-Free-music-catalog/be%20careful.flac) | **CC0 1.0** — 항목 메타데이터 `licenseurl: https://creativecommons.org/publicdomain/zero/1.0/`, 업로더 = 작곡가 본인 계정. 작곡가 itch.io: "Everything is released under a CC0 license, so you can use and modify the files however you need." (https://itch.io/profile/ondrosik) | 4:25.5 · -18.1 · 4.3 · -1.0 · 65/35/0 | 낮은 펄스가 첫 30초 동안 -26→-18 로 천천히 차오르고 그 뒤 평탄. **도입 긴장** | 등록 정보 없음. CC0 이라 표시 의무도 없음. 위험 낮음 |
+| M02 | `M02_ondrosik_calm_before_the_storm.flac` | "Calm Before the Storm" · Ondrosik | 같은 항목, `Calm Before the Storm.flac` | CC0 1.0 (M01 과 같은 근거) | 2:22.5 · -16.9 · 4.6 · -2.1 · 68/32/0 | 처음부터 꽉 찬 저역 패드 + 규칙적 어택(펄스). **질문 묶음·긴장 유지**, 도입 대안 | M01 과 같음 |
+| M03 | `M03_isaiah658_unsolved_investigation.wav` (44.1 kHz WAV) | "Unsolved Investigation" · isaiah658 | https://opengameart.org/content/unsolved-investigation | **CC0** — 페이지 `License(s): CC0`. 작곡가 설명: "dark mysterious vibe in a score / cinematic style … allows for dialogue and other sound effects to be heard over it … The music is a seamless loop." | 0:48.0 (끊김 없는 루프) · -21.0 · 2.3 · -9.2 · 40/60/0 | 어둡고 신비한 현·신스 패드, 거의 평탄. **발견 장면** | 등록 정보 없음. 위험 낮음 |
+| M04 | `M04_ondrosik_seen_from_the_unseen.flac` | "Seen from the Unseen" · Ondrosik | 같은 항목(M01), `Seen from the Unseen.flac` | CC0 1.0 | 2:06.8 · -15.9 · 1.9 · -1.0 · 40/60/0 | 가장 평탄한 지속 패드(LRA 1.9). **설명 구간 깔개**, 발견 대안 | M01 과 같음 |
+| M05 | `M05_ondrosik_waves_of_longing.flac` | "Waves of Longing" · Ondrosik | 같은 항목(M01), `Waves of Longing.flac` | CC0 1.0 | 3:49.4 · -18.0 · 3.7 · -1.0 · 50/50/0 | 느리게 부푸는 물결형 패드, -20 에서 시작해 1분 뒤 -17. **1954 회상** | M01 과 같음 |
+| M06 | `M06_ondrosik_regret.flac` | "regret" · Ondrosik | 같은 항목(M01), `regret.flac` | CC0 1.0 | 4:47.2 · -18.0 · 5.2 · -5.2 · 73/26/0 | 낮은 바탕 위 중역 아르페지오 반복(조금 움직임 있음). 회상 대안, consecuencias | M01 과 같음 |
+| M07 | `M07_ondrosik_sanctum_resonance.flac` | "Sanctum Resonance" · Ondrosik | 같은 항목(M01), `Sanctum Resonance.flac` | CC0 1.0 | 1:29.9 · -18.0 · 3.9 · -4.9 · 52/48/0 | 저역 울림 블록이 짧은 틈을 두고 이어짐. 잠긴 공간·문서고 장면 | M01 과 같음. 블록 사이 틈이 있어 이어 붙일 때 확인 |
+| M08 | `M08_distimia_caribdis.mp3` (128 kbps) | "Caribdis" · Distimia | https://ccmixter.org/files/Distimia/12376 | **CC BY 3.0** — ccMixter API `license_name: Attribution (3.0)`, `license_url: http://creativecommons.org/licenses/by/3.0/`. 리믹스 원본 없음(sources API 빈 목록) | 4:30.5 · -19.3 · 4.6 · -4.6 · 73/27/0 | 다크 앰비언트, 저역 신스 + 드문 피아노 어택. 본편 escalada·수사 구간 | 등록 정보 없음(2007 업로드). 위험 낮음~중간(확인 불가) |
+| M09 | `M09_matthew_pablo_desolate_part_I.mp3` | "Desolate (Part I)" · Matthew Pablo | https://opengameart.org/content/desolate (zip `Desolate Collection.zip` 안 `Desolate Part I.mp3`) | **CC BY 3.0** — 페이지 `License(s): CC-BY 3.0` | 2:47.6 · -19.6 · 11.5(앞 페이드인 때문, 본체는 평탄) · -5.3 · 91/9/0 | 낮은 드론 + 드문 고음. 작곡가 설명 "ambient and suspenseful track with some elements of drama". **Part II·전체본은 큰 타격이 있어 받지 않음** | 작곡가가 음악을 판매·의뢰받는 전문가라 등록 여부 확인 필요. 위험 중간 |
+| M10 | `M10_grove_of_whispers_black_star.mp3` (VBR) | "Black Star" · Grove of Whispers (앨범 *The Sheltering Sky*, Buddhist on Fire, bof060) | https://archive.org/details/bof060 | **CC BY 4.0** — 넷레이블 공식 업로드(컬렉션 `buddhistonfire`, `netlabels`), `licenseurl: http://creativecommons.org/licenses/by/4.0/` | 12:10.6 · -22.6 · 4.7 · -7.6 · 53/47/0 | 균일한 긴 드론("에어컨인 줄 알았다"는 작곡가 일화). 긴 설명 구간 밑바닥 | 등록 정보 없음. 위험 낮음 |
+| M11 | `M11_grove_of_whispers_light_and_shadow.flac` | "Light and Shadow" · Grove of Whispers (bof060) | https://archive.org/details/bof060 | CC BY 4.0 (M10 과 같은 근거) | 8:25.9 · -26.4 · 14.2 · -8.9 · 7/93/0 | 아주 옅은 떨리는 음. 앞 3분은 매우 조용하고 뒤로 갈수록 커짐. **조건부 예비**(중역 비중이 높다) | M10 과 같음 |
+| M12 | `M12_geoffpeters_caring_can_make_a_difference.mp3` | "Caring Can Make A Difference (Short Emotional Film Score with Stems)" · geoffpeters | https://ccmixter.org/files/geoffpeters/48537 | **CC BY 3.0** — ccMixter `Attribution (3.0)` http://creativecommons.org/licenses/by/3.0/. 리믹스 원본 없음 | 1:22.6 · -23.3 · 10.4 · -10.9 · 1/99/0 | 피아노·현 감정 소품. **조건부 예비**: 중역 선율이 있어 내레이션이 쉬는 맺음 구간에만 | 등록 정보 없음. 위험 낮음~중간 |
+
+**설명란 `Créditos:` 에 그대로 넣을 문구** (CC BY 곡은 필수, CC0 곡은 의무는 없지만 넣는다. 실제로 쓴 곡만 남긴다)
+```
+Música:
+"be careful", "Calm Before the Storm", "Seen from the Unseen", "Waves of Longing", "regret", "Sanctum Resonance" – Ondrosik (CC0 1.0) – archive.org/details/Ondrosik-Free-music-catalog
+"Unsolved Investigation" – isaiah658 (CC0) – opengameart.org/content/unsolved-investigation
+"Caribdis" – Distimia – ccmixter.org/files/Distimia/12376 – Licencia CC BY 3.0: creativecommons.org/licenses/by/3.0/
+"Desolate (Part I)" – Matthew Pablo – opengameart.org/content/desolate – Licencia CC BY 3.0: creativecommons.org/licenses/by/3.0/
+"Black Star", "Light and Shadow" – Grove of Whispers (Buddhist on Fire) – archive.org/details/bof060 – Licencia CC BY 4.0: creativecommons.org/licenses/by/4.0/
+"Caring Can Make A Difference" – geoffpeters – ccmixter.org/files/geoffpeters/48537 – Licencia CC BY 3.0: creativecommons.org/licenses/by/3.0/
+Fragmentos editados y con volumen ajustado.
+```
+
+**Content ID 확인 절차(공개 전, 사람이 함):** 위 곡 중 "등록 정보 없음"은 등록되지 않았다는 증명이 아니다. 최종 렌더를 **비공개(Private)** 로 올려 YouTube Studio 업로드 단계의 '확인(Checks)' 결과를 본다. 클레임이 나오면 그 곡을 빼거나(예비곡으로 교체) 이의 제기 근거로 이 표의 라이선스 원문 URL 을 쓴다.
+
+**받는 방식 메모 → 사용 보류(2026-11-26 메인 세션):** ccMixter 파일은 직접 요청 시 403(핫링크 차단)이어서 Referer 를 붙여 받았는데, 이를 차단 우회로 보고 **M08·M12 파일을 삭제했다.** 라이선스(CC BY 3.0) 자체는 문제없으므로 사람이 브라우저에서 ccMixter 다운로드 버튼으로 받아 `assets/music/original/` 에 두면 쓸 수 있다. 그 전까지 배치에 쓰지 않는다.
+
+### 7-1. 검토했으나 쓰지 않는 음악 후보 (이유)
+
+| 후보 | 이유 |
+|---|---|
+| Incompetech / Kevin MacLeod 전 곡 (CC BY 4.0) | **Content ID 사전 등록.** 공식 안내 https://incompetech.com/music/royalty-free/youtube-contentid.html: "By making this change, and having the music pre-registered, it stops the baddies and bad data from claiming my music incorrectly." 크레딧을 설명란에 적으면 클레임이 풀린다고 하지만, 등록곡 제외 조건에 걸린다 |
+| Scott Buckley 전 곡 (CC BY 4.0, archive.org `scott-buckley` 포함) | **Content ID 등록("Smart Content ID").** 클레임 주체 "We Are Era Music BV, claimed on behalf of Scott Buckley", 설명란에 이름이 없으면 클레임(https://scottbuckley.com.au/library/copyright-claims-release). archive.org 판도 작곡가가 아닌 제3자 업로드 |
+| FreePD.com (CC0) | 사이트 폐쇄("FreePD.com - Site Closed") |
+| Musopen (musopen.org) | 이 환경에서 HTTP 403. 우회하지 않음. archive.org 의 Musopen 쇼팽 녹음(CC0, 업로더 aaron@musopen.org)은 받아 측정했으나 전주곡 Op.28-6 의 LRA 18.3 LU(다이내믹 큼)라 제외 |
+| Pixabay Music | 이 환경에서 HTTP 403. 또 Pixabay 곡은 Content ID 클레임 사례가 많다는 지시 메모에 따라 우선순위 낮음 |
+| Free Music Archive (곡별 CC BY 많음) | 내려받기가 로그인 필요(`/track/<곡>/download/` → `/login` 302). 로그인 없이 스트림 주소로 받는 것은 우회라 하지 않음. 필요하면 사람이 로그인해 받는다 |
+| Frank Schlimbach "Crime, Trailer, Horror…" (archive.org, CC BY 4.0 표시) | 같은 항목 설명에 "Free for personal use!" — 표시 라이선스와 충돌, 근거 불명확 |
+| Snabisch "Investigating a Crime at Night" (OGA, CC BY 3.0) | 작곡가가 AudioJungle 판매 링크를 건다. 판매 마켓 곡은 Content ID 등록 가능성이 높아 제외 |
+| Alexandr Zhelanov "I know your secret" (OGA, CC BY 3.0) | 측정 I -9.6 LUFS·LRA 14.2, 중역이 꽉 찬 트레일러형. 낮은 레벨에서 내레이션 대역과 겹침 |
+| Zander Noriega "Perpetual Tension", "Article 196 Section 1" (OGA, CC BY 3.0) | 작곡가 설명대로 "big violent drums"·기타·브라스, I -14/-10 LUFS. 갑자기 터지는 타격 |
+| Juhani Junkala "Horror Atmosphere / Post Apocalyptic Wastelands" (OGA, CC0) | LRA 20.3 LU, 큰 타격과 정적이 번갈아 나옴 |
+| TinyWorlds "Space Graveyard" (OGA, CC0) | LRA 15.0, 드문 타격 사이 정적 |
+| obscure music "Sad orchestral theme" (`mess.wav`, OGA, CC0) | 후반 I -5 LUFS 급 클라이맥스, 트루 피크 +6.7 dBTP(파일 자체 클리핑) |
+| TAD "The Past" (OGA, CC BY 4.0), cesisco "Emotional orchestral music" 3곡(OGA, CC BY 4.0), geoffpeters "Piece of Quiet"(ccMixter, CC BY 3.0), Ondrosik "No words"·"Fragile Memories" | 중역 리드 선율(피아노·현)이 앞에 있고 LRA 8~12. 내레이션 대역과 겹침 |
+| geoffpeters "Scary music for a Horror Movie…creepy synth" (ccMixter, CC BY 3.0) | 중역 글리산도 선율이 사이렌처럼 두드러짐 |
+| nickleus "suspenseful strings" (ccMixter, CC BY 3.0) | 앞 25초 뒤로 스타카토 타격과 정적. 깔개로 못 씀 |
+| gurdonark "Sawmill" (ccMixter, CC BY 3.0) | 리믹스(원본 4개 크레딧 사슬), 타악기 중심 |
+| tachyon869 "inspiration" (ccMixter, CC BY 3.0) | I -10.8 LUFS, 꽉 찬 인더스트리얼 질감 |
+| Lee Rosevere, Kai Engel(대부분), Chris Zabriskie(대부분), Borrtex, Blue Dot Sessions 등 | CC BY-NC / NC-SA / NC-ND |
+| archive.org 의 "CC0" 표시 상업 음반 재업로드(영화 OST, 바이닐 립 등) | 업로더가 권리자가 아님. 표시 라이선스를 믿을 수 없음 |
