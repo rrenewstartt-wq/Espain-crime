@@ -4,7 +4,7 @@
 
 PAL = {
     # 1992 cold morning (daylight, blue-black shadows)
-    "cold": {"desk": (14, 24, 34), "paper": (228, 226, 216), "lift": (40, 70, 96)},
+    "cold": {"desk": (16, 22, 28), "paper": (228, 226, 216), "lift": (50, 64, 78)},
     # archive discovery under tungsten bulbs (warm, deep brown-black)
     "tung": {"desk": (26, 16, 8), "paper": (242, 214, 164), "lift": (150, 96, 40)},
     # 1954 sepia

@@ -338,8 +338,8 @@ def conosur(p, d, lines, s, center):
             x, y = map_pt(c)
             mx, my = (x + ax) / 2, (y + ay) / 2 - 160
             extra += (f'<circle cx="{x:.0f}" cy="{y:.0f}" r="13" fill="#1d1a15"/><path id="{p}-ln{i}" d="M{x:.0f},{y:.0f} Q{mx:.0f},{my:.0f} {ax:.0f},{ay:.0f}" fill="none" stroke="{ACC}" stroke-width="9" '
-                      f'stroke-dasharray="1600" stroke-dashoffset="1600" stroke-linecap="round"/>')
-        extra += f'<text x="{ax + 40:.0f}" y="{ay - 20:.0f}" style="font:700 86px Caveat;fill:#1d1a15">Lambaré</text>'
+                      f'stroke-dasharray="4000" stroke-dashoffset="4000" stroke-linecap="round"/>')
+        extra += f'<text x="{ax + 40:.0f}" y="{ay - 20:.0f}" style="font:700 86px Caveat;fill:#1d1a15">Asunción</text>'
     x0, y0 = cam_center(center[0], center[1], s)
     x1, y1 = cam_center(center[0], center[1], s * 1.05)
     html = f'<div id="{p}-cam" class="ao-cam" style="transform-origin:0 0" data-layout-allow-overflow>{map_svg(p, hi, extra)}</div>'

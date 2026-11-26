@@ -45,10 +45,9 @@
 
 </style>
 <div id="root" data-composition-id="s38" data-width="1920" data-height="1080" data-duration="1.2">
-<div id="s38-cam" class="ao-cam" style="background:#030201" data-layout-allow-overflow><img id="s38-pl" src="assets/ph/ledger.jpg" style="position:absolute;left:0px;top:0px;width:1920px;height:1080px;" alt="">
-<div class="ao-full" style="background:linear-gradient(90deg,rgba(3,2,1,.8),rgba(3,2,1,0) 35%,rgba(3,2,1,0) 65%,rgba(3,2,1,.85))"></div></div>
+<div id="s38-cam" class="ao-cam" style="background:#050302" data-layout-allow-overflow><img id="s38-bgp" src="assets/ph/ledger.jpg" style="position:absolute;left:0px;top:0px;width:1920px;height:1080px;filter:blur(14px) brightness(.45)" alt=""><div id="s38-vw" style="position:absolute;left:464px;top:164px;width:992px;height:752px;background:#ece3cf;box-shadow:0 40px 90px rgba(0,0,0,.75);transform:rotate(1deg)"><video id="s38-v" class="clip" src="assets/fx/f_files.mp4" data-start="0" data-duration="1.200" data-media-start="0.0" muted playsinline style="position:absolute;left:16px;top:16px;width:960px;height:720px;"></video></div></div>
 <div id="s38-vig" class="ao-vig"></div><div id="s38-grain" class="ao-grain"></div>
-<div id="s38-fg" class="ao-fg"><div id="s38-tag" class="ao-tag src"><i></i><span><b>IMAGEN ILUSTRATIVA</b> · Libro de registro, EE. UU. (HAER)</span></div></div>
+<div id="s38-fg" class="ao-fg"><div id="s38-tag" class="ao-tag src" style="top:70px;"><i></i><span><b>IMAGEN ILUSTRATIVA</b> · archivo, FBI, 1969</span></div></div>
 </div>
 <script>
 (function () {
@@ -69,7 +68,7 @@ function stampIn(key, t0, rot) { tl.fromTo(q(key), { scale: 2.4, opacity: 0, rot
 function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35, .3], [.15, -.1], [0, 0]]; k.forEach((v, i) => tl.set(q(key), { x: v[0] * amp, y: v[1] * amp }, t0 + i / 30)); }
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
-shot('cam', 0, 1.2, [1.18,120,0,-3], [1.18,-140,-10,-3]); whipIn('cam', 0, 320); tag(0.05);
+shot('cam', 0, 1.2, [1.0,0,0], [1.0,0,-10]); tag(0.05);
 tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);tl.set(q('grain'), { backgroundPosition: '281px 3px' }, 1.133);tl.set(q('grain'), { backgroundPosition: '418px 214px' }, 1.200);
 tl.set({}, {}, 1.199);
 window.__timelines["s38"] = tl;

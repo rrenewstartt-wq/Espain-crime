@@ -15,6 +15,7 @@ for _f in ("build_head.py", "build_scenes_a.py", "build_scenes_b.py"):
 SC_PREV = dict(SC)              # graphic versions, kept as fallbacks and reused by the photo overrides
 exec(compile(open(os.path.join(_HERE, "build_scenes_photo.py")).read(), "build_scenes_photo.py", "exec"))
 REAL_ROWS |= {7, 8, 16, 18, 19, 33, 34, 62}     # rows built on real photographs/scans in the graphic files
+exec(compile(open(os.path.join(_HERE, "build_scenes_footage.py")).read(), "build_scenes_footage.py", "exec"))
 
 
 # ------------------------------------------------------------------ write scene files
@@ -269,10 +270,13 @@ for n in range(1, 66):
     shots += [round(STARTS[n - 1] + c, 3) for c in CUTS[n]]
 json.dump({"shot_starts": sorted(shots), "end": END}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
 real = sum(DUR[n - 1] for n in REAL_ROWS)
-json.dump({"shot_starts": sorted(shots), "end": END, "real_rows": sorted(REAL_ROWS), "real_sec": round(real, 1)}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
+json.dump({"shot_starts": sorted(shots), "end": END, "real_rows": sorted(REAL_ROWS), "real_sec": round(real, 1),
+           "moving_rows": {n: round(min(v, DUR[n - 1]), 2) for n, v in sorted(MOVING.items())}}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
 _mx = max(m for v in MAGS.values() for _, m in v)
 assert _mx <= 1.5 + 1e-6, MAGS
 missing = sorted(n for n in REAL_ROWS if n not in MAGS)
 print("magnification checked on", len(MAGS), "rows, max", _mx, "; real rows without a check:", missing)
+mov = sum(min(v, DUR[n - 1]) for n, v in MOVING.items())
+print(f"moving footage: {len(MOVING)} rows, {mov:.1f} s = {100 * mov / END:.1f}%")
 print("real-photo rows:", len(REAL_ROWS), f"{real:.1f} s = {100 * real / END:.1f}%")
 print("built", len(SC), "scenes;", len(shots), "shots;", "photo slots missing:", [k for k, v in HAVE.items() if not v])

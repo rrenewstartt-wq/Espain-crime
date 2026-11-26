@@ -170,7 +170,7 @@ async function stairs(canvas, o) {
 
 // ---------------------------------------------------------------- boxes carried out through a bright doorway
 async function boxes(canvas, o) {
-  const r = renderer(canvas, 1.15);
+  const r = renderer(canvas, 1.75);
   const s = new THREE.Scene();
   s.background = new THREE.Color(0x040302);
   s.fog = new THREE.FogExp2(0x120a05, 0.11);
@@ -181,10 +181,11 @@ async function boxes(canvas, o) {
   const outside = new THREE.Mesh(new THREE.PlaneGeometry(8, 6), new THREE.MeshBasicMaterial({ color: 0xfff6e8, fog: false })); outside.position.set(0, 2, -7.5); s.add(outside);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(10, 16), new THREE.MeshStandardMaterial({ map: await tex("concrete.jpg", [3, 4]), color: 0x5b4c3c, roughness: 1 }));
   floor.rotation.x = -Math.PI / 2; floor.position.z = -2; floor.receiveShadow = true; s.add(floor);
+  floor.material.color.setHex(0x9a8a76);
   const sun = new THREE.SpotLight(0xfff2de, 90, 16, 0.5, 0.5, 1.0); sun.position.set(0, 2.2, -7.2); sun.target.position.set(0, 0, 2); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); s.add(sun, sun.target);
-  const lamp = new THREE.PointLight(0xffa058, 3, 6, 1.6); lamp.position.set(1.4, 2.6, 0.5); s.add(lamp);
-  s.add(new THREE.AmbientLight(0x1a1008, 0.5));
-  const card = new THREE.MeshStandardMaterial({ map: await tex("cardboard.jpg"), color: 0x9c8a74, roughness: 0.92 });
+  const lamp = new THREE.PointLight(0xffe6c8, 14, 8, 1.4); lamp.position.set(1.2, 2.6, 0.8); s.add(lamp);
+  s.add(new THREE.AmbientLight(0x3a2a1c, 1.6));
+  const card = new THREE.MeshStandardMaterial({ map: await tex("cardboard.jpg"), color: 0x8c8274, roughness: 0.92 });
   const figTex = await new THREE.TextureLoader().loadAsync("assets/fig/worker.png"); figTex.colorSpace = THREE.SRGBColorSpace;
   const figMat = new THREE.MeshBasicMaterial({ map: figTex, transparent: true, alphaTest: 0.05, color: 0x2a2420, side: THREE.DoubleSide });
   const items = [];

@@ -45,14 +45,9 @@
 
 </style>
 <div id="root" data-composition-id="s33" data-width="1920" data-height="1080" data-duration="1.1">
-<div id="s33-cam" class="ao-cam" style="background:#030303" data-layout-allow-overflow>
-<div style="position:absolute;left:-840px;top:-240px;width:3000px;height:2000px;background:url(assets/img/padlocks_cool.jpg) 0 0/100% 100%;filter:brightness(.85) contrast(1.25) sepia(.3)"></div>
-<div class="ao-full" style="background:radial-gradient(circle at 52% 48%,rgba(0,0,0,0) 22%,rgba(0,0,0,.8) 62%)"></div><svg id="s33-cut" viewBox="0 0 1920 1080" width="1920" height="1080" style="position:absolute;left:0;top:0;overflow:visible;filter:blur(2px)">
-<defs><linearGradient id="s33-cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c7a64"/><stop offset=".35" stop-color="#2a2622"/><stop offset="1" stop-color="#0b0a09"/></linearGradient></defs>
-<g fill="url(#s33-cg)"><path d="M2000,880 Q1640,700 1290,500 L1318,462 Q1680,640 2020,820Z"/><path d="M2000,560 Q1640,500 1300,470 L1312,430 Q1660,450 2020,500Z"/>
-<path d="M1290,500 L1180,452 Q1170,430 1196,420 L1318,462Z"/><path d="M1300,470 L1190,410 Q1186,388 1212,382 L1312,430Z"/></g></svg></div>
+<div id="s33-cam" class="ao-cam" style="background:#050302" data-layout-allow-overflow><img id="s33-bgp" src="assets/ph/stairdoor.jpg" style="position:absolute;left:0px;top:-0px;width:1920px;height:1081px;filter:blur(14px) brightness(.45)" alt=""><div id="s33-vw" style="position:absolute;left:464px;top:164px;width:992px;height:752px;background:#ece3cf;box-shadow:0 40px 90px rgba(0,0,0,.75);transform:rotate(-1deg)"><video id="s33-v" class="clip" src="assets/fx/f_knob.mp4" data-start="0" data-duration="1.100" data-media-start="0.0" muted playsinline style="position:absolute;left:16px;top:16px;width:960px;height:720px;"></video></div></div>
 <div id="s33-vig" class="ao-vig"></div><div id="s33-grain" class="ao-grain"></div>
-<div id="s33-fg" class="ao-fg"><div id="s33-tag" class="ao-tag"><i></i>RECREACIÓN</div></div>
+<div id="s33-fg" class="ao-fg"><div id="s33-tag" class="ao-tag"><i></i>RECREACIÓN</div><div id="s33-tag2" class="ao-tag src" style="top:122px;"><i></i><span><b>IMAGEN ILUSTRATIVA</b> · cerradura, EE. UU., 1953</span></div></div>
 </div>
 <script>
 (function () {
@@ -73,8 +68,7 @@ function stampIn(key, t0, rot) { tl.fromTo(q(key), { scale: 2.4, opacity: 0, rot
 function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35, .3], [.15, -.1], [0, 0]]; k.forEach((v, i) => tl.set(q(key), { x: v[0] * amp, y: v[1] * amp }, t0 + i / 30)); }
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
-tl.to(q('cam'), { x: -6, y: -5, rotation: -0.45, duration: 0.1, ease: 'sine.inOut' }, 0.00);tl.to(q('cam'), { x: 5, y: 4, rotation: -0.30, duration: 0.1, ease: 'sine.inOut' }, 0.10);tl.to(q('cam'), { x: 3, y: 2, rotation: -0.15, duration: 0.1, ease: 'sine.inOut' }, 0.20);tl.to(q('cam'), { x: 1, y: 0, rotation: 0.00, duration: 0.1, ease: 'sine.inOut' }, 0.30);tl.to(q('cam'), { x: -1, y: -2, rotation: 0.15, duration: 0.1, ease: 'sine.inOut' }, 0.40);tl.to(q('cam'), { x: -3, y: -4, rotation: 0.30, duration: 0.1, ease: 'sine.inOut' }, 0.50);tl.to(q('cam'), { x: -5, y: 5, rotation: 0.45, duration: 0.1, ease: 'sine.inOut' }, 0.60);tl.to(q('cam'), { x: 6, y: 3, rotation: -0.45, duration: 0.1, ease: 'sine.inOut' }, 0.70);tl.to(q('cam'), { x: 4, y: 1, rotation: -0.30, duration: 0.1, ease: 'sine.inOut' }, 0.80);tl.to(q('cam'), { x: 2, y: -1, rotation: -0.15, duration: 0.1, ease: 'sine.inOut' }, 0.90);tl.to(q('cam'), { x: 0, y: -3, rotation: 0.00, duration: 0.1, ease: 'sine.inOut' }, 1.00);
-tl.fromTo(q('cut'), { x: 520 }, { x: 0, duration: 0.7, ease: 'power3.out' }, 0.15); tag(0.05);
+shot('cam', 0, 1.1, [1.0,0,0], [1.0,0,-10]); tag(0.05);
 tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);
 tl.set({}, {}, 1.099);
 window.__timelines["s33"] = tl;
