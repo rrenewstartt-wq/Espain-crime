@@ -45,12 +45,12 @@
 
 </style>
 <div id="root" data-composition-id="s26" data-width="1920" data-height="1080" data-duration="1.6">
-<canvas id="s26-c3" width="1920" height="1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"></canvas>
+<div id="s26-cam" class="ao-cam" style="background:#030507"><img id="s26-pl" src="assets/ph/comandancia.jpg" style="position:absolute;left:-34px;top:0px;width:1987px;height:1080px;filter:brightness(.5) contrast(1.15)" alt=""></div>
 <div id="s26-vig" class="ao-vig"></div><div id="s26-grain" class="ao-grain"></div>
 <div id="s26-fg" class="ao-fg"><div id="s26-st" class="ao-stampT" style="position:absolute;left:600px;top:250px;font-size:96px;background:rgba(5,7,9,.6)">VERSIÓN POLICIAL</div><div id="s26-tag" class="ao-tag"><i></i>RECREACIÓN</div></div>
 </div>
-<script type="module">
-import { mount } from "./lib/a3d.js";
+<script>
+(function () {
 const P = "s26";
 
 const tl = gsap.timeline({ paused: true });
@@ -68,13 +68,10 @@ function stampIn(key, t0, rot) { tl.fromTo(q(key), { scale: 2.4, opacity: 0, rot
 function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35, .3], [.15, -.1], [0, 0]]; k.forEach((v, i) => tl.set(q(key), { x: v[0] * amp, y: v[1] * amp }, t0 + i / 30)); }
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
-const draw = await mount("s26-c3", "exterior", {"d": 1.6, "shots": [[0, [0.0, 1.6, 19.0], [0.0, 1.7, 15.5], [0, 3.4, 0], [0, 3.2, 0]]], "dim": true});
-const st = { t: 0 };
-tl.fromTo(st, { t: 0 }, { t: 1.6, duration: 1.6, ease: "none", onUpdate: () => draw(st.t) }, 0);
-draw(0);
-stampIn('st', 0.2, -3); tag(0.05);
+shot('cam', 0, 1.6, [1.0,0,0], [1.09,-20,0]); stampIn('st', 0.2, -3); tag(0.05);
 tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);tl.set(q('grain'), { backgroundPosition: '281px 3px' }, 1.133);tl.set(q('grain'), { backgroundPosition: '418px 214px' }, 1.200);tl.set(q('grain'), { backgroundPosition: '43px 425px' }, 1.267);tl.set(q('grain'), { backgroundPosition: '180px 124px' }, 1.333);tl.set(q('grain'), { backgroundPosition: '317px 335px' }, 1.400);tl.set(q('grain'), { backgroundPosition: '454px 34px' }, 1.467);tl.set(q('grain'), { backgroundPosition: '79px 245px' }, 1.533);tl.set(q('grain'), { backgroundPosition: '216px 456px' }, 1.600);
 tl.set({}, {}, 1.599);
 window.__timelines["s26"] = tl;
+})();
 </script>
 </template>

@@ -12,6 +12,9 @@ import re
 _HERE = os.path.dirname(os.path.abspath(__file__))
 for _f in ("build_head.py", "build_scenes_a.py", "build_scenes_b.py"):
     exec(compile(open(os.path.join(_HERE, _f)).read(), _f, "exec"))
+SC_PREV = dict(SC)              # graphic versions, kept as fallbacks and reused by the photo overrides
+exec(compile(open(os.path.join(_HERE, "build_scenes_photo.py")).read(), "build_scenes_photo.py", "exec"))
+REAL_ROWS |= {7, 8, 16, 18, 19, 33, 34, 62}     # rows built on real photographs/scans in the graphic files
 
 
 # ------------------------------------------------------------------ write scene files
@@ -264,4 +267,7 @@ for n in range(1, 66):
     shots.append(STARTS[n - 1])
     shots += [round(STARTS[n - 1] + c, 3) for c in CUTS[n]]
 json.dump({"shot_starts": sorted(shots), "end": END}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
+real = sum(DUR[n - 1] for n in REAL_ROWS)
+json.dump({"shot_starts": sorted(shots), "end": END, "real_rows": sorted(REAL_ROWS), "real_sec": round(real, 1)}, open(os.path.join(VIDEO, "shots.json"), "w"), indent=0)
+print("real-photo rows:", len(REAL_ROWS), f"{real:.1f} s = {100 * real / END:.1f}%")
 print("built", len(SC), "scenes;", len(shots), "shots;", "photo slots missing:", [k for k, v in HAVE.items() if not v])

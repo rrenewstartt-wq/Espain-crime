@@ -235,6 +235,7 @@ mapdata = {"w": MW, "h": MH, "countries": countries, "rivers": rivers,
 json.dump(mapdata, open(out("map", "southamerica.json"), "w"))
 
 exec(open(os.path.join(HERE, "prep_textures_v2.py")).read())
+exec(open(os.path.join(HERE, "prep_photos.py")).read())
 import sys
 if "--no-audio" in sys.argv:
     print("ok (no audio) →", OUT)

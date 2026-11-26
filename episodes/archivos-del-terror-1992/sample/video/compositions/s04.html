@@ -54,9 +54,9 @@
 <text x="772" y="505" style="font:700 30px 'IBM Plex Mono';fill:#f2f4f3;letter-spacing:.12em;paint-order:stroke;stroke:#05080a;stroke-width:8px">CENTRO DE ASUNCIÓN</text>
 <text id="s04-km" x="805" y="756" style="font:700 40px 'IBM Plex Mono';fill:#2EC4B6;paint-order:stroke;stroke:#05080a;stroke-width:9px">4 km</text>
 <text id="s04-lam" x="846" y="999" style="font:800 60px 'Barlow Condensed';fill:#fff;letter-spacing:.05em;paint-order:stroke;stroke:#05080a;stroke-width:10px">LAMBARÉ</text>
-</svg></div>
+</svg></div><div id="s04-N" class="ao-full" style="background:#000"><img id="s04-pl" src="assets/ph/nasa96.jpg" style="position:absolute;left:-0px;top:0px;width:1921px;height:1080px;" alt=""></div>
 <div id="s04-vig" class="ao-vig"></div><div id="s04-grain" class="ao-grain"></div>
-<div id="s04-fg" class="ao-fg"><div id="s04-tag" class="ao-tag src"><i></i><span><b>MAPA</b> · © OpenStreetMap contributors</span></div></div>
+<div id="s04-fg" class="ao-fg"><div id="s04-tag" class="ao-tag src"><i></i><span><b>MAPA</b> · © OpenStreetMap contributors</span></div><div id="s04-tagn" class="ao-tag src"><i></i><span><b>IMAGEN REAL</b> · NASA, misión STS-72 (1996)</span></div></div>
 </div>
 <script>
 (function () {
@@ -78,9 +78,10 @@ function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35,
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
 shot('cam', 0, 1.4, [1.25,0,-330], [1.25,0,-520]);
-tl.to(q('circ'), { attr: { 'stroke-dashoffset': 0 }, duration: 0.7, ease: 'power2.inOut' }, 0.05);
-tl.to(q('rad'), { attr: { 'stroke-dashoffset': 0 }, duration: 0.6, ease: 'power2.inOut' }, 0.35);
-tl.fromTo(q('km'), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.6); tl.fromTo(q('lam'), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.85); tag(0.05);
+tl.to(q('circ'), { attr: { 'stroke-dashoffset': 0 }, duration: 0.7, ease: 'power2.inOut' }, 0.65);
+tl.to(q('rad'), { attr: { 'stroke-dashoffset': 0 }, duration: 0.4, ease: 'power2.inOut' }, 0.8);
+tl.fromTo(q('km'), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.0); tl.fromTo(q('lam'), { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.1); tag(0.05);shot('N', 0, 0.6, [1.0,0,0], [1.12,40,-30]); /*cut*/ tl.set(q('N'), { opacity: 0 }, 0.6); tl.set(q('tagn'), { opacity: 0 }, 0.6);
+tl.set(q('tag'), { opacity: 0 }, 0); tl.set(q('tag'), { opacity: 1 }, 0.6);
 tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);tl.set(q('grain'), { backgroundPosition: '281px 3px' }, 1.133);tl.set(q('grain'), { backgroundPosition: '418px 214px' }, 1.200);tl.set(q('grain'), { backgroundPosition: '43px 425px' }, 1.267);tl.set(q('grain'), { backgroundPosition: '180px 124px' }, 1.333);tl.set(q('grain'), { backgroundPosition: '317px 335px' }, 1.400);
 tl.set({}, {}, 1.399);
 window.__timelines["s04"] = tl;

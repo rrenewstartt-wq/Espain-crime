@@ -23,3 +23,8 @@ bash scripts/render.sh episodes/archivos-del-terror-1992/sample/video episodes/a
 - 소스 분리: `tools/build_head.py`(타이밍·팔레트·공통 스타일), `tools/build_scenes_a.py`(1–30), `tools/build_scenes_b.py`(31–65), `lib/a3d.js`(three.js 소품), `tools/prep_textures_v2.py`(질감·실루엣).
 - 팔레트: 1992 차가운 아침(cold), 문서고 텅스텐(tung), 1954 세피아(sepia). 그레이드(비네트·그레인)는 장면 안, 청록 그래픽은 그 위 `-fg` 층.
 - 음향: config `production.audio` 새 기준(음악은 내레이션 -28 dB, 쉬는 2초+ 구간 -20 dB, 효과음은 음악 +6~10 dB). 내레이션 -16 LUFS 가정 → 음악 스템 -43.8 LUFS, 효과음 스템 -35.2 LUFS. 음악 교체: `assets/music/` 에 LICENSES 기록된 곡 → `prep_assets.py` 가 `assets/audio/music.wav` 로 만들고 `build.py → MUSIC` 이 자동 사용.
+
+## 3차 반영 (2026-11-26 오후)
+- 실사 사진(§8-1) 오버라이드: `tools/build_scenes_photo.py`, 사진 가공 `tools/prep_photos.py`(크롭·톤·간판/행인 흐림). 사진이 없으면 그래픽 판으로 자동 복귀. 실사 행 32개, 58.2초(47.9%).
+- 음악(§7, music-plan.md 기본 조합): M01 0–56.1 / 드론만 56.1–63.9 / M03 63.9 / M02 86.8 (101.4 +3 dB) / 103.9 끊김(드론) / M05 108.1. 곡 파일은 prep 가 `assets/music/` 로 복사, 배치표는 `build.py → MUSIC_PLAN`.
+- 음악 스템 -45.0 LUFS(내레이션 -16 가정 시 -29 dB), 드론 -40.2, 효과음 -35.2(음악 +9.8 dB). 쉬는 2초+ 구간은 임시 타이밍에 없음 → /voice 에서 `music_segments()` 로.

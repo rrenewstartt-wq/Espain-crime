@@ -45,9 +45,8 @@
 
 </style>
 <div id="root" data-composition-id="s32" data-width="1920" data-height="1080" data-duration="1.2">
-<div id="s32-cam" class="ao-cam" style="background:#030303" data-layout-allow-overflow>
-<div style="position:absolute;left:-180px;top:-120px;width:2280px;height:1520px;background:url(assets/img/padlocks_cool.jpg) 0 0/100% 100%;filter:brightness(.75) contrast(1.25) sepia(.35)"></div>
-<div id="s32-beam" class="ao-full" style="background:radial-gradient(circle at 56% 38%,rgba(0,0,0,0) 10%,rgba(0,0,0,.86) 34%,rgba(0,0,0,.97) 60%)"></div></div>
+<div id="s32-cam" class="ao-cam" style="background:#020101" data-layout-allow-overflow><img id="s32-pl" src="assets/ph/stairdoor.jpg" style="position:absolute;left:0px;top:-0px;width:1920px;height:1081px;" alt=""><div style="position:absolute;left:770px;top:640px;width:300px;height:300px;border-radius:50%;overflow:hidden;-webkit-mask-image:radial-gradient(circle,#000 45%,transparent 70%);mask-image:radial-gradient(circle,#000 45%,transparent 70%)"><div style="position:absolute;left:-560px;top:-220px;width:1500px;height:1000px;background:url(assets/img/padlocks_cool.jpg) 0 0/100% 100%;filter:sepia(.5) brightness(.85)"></div></div>
+<div id="s32-beam" class="ao-full" style="background:radial-gradient(circle at 48% 66%,rgba(0,0,0,0) 14%,rgba(0,0,0,.8) 38%,rgba(0,0,0,.95) 64%)"></div></div>
 <div id="s32-vig" class="ao-vig"></div><div id="s32-grain" class="ao-grain"></div>
 <div id="s32-fg" class="ao-fg"><div id="s32-tag" class="ao-tag"><i></i>RECREACIÓN</div></div>
 </div>
@@ -70,7 +69,7 @@ function stampIn(key, t0, rot) { tl.fromTo(q(key), { scale: 2.4, opacity: 0, rot
 function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35, .3], [.15, -.1], [0, 0]]; k.forEach((v, i) => tl.set(q(key), { x: v[0] * amp, y: v[1] * amp }, t0 + i / 30)); }
 function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
-shot('cam', 0, 1.2, [1.0,0,0], [1.12,-60,40], 'power1.inOut'); tl.fromTo(q('beam'), { x: -220, y: 80 }, { x: 0, y: 0, duration: 0.7, ease: 'power2.out' }, 0); tag(0.05);
+shot('cam', 0, 1.2, [1.0,0,0], [1.12,-40,-60], 'power1.inOut'); tl.fromTo(q('beam'), { x: -220, y: 80 }, { x: 0, y: 0, duration: 0.7, ease: 'power2.out' }, 0); tag(0.05);
 tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);tl.set(q('grain'), { backgroundPosition: '281px 3px' }, 1.133);tl.set(q('grain'), { backgroundPosition: '418px 214px' }, 1.200);
 tl.set({}, {}, 1.199);
 window.__timelines["s32"] = tl;

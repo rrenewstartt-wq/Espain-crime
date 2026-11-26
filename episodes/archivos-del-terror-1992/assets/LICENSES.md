@@ -237,3 +237,4 @@ Flickr 검색(라이선스 필터 BY/BY-SA/CC0/PDM/No known restrictions)에는 
 | UNESCO Memory of the World 등재 신청서 PDF(`paraguay_terror.pdf`) | 신청 기관(CDyA) 저작물로 재사용 조건 미표시 |
 | LOC "Paraguay. Inspection tour made by Percy Warner"(1957) 사진 묶음 | LOC "Rights status not evaluated" |
 | LOC "Paraguay: Unterdrückung, Folter, Gefangenenmord"(1965 포스터) 등 Yanker 포스터 | LOC "Publication may be restricted" |
+- (video-editor, 2026-11-26) 샘플에 실제로 쓴 §8-1 사진: habs_az0060(간판 흐림), habs_pa2957, owi_1942, habs_pa1976, habs_il0937, habs_ca2282, habs_ma1170, habs_ca2248, haer_ne0071(글씨 흐림), hec_1932(행인 흐림·크롭), hec_1930(얼굴 제외 크롭·라벨 흐림), loc 1908-19 로페스 궁, nasa_sts072(1996), 1856 지도(질감으로만, 흐림), CIA 1954 p1·CIA 1976 p1(흐린 질감, 읽히지 않음). 가공 스크립트 `sample/video/tools/prep_photos.py`. 쓴 음악: §7 M01·M02·M03·M05.
