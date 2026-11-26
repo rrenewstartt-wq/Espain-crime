@@ -75,6 +75,10 @@ ASSETS = os.path.join(VIDEO, "assets")
 PHOTO = {"A2": "martin_almada_2008_g.jpg", "A4": "museo_justicia_archivo_terror_2019_g.jpg",
          "A5": "heap_of_tapes_g.jpg", "A7": "old_door_locked_g.jpg"}
 HAVE = {k: os.path.exists(os.path.join(ASSETS, "img", f)) for k, f in PHOTO.items()}
+# new archive photos (assets/photos/): used only once their row exists in assets/LICENSES.md
+_LIC = open(os.path.join(VIDEO, "..", "..", "assets", "LICENSES.md")).read()
+NEWPH = {"palacio": "loc_asuncion_palacio_lopez_1908-1919_npco.jpg", "cia1954": "doc_cia_1954-05-07_paraguayan_political_crisis_p1.png"}
+NEWOK = {k: (f in _LIC and os.path.exists(os.path.join(ASSETS, "img", f))) for k, f in NEWPH.items()}
 MAP = json.load(open(os.path.join(ASSETS, "map", "southamerica.json")))
 
 # palette per scene: cold = 1992 morning, tung = archive discovery under tungsten, sepia = 1954

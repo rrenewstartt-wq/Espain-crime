@@ -354,7 +354,13 @@
       "lufs_tolerance": 1.0,
       "true_peak_max_dbtp": -1.0,
       "sample_rate": 48000,
-      "music_under_narration_db": -20,
+      "music_under_narration_db": -28,
+      "music_under_narration_range_db": [
+        -32,
+        -25
+      ],
+      "music_between_lines_db": -20,
+      "music_note": "사용자 결정(2026-11-26): 배경 음악은 '들릴랑 말랑', 내레이션이 묻히면 안 된다. 내레이션이 나오는 동안 음악은 내레이션보다 약 28 dB 낮게(허용 -32~-25, 스템 LUFS 차이로 측정), 효과음은 음악보다 6~10 dB 위. 문장 사이·질문 뒤처럼 내레이션이 쉬는 2초 이상 구간에서만 -20 dB 까지 살짝 올린다(덕킹 복귀 0.3~0.5초).",
       "max_silence_sec": 2.5,
       "note": "YouTube 정규화 기준 -14 LUFS (provisional: 레퍼런스 음량 미측정)"
     },

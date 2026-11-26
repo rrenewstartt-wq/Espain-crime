@@ -469,7 +469,7 @@ def s60(p, d):
                      + "".join(f"<span style='display:block;height:1em'>{c}</span>" for c in seq) + "</span></span>"
                      for i, seq in enumerate(["1", "9", "98765", "2109876543210987654"]))
     html = f'''<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow style="background:#050302">
-<img src="assets/img/stroessner_sepia.jpg" style="position:absolute;left:0;top:-500px;width:1920px;height:2886px;object-fit:cover;filter:blur(34px) brightness(.38)" alt=""></div>'''
+{f'<img src="assets/img/{NEWPH["palacio"]}" class="ao-full" style="object-fit:cover;filter:brightness(.45)" alt="">' if NEWOK["palacio"] else '<img src="assets/img/stroessner_sepia.jpg" style="position:absolute;left:0;top:-500px;width:1920px;height:2886px;object-fit:cover;filter:blur(34px) brightness(.38)" alt="">'}</div>'''
     fg = f'''<div id="{p}-roll" style="position:absolute;left:0;width:1920px;top:400px;text-align:center;font:700 200px/1 'Courier Prime';color:{ACC};height:200px;overflow:hidden">{digits}</div>
 <div id="{p}-card" style="opacity:0"><div class="dc-line dc-d" style="left:{x1:.0f}px;top:400px">{l1}</div>
 <div class="dc-line dc-p" style="left:{x1 + 8:.0f}px;top:570px">{l2}<span id="{p}-cur" class="dc-cur"></span></div></div>'''

@@ -173,6 +173,12 @@ for f, kind in (("martin_almada_2008.jpg", "cool"), ("museo_justicia_archivo_ter
     if os.path.exists(p) and os.path.getsize(p) > 10000:
         grade(p, out("img", f.replace(".jpg", "_g.jpg")), kind)
 
+# archive photos delivered later (assets/photos/): copied only when LICENSES.md records them
+_lic = open(os.path.join(SRC, "LICENSES.md")).read()
+for f in sorted(os.listdir(os.path.join(SRC, "photos"))) if os.path.isdir(os.path.join(SRC, "photos")) else []:
+    if f in _lic:
+        grade(os.path.join(SRC, "photos", f), out("img", f), "sepia" if f.startswith("loc_") else "doc", maxw=2400)
+
 # OSM city map (already dark-processed by scene-planner); copy as is
 shutil.copy(os.path.join(SRC, "map_asuncion_lambare_osm_dark.png"), out("map", "asuncion_lambare_osm_dark.png"))
 
@@ -261,7 +267,7 @@ ff("-i", os.path.join(SFX, "drone_ambient_120s.wav"), "-i", out("audio", "pad_hi
 norm(out("audio", "bed_raw.wav"), out("audio", "bed.wav"), -19)
 os.remove(out("audio", "bed_raw.wav"))
 os.remove(out("audio", "pad_high.wav"))
-norm(os.path.join(SFX, "impact_low_2s.wav"), out("audio", "impact.wav"), -14, "highpass=f=30")
+norm(os.path.join(SFX, "impact_low_2s.wav"), out("audio", "impact.wav"), -11, "highpass=f=30,acompressor=threshold=-20dB:ratio=6:attack=5:release=250:makeup=4,alimiter=limit=0.6")
 norm(os.path.join(SFX, "whoosh_1s.wav"), out("audio", "whoosh.wav"), -17)
 ff("-i", os.path.join(SFX, "whoosh_1s.wav"), "-af", "asetrate=48000*1.25,aresample=48000,loudnorm=I=-18:TP=-2", "-ac", "2",
    out("audio", "whoosh_b.wav"))

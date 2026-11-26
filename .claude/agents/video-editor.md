@@ -20,7 +20,7 @@ HyperFrames 작업 전에 반드시 `/hyperframes` 스킬(렌더 계약)과 필�
 
 ## 2차: 재타이밍·믹스·최종 렌더 (내레이션 후, /voice)
 1. `data/voice.json`(줄별 음성 길이)로 장면 길이를 다시 계산하고 컴포지션을 다시 만든다.
-2. 내레이션 + 음악(내레이션 아래 약 -20 dB) + 효과음을 믹스하고 -14 LUFS, 트루 피크 -1 dBTP 이하로 맞춘다.
+2. 내레이션 + 음악 + 효과음을 믹스하고 -14 LUFS, 트루 피크 -1 dBTP 이하로 맞춘다. **배경 음악은 들릴랑 말랑하게**: 내레이션 구간에서 음악 스템이 내레이션 스템보다 약 28 dB 낮게(`config/format.json → production.audio.music_under_narration_db`, 허용 -32~-25), 내레이션이 2초 이상 쉬는 곳에서만 -20 dB 까지. 효과음은 음악보다 6~10 dB 위. 스템별 LUFS 를 재서 보고에 적는다.
 3. 최종 렌더 `renders/<ep>.mp4` → `python3 scripts/check_video.py episodes/<ep>/renders/<ep>.mp4 --expect-min <분>` 전부 통과.
 4. 업로드용 SRT(`release/<ep>.es.srt`)를 음성 타이밍으로 만든다. 화면에 자막을 굽지 않는다.
 
