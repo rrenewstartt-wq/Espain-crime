@@ -65,3 +65,20 @@ art. 8 근거: Ley N° 1.328/98 "De Derecho de Autor y Derechos Conexos", BACN h
 | 신문·방송 1992년 현장 사진(ABC Color, Última Hora 등) | 저작권. 라이선스 확인 전 사용 금지(plan.md §8) |
 | Poder Judicial *Archivos del Terror* 책(2008) 도판·저장소 이미지 | 이용 조건 미확인 ⚠️. 책 속 사진은 제3자 저작물일 수 있음 |
 | CVJ 최종보고서 PDF(Commons, CC BY-SA 4.0, Defensoría del Pueblo) | 문서 자체는 사용 가능. 다만 보고서 안 사진은 제3자 크레딧일 수 있어 개별 확인이 필요하다. 이번 2분 구간에는 필요 없음(escalada·consecuencias 용 후보) |
+
+## 6. 샘플 영상(0:00~2:01)에서 새로 만들거나 들여온 것 (video-editor, 2026-11-25)
+
+| 파일 | 출처 | 저작자 | 라이선스 | 변경 | 크레딧 문구 |
+|---|---|---|---|---|---|
+| 그래픽 G1~G17 (`sample/video/compositions/*.html`, 생성기 `sample/video/tools/build.py`) | — HyperFrames HTML/SVG/CSS 로 직접 제작(건물·인물 실루엣, 서류·카드·달력, 연표, 숫자 카드, 계단·서랍 소품, 지도 스타일링) | ARCHIVO OSCURO | 우리 저작물 | — | "Gráficos y recreaciones: elaboración propia" |
+| 종이·카드·책상·하늘·연기·필름 그레인·지문 무늬·낙서 텍스처 (`video/assets/tex/*`, 생성기 `sample/video/tools/prep_assets.py`) | — numpy 잡음으로 직접 생성. 지문 무늬는 수식으로 만든 것(실제 지문 아님), 카드 낙서는 판독 불가 곡선(실명 없음) | ARCHIVO OSCURO | 우리 저작물 | — | 위와 같음 |
+| 남미 벡터 지도(`video/assets/map/southamerica.json` → SVG) | 위 §3 Natural Earth geojson | Natural Earth | 퍼블릭 도메인 | 투영·단순화, 종이 질감 채움, 청록 강조 | "Mapas: elaboración propia con datos de Natural Earth" |
+| 배경음 `video/assets/audio/bed.wav` | — `drone_ambient_120s.wav` + ffmpeg 로 합성한 고음 패드(사인파 화음 + 분홍 잡음, 트레몰로·에코) | ARCHIVO OSCURO | 우리 저작물 | 음량 정규화 | "Música y efectos: elaboración propia" |
+| 효과음 정규화본 `video/assets/audio/*.wav` | 위 §4 파일 | §4 와 같음 | §4 와 같음(타자기 CC BY 4.0 크레딧 유지) | 음량 정규화·자르기·피치 변형(whoosh_b) | §4 와 같음 |
+| 글꼴 Courier Prime (`assets/fonts/CourierPrime-*.woff2`, 날짜 카드·타자 글씨) | HyperFrames 레지스트리 번들(`registry/blocks/notes-reveal/assets`), 원 프로젝트 https://github.com/quoteunquoteapps/CourierPrime | The Courier Prime Project Authors | SIL OFL 1.1 (`assets/fonts/CourierPrime-OFL.txt`) | 없음 | 표시 의무 없음 |
+| 글꼴 Barlow Condensed Bold/ExtraBold (`assets/fonts/BarlowCondensed-*.woff2`, 이름 자막) | HyperFrames 레지스트리 번들(`registry/blocks/lower-third-bild`), 원 프로젝트 https://github.com/jpt/barlow | The Barlow Project Authors | SIL OFL 1.1 (`assets/fonts/BarlowCondensed-OFL.txt`) | 없음 | 표시 의무 없음 |
+| 글꼴 IBM Plex Mono (`assets/fonts/IBMPlexMono-*.ttf`, 출처·RECREACIÓN 라벨) | 로컬 OFL 글꼴 모음, 원 프로젝트 https://github.com/IBM/plex | IBM Corp. | SIL OFL 1.1 (`assets/fonts/IBMPlexMono-OFL.txt`) | 없음 | 표시 의무 없음 |
+| 글꼴 Work Sans (`assets/fonts/WorkSans-*.ttf`, 역할 줄·풀이 문장) | 로컬 OFL 글꼴 모음, 원 프로젝트 https://github.com/weiweihuanghuang/Work-Sans | The Work Sans Project Authors | SIL OFL 1.1 (`assets/fonts/WorkSans-OFL.txt`) | 없음 | 표시 의무 없음 |
+
+- 사진 A2·A4·A5·A7 은 2026-11-25 `fetch_pending_assets.sh` 를 한 번 더 돌렸지만 네 파일 모두 HTTP 429 였다(우회 안 함). 샘플은 shots.md 의 대체 그래픽으로 만들었다: A2 → 타자 카드 + 이름 자막, A4 → 제목을 흐린 서류 더미 위에, A5 → 직접 그린 카세트 격자(`RECREACIÓN`), A7 → A6 자물쇠 사진 전체 프레임을 잠긴 문으로 사용. 파일을 받으면 `prep_assets.py` → `build.py` 를 다시 돌리면 사진 판으로 자동 전환된다.
+- 화면에 쓰인 출처 라벨: 사진·문서·지도는 `IMAGEN REAL`·`DOCUMENTO REAL`·`MAPA`·`FUENTE` 라벨, 재연은 `RECREACIÓN`. OSM 도시 지도에는 "© OpenStreetMap contributors" 를 장면 내내 표시.

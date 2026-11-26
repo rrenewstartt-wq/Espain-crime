@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es" data-composition-variables='[{"id":"review","type":"boolean","label":"Versión de revisión (texto del guion + BORRADOR)","default":false}]'>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+
+@font-face{font-family:"Anton";src:url("assets/fonts/Anton-Regular.ttf")}
+@font-face{font-family:"Courier Prime";src:url("assets/fonts/CourierPrime-Regular.woff2");font-weight:400}
+@font-face{font-family:"Courier Prime";src:url("assets/fonts/CourierPrime-Bold.woff2");font-weight:700}
+@font-face{font-family:"Barlow Condensed";src:url("assets/fonts/BarlowCondensed-ExtraBold.woff2");font-weight:800}
+@font-face{font-family:"Barlow Condensed";src:url("assets/fonts/BarlowCondensed-Bold.woff2");font-weight:700}
+@font-face{font-family:"IBM Plex Mono";src:url("assets/fonts/IBMPlexMono-Regular.ttf");font-weight:400}
+@font-face{font-family:"IBM Plex Mono";src:url("assets/fonts/IBMPlexMono-Bold.ttf");font-weight:700}
+@font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Regular.ttf");font-weight:400}
+@font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Bold.ttf");font-weight:700}
+@font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-BoldItalic.ttf");font-weight:700;font-style:italic}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+#root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+#review { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; z-index: 90; display: none; pointer-events: none; }
+#review .cap { position: absolute; left: 240px; width: 1440px; bottom: 34px; text-align: center; }
+#review .cap span { display: inline-block; font: 400 28px/1.35 "Work Sans", sans-serif; color: #fff; background: rgba(0,0,0,.62); padding: 6px 16px; }
+#review-flag { position: absolute; left: 110px; top: 70px; font: 700 22px/1 "IBM Plex Mono", monospace; letter-spacing: .14em; color: #fff;
+  background: rgba(0,0,0,.66); padding: 10px 14px; border: 2px solid #fff; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="121.4" data-width="1920" data-height="1080" data-fps="30">
+<div id="s01" data-composition-id="s01" data-composition-src="compositions/s01.html" data-start="0.0" data-duration="2.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s02" data-composition-id="s02" data-composition-src="compositions/s02.html" data-start="2.4" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s03" data-composition-id="s03" data-composition-src="compositions/s03.html" data-start="3.6" data-duration="1.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s04" data-composition-id="s04" data-composition-src="compositions/s04.html" data-start="5.0" data-duration="1.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s05" data-composition-id="s05" data-composition-src="compositions/s05.html" data-start="6.4" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s06" data-composition-id="s06" data-composition-src="compositions/s06.html" data-start="8.2" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s07" data-composition-id="s07" data-composition-src="compositions/s07.html" data-start="10.0" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s08" data-composition-id="s08" data-composition-src="compositions/s08.html" data-start="11.6" data-duration="2.3" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s09" data-composition-id="s09" data-composition-src="compositions/s09.html" data-start="13.9" data-duration="1.7" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s10" data-composition-id="s10" data-composition-src="compositions/s10.html" data-start="15.6" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s11" data-composition-id="s11" data-composition-src="compositions/s11.html" data-start="17.8" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s12" data-composition-id="s12" data-composition-src="compositions/s12.html" data-start="20.0" data-duration="2.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s13" data-composition-id="s13" data-composition-src="compositions/s13.html" data-start="22.1" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s14" data-composition-id="s14" data-composition-src="compositions/s14.html" data-start="23.9" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s15" data-composition-id="s15" data-composition-src="compositions/s15.html" data-start="25.9" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s16" data-composition-id="s16" data-composition-src="compositions/s16.html" data-start="27.7" data-duration="1.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s17" data-composition-id="s17" data-composition-src="compositions/s17.html" data-start="29.6" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s18" data-composition-id="s18" data-composition-src="compositions/s18.html" data-start="31.6" data-duration="1.3" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s19" data-composition-id="s19" data-composition-src="compositions/s19.html" data-start="32.9" data-duration="1.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s20" data-composition-id="s20" data-composition-src="compositions/s20.html" data-start="34.8" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s21" data-composition-id="s21" data-composition-src="compositions/s21.html" data-start="36.8" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s22" data-composition-id="s22" data-composition-src="compositions/s22.html" data-start="38.8" data-duration="1.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s23" data-composition-id="s23" data-composition-src="compositions/s23.html" data-start="40.7" data-duration="2.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s24" data-composition-id="s24" data-composition-src="compositions/s24.html" data-start="43.1" data-duration="2.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s25" data-composition-id="s25" data-composition-src="compositions/s25.html" data-start="45.5" data-duration="2.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s26" data-composition-id="s26" data-composition-src="compositions/s26.html" data-start="47.9" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s27" data-composition-id="s27" data-composition-src="compositions/s27.html" data-start="49.5" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s28" data-composition-id="s28" data-composition-src="compositions/s28.html" data-start="51.1" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s29" data-composition-id="s29" data-composition-src="compositions/s29.html" data-start="53.6" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s30" data-composition-id="s30" data-composition-src="compositions/s30.html" data-start="56.1" data-duration="2.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s31" data-composition-id="s31" data-composition-src="compositions/s31.html" data-start="58.2" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s32" data-composition-id="s32" data-composition-src="compositions/s32.html" data-start="59.4" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s33" data-composition-id="s33" data-composition-src="compositions/s33.html" data-start="60.6" data-duration="1.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s34" data-composition-id="s34" data-composition-src="compositions/s34.html" data-start="61.7" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s35" data-composition-id="s35" data-composition-src="compositions/s35.html" data-start="62.9" data-duration="1.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s36" data-composition-id="s36" data-composition-src="compositions/s36.html" data-start="63.9" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s37" data-composition-id="s37" data-composition-src="compositions/s37.html" data-start="65.1" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s38" data-composition-id="s38" data-composition-src="compositions/s38.html" data-start="66.3" data-duration="1.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s39" data-composition-id="s39" data-composition-src="compositions/s39.html" data-start="67.5" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s40" data-composition-id="s40" data-composition-src="compositions/s40.html" data-start="69.7" data-duration="1.7" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s41" data-composition-id="s41" data-composition-src="compositions/s41.html" data-start="71.4" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s42" data-composition-id="s42" data-composition-src="compositions/s42.html" data-start="73.9" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s43" data-composition-id="s43" data-composition-src="compositions/s43.html" data-start="76.1" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s44" data-composition-id="s44" data-composition-src="compositions/s44.html" data-start="77.7" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s45" data-composition-id="s45" data-composition-src="compositions/s45.html" data-start="79.3" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s46" data-composition-id="s46" data-composition-src="compositions/s46.html" data-start="81.1" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s47" data-composition-id="s47" data-composition-src="compositions/s47.html" data-start="82.9" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s48" data-composition-id="s48" data-composition-src="compositions/s48.html" data-start="84.9" data-duration="1.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s49" data-composition-id="s49" data-composition-src="compositions/s49.html" data-start="86.8" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s50" data-composition-id="s50" data-composition-src="compositions/s50.html" data-start="89.0" data-duration="2.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s51" data-composition-id="s51" data-composition-src="compositions/s51.html" data-start="91.1" data-duration="2.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s52" data-composition-id="s52" data-composition-src="compositions/s52.html" data-start="93.1" data-duration="1.6" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s53" data-composition-id="s53" data-composition-src="compositions/s53.html" data-start="94.7" data-duration="1.7" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s54" data-composition-id="s54" data-composition-src="compositions/s54.html" data-start="96.4" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s55" data-composition-id="s55" data-composition-src="compositions/s55.html" data-start="98.9" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s56" data-composition-id="s56" data-composition-src="compositions/s56.html" data-start="101.4" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s57" data-composition-id="s57" data-composition-src="compositions/s57.html" data-start="103.9" data-duration="1.4" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s58" data-composition-id="s58" data-composition-src="compositions/s58.html" data-start="105.3" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s59" data-composition-id="s59" data-composition-src="compositions/s59.html" data-start="107.1" data-duration="1.0" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s60" data-composition-id="s60" data-composition-src="compositions/s60.html" data-start="108.1" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s61" data-composition-id="s61" data-composition-src="compositions/s61.html" data-start="110.3" data-duration="1.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s62" data-composition-id="s62" data-composition-src="compositions/s62.html" data-start="112.1" data-duration="2.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s63" data-composition-id="s63" data-composition-src="compositions/s63.html" data-start="114.3" data-duration="2.1" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s64" data-composition-id="s64" data-composition-src="compositions/s64.html" data-start="116.4" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="s65" data-composition-id="s65" data-composition-src="compositions/s65.html" data-start="118.9" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
+<div id="fx" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="121.4" data-track-index="2" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:80"></div>
+<audio id="a-bed1" class="clip" src="assets/audio/bed.wav" data-start="0.0" data-duration="57.55" data-media-start="0.0" data-volume="0.62" data-track-index="3"></audio>
+<audio id="a-bed2" class="clip" src="assets/audio/bed.wav" data-start="62.9" data-duration="58.5" data-media-start="8.0" data-volume="0.62" data-track-index="3"></audio>
+<audio id="a-tw1" class="clip" src="assets/audio/typewriter.wav" data-start="0.3" data-duration="1.85" data-media-start="0.4" data-volume="0.9" data-track-index="4"></audio>
+<audio id="a-tw2" class="clip" src="assets/audio/typewriter.wav" data-start="2.42" data-duration="1.0" data-media-start="5.2" data-volume="0.9" data-track-index="4"></audio>
+<audio id="a-tw3" class="clip" src="assets/audio/typewriter.wav" data-start="20.05" data-duration="0.85" data-media-start="9.0" data-volume="0.6" data-track-index="4"></audio>
+<audio id="a-tw4" class="clip" src="assets/audio/typewriter.wav" data-start="23.98" data-duration="1.55" data-media-start="12.0" data-volume="0.85" data-track-index="4"></audio>
+<audio id="a-tw5" class="clip" src="assets/audio/typewriter.wav" data-start="49.52" data-duration="0.95" data-media-start="15.3" data-volume="0.85" data-track-index="4"></audio>
+<audio id="a-tw6" class="clip" src="assets/audio/typewriter.wav" data-start="89.03" data-duration="0.55" data-media-start="2.0" data-volume="0.8" data-track-index="4"></audio>
+<audio id="a-tw7" class="clip" src="assets/audio/typewriter.wav" data-start="109.1" data-duration="1.4" data-media-start="6.6" data-volume="0.85" data-track-index="4"></audio>
+<audio id="a-wh1" class="clip" src="assets/audio/whoosh.wav" data-start="3.5" data-duration="1.2" data-media-start="0.0" data-volume="0.8" data-track-index="5"></audio>
+<audio id="a-wh2" class="clip" src="assets/audio/whoosh_b.wav" data-start="11.62" data-duration="0.9" data-media-start="0.0" data-volume="0.6" data-track-index="5"></audio>
+<audio id="a-wh3" class="clip" src="assets/audio/whoosh_b.wav" data-start="62.82" data-duration="0.9" data-media-start="0.0" data-volume="0.9" data-track-index="5"></audio>
+<audio id="a-wh4" class="clip" src="assets/audio/whoosh.wav" data-start="107.55" data-duration="1.2" data-media-start="0.0" data-volume="0.9" data-track-index="5"></audio>
+<audio id="a-wh5" class="clip" src="assets/audio/whoosh_b.wav" data-start="66.2" data-duration="0.9" data-media-start="0.0" data-volume="0.45" data-track-index="5"></audio>
+<audio id="a-st1" class="clip" src="assets/audio/impact.wav" data-start="22.45" data-duration="1.6" data-media-start="0.0" data-volume="0.55" data-track-index="6"></audio>
+<audio id="a-st2" class="clip" src="assets/audio/impact.wav" data-start="44.05" data-duration="1.6" data-media-start="0.0" data-volume="0.5" data-track-index="6"></audio>
+<audio id="a-pz" class="clip" src="assets/audio/impact.wav" data-start="57.6" data-duration="2.0" data-media-start="0.0" data-volume="0.9" data-track-index="6"></audio>
+<audio id="a-lk" class="clip" src="assets/audio/lock.wav" data-start="61.95" data-duration="0.8" data-media-start="0.0" data-volume="0.9" data-track-index="7"></audio>
+<audio id="a-lki" class="clip" src="assets/audio/impact.wav" data-start="61.95" data-duration="2.0" data-media-start="0.0" data-volume="0.9" data-track-index="6"></audio>
+<audio id="a-q1" class="clip" src="assets/audio/impact.wav" data-start="86.85" data-duration="2.0" data-media-start="0.0" data-volume="0.85" data-track-index="6"></audio>
+<audio id="a-q2" class="clip" src="assets/audio/impact.wav" data-start="91.15" data-duration="2.0" data-media-start="0.0" data-volume="0.85" data-track-index="6"></audio>
+<audio id="a-q3" class="clip" src="assets/audio/impact.wav" data-start="96.45" data-duration="2.0" data-media-start="0.0" data-volume="0.95" data-track-index="6"></audio>
+<audio id="a-zq3b" class="clip" src="assets/audio/impact.wav" data-start="96.92" data-duration="2.0" data-media-start="0.0" data-volume="0.6" data-track-index="10"></audio>
+<audio id="a-rs1" class="clip" src="assets/audio/riser.wav" data-start="100.95" data-duration="3.0" data-media-start="0.0" data-volume="0.8" data-track-index="8"></audio>
+<audio id="a-tt" class="clip" src="assets/audio/impact.wav" data-start="103.95" data-duration="2.0" data-media-start="0.0" data-volume="1.0" data-track-index="6"></audio>
+<audio id="a-rs2" class="clip" src="assets/audio/riser.wav" data-start="106.1" data-duration="1.0" data-media-start="2.0" data-volume="0.8" data-track-index="8"></audio>
+<audio id="a-rs0" class="clip" src="assets/audio/riser.wav" data-start="58.4" data-duration="3.0" data-media-start="0.0" data-volume="0.35" data-track-index="8"></audio>
+<audio id="a-k21_0" class="clip" src="assets/audio/tick.wav" data-start="36.9" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_1" class="clip" src="assets/audio/tick.wav" data-start="36.99" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_2" class="clip" src="assets/audio/tick.wav" data-start="37.085" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_3" class="clip" src="assets/audio/tick.wav" data-start="37.186" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_4" class="clip" src="assets/audio/tick.wav" data-start="37.292" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_5" class="clip" src="assets/audio/tick.wav" data-start="37.404" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_6" class="clip" src="assets/audio/tick.wav" data-start="37.521" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_7" class="clip" src="assets/audio/tick.wav" data-start="37.643" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_8" class="clip" src="assets/audio/tick.wav" data-start="37.771" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_9" class="clip" src="assets/audio/tick.wav" data-start="37.904" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_10" class="clip" src="assets/audio/tick.wav" data-start="38.043" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_0" class="clip" src="assets/audio/tick.wav" data-start="67.55" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_1" class="clip" src="assets/audio/tick.wav" data-start="67.64" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_2" class="clip" src="assets/audio/tick.wav" data-start="67.735" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_3" class="clip" src="assets/audio/tick.wav" data-start="67.836" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_4" class="clip" src="assets/audio/tick.wav" data-start="67.942" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_5" class="clip" src="assets/audio/tick.wav" data-start="68.054" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_6" class="clip" src="assets/audio/tick.wav" data-start="68.171" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_7" class="clip" src="assets/audio/tick.wav" data-start="68.293" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_8" class="clip" src="assets/audio/tick.wav" data-start="68.421" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_9" class="clip" src="assets/audio/tick.wav" data-start="68.554" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_10" class="clip" src="assets/audio/tick.wav" data-start="68.693" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k39_11" class="clip" src="assets/audio/tick.wav" data-start="68.837" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_0" class="clip" src="assets/audio/tick.wav" data-start="73.95" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_1" class="clip" src="assets/audio/tick.wav" data-start="74.03" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_2" class="clip" src="assets/audio/tick.wav" data-start="74.115" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_3" class="clip" src="assets/audio/tick.wav" data-start="74.204" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_4" class="clip" src="assets/audio/tick.wav" data-start="74.299" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_5" class="clip" src="assets/audio/tick.wav" data-start="74.398" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_6" class="clip" src="assets/audio/tick.wav" data-start="74.502" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_7" class="clip" src="assets/audio/tick.wav" data-start="74.611" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_8" class="clip" src="assets/audio/tick.wav" data-start="74.724" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_9" class="clip" src="assets/audio/tick.wav" data-start="74.843" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_10" class="clip" src="assets/audio/tick.wav" data-start="74.966" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k42_11" class="clip" src="assets/audio/tick.wav" data-start="75.094" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_0" class="clip" src="assets/audio/tick.wav" data-start="116.5" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_1" class="clip" src="assets/audio/tick.wav" data-start="116.6" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_2" class="clip" src="assets/audio/tick.wav" data-start="116.706" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_3" class="clip" src="assets/audio/tick.wav" data-start="116.818" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_4" class="clip" src="assets/audio/tick.wav" data-start="116.936" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_5" class="clip" src="assets/audio/tick.wav" data-start="117.06" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_6" class="clip" src="assets/audio/tick.wav" data-start="117.19" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_7" class="clip" src="assets/audio/tick.wav" data-start="117.326" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_8" class="clip" src="assets/audio/tick.wav" data-start="117.468" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_9" class="clip" src="assets/audio/tick.wav" data-start="117.616" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_10" class="clip" src="assets/audio/tick.wav" data-start="117.77" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<div id="review" data-track-kind="captions" data-layout-allow-caption-zone>
+<div id="review-flag">BORRADOR · SIN NARRACIÓN</div>
+<div id="cap0" class="clip cap" data-start="0.0" data-duration="6.4" data-track-index="11"><span>Es la mañana del 22 de diciembre de 1992 en Lambaré, a cuatro kilómetros del centro de Asunción.</span></div>
+<div id="cap1" class="clip cap" data-start="6.4" data-duration="3.6" data-track-index="11"><span>Faltan tres días para Navidad y el día amanece caluroso.</span></div>
+<div id="cap2" class="clip cap" data-start="10.0" data-duration="3.9" data-track-index="11"><span>Hace casi cuatro años que cayó la dictadura de Alfredo Stroessner.</span></div>
+<div id="cap3" class="clip cap" data-start="13.9" data-duration="6.1" data-track-index="11"><span>Ante una dependencia policial de nombre administrativo, el Departamento de Producciones, llega un juez con una orden.</span></div>
+<div id="cap4" class="clip cap" data-start="20.0" data-duration="3.9" data-track-index="11"><span>Se llama José Agustín Fernández y es juez en lo criminal.</span></div>
+<div id="cap5" class="clip cap" data-start="23.9" data-duration="5.7" data-track-index="11"><span>El expediente que lo trae hasta aquí lleva un nombre corto: «Martín Almada sobre Hábeas Data».</span></div>
+<div id="cap6" class="clip cap" data-start="29.6" data-duration="7.2" data-track-index="11"><span>Almada es un educador que, amparado en la Constitución de junio, pide ver lo que la policía guarda sobre él.</span></div>
+<div id="cap7" class="clip cap" data-start="36.8" data-duration="3.9" data-track-index="11"><span>Han pasado 99 días desde que el juzgado recibió su pedido.</span></div>
+<div id="cap8" class="clip cap" data-start="40.7" data-duration="7.2" data-track-index="11"><span>Y la respuesta oficial, según recuerda el juez, es que esos documentos desaparecieron con el golpe de febrero de 1989.</span></div>
+<div id="cap9" class="clip cap" data-start="47.9" data-duration="3.2" data-track-index="11"><span>Según la Policía, ya no queda nada que buscar.</span></div>
+<div id="cap10" class="clip cap" data-start="51.1" data-duration="5.0" data-track-index="11"><span>En la puerta, el oficial de guardia no quiere dejarlo pasar sin su jefe.</span></div>
+<div id="cap11" class="clip cap" data-start="56.1" data-duration="2.1" data-track-index="11"><span>Por ahora, nada contradice esa versión.</span></div>
+<div id="cap12" class="clip cap" data-start="58.2" data-duration="5.7" data-track-index="11"><span>Hasta que, al final de una escalera, un cerrajero rompe el candado de una puerta cerrada.</span></div>
+<div id="cap13" class="clip cap" data-start="63.9" data-duration="3.6" data-track-index="11"><span>Detrás aparece una montaña desordenada de libros, carpetas y fichas.</span></div>
+<div id="cap14" class="clip cap" data-start="67.5" data-duration="3.9" data-track-index="11"><span>Con los años, el inventario hablará de cerca de 800.000 páginas.</span></div>
+<div id="cap15" class="clip cap" data-start="71.4" data-duration="2.5" data-track-index="11"><span>Son unos doscientos metros lineales de papel.</span></div>
+<div id="cap16" class="clip cap" data-start="73.9" data-duration="2.2" data-track-index="11"><span>Hay 11.225 fichas de personas detenidas.</span></div>
+<div id="cap17" class="clip cap" data-start="76.1" data-duration="3.2" data-track-index="11"><span>Hay unas 20.000 fotografías y 543 casetes de audio.</span></div>
+<div id="cap18" class="clip cap" data-start="79.3" data-duration="3.6" data-track-index="11"><span>El inventario los fecha entre 1927 y febrero de 1989.</span></div>
+<div id="cap19" class="clip cap" data-start="82.9" data-duration="3.9" data-track-index="11"><span>Solo sacarlos de este lugar va a llevar unas doce horas.</span></div>
+<div id="cap20" class="clip cap" data-start="86.8" data-duration="4.3" data-track-index="11"><span>¿Cómo sobreviven casi intactos los papeles que una policía decía haber perdido?</span></div>
+<div id="cap21" class="clip cap" data-start="91.1" data-duration="5.3" data-track-index="11"><span>¿Qué hacen en un depósito de Lambaré las fichas de detenidos argentinos, uruguayos y chilenos?</span></div>
+<div id="cap22" class="clip cap" data-start="96.4" data-duration="7.5" data-track-index="11"><span>Y sobre todo, ¿por qué un aparato que negaba haber detenido a ciertos desaparecidos los tenía fichados, con foto y huellas?</span></div>
+<div id="cap23" class="clip cap" data-start="103.9" data-duration="3.2" data-track-index="11"><span>Esta es la historia de los Archivos del Terror.</span></div>
+<div id="cap24" class="clip cap" data-start="107.1" data-duration="5.0" data-track-index="11"><span>Para entender por qué existe esa habitación, hay que volver a mayo de 1954.</span></div>
+<div id="cap25" class="clip cap" data-start="112.1" data-duration="4.3" data-track-index="11"><span>Ese mes, un golpe militar lleva al poder al general Alfredo Stroessner.</span></div>
+<div id="cap26" class="clip cap" data-start="116.4" data-duration="5.0" data-track-index="11"><span>Va a gobernar treinta y cinco años seguidos, el equivalente a siete períodos presidenciales.</span></div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const v = (window.__hyperframes && window.__hyperframes.getVariables) ? window.__hyperframes.getVariables() : {};
+if (v.review === true || v.review === "true") document.getElementById("review").style.display = "block";
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

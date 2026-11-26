@@ -7,11 +7,14 @@
 # - telemetry off by default
 set -euo pipefail
 PROJ="$1"; OUT="$2"; shift 2
+# resolve the output against the caller's directory before cd (absolute paths stay as they are)
+case "$OUT" in /*) ;; *) OUT="$PWD/$OUT" ;; esac
+OUT=$(realpath -m "$OUT")
 SHELL_BIN=$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | sort | tail -1)
 export PRODUCER_HEADLESS_SHELL_PATH="${PRODUCER_HEADLESS_SHELL_PATH:-$SHELL_BIN}"
 export HYPERFRAMES_NO_TELEMETRY="${HYPERFRAMES_NO_TELEMETRY:-1}"
 mkdir -p "$(dirname "$OUT")"
 cd "$PROJ"
 start=$(date +%s)
-npx --no-install hyperframes render -o "$(realpath -m "$OLDPWD/$OUT" 2>/dev/null || echo "$OUT")" --workers "${HF_WORKERS:-4}" --video-bitrate "${HF_BITRATE:-12M}" "$@"
+npx --no-install hyperframes render -o "$OUT" --workers "${HF_WORKERS:-4}" --video-bitrate "${HF_BITRATE:-12M}" "$@"
 echo "렌더 시간: $(( $(date +%s) - start ))초"
