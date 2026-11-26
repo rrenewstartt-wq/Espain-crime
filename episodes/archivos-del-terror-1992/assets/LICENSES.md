@@ -238,3 +238,85 @@ Flickr 검색(라이선스 필터 BY/BY-SA/CC0/PDM/No known restrictions)에는 
 | LOC "Paraguay. Inspection tour made by Percy Warner"(1957) 사진 묶음 | LOC "Rights status not evaluated" |
 | LOC "Paraguay: Unterdrückung, Folter, Gefangenenmord"(1965 포스터) 등 Yanker 포스터 | LOC "Publication may be restricted" |
 - (video-editor, 2026-11-26) 샘플에 실제로 쓴 §8-1 사진: habs_az0060(간판 흐림), habs_pa2957, owi_1942, habs_pa1976, habs_il0937, habs_ca2282, habs_ma1170, habs_ca2248, haer_ne0071(글씨 흐림), hec_1932(행인 흐림·크롭), hec_1930(얼굴 제외 크롭·라벨 흐림), loc 1908-19 로페스 궁, nasa_sts072(1996), 1856 지도(질감으로만, 흐림), CIA 1954 p1·CIA 1976 p1(흐린 질감, 읽히지 않음). 가공 스크립트 `sample/video/tools/prep_photos.py`. 쓴 음악: §7 M01·M02·M03·M05.
+
+## 9. 자료 영상 (`footage/`, 2026-11-26 scene-planner)
+
+움직이는 실사 소재. 퍼블릭 도메인 또는 퍼블릭 도메인 표시가 개별 항목에 붙은 것만 받았다. 원본 전체는 받지 않고 HTTP 범위 탐색으로 필요한 구간만 잘랐다.
+재현 스크립트: `sample/fetch_footage.sh`(구간 표의 원본 시각이 이 스크립트 값과 같다). 결과 파일은 `assets/footage/`(.gitignore, 커밋 안 함).
+
+**공통 처리:** 소리 제거(원본 음악·내레이션은 쓰지 않는다. Prelinger FAQ 7 "public domain materials may occasionally incorporate copyrighted elements (such as music…)" 대비), 필름 텔레시네 되돌리기(fieldmatch+decimate → 23.976p), 정사각 픽셀 640×480(업스케일 안 함), H.264 CRF 14. NASA 는 원본 해상도 그대로.
+**해상도:** NASA 1건(1616×1072)만 720p 이상이다. **나머지는 모두 SD(4:3)** → 액자·작은 창·흐린 배경·강한 크롭 없는 부분 화면으로만 쓴다. Prelinger 구판 MPEG2 는 352/368×480(가로 실효 해상도가 더 낮음), NARA 판은 720×480.
+**화면 라벨:** 사건과 무관한 자료 영상은 `Imagen ilustrativa`, 우리 글자·소품을 얹어 사건 장면을 재연하면 `RECREACIÓN`, 실제 장소(1945 아순시온)는 `IMAGEN REAL · Asunción, c. 1945`(**1954·1992 영상이 아님을 연도로 표시**).
+**얼굴:** 아래 표 "얼굴" 칸. "흐림 필요" 는 사건과 무관한 실존 인물(배우 포함) 얼굴이 크게 나오는 것.
+
+### 9-1. 출처별 근거
+
+| 코드 | 제목 · 제작 주체 · 연도 | 출처 URL | 라이선스 근거 (원문) | 비고 |
+|---|---|---|---|---|
+| V-FBI | *Document Examination* · Federal Bureau of Investigation (Department of Justice) · 1969 · 컬러 | https://archive.org/details/gov.archives.arc.12093 (파일 `gov.archives.arc.12093.mpeg`, 720×480 MPEG2) · NARA ARC 12093 / Local ID 65.19 | 항목 표시 `licenseurl: http://creativecommons.org/publicdomain/zero/1.0/`. 항목 설명 "Department of Justice. Federal Bureau of Investigation. (1935 - ). TRAINING FILM". 영화 앞뒤 자막 "The Federal Bureau of Investigation Presents" / "Presented By The Federal Bureau of Investigation" (저작권 표시 없음, 프레임으로 확인). 미국 연방 정부 저작물(17 U.S.C. §105) | 정부 직접 제작이라 근거가 가장 단단하다 |
+| V-NAVY | *Basic Typing, Part I: Methods (Part I)* · US Navy Training Film MN-1512a, Bureau of Aeronautics 감독, 제작 De Frenes & Co. · 1943~44 · 흑백 | https://archive.org/details/basic_typing_1 (파일 `basic_typing_1.mpeg`, 352×480) · Prelinger Archives | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/` (Prelinger Archives 의 Public Domain Dedication). Prelinger FAQ 5: "this Public Domain dedication still governs films to which it has been affixed." | ⚠️ **오프닝 자막에 "DE FRENES & CO. © 1943" 표시가 있다.** 해군 위탁 제작물이지만 제작사 저작권 표시가 있어, 1970~71년 갱신 여부를 사람이 확인하기 전에는 **예비 소재**로만 둔다(대체: V-COR·V-FBI 의 타자·서류 컷) |
+| V-COR | *I Want to Be a Secretary* · Coronet Instructional Films · 1941 · 흑백 | https://archive.org/details/IWanttoB1941 (파일 `IWanttoB1941.mpeg`, 368×480) · Prelinger Archives | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/` (Prelinger Public Domain Dedication, 위 FAQ 5). 오프닝·엔딩 자막에 저작권 표시 없음(프레임으로 확인) | |
+| V-ARMY | *Safeguarding Military Information* · Research Council of the Academy of Motion Picture Arts and Sciences, 미 육군 훈련용 · 1941 · 흑백 | https://archive.org/details/Safeguar1941 (파일 `Safeguar1941.mpeg`, 352×480) · Prelinger Archives | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/` (Prelinger Public Domain Dedication). 오프닝·엔딩 자막에 저작권 표시 없음 | |
+| V-BOOK | *Booked for Safekeeping (Part I)* · Louisiana Association for Mental Health, 감독 George C. Stoney, New Orleans Police Department 협조 · 1960 · 흑백 | https://archive.org/details/Bookedfo1960 (파일 `Bookedfo1960.mpeg`, 368×480) · Prelinger Archives | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/` (Prelinger Public Domain Dedication). 오프닝 자막(제목·제작 취지)에 저작권 표시 없음 | 출연자는 실제 뉴올리언스 경찰관(항목 설명) → 얼굴 주의 |
+| V-POL | *Your Police* · Riviera Productions · 1953 · 흑백 | https://archive.org/details/your_police (파일 `your_police.mpeg`, 352×480) · Prelinger Archives | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/` (Prelinger Public Domain Dedication). 오프닝·엔딩 자막에 저작권 표시 없음 | |
+| V-PY | *Paraguay* · The Office of the Coordinator of Inter-American Affairs(미 연방 기관) 제공, "a Julien Bryan production" · 1945 · 흑백 | https://archive.org/details/gov.archives.arc.47001 (파일 `gov.archives.arc.47001.mpeg`, 720×480) · NARA ARC 47001 / Local ID 306.137 (RG 306, U.S. Information Agency) | 항목 표시 `licenseurl: http://creativecommons.org/licenses/publicdomain/`. 오프닝 "The Office of the Coordinator of Inter-American Affairs presents", 크레딧(Photography Julien Bryan, William James, Francis Thompson…)·엔딩 어디에도 저작권 표시 없음(프레임으로 확인) → 1945년 공표 당시 표시 없는 공표물은 미국에서 퍼블릭 도메인 | ⚠️ 약: 위탁 제작물이다. 파라과이 내 보호 여부는 확인하지 않았다(미국 정부 기관 공표물). NARA 카탈로그의 "Use Restrictions" 칸은 API 키 없이 읽을 수 없어 보지 못했다 |
+| V-NASA | *Northwest coast of United States to Central South America at Night* · ISS Expedition 28 승무원, NASA Johnson Space Center Earth Science and Remote Sensing Unit · 2011-08-19 (프레임 ISS028-E-33150~33676) | https://eol.jsc.nasa.gov/BeyondThePhotography/CrewEarthObservationsVideos/SouthAmerica.htm (파일 `videos/nsamerica_iss_20110819/nsamerica_iss_20110819HD.mp4`, 1616×1072) | JSC 이용 조건(https://eol.jsc.nasa.gov/FAQ/default.htm): "NASA material is not protected by copyright unless noted. … If not copyrighted, NASA material may be reproduced and distributed without further permission from NASA." 표기 요구: "Video courtesy of the Earth Science and Remote Sensing Unit, NASA Johnson Space Center" | 페이지 설명: "The pass ends as the ISS is over the capital city of Bolivia, La Paz." → 쓴 끝부분은 남미 서부(페루~볼리비아) 새벽. **파라과이 상공이 아니다** |
+
+### 9-2. 받은 클립 (37개)
+
+| 파일 (`footage/`) | 출처 | 원본 구간(초) | 길이 | 해상도 | 내용 | 얼굴 | 크레딧 문구 |
+|---|---|---|---:|---|---|---|---|
+| `fx01_fbi1969_fichero_oficina.mp4` | V-FBI | 98.5–104.5 | 6.0 | 640×480 (SD) | 벽 가득한 카드 색인 서랍과 책상(사무실 전경). 영어 표지 "NATIONAL FRAUDULENT CHECK FILE" 흐림 필요 | 작음(책상의 남자) | "Document Examination (FBI, 1969) / National Archives, dominio público" |
+| `fx02_fbi1969_mano_saca_ficha.mp4` | V-FBI | 112.3–117.8 | 5.5 | SD | 손이 색인 서랍에서 카드를 꺼냄(클로즈업) | 없음(손). 카드 글씨(가상 인명) 흐림 | 위와 같음 |
+| `fx03_fbi1969_mano_hojea_fichas.mp4` | V-FBI | 118.0–124.0 | 6.0 | SD | 같은 서랍, 카드 넘김 계속 | 없음. 카드 글씨 흐림 | 위와 같음 |
+| `fx04_fbi1969_manos_documento_mesa.mp4` | V-FBI | 489.5–494.0 | 4.5 | SD | 책상 위 서류를 펜으로 짚는 손 | 없음 | 위와 같음 |
+| `fx05_fbi1969_manos_hojean_archivo.mp4` | V-FBI | 520.0–524.0 | 4.0 | SD | 타자 견본 철을 넘기는 손 | 없음. 영어 타자 글씨 흐림 | 위와 같음 |
+| `fx06_fbi1969_dedo_recorre_archivo.mp4` | V-FBI | 528.0–532.7 | 4.7 | SD | 손가락이 견본 철 가장자리를 훑음 | 없음 | 위와 같음 |
+| `fx07_fbi1969_mano_escribe_papeles.mp4` | V-FBI | 555.0–561.0 | 6.0 | SD | 서류 옆에서 펜으로 쓰는 손 | 없음 | 위와 같음 |
+| `fx08_navy1944_tipos_golpean_papel.mp4` | V-NAVY ⚠️ | 143.0–149.0 | 6.0 | SD(352×480 원본) | 활자대가 종이를 때리는 매크로 | 없음. 영어 타자 글씨 흐림 | "Basic Typing (US Navy, 1944) / Prelinger Archives, dominio público" |
+| `fx09_navy1944_mano_teclas.mp4` | V-NAVY ⚠️ | 163.55–169.0 | 5.5 | SD | 자판 위 손 클로즈업 | 없음 | 위와 같음 |
+| `fx10_navy1944_silueta_mecanografa.mp4` | V-NAVY ⚠️ | 311.0–317.0 | 6.0 | SD | 역광 실루엣 타자수(옆모습) | 없음(실루엣) | 위와 같음 |
+| `fx11_navy1944_dedo_tecla_macro.mp4` | V-NAVY ⚠️ | 681.0–685.7 | 4.7 | SD | 손가락이 키를 누르는 극접사 | 없음 | 위와 같음 |
+| `fx12_navy1944_manos_escriben.mp4` | V-NAVY ⚠️ | 825.0–831.0 | 6.0 | SD | 비스듬한 자판 위 양손 타자 | 없음 | 위와 같음 |
+| `fx13_coronet1941_muro_ficheros.mp4` | V-COR | 416.0–422.0 | 6.0 | SD(368×480 원본) | 카드 서랍 벽 앞 사무실(여성 2~4명) | **흐림 필요**(중간 크기 얼굴 2명). 왼쪽 서랍 벽만 크롭하면 얼굴 없음 | "I Want to Be a Secretary (Coronet, 1941) / Prelinger Archives, dominio público" |
+| `fx14_coronet1941_manos_maquina.mp4` | V-COR | 485.0–490.5 | 5.5 | SD | 사무용 타자기 자판과 손, 종이 | 없음 | 위와 같음 |
+| `fx15_coronet1941_lapiz_registro.mp4` | V-COR | 666.0–672.0 | 6.0 | SD | 연필이 기록 카드 칸을 짚음 | 없음. 카드의 가상 인명 흐림 | 위와 같음 |
+| `fx16_army1941_sombra_en_puerta.mp4` | V-ARMY | 19.0–23.6 | 4.6 | SD(352×480 원본) | 모자·외투 실루엣이 철문 손잡이를 돌림, 벽에 그림자 | 거의 없음(모자 그늘) | "Safeguarding Military Information (1941) / Prelinger Archives, dominio público" |
+| `fx17_army1941_abre_puerta_entra.mp4` | V-ARMY | 25.0–29.0 | 4.0 | SD | 같은 인물이 문을 열고 안으로 들어감 | 작음(옆얼굴 1초) | 위와 같음 |
+| `fx18_army1941_puerta_oscura_figura.mp4` | V-ARMY | 50.0–55.0 | 5.0 | SD | 어두운 이중문, 그늘 속 인물이 다가옴. 둥근 창(선박 문) | 없음 | 위와 같음 |
+| `fx19_army1941_documento_sombra.mp4` | V-ARMY | 362.0–365.5 | 3.5 | SD | 액자 속 손글씨 서류 위로 그림자 | 없음. 영어 글씨 흐림 | 위와 같음 |
+| `fx20_booked1960_calle_noche_pov.mp4` | V-BOOK | 328.0–334.0 | 6.0 | SD(368×480 원본) | 경찰차 보닛 경광등 너머 밤거리(가로등·네온) | 없음. **영어 네온 간판 흐림 필요** | "Booked for Safekeeping (1960) / Prelinger Archives, dominio público" |
+| `fx21_booked1960_escalera_policia.mp4` | V-BOOK | 388.5–391.0 | 2.5 | SD | 경찰관이 계단 난간을 잡고 오름 | **흐림 필요**(왼쪽 격자무늬 셔츠 남자, 배우·환자 역). 위쪽 계단만 크롭 권장 | 위와 같음 |
+| `fx22_booked1960_linterna_oscuro.mp4` | V-BOOK | 672.0–677.0 | 5.0 | SD | 어두운 방, 손전등 빛과 문틈 빛, 경찰관 윤곽 | 첫 1초 경찰관 얼굴 반쯤 → 크롭/어둡게 | 위와 같음 |
+| `fx23_booked1960_silueta_linterna.mp4` | V-BOOK | 687.0–693.0 | 6.0 | SD | 앞쪽 큰 실루엣 + 손전등, 오른쪽 문간 경찰관 | 오른쪽 경찰관 얼굴 작음 → 크롭 권장 | 위와 같음 |
+| `fx24_police1953_mano_ventana.mp4` | V-POL | 142.0–145.0 | 3.0 | SD(352×480 원본) | 창 걸쇠를 잠그는 손 | 없음 | "Your Police (Riviera Productions, 1953) / Prelinger Archives, dominio público" |
+| `fx25_police1953_mano_pomo_cerradura.mp4` | V-POL | 145.0–147.2 | 2.2 | SD | 문손잡이 자물쇠를 돌려 잠그는 손 | 없음 | 위와 같음 |
+| `fx27_police1953_agente_prueba_puerta.mp4` | V-POL | 186.0–188.8 | 2.8 | SD | 경찰관 둘이 문을 확인, 격자 그림자 | **흐림 필요**(경찰관 얼굴 중간 크기, 미국 제복) → 손·문만 크롭 권장 | 위와 같음 |
+| `fx28_ociaa1945_asuncion_horizonte.mp4` | V-PY | 308.0–312.1 | 4.1 | SD(720×480 원본) | 아순시온 시가지와 강 수평선(높은 곳에서) | 없음 | "Paraguay (Office of the Coordinator of Inter-American Affairs, 1945) / National Archives, dominio público" |
+| `fx29_ociaa1945_asuncion_tejados.mp4` | V-PY | 313.0–316.0 | 3.0 | SD | 아순시온 지붕들 파노라마 | 없음 | 위와 같음 |
+| `fx29b_ociaa1945_asuncion_tejados2.mp4` | V-PY | 316.3–318.4 | 2.1 | SD | 지붕과 강 방향 다른 각도 | 없음 | 위와 같음 |
+| `fx30_ociaa1945_asuncion_calle_cupula.mp4` | V-PY | 345.0–347.2 | 2.2 | SD | 위에서 본 거리와 둥근 지붕 건물 | 없음(원경 행인) | 위와 같음 |
+| `fx31_ociaa1945_asuncion_tranvia.mp4` | V-PY | 350.0–356.0 | 6.0 | SD | 전차가 지나는 거리, `FARMACIA` 간판, 멀리 둥근 지붕 | 없음(원경 행인) | 위와 같음 |
+| `fx32_ociaa1945_panteon_heroes.mp4` | V-PY | 372.95–375.1 | 2.2 | SD | Panteón Nacional de los Héroes 정면 | 없음 | 위와 같음 |
+| `fx33_ociaa1945_soldados_marchan.mp4` | V-PY | 383.4–386.9 | 3.5 | SD | 파라과이 군인 행진(소총·탄띠) | **흐림 필요**(실존 군인 얼굴 크게, 사건 무관) | 위와 같음 |
+| `fx34_ociaa1945_soldados_contrapicado.mp4` | V-PY | 388.35–390.6 | 2.3 | SD | 행진 로우앵글(모자 챙 그늘) | 중간 → 흐림 또는 하반신·총 크롭 | 위와 같음 |
+| `fx35_ociaa1945_vapor_rio.mp4` | V-PY | 470.0–474.1 | 4.1 | SD | 외륜 증기선(강변) | 없음(원경 승객) | 위와 같음 |
+| `fx36_ociaa1945_rio_paraguay.mp4` | V-PY | 475.0–481.0 | 6.0 | SD | 넓은 강과 구름, 작은 배 | 없음 | 위와 같음 |
+| `fx37_nasa2011_sudamerica_amanecer.mp4` | V-NASA | 18.8–23.0 | 4.2 | **1616×1072 (HD)** | 궤도에서 본 남미 서부 밤→새벽, 태양전지판 일부 | 없음 | "Video courtesy of the Earth Science and Remote Sensing Unit, NASA Johnson Space Center" |
+
+(`fx26` 은 구간 안에 다른 컷이 섞여 2초 미만만 남아 지웠다. 번호는 비워 둔다.)
+
+### 9-3. 찾았으나 쓰지 않는 영상 (이유)
+
+| 후보 | 이유 |
+|---|---|
+| *A Day with the F.B.I.* (1951), IA `gov.archives.arc.2022383`(CC0 표시, 서류 보관·지문 카드실 장면이 많음) | 제목 화면에 "Columbia Pictures Corporation presents · Reader's Digest on the Screen", "**Copyright MCMLI RD-DR Corporation, All rights reserved**". 상업 극장용 단편이고 CC0 표시는 업로더(Public.Resource.Org)가 붙인 것이라 권리자 표시가 아니다 → 제외 |
+| *National Archives Building* (1937), IA `gov.archives.arc.100253`(CC0 표시) | NARA 설명에 "Paramount Pictures", Local ID PARA-PN-79 → Paramount News 뉴스릴. 뉴스 화면 + 상업 권리 → 제외 |
+| *Focus on the FBI* (IA `gov.archives.arc.12103`), OCIAA 라틴아메리카 뉴스릴 묶음(`gov.archives.arc.38976`, `38930`, `38955` 등), `mt-mtt-*` 뉴스릴 | NARA 설명이 "NEWSREEL" 이거나 뉴스릴 편집본 → 뉴스 화면 금지 조건 |
+| Prelinger 신판 고화질 스캔(예: *One Step Behind – One Step Ahead: NYSIIS* 1965, *[National Archives Master Reel 1/2]*, *Home Movies PA000184: Large Bureaucratic Office* 1920×1080, *Vista Stock Shots: Office Communications*, *This Is Your Police Department* 신판) | 항목에 라이선스 표시가 없다. Prelinger FAQ 4: "Many people believe that all Prelinger Archives films are in the public domain. Some are. Many are not." → 표시가 붙은 판만 쓴다 |
+| *Fundamentals of Filing* (1942) | 제목과 달리 금속 줄(공구) 영화. 내용 불일치 + 라이선스 표시 없음 |
+| PeriscopeFilm 업로드(예: *Brazilian Rain Forest* 1954) | 상업 스톡 업체의 재업로드, 항목에 라이선스 표시 없음 |
+| NARA `111-adc-8866/8867` (Signal Corps, 잘츠부르크 1951) | 미 연방 저작물이라 권리는 문제없지만 기록 보관과 무관한 미군 시설 촬영분. 쓸 컷 없음 |
+| NASA JSC *City Lights of North and South America* (2011, 1080×720) | 거의 전부 북미 상공. 남미 장면으로 쓰면 오해 |
+| Wikimedia Commons 영상 검색 | 첫 검색에서만 응답(대부분 무관, *Le Paraguay à l'Ombre de ses Guerres* 는 다른 다큐멘터리 → 제외), 두 번째 요청부터 HTTP 429 → 한 번 시도 후 중단(우회 안 함) |
+| NARA 카탈로그(catalog.archives.gov) API | API 키 없이 JSON 이 나오지 않음(HTML 앱만) → 카탈로그 "Use Restrictions" 칸 직접 확인 못 함 |
