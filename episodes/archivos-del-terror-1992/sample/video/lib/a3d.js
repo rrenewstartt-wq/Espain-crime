@@ -112,7 +112,7 @@ async function stairs(canvas, o) {
   const r = renderer(canvas, o.mode === "door" ? 1.0 : 1.15);
   const s = new THREE.Scene();
   s.background = new THREE.Color(0x030202);
-  s.fog = new THREE.FogExp2(0x0a0604, 0.16);
+  s.fog = new THREE.FogExp2(0x0a0604, 0.09);
   const conc = new THREE.MeshStandardMaterial({ map: await tex("concrete.jpg", [2, 2]), color: 0x8a7a68, roughness: 0.95 });
   const step = new THREE.MeshStandardMaterial({ map: await tex("concrete.jpg", [1, 0.3]), color: 0x9a8a76, roughness: 0.9 });
   const N = 13, sh = 0.18, sd = 0.3, w = 1.3;
@@ -141,11 +141,11 @@ async function stairs(canvas, o) {
   door.position.set(-dw / 2, topY, dz + 0.03); s.add(door);
   const gap = new THREE.Mesh(new THREE.PlaneGeometry(dw, 0.02), new THREE.MeshBasicMaterial({ color: 0xffd9a0 })); gap.position.set(0, topY + 0.012, dz + 0.06); s.add(gap);
   // the tungsten bulb above the door
-  const bulb = new THREE.PointLight(0xffa860, 7, 7, 1.6); bulb.position.set(0.0, topY + 2.25, dz + 0.45); bulb.castShadow = true; bulb.shadow.mapSize.set(512, 512); s.add(bulb);
+  const bulb = new THREE.PointLight(0xffa860, 26, 9, 1.4); bulb.position.set(0.0, topY + 2.25, dz + 0.45); bulb.castShadow = true; bulb.shadow.mapSize.set(512, 512); s.add(bulb);
   const gtex = await tex("glow.png");
   const bulbGlow = glowSprite(gtex, 0xffb870, 0.9, 0.9); bulbGlow.position.copy(bulb.position); s.add(bulbGlow);
   const flood = glowSprite(gtex, 0xfff0d8, 5, 0); flood.position.set(0, topY + 1.1, dz + 0.2); s.add(flood);
-  s.add(new THREE.AmbientLight(0x1a120b, 0.6));
+  s.add(new THREE.AmbientLight(0x2a1c10, 1.6));
   const dust = await dustPoints(160, [-0.6, topY - 0.5, dz - 0.3, 0.6, topY + 2.2, dz + 2.5], 31, 0xffd7a0, 0.03); s.add(dust);
   const cam = new THREE.PerspectiveCamera(o.mode === "door" ? 46 : 52, 16 / 9, 0.05, 40);
   return (t) => {
@@ -175,10 +175,10 @@ async function boxes(canvas, o) {
   s.background = new THREE.Color(0x040302);
   s.fog = new THREE.FogExp2(0x120a05, 0.11);
   const conc = new THREE.MeshStandardMaterial({ map: await tex("concrete.jpg", [3, 1]), color: 0x6e604f, roughness: 1 });
-  const wallL = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), conc); wallL.position.set(-2.6, 2, -6); s.add(wallL);
+  const wallL = new THREE.Mesh(new THREE.PlaneGeometry(4, 9), conc); wallL.position.set(-2.6, 4.5, -6); s.add(wallL);
   const wallR = wallL.clone(); wallR.position.x = 2.6; s.add(wallR);
-  const wallT = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 1.6), conc); wallT.position.set(0, 3.2, -6); s.add(wallT);
-  const outside = new THREE.Mesh(new THREE.PlaneGeometry(8, 6), new THREE.MeshBasicMaterial({ color: 0xf6efe2 })); outside.position.set(0, 2, -7.5); s.add(outside);
+  const wallT = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 6.6), conc); wallT.position.set(0, 5.7, -6); s.add(wallT);
+  const outside = new THREE.Mesh(new THREE.PlaneGeometry(8, 6), new THREE.MeshBasicMaterial({ color: 0xfff6e8, fog: false })); outside.position.set(0, 2, -7.5); s.add(outside);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(10, 16), new THREE.MeshStandardMaterial({ map: await tex("concrete.jpg", [3, 4]), color: 0x5b4c3c, roughness: 1 }));
   floor.rotation.x = -Math.PI / 2; floor.position.z = -2; floor.receiveShadow = true; s.add(floor);
   const sun = new THREE.SpotLight(0xfff2de, 90, 16, 0.5, 0.5, 1.0); sun.position.set(0, 2.2, -7.2); sun.target.position.set(0, 0, 2); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); s.add(sun, sun.target);
@@ -186,7 +186,7 @@ async function boxes(canvas, o) {
   s.add(new THREE.AmbientLight(0x1a1008, 0.5));
   const card = new THREE.MeshStandardMaterial({ map: await tex("cardboard.jpg"), roughness: 0.9 });
   const figTex = await new THREE.TextureLoader().loadAsync("assets/fig/worker.png"); figTex.colorSpace = THREE.SRGBColorSpace;
-  const figMat = new THREE.MeshBasicMaterial({ map: figTex, transparent: true, alphaTest: 0.05, color: 0x2a2420 });
+  const figMat = new THREE.MeshBasicMaterial({ map: figTex, transparent: true, alphaTest: 0.05, color: 0x2a2420, side: THREE.DoubleSide });
   const items = [];
   for (let i = 0; i < 6; i++) {
     const g = new THREE.Group();
@@ -200,20 +200,20 @@ async function boxes(canvas, o) {
     dust.userData.update(t);
     items.forEach((g, i) => {
       const u = ((t + i * 0.55) % 3.3) / 3.3;              // walking away from camera to the door
-      g.position.set((i % 2 ? 0.28 : -0.22) + Math.sin(u * 9 + i) * 0.03, Math.abs(Math.sin(u * 30)) * 0.03, lerp(1.2, -6.4, u));
+      g.position.set((i % 2 ? 0.28 : -0.22) + Math.sin(u * 9 + i) * 0.03, Math.abs(Math.sin(u * 30)) * 0.03, lerp(-0.6, -6.4, u));
       g.rotation.y = Math.PI;
       g.visible = u < 0.97;
     });
     const cutB = o.cut || 99;
     if (t < cutB) { cam.position.set(0.15, 1.45, 3.2 - 0.25 * t); cam.lookAt(0, 1.4, -6); }
-    else { cam.position.set(-0.9, 0.55, 0.4); cam.lookAt(0.2, 1.2, -6); }
+    else { cam.position.set(-0.9, 0.55, 1.6 - 0.2 * (t - cutB)); cam.lookAt(0.2, 1.2, -6); }
     r.render(s, cam);
   };
 }
 
 // ---------------------------------------------------------------- police building, cold morning
 async function exterior(canvas, o) {
-  const r = renderer(canvas, o.dim ? 0.62 : 0.95);
+  const r = renderer(canvas, o.dim ? 0.85 : 1.15);
   const s = new THREE.Scene();
   s.background = await tex("sky_cold.jpg");
   s.fog = new THREE.Fog(o.dim ? 0x58687a : 0xa9bccb, 18, 80);
@@ -239,11 +239,11 @@ async function exterior(canvas, o) {
   ground.rotation.x = -Math.PI / 2; ground.position.z = 10; ground.receiveShadow = true; s.add(ground);
   // fence in front of the building
   const iron = new THREE.MeshStandardMaterial({ color: 0x101315, metalness: 0.5, roughness: 0.6 });
-  for (let x = -16; x <= 16; x += 0.32) { const p = new THREE.Mesh(new THREE.BoxGeometry(0.05, 1.9, 0.05), iron); p.position.set(x, 0.95, 4.5); p.castShadow = true; s.add(p); }
+  for (let x = -16; x <= 16; x += 0.32) { if (Math.abs(x) < 0.9) continue; const p = new THREE.Mesh(new THREE.BoxGeometry(0.05, 1.9, 0.05), iron); p.position.set(x, 0.95, 4.5); p.castShadow = true; s.add(p); }
   for (const y of [0.3, 1.7]) { const rail = new THREE.Mesh(new THREE.BoxGeometry(32, 0.06, 0.06), iron); rail.position.set(0, y, 4.5); s.add(rail); }
   const treeMat = new THREE.MeshBasicMaterial({ map: await tex("tree.png"), transparent: true, alphaTest: 0.3, color: o.dim ? 0x30383a : 0x5a6462, fog: true });
   for (const [x, z, h] of [[-15, 1.5, 9], [16, 2.5, 8], [-21, -6, 10]]) { const tr = new THREE.Mesh(new THREE.PlaneGeometry(h * 0.86, h), treeMat); tr.position.set(x, h / 2, z); s.add(tr); }
-  const sun = new THREE.DirectionalLight(0xfff0dc, o.dim ? 1.2 : 3.2); sun.position.set(-30, 18, 24); sun.castShadow = true;
+  const sun = new THREE.DirectionalLight(0xfff0dc, o.dim ? 1.6 : 4.6); sun.position.set(-26, 16, 30); sun.castShadow = true;
   sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -20, right: 20, top: 14, bottom: -6, far: 120 }); s.add(sun);
   s.add(new THREE.HemisphereLight(0x9fb6c8, 0x2a2622, o.dim ? 0.5 : 1.1));
   const gtex = await tex("glow.png");

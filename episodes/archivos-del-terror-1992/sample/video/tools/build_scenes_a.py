@@ -194,7 +194,7 @@ TL_CSS = f"""
 
 @scene(8)
 def s08(p, d):
-    html = f'''<div id="{p}-cam" class="ao-cam" style="{PAPER()}" data-layout-allow-overflow></div>
+    html = f'''<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>{BIGPAPER()}</div>
 <div id="{p}-rip" class="ao-full" style="{DESK()};z-index:5">{print_html(p + "x", 660, 40, 620, 940, -2, "50% 10%", "cover")}</div>'''
     fg = f'''<div id="{p}-g" class="ao-full">
 <div id="{p}-axis" class="tl-axis" style="left:360px;top:600px;width:1200px"></div><div id="{p}-fill" class="tl-fill" style="left:360px;top:600px;width:1200px"></div>
@@ -230,9 +230,9 @@ def s09(p, d):
 
 @scene(10)
 def s10(p, d):
-    shots = [[0, [1.4, 1.75, 12.0], [1.0, 1.72, 10.0], [0, 1.8, 0], [0, 1.8, 0]],
+    shots = [[0, [1.3, 1.78, 12.9], [1.0, 1.75, 11.2], [0, 1.8, 0], [0, 1.8, 0]],
              [1.1, [-8.0, 1.3, 11.0], [-7.4, 1.3, 10.4], [0, 1.6, 2.5], [0, 1.6, 2.0]]]   # /*cut*/ wide from across the street
-    return S(js="tag(0.05); /*cut:1.1*/", mod=ext3d(p, d, shots, figure="man_back", ffrom=[0.5, 0, 9.4], fto=[0.1, 0, 3.4]),
+    return S(js="tag(0.05); /*cut:1.1*/", mod=ext3d(p, d, shots, figure="man_back", ffrom=[0.6, 0, 10.4], fto=[0.15, 0, 5.2]),
              fg=tag_html(p, "RECREACIÓN"))
 
 
@@ -266,7 +266,7 @@ def s12(p, d):
              f'<div style="font:700 62px \'Courier Prime\';color:#1a1f1f;margin-top:40px;white-space:nowrap">{nm}</div>')
     html = f'<div id="{p}-cam" class="ao-cam" style="{DESK()}" data-layout-allow-overflow>{index_card(p, inner)}</div>'
     # /*cut*/ insert: the typed surname, extreme close, ribbon ink texture
-    js = f"""type('t', {n}, 0.1, 0.035); shot('cam', 0, 1.05, [1.0,0,0], [1.04,0,0]); /*cut*/ shot('cam', 1.05, {d}, [3.2,-640,1020,-2], [3.3,-700,1050,-2]); lt(0.25);"""
+    js = f"""type('t', {n}, 0.1, 0.035); shot('cam', 0, 1.05, [1.0,0,0], [1.04,0,0]); /*cut*/ shot('cam', 1.05, {d}, [3.0,-950,360,-2], [3.08,-990,370,-2]); lt(0.25);"""
     return S(html, js, fg=lt_html(p, "José Agustín Fernández", "juez en lo criminal (1992)"))
 
 
@@ -276,7 +276,7 @@ def s13(p, d):
              f'<div id="{p}-st" class="ao-stamp" style="position:absolute;left:150px;top:300px;font-size:84px">JUEZ EN LO CRIMINAL</div>')
     html = f'<div id="{p}-cam" class="ao-cam" style="{DESK()}" data-layout-allow-overflow><div id="{p}-sh" class="ao-full">{index_card(p, inner, rot=1.5)}</div></div>'
     js = f"""shot('cam', 0, 0.9, [1.12,0,20], [1.16,0,20]); stampIn('st', 0.35, -6); shake('sh', 0.51, 14);
-/*cut*/ shot('cam', 0.9, {d}, [3.0,-50,-560,4], [3.1,-80,-580,4]);"""
+/*cut*/ shot('cam', 0.9, {d}, [2.0,-200,-130,4], [2.06,-215,-135,4]);"""
     return S(html, js)
 
 
@@ -390,7 +390,7 @@ def s20(p, d):
 <path id="{p}-arr" d="M560,540 L1150,540" stroke="{ACC}" stroke-width="12" stroke-dasharray="600" stroke-dashoffset="600"/>
 <path id="{p}-head" d="M1150,505 L1205,540 L1150,575Z" fill="{ACC}" opacity="0"/>
 <g transform="translate(1560,590)" fill="none" stroke="{ACC}" stroke-width="9"><rect x="-38" y="0" width="76" height="62"/><path d="M-24,0 L-24,-26 A24,24 0 0 1 24,-26 L24,0"/></g>
-<text id="{p}-q" x="1700" y="440" style="font:400 230px Anton;fill:{ACC}" opacity="0">?</text></svg>'''
+<text id="{p}-q" x="1720" y="720" style="font:400 230px Anton;fill:{ACC}" opacity="0">?</text></svg>'''
     js = f"""tl.to(q('arr'), {{ attr: {{ 'stroke-dashoffset': 0 }}, duration: 0.5, ease: 'power2.inOut' }}, 0.1); tl.set(q('head'), {{ opacity: 1 }}, 0.6);
 tl.fromTo(q('q'), {{ opacity: 0 }}, {{ opacity: 1, duration: 0.15 }}, 1.05);
 shot('cam', 0, 1.0, [1.0,0,0], [1.03,0,0]); shot('fgs', 0, 1.0, [1.0,0,0], [1.03,0,0]);
@@ -417,7 +417,7 @@ def s22(p, d):
     pages = "".join(f'''<div id="{p}-m{i}" style="position:absolute;left:560px;top:120px;width:800px;height:860px;{PAPER()};
 box-shadow:0 30px 60px rgba(0,0,0,.6);transform-origin:50% 0;z-index:{10 - i}">
 <div style="height:120px;background:#1c2730;display:flex;align-items:center;justify-content:center;font:700 58px 'Courier Prime';letter-spacing:.24em;color:#e9ece9">{m}</div>
-<div style="text-align:center;font:400 330px/1.3 Anton;color:#1e2326">{["14", "", "", "22"][i]}</div>
+<div style="text-align:center;font:400 330px/1.3 Anton;color:#1e2326">{["14", "", "", "22"][i]}</div>{"" if i in (0, 3) else '<div style="position:absolute;left:80px;top:200px;width:640px;display:grid;grid-template-columns:repeat(7,1fr);gap:14px;font:700 40px Courier Prime;color:#3a3d3c;text-align:center">' + "".join(f"<span>{k}</span>" for k in range(1, 31 if i == 2 else 32)) + "</div>"}
 <div style="text-align:center;font:700 48px 'Courier Prime';letter-spacing:.3em;color:#2d3236">1992</div></div>''' for i, m in enumerate(months))
     html = f'<div id="{p}-cam" class="ao-cam" style="perspective:1600px;{DESK()}" data-layout-allow-overflow>{pages}</div>'
     js = "".join(f"tl.to(q('m{i}'), {{ rotationX: -92, duration: 0.3, ease: 'power2.in' }}, {0.35 + i * 0.4:.2f}); tl.set(q('m{i}'), {{ opacity: 0 }}, {0.65 + i * 0.4:.2f});" for i in range(3))
@@ -440,7 +440,7 @@ tl.fromTo(q('key'), {{ filter: 'blur(6px)' }}, {{ filter: 'blur(0px)', duration:
 @scene(24)
 def s24(p, d):
     icons = "".join(f'<div id="{p}-f{i}" style="position:absolute;left:{1240 + (i % 4) * 80}px;top:{300 + (i // 4) * 100}px;width:64px;height:82px;{PAPER()};border:3px solid #22201c;box-shadow:0 8px 12px rgba(0,0,0,.35)"></div>' for i in range(8))
-    html = f'<div id="{p}-cam" class="ao-cam" style="{PAPER()}" data-layout-allow-overflow>{icons}</div>'
+    html = f'<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>{BIGPAPER()}{icons}</div>'
     fg = f'''<div id="{p}-g" class="ao-full" style="transform-origin:50% 50%"><div class="tl-axis" style="left:300px;top:620px;width:1320px"></div>
 <div class="tl-dot" style="left:480px;top:623px"></div><div id="{p}-ph" class="tl-dot" style="left:1560px;top:623px;background:{ACC}"></div>
 <div class="tl-lab" style="left:1560px;top:670px">22 DIC 1992</div>
@@ -499,7 +499,7 @@ def s28(p, d):
               fig_img(p, "j", "man_back", -320, 160, 1500, "filter:blur(14px) brightness(.6)"))
     html = doorway(p, layers)
     js = f"""tl.fromTo(q('g'), {{ y: 30 }}, {{ y: 0, duration: 0.4, ease: 'power3.out' }}, 0.2);
-shot('cam', 0, 1.25, [1.0,0,0], [1.04,0,0]); /*cut*/ shot('cam', 1.25, {d}, [2.6,-1060,1020], [2.66,-1090,1045]); lt(0.2); tag(0.05);"""
+shot('cam', 0, 1.25, [1.0,0,0], [1.04,0,0]); /*cut*/ shot('cam', 1.25, {d}, [2.4,-400,680], [2.46,-415,700]); lt(0.2); tag(0.05);"""
     return S(html, js, fg=tag_html(p, "RECREACIÓN") + lt_html(p, "Oficial de guardia", "Policía · entrada del depósito"))
 
 

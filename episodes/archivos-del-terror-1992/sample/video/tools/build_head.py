@@ -91,6 +91,12 @@ def DESK():
     return f"background:#000 url(assets/tex/desk_{pal}.jpg) center/cover"
 
 
+def BIGPAPER():
+    pal = CUR[0] if CUR[0] in ("cold", "tung", "sepia") else "cold"
+    return (f'<div style="position:absolute;left:-1500px;top:-1500px;width:4920px;height:4080px;'
+            f'background:url(assets/tex/paper_{pal}.jpg) 1500px 1500px/1920px 1080px"></div>')
+
+
 def PAPER(pos="center", size="cover"):
     pal = CUR[0] if CUR[0] in ("cold", "tung", "sepia") else "cold"
     return f"background:url(assets/tex/paper_{pal}.jpg) {pos}/{size}"

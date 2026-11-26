@@ -244,7 +244,7 @@ def s44(p, d):
 
 
 def stamp_tl(p, d, first):
-    html = f'<div id="{p}-cam" class="ao-cam" style="{PAPER()}" data-layout-allow-overflow></div>'
+    html = f'<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>{BIGPAPER()}</div>'
     fg = f'''<div id="{p}-g" class="ao-full" style="transform-origin:50% 50%">
 <div class="tl-axis" style="left:300px;top:560px;width:1320px"></div><div id="{p}-fill" class="tl-fill" style="left:300px;top:560px;width:1320px"></div>
 <div class="tl-dot" style="left:300px;top:563px"></div><div id="{p}-d2" class="tl-dot" style="left:1620px;top:563px"></div>
@@ -303,7 +303,7 @@ def s49(p, d):
     stains = "".join(f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{int(w * .8)}px;border-radius:50%;border:9px solid rgba(70,48,24,.45);box-shadow:inset 0 0 60px rgba(70,48,24,.4),0 0 30px rgba(70,48,24,.25)"></div>' for x, y, w in ((300, 150, 520), (1100, 520, 620), (760, 60, 300), (420, 640, 360)))
     a = f'''<div id="{p}-A" class="ao-full" style="background:#050302"><div id="{p}-pa" class="ao-full" style="background:#e3c99a url(assets/tex/paper_tung.jpg) 30% 40%/2400px 1600px;background-blend-mode:multiply">
 <img src="assets/tex/smoke1.png" style="position:absolute;left:0;top:0;width:1920px;height:1080px;mix-blend-mode:multiply;opacity:.55;filter:sepia(1) brightness(.6)" alt="">{stains}
-<div style="position:absolute;left:240px;top:330px;width:1500px;font:700 46px/1.9 'Courier Prime';color:rgba(30,22,14,.8);filter:blur(1.2px);white-space:nowrap">{"<br>".join("— — — — — — — — — —"[: 10 + (i * 7) % 9] .replace("—", "▬") for i in range(6))}</div></div>
+<div style="position:absolute;left:240px;top:330px;width:1500px;opacity:.8">{doc_lines(7, 40, 49, "#3a2614")}</div></div>
 <div class="ao-full" style="background:linear-gradient(180deg,rgba(5,3,2,.75),rgba(5,3,2,0) 30%,rgba(5,3,2,0) 70%,rgba(5,3,2,.8)),radial-gradient(ellipse at 40% 30%,rgba(255,196,120,.25),rgba(0,0,0,0) 50%)"></div></div>'''
     b = f'''<div id="{p}-B" class="ao-full" style="opacity:0;background:#040201">
 <div style="position:absolute;left:380px;top:180px;width:1700px;height:1100px;background:#d8bd8c url(assets/tex/paper_tung.jpg) 0 0/2400px 1600px;background-blend-mode:multiply;transform:rotate(-14deg);border-radius:0 0 0 120px;box-shadow:-30px 30px 60px rgba(0,0,0,.8)"></div>
@@ -376,7 +376,7 @@ def s53(p, d):
     html = f'''<div id="{p}-cam" class="ao-cam" style="{DESK()}" data-layout-allow-overflow>
 {ficha(p, 0, 180, 330, -5, "ARGENTINA")}{ficha(p, 1, 700, 380, 2, "URUGUAY")}{ficha(p, 2, 1220, 320, 5, "CHILE")}</div>'''
     js = "".join(f"stampIn('st{i}', {0.12 + i * 0.25:.2f}, -8);" for i in range(3))
-    js += f"shot('cam', 0, 0.85, [0.95,0,0], [0.98,0,0]); /*cut*/ shot('cam', 0.85, {d}, [2.4,-580,-780,-4], [2.46,-600,-800,-4]); tag(0.05);"
+    js += f"shot('cam', 0, 0.85, [0.95,0,0], [0.98,0,0]); /*cut*/ shot('cam', 0.85, {d}, [2.4,-250,-271,-4], [2.46,-258,-280,-4]); tag(0.05);"
     return S(html, js, fg=tag_html(p, "RECREACIÓN"))
 
 
@@ -409,13 +409,14 @@ def s56(p, d):
     r = random.Random(56)
     wall = "".join(ficha(p, 10 + i, r.randint(-200, 1700), r.randint(-150, 900), r.uniform(-12, 12), None, i % 2 == 0, i % 3 == 0) for i in range(18))
     words = ["FICHADOS", "CON FOTO", "CON HUELLAS"]
-    ws = '<span style="color:#f3ead8"> · </span>'.join(f'<span id="{p}-w{i}" style="color:#f3ead8">{w}</span>' for i, w in enumerate(words))
+    ws = (f'<span id="{p}-w0x"><span id="{p}-w0" style="color:#f3ead8">{words[0]}</span><span style="color:#f3ead8"> · </span></span>'
+          + '<span style="color:#f3ead8"> · </span>'.join(f'<span id="{p}-w{i}" style="color:#f3ead8">{w}</span>' for i, w in enumerate(words) if i))
     html = f'''<div id="{p}-cam" class="ao-cam" style="background:#050302" data-layout-allow-overflow><div id="{p}-wall" class="ao-full">{wall}</div>
 <div class="ao-full" style="background:rgba(5,3,2,.62)"></div></div>'''
     fg = f'<div id="{p}-g" class="ao-full" style="transform-origin:50% 50%"><div style="position:absolute;left:0;width:1920px;top:460px;text-align:center;font:400 112px/1 Anton;letter-spacing:.02em;white-space:nowrap">{ws}</div></div>'
     js = "".join(f"tl.fromTo(q('f{10 + i}'), {{ y: -1300 }}, {{ y: 0, duration: 0.3, ease: 'power3.in' }}, {0.05 + i * 0.1:.2f});" for i in range(18))
     js += "".join(f"tl.set(q('w{i}'), {{ color: '{ACC}' }}, {0.3 + i * 0.55:.2f});" for i in range(3))
-    js += f"shot('cam', 0, 1.3, [1.0,0,0], [1.03,0,0]); /*cut*/ shot('cam', 1.3, {d}, [1.8,500,300,2], [1.85,500,300,2]); shot('g', 1.3, {d}, [1.5,-380,0], [1.52,-390,0]);"
+    js += f"shot('cam', 0, 1.3, [1.0,0,0], [1.03,0,0]); /*cut*/ shot('cam', 1.3, {d}, [1.8,500,300,2], [1.85,500,300,2]); shot('g', 1.3, {d}, [1.35,-462,0], [1.37,-470,0]); tl.set(q('w0x'), {{ opacity: 0 }}, 1.3);"
     return S(html, js, fg=fg)
 
 
@@ -484,7 +485,7 @@ shot('cam', 0, 1.0, [1.2,0,0], [1.25,0,0]); shot('cam', 1.0, {d}, [1.0,-200,-10]
 def origen(p, mode):
     yrs = "".join(f'<div style="position:absolute;left:{260 + (y - 1954) * 40}px;top:600px;width:3px;height:{30 if y % 5 == 0 else 14}px;background:#3d3428"></div>' for y in range(1954, 1990))
     lbls = "".join(f'<div style="position:absolute;left:{260 + (y - 1954) * 40 - 50}px;top:640px;width:100px;text-align:center;font:700 30px Courier Prime;color:#3d3428">{y}</div>' for y in (1954, 1964, 1974, 1984, 1989))
-    html = f'<div id="{p}-cam" class="ao-cam" style="{PAPER()}" data-layout-allow-overflow></div>'
+    html = f'<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>{BIGPAPER()}</div>'
     blocks = ""
     if mode == "periods":
         blocks = "".join(f'<div id="{p}-k{i}" style="position:absolute;left:{260 + i * 200}px;top:470px;width:186px;height:110px;border:5px solid {ACC};opacity:0"><div style="font:400 64px/100px Anton;color:#2a2219;text-align:center">{i + 1}</div></div>' for i in range(7))
@@ -506,7 +507,7 @@ def origen(p, mode):
 def s61(p, d):
     html, fg = origen(p, "open")
     js = f"""tl.fromTo(q('ax'), {{ scaleX: 0.02 }}, {{ scaleX: 1, duration: 1.2, ease: 'power3.out' }}, 0.1);
-shot('cam', 0, 0.9, [2.2,1500,-120], [2.25,1480,-120]); shot('g', 0, 0.9, [2.2,1500,-120], [2.25,1480,-120]);
+shot('cam', 0, 0.9, [2.2,1150,-120], [2.25,1140,-120]); shot('g', 0, 0.9, [2.2,1150,-120], [2.25,1140,-120]);
 /*cut*/ shot('cam', 0.9, {d}, [1.0,0,0], [1.02,-10,0]); shot('g', 0.9, {d}, [1.0,0,0], [1.02,-10,0]);"""
     return S(html, js, TL_CSS, fg=fg)
 
@@ -534,7 +535,7 @@ def s64(p, d):
     js = f"""tl.set(q('mk'), {{ opacity: 1 }}, 0); tl.fromTo(q('fill'), {{ scaleX: 0 }}, {{ scaleX: 1, duration: 1.15, ease: 'power1.inOut' }}, 0.05);
 tl.set(q('big'), {{ opacity: 1 }}, 0.05); count('n', 0, 35, 0.05, 1.15);
 shot('cam', 0, 1.25, [1.0,0,0], [1.02,0,0]); shot('g', 0, 1.25, [1.0,0,0], [1.02,0,0]);
-/*cut*/ shot('cam', 1.25, {d}, [1.9,0,-560], [1.94,0,-575]); shot('g', 1.25, {d}, [1.9,0,-560], [1.94,0,-575]);"""
+/*cut*/ shot('cam', 1.25, {d}, [1.9,0,-800], [1.94,0,-815]); shot('g', 1.25, {d}, [1.9,0,-800], [1.94,0,-815]);"""
     return S(html, js, TL_CSS, fg=fg)
 
 
@@ -543,6 +544,6 @@ def s65(p, d):
     html, fg = origen(p, "periods")
     js = f"""tl.set(q('fill'), {{ scaleX: 1 }}, 0); tl.set(q('big'), {{ opacity: 1 }}, 0);
 {"".join(f"tl.fromTo(q('k{i}'), {{ opacity: 0, y: -40 }}, {{ opacity: 1, y: 0, duration: 0.15, ease: 'power3.out' }}, {0.1 + i * 0.15:.2f}); tl.set(q('n'), {{ textContent: '{i + 1}' }}, {0.1 + i * 0.15:.2f});" for i in range(7))}
-shot('cam', 0, 1.25, [1.25,0,180], [1.27,0,180]); shot('g', 0, 1.25, [1.25,0,180], [1.27,0,180]);
+shot('cam', 0, 1.25, [1.15,0,150], [1.17,0,150]); shot('g', 0, 1.25, [1.15,0,150], [1.17,0,150]);
 /*cut*/ shot('cam', 1.25, {d}, [1.0,0,0], [1.02,0,0]); shot('g', 1.25, {d}, [1.0,0,0], [1.02,0,0]);"""
     return S(html, js, TL_CSS, fg=fg)

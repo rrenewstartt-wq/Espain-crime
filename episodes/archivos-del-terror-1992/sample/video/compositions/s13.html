@@ -11,45 +11,45 @@
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Regular.ttf");font-weight:400}
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Bold.ttf");font-weight:700}
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-BoldItalic.ttf");font-weight:700;font-style:italic}
+@font-face{font-family:"Caveat";src:url("assets/fonts/Caveat-Bold.woff2");font-weight:700}
 
-#root{position:absolute;inset:0;overflow:hidden;background:#0c1013;color:#f1f3f2;font-family:"Work Sans",sans-serif}
+#root{position:absolute;inset:0;overflow:hidden;background:#000;color:#f1f3f2;font-family:"Work Sans",sans-serif}
 .ao-full{position:absolute;left:0;top:0;width:1920px;height:1080px}
 .ao-cam{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:50% 50%}
-.ao-cover{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}
+.ao-fg{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:40;transform-origin:50% 50%}
+.ao-vig{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:20;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 48%,rgba(0,0,0,0) 48%,rgba(0,0,0,.38) 78%,rgba(0,0,0,.72) 100%)}
+.ao-grain{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:21;pointer-events:none;
+  background:url(assets/tex/grain.png);mix-blend-mode:overlay;opacity:.26}
 .ao-tag{position:absolute;top:70px;right:110px;font:700 22px/1 "IBM Plex Mono",monospace;letter-spacing:.16em;color:#f3f5f4;
-  background:rgba(7,11,14,.66);padding:11px 16px 11px 14px;display:flex;align-items:center;gap:12px;text-transform:uppercase;z-index:60}
+  background:rgba(5,7,9,.72);padding:11px 16px 11px 14px;display:flex;align-items:center;gap:12px;text-transform:uppercase;z-index:60}
 .ao-tag i{width:12px;height:12px;background:#2EC4B6;display:block;flex:none}
 .ao-tag.src{font-weight:400;font-size:19px;letter-spacing:.07em;text-transform:none}
 .ao-tag.src b{font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.ao-osm{position:absolute;right:110px;bottom:60px;font:400 18px/1 "IBM Plex Mono",monospace;color:#e9eeec;background:rgba(7,11,14,.7);
-  padding:8px 12px;z-index:60}
 .ao-lt{position:absolute;left:176px;bottom:150px;z-index:55;padding:4px 30px 6px 0}
 .ao-lt .bar{position:absolute;left:-26px;top:8px;width:10px;bottom:10px;background:#2EC4B6}
 .ao-lt .nm{font:800 80px/0.95 "Barlow Condensed",sans-serif;text-transform:uppercase;color:#fff;display:inline-block;
-  transform:skewX(-9deg);letter-spacing:.01em;text-shadow:0 4px 22px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.6)}
-.ao-lt .rl{font:400 33px/1.2 "Work Sans",sans-serif;color:#eef2f0;margin-top:10px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+  transform:skewX(-9deg);letter-spacing:.01em;text-shadow:0 4px 22px rgba(0,0,0,.8),0 0 2px rgba(0,0,0,.7)}
+.ao-lt .rl{font:400 33px/1.2 "Work Sans",sans-serif;color:#eef2f0;margin-top:10px;text-shadow:0 2px 12px rgba(0,0,0,.95)}
 .ao-ch{display:none}
 .ao-num{font-family:"Anton",sans-serif;color:#2EC4B6;line-height:.92;letter-spacing:.005em;font-variant-numeric:tabular-nums}
 .ao-unit{font-family:"Anton",sans-serif;color:#f4f2ec;letter-spacing:.03em}
-.ao-mono{font-family:"Courier Prime",monospace}
-.ao-paper{background:url("assets/tex/paper_cream.jpg") center/cover}
-.ao-grey{background:url("assets/tex/paper_grey.jpg") center/cover}
-.ao-desk{background:url("assets/tex/desk_dark.jpg") center/cover}
-.ao-shadow{box-shadow:0 30px 60px rgba(0,0,0,.55),0 6px 14px rgba(0,0,0,.4)}
-.ao-stamp{font-family:"Anton",sans-serif;color:#2EC4B6;border:8px solid #2EC4B6;padding:6px 26px 2px;letter-spacing:.06em;
-  display:inline-block;mix-blend-mode:multiply}
-.ao-blurline{height:16px;background:#4a4a48;border-radius:3px;filter:blur(5px);opacity:.55;margin:0 0 26px}
+.ao-shadow{box-shadow:0 30px 60px rgba(0,0,0,.6),0 6px 14px rgba(0,0,0,.45)}
+.ao-stamp{font-family:"Anton",sans-serif;color:#1f5f73;border:8px solid #1f5f73;padding:6px 26px 2px;letter-spacing:.06em;
+  display:inline-block;mix-blend-mode:multiply;opacity:.9}
+.ao-stampT{font-family:"Anton",sans-serif;color:#2EC4B6;border:8px solid #2EC4B6;padding:6px 26px 2px;letter-spacing:.06em;display:inline-block}
+.ao-blurline{height:16px;background:#3c3a36;border-radius:3px;filter:blur(4px);opacity:.6;margin:0 0 26px}
+.ao-hand{font-family:"Caveat",cursive;font-weight:700}
 
-#root{}
+#root{background:#000}
 
 </style>
 <div id="root" data-composition-id="s13" data-width="1920" data-height="1080" data-duration="1.8">
-<div id="s13-cam" class="ao-cam ao-desk" data-layout-allow-overflow><div id="s13-sh" class="ao-full"><div id="s13-card" style="position:absolute;left:460px;top:250px;width:1000px;height:600px;background:url(assets/tex/paper_grey.jpg) center/cover;
-box-shadow:0 30px 70px rgba(0,0,0,.55);transform:rotate(1.5deg);padding:60px 70px;
-background-image:url(assets/tex/paper_grey.jpg)">
-<div style="position:absolute;left:0;right:0;top:118px;height:3px;background:#6d8796;opacity:.7"></div>
-<div style="position:absolute;left:0;right:0;top:170px;height:2px;background:#8aa0ab;opacity:.45"></div><div style="position:absolute;left:0;right:0;top:234px;height:2px;background:#8aa0ab;opacity:.45"></div><div style="position:absolute;left:0;right:0;top:298px;height:2px;background:#8aa0ab;opacity:.45"></div><div style="position:absolute;left:0;right:0;top:362px;height:2px;background:#8aa0ab;opacity:.45"></div><div style="position:absolute;left:0;right:0;top:426px;height:2px;background:#8aa0ab;opacity:.45"></div><div style="position:absolute;left:0;right:0;top:490px;height:2px;background:#8aa0ab;opacity:.45"></div>
-<div style="font:700 30px 'Courier Prime';letter-spacing:.2em;color:#44514f">NOMBRE</div><div style="font:700 62px 'Courier Prime';color:#1d2222;margin-top:40px;white-space:nowrap">JOSÉ AGUSTÍN FERNÁNDEZ</div><div id="s13-st" class="ao-stamp" style="position:absolute;left:150px;top:300px;font-size:84px">JUEZ EN LO CRIMINAL</div></div></div></div><div id="s13-vg" style="position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:30;opacity:0;pointer-events:none;background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,.25) 30%,rgba(0,0,0,.58) 65%,rgba(0,0,0,.82) 100%)"></div>
+<div id="s13-cam" class="ao-cam" style="background:#000 url(assets/tex/desk_cold.jpg) center/cover" data-layout-allow-overflow><div id="s13-sh" class="ao-full"><div id="s13-card" style="position:absolute;left:460px;top:250px;width:1000px;height:600px;background:url(assets/tex/paper_grey.jpg) center/cover;
+box-shadow:0 30px 70px rgba(0,0,0,.65);transform:rotate(1.5deg);padding:60px 70px">
+<div style="position:absolute;left:0;right:0;top:118px;height:3px;background:#5d7a8a;opacity:.8"></div><div style="position:absolute;left:0;right:0;top:170px;height:2px;background:#7d93a0;opacity:.5"></div><div style="position:absolute;left:0;right:0;top:234px;height:2px;background:#7d93a0;opacity:.5"></div><div style="position:absolute;left:0;right:0;top:298px;height:2px;background:#7d93a0;opacity:.5"></div><div style="position:absolute;left:0;right:0;top:362px;height:2px;background:#7d93a0;opacity:.5"></div><div style="position:absolute;left:0;right:0;top:426px;height:2px;background:#7d93a0;opacity:.5"></div><div style="position:absolute;left:0;right:0;top:490px;height:2px;background:#7d93a0;opacity:.5"></div><div style="font:700 30px 'Courier Prime';letter-spacing:.2em;color:#44514f">NOMBRE</div><div style="font:700 62px 'Courier Prime';color:#1a1f1f;margin-top:40px;white-space:nowrap">JOSÉ AGUSTÍN FERNÁNDEZ</div><div id="s13-st" class="ao-stamp" style="position:absolute;left:150px;top:300px;font-size:84px">JUEZ EN LO CRIMINAL</div></div></div></div>
+<div id="s13-vig" class="ao-vig"></div><div id="s13-grain" class="ao-grain"></div>
+
 </div>
 <script>
 (function () {
@@ -60,19 +60,19 @@ const q = (s) => "#" + P + "-" + s;
 function type(key, n, t0, dt) { for (let i = 0; i < n; i++) tl.set(q(key + i), { display: "inline" }, t0 + i * dt); }
 function blink(key, t0, t1, per) { let on = true; for (let t = t0; t < t1 - 0.001; t += per) { tl.set(q(key), { opacity: on ? 1 : 0 }, t); on = !on; } }
 function fmt(n) { return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
-function count(key, a, b, t0, d, pre, suf) { const F = Math.max(1, Math.round(d * 30)); for (let f = 0; f <= F; f++) { const p = f / F, e = 1 - Math.pow(1 - p, 3); tl.set(q(key), { textContent: "​" + (pre || "") + fmt(a + (b - a) * e) + (suf || "") }, t0 + f / 30); } }
-function shot(key, t0, t1, a, b, ease) { tl.set(q(key), { scale: a[0], x: a[1], y: a[2], rotation: a[3] || 0 }, t0); tl.to(q(key), { scale: b[0], x: b[1], y: b[2], rotation: b[3] || 0, duration: t1 - t0, ease: ease || "sine.inOut" }, t0); }
+function count(key, a, b, t0, d, pre, suf) { const F = Math.max(1, Math.round(d * 30)); for (let f = 0; f <= F; f++) { const p = f / F, e = 1 - Math.pow(1 - p, 3); tl.set(q(key), { textContent: "\u200B" + (pre || "") + fmt(a + (b - a) * e) + (suf || "") }, t0 + f / 30); } }
+function shot(key, t0, t1, a, b, ease) { tl.set(q(key), { scale: a[0], x: a[1], y: a[2], rotation: a[3] || 0 }, t0); tl.to(q(key), { scale: b[0], x: b[1], y: b[2], rotation: b[3] || 0, duration: t1 - t0, ease: ease || "none" }, t0); }
+function show(key, t0, t1) { tl.set(q(key), { opacity: 0 }, 0); tl.set(q(key), { opacity: 1 }, t0); if (t1 !== undefined) tl.set(q(key), { opacity: 0 }, t1); }
 function lt(t0) { tl.fromTo(q("lt"), { clipPath: "inset(-20% 100% -20% -10%)", x: -40 }, { clipPath: "inset(-20% -5% -20% -10%)", x: 0, duration: 0.5, ease: "expo.out" }, t0); }
 function tag(t0) { tl.fromTo(q("tag"), { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.25, ease: "power3.out" }, t0); }
-function whipIn(key, t0, dx) { tl.fromTo(q(key), { x: dx, filter: "blur(18px)" }, { x: 0, filter: "blur(0px)", duration: 0.28, ease: "expo.out" }, t0); }
+function whipIn(key, t0, dx) { tl.fromTo(q(key), { x: dx, filter: "blur(22px)" }, { x: 0, filter: "blur(0px)", duration: 0.3, ease: "expo.out" }, t0); }
 function stampIn(key, t0, rot) { tl.fromTo(q(key), { scale: 2.4, opacity: 0, rotation: rot - 8 }, { scale: 1, opacity: 1, rotation: rot, duration: 0.16, ease: "power4.in" }, t0); }
 function shake(key, t0, amp) { const k = [[1, -.6], [-.8, .9], [.6, -.4], [-.35, .3], [.15, -.1], [0, 0]]; k.forEach((v, i) => tl.set(q(key), { x: v[0] * amp, y: v[1] * amp }, t0 + i / 30)); }
-function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .9, duration: d, ease: "none" }, t0); } }
+function dust(n, t0, d) { for (let i = 0; i < n; i++) { const s = ((i * 7919) % 1000) / 1000; tl.fromTo(q("d" + i), { y: 0, opacity: 0 }, { y: -60 - 140 * s, x: (s - .5) * 60, opacity: .85, duration: d, ease: "none" }, t0); } }
 
-shot('cam', 0, 0.9, [1.12,0,20], [1.16,0,20], 'none'); stampIn('st', 0.35, -6); shake('sh', 0.51, 14);
-shot('cam', 0.9, 1.8, [1.9,-140,-280,4], [1.96,-150,-290,4], 'none');
-tl.set(q('vg'), { opacity: 0 }, 0.0);
-tl.set(q('vg'), { opacity: 1 }, 0.9);
+shot('cam', 0, 0.9, [1.12,0,20], [1.16,0,20]); stampIn('st', 0.35, -6); shake('sh', 0.51, 14);
+/*cut*/ shot('cam', 0.9, 1.8, [2.0,-200,-130,4], [2.06,-215,-135,4]);
+tl.set(q('grain'), { backgroundPosition: '0px 0px' }, 0.000);tl.set(q('grain'), { backgroundPosition: '137px 211px' }, 0.067);tl.set(q('grain'), { backgroundPosition: '274px 422px' }, 0.133);tl.set(q('grain'), { backgroundPosition: '411px 121px' }, 0.200);tl.set(q('grain'), { backgroundPosition: '36px 332px' }, 0.267);tl.set(q('grain'), { backgroundPosition: '173px 31px' }, 0.333);tl.set(q('grain'), { backgroundPosition: '310px 242px' }, 0.400);tl.set(q('grain'), { backgroundPosition: '447px 453px' }, 0.467);tl.set(q('grain'), { backgroundPosition: '72px 152px' }, 0.533);tl.set(q('grain'), { backgroundPosition: '209px 363px' }, 0.600);tl.set(q('grain'), { backgroundPosition: '346px 62px' }, 0.667);tl.set(q('grain'), { backgroundPosition: '483px 273px' }, 0.733);tl.set(q('grain'), { backgroundPosition: '108px 484px' }, 0.800);tl.set(q('grain'), { backgroundPosition: '245px 183px' }, 0.867);tl.set(q('grain'), { backgroundPosition: '382px 394px' }, 0.933);tl.set(q('grain'), { backgroundPosition: '7px 93px' }, 1.000);tl.set(q('grain'), { backgroundPosition: '144px 304px' }, 1.067);tl.set(q('grain'), { backgroundPosition: '281px 3px' }, 1.133);tl.set(q('grain'), { backgroundPosition: '418px 214px' }, 1.200);tl.set(q('grain'), { backgroundPosition: '43px 425px' }, 1.267);tl.set(q('grain'), { backgroundPosition: '180px 124px' }, 1.333);tl.set(q('grain'), { backgroundPosition: '317px 335px' }, 1.400);tl.set(q('grain'), { backgroundPosition: '454px 34px' }, 1.467);tl.set(q('grain'), { backgroundPosition: '79px 245px' }, 1.533);tl.set(q('grain'), { backgroundPosition: '216px 456px' }, 1.600);tl.set(q('grain'), { backgroundPosition: '353px 155px' }, 1.667);tl.set(q('grain'), { backgroundPosition: '490px 366px' }, 1.733);tl.set(q('grain'), { backgroundPosition: '115px 65px' }, 1.800);
 tl.set({}, {}, 1.799);
 window.__timelines["s13"] = tl;
 })();

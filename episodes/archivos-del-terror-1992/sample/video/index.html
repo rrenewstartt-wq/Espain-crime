@@ -16,15 +16,16 @@
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Regular.ttf");font-weight:400}
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-Bold.ttf");font-weight:700}
 @font-face{font-family:"Work Sans";src:url("assets/fonts/WorkSans-BoldItalic.ttf");font-weight:700;font-style:italic}
+@font-face{font-family:"Caveat";src:url("assets/fonts/Caveat-Bold.woff2");font-weight:700}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
 #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
 #review { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; z-index: 90; display: none; pointer-events: none; }
 #review .cap { position: absolute; left: 240px; width: 1440px; bottom: 34px; text-align: center; }
-#review .cap span { display: inline-block; font: 400 28px/1.35 "Work Sans", sans-serif; color: #fff; background: rgba(0,0,0,.62); padding: 6px 16px; }
+#review .cap span { display: inline-block; font: 400 28px/1.35 "Work Sans", sans-serif; color: #fff; background: rgba(0,0,0,.66); padding: 6px 16px; }
 #review-flag { position: absolute; left: 110px; top: 70px; font: 700 22px/1 "IBM Plex Mono", monospace; letter-spacing: .14em; color: #fff;
-  background: rgba(0,0,0,.66); padding: 10px 14px; border: 2px solid #fff; }
+  background: rgba(0,0,0,.7); padding: 10px 14px; border: 2px solid #fff; }
 </style>
 </head>
 <body>
@@ -95,44 +96,41 @@ html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; backgro
 <div id="s64" data-composition-id="s64" data-composition-src="compositions/s64.html" data-start="116.4" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
 <div id="s65" data-composition-id="s65" data-composition-src="compositions/s65.html" data-start="118.9" data-duration="2.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:1"></div>
 <div id="fx" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="121.4" data-track-index="2" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index:80"></div>
-<audio id="a-bed1" class="clip" src="assets/audio/bed.wav" data-start="0.0" data-duration="57.55" data-media-start="0.0" data-volume="1.488" data-track-index="3"></audio>
+<audio id="a-bed1" class="clip" src="assets/audio/bed.wav" data-start="0.0" data-duration="56.1" data-media-start="0.0" data-volume="1.488" data-track-index="3"></audio>
 <audio id="a-bed2" class="clip" src="assets/audio/bed.wav" data-start="62.9" data-duration="58.5" data-media-start="8.0" data-volume="1.488" data-track-index="3"></audio>
 <audio id="a-tw1" class="clip" src="assets/audio/typewriter.wav" data-start="0.3" data-duration="1.85" data-media-start="0.4" data-volume="0.405" data-track-index="4"></audio>
 <audio id="a-tw2" class="clip" src="assets/audio/typewriter.wav" data-start="2.42" data-duration="1.0" data-media-start="5.2" data-volume="0.405" data-track-index="4"></audio>
 <audio id="a-tw3" class="clip" src="assets/audio/typewriter.wav" data-start="20.05" data-duration="0.85" data-media-start="9.0" data-volume="0.27" data-track-index="4"></audio>
 <audio id="a-tw4" class="clip" src="assets/audio/typewriter.wav" data-start="23.98" data-duration="1.55" data-media-start="12.0" data-volume="0.383" data-track-index="4"></audio>
-<audio id="a-tw5" class="clip" src="assets/audio/typewriter.wav" data-start="49.52" data-duration="0.95" data-media-start="15.3" data-volume="0.383" data-track-index="4"></audio>
+<audio id="a-tw5" class="clip" src="assets/audio/typewriter.wav" data-start="49.52" data-duration="0.85" data-media-start="15.3" data-volume="0.383" data-track-index="4"></audio>
 <audio id="a-tw6" class="clip" src="assets/audio/typewriter.wav" data-start="89.03" data-duration="0.55" data-media-start="2.0" data-volume="0.36" data-track-index="4"></audio>
 <audio id="a-tw7" class="clip" src="assets/audio/typewriter.wav" data-start="109.1" data-duration="1.4" data-media-start="6.6" data-volume="0.383" data-track-index="4"></audio>
 <audio id="a-wh1" class="clip" src="assets/audio/whoosh.wav" data-start="3.5" data-duration="1.2" data-media-start="0.0" data-volume="0.8" data-track-index="5"></audio>
-<audio id="a-wh2" class="clip" src="assets/audio/whoosh_b.wav" data-start="11.62" data-duration="0.9" data-media-start="0.0" data-volume="0.6" data-track-index="5"></audio>
+<audio id="a-wh2" class="clip" src="assets/audio/whoosh_b.wav" data-start="31.5" data-duration="0.9" data-media-start="0.0" data-volume="0.6" data-track-index="5"></audio>
 <audio id="a-wh3" class="clip" src="assets/audio/whoosh_b.wav" data-start="62.82" data-duration="0.9" data-media-start="0.0" data-volume="0.9" data-track-index="5"></audio>
 <audio id="a-wh4" class="clip" src="assets/audio/whoosh.wav" data-start="107.55" data-duration="1.2" data-media-start="0.0" data-volume="0.9" data-track-index="5"></audio>
 <audio id="a-wh5" class="clip" src="assets/audio/whoosh_b.wav" data-start="66.2" data-duration="0.9" data-media-start="0.0" data-volume="0.45" data-track-index="5"></audio>
-<audio id="a-st1" class="clip" src="assets/audio/impact.wav" data-start="22.45" data-duration="1.6" data-media-start="0.0" data-volume="0.275" data-track-index="6"></audio>
-<audio id="a-st2" class="clip" src="assets/audio/impact.wav" data-start="44.05" data-duration="1.6" data-media-start="0.0" data-volume="0.25" data-track-index="6"></audio>
-<audio id="a-pz" class="clip" src="assets/audio/impact.wav" data-start="57.6" data-duration="2.0" data-media-start="0.0" data-volume="0.45" data-track-index="6"></audio>
-<audio id="a-lk" class="clip" src="assets/audio/lock.wav" data-start="61.95" data-duration="0.8" data-media-start="0.0" data-volume="0.495" data-track-index="7"></audio>
-<audio id="a-lki" class="clip" src="assets/audio/impact.wav" data-start="61.95" data-duration="2.0" data-media-start="0.0" data-volume="0.45" data-track-index="6"></audio>
-<audio id="a-q1" class="clip" src="assets/audio/impact.wav" data-start="86.85" data-duration="2.0" data-media-start="0.0" data-volume="0.425" data-track-index="6"></audio>
-<audio id="a-q2" class="clip" src="assets/audio/impact.wav" data-start="91.15" data-duration="2.0" data-media-start="0.0" data-volume="0.425" data-track-index="6"></audio>
-<audio id="a-q3" class="clip" src="assets/audio/impact.wav" data-start="96.45" data-duration="2.0" data-media-start="0.0" data-volume="0.475" data-track-index="6"></audio>
-<audio id="a-zq3b" class="clip" src="assets/audio/impact.wav" data-start="96.92" data-duration="2.0" data-media-start="0.0" data-volume="0.3" data-track-index="10"></audio>
+<audio id="a-st1" class="clip" src="assets/audio/impact.wav" data-start="22.45" data-duration="1.6" data-media-start="0.0" data-volume="0.25" data-track-index="6"></audio>
+<audio id="a-st2" class="clip" src="assets/audio/impact.wav" data-start="44.05" data-duration="1.6" data-media-start="0.0" data-volume="0.225" data-track-index="6"></audio>
+<audio id="a-pz" class="clip" src="assets/audio/impact.wav" data-start="57.4" data-duration="2.0" data-media-start="0.0" data-volume="0.5" data-track-index="6"></audio>
+<audio id="a-lk" class="clip" src="assets/audio/lock.wav" data-start="61.95" data-duration="0.8" data-media-start="0.0" data-volume="0.55" data-track-index="7"></audio>
+<audio id="a-lki" class="clip" src="assets/audio/impact.wav" data-start="61.95" data-duration="2.0" data-media-start="0.0" data-volume="0.8" data-track-index="6"></audio>
+<audio id="a-q1" class="clip" src="assets/audio/impact.wav" data-start="86.85" data-duration="2.0" data-media-start="0.0" data-volume="0.8" data-track-index="6"></audio>
+<audio id="a-q2" class="clip" src="assets/audio/impact.wav" data-start="91.15" data-duration="2.0" data-media-start="0.0" data-volume="0.8" data-track-index="6"></audio>
+<audio id="a-q3" class="clip" src="assets/audio/impact.wav" data-start="96.45" data-duration="2.0" data-media-start="0.0" data-volume="0.85" data-track-index="6"></audio>
+<audio id="a-zq3b" class="clip" src="assets/audio/impact.wav" data-start="97.67" data-duration="2.0" data-media-start="0.0" data-volume="0.55" data-track-index="10"></audio>
 <audio id="a-rs1" class="clip" src="assets/audio/riser.wav" data-start="100.95" data-duration="3.0" data-media-start="0.0" data-volume="0.64" data-track-index="8"></audio>
-<audio id="a-tt" class="clip" src="assets/audio/impact.wav" data-start="103.95" data-duration="2.0" data-media-start="0.0" data-volume="0.5" data-track-index="6"></audio>
+<audio id="a-tt" class="clip" src="assets/audio/impact.wav" data-start="103.95" data-duration="2.0" data-media-start="0.0" data-volume="0.9" data-track-index="6"></audio>
 <audio id="a-rs2" class="clip" src="assets/audio/riser.wav" data-start="106.1" data-duration="1.0" data-media-start="2.0" data-volume="0.64" data-track-index="8"></audio>
 <audio id="a-rs0" class="clip" src="assets/audio/riser.wav" data-start="58.4" data-duration="3.0" data-media-start="0.0" data-volume="0.28" data-track-index="8"></audio>
-<audio id="a-k21_0" class="clip" src="assets/audio/tick.wav" data-start="36.9" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_1" class="clip" src="assets/audio/tick.wav" data-start="36.99" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_2" class="clip" src="assets/audio/tick.wav" data-start="37.085" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_3" class="clip" src="assets/audio/tick.wav" data-start="37.186" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_4" class="clip" src="assets/audio/tick.wav" data-start="37.292" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_5" class="clip" src="assets/audio/tick.wav" data-start="37.404" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_6" class="clip" src="assets/audio/tick.wav" data-start="37.521" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_7" class="clip" src="assets/audio/tick.wav" data-start="37.643" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_8" class="clip" src="assets/audio/tick.wav" data-start="37.771" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_9" class="clip" src="assets/audio/tick.wav" data-start="37.904" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k21_10" class="clip" src="assets/audio/tick.wav" data-start="38.043" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_0" class="clip" src="assets/audio/tick.wav" data-start="36.85" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_1" class="clip" src="assets/audio/tick.wav" data-start="36.94" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_2" class="clip" src="assets/audio/tick.wav" data-start="37.035" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_3" class="clip" src="assets/audio/tick.wav" data-start="37.136" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_4" class="clip" src="assets/audio/tick.wav" data-start="37.242" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_5" class="clip" src="assets/audio/tick.wav" data-start="37.354" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_6" class="clip" src="assets/audio/tick.wav" data-start="37.471" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k21_7" class="clip" src="assets/audio/tick.wav" data-start="37.593" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k39_0" class="clip" src="assets/audio/tick.wav" data-start="67.55" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k39_1" class="clip" src="assets/audio/tick.wav" data-start="67.64" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k39_2" class="clip" src="assets/audio/tick.wav" data-start="67.735" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
@@ -142,9 +140,6 @@ html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; backgro
 <audio id="a-k39_6" class="clip" src="assets/audio/tick.wav" data-start="68.171" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k39_7" class="clip" src="assets/audio/tick.wav" data-start="68.293" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k39_8" class="clip" src="assets/audio/tick.wav" data-start="68.421" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k39_9" class="clip" src="assets/audio/tick.wav" data-start="68.554" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k39_10" class="clip" src="assets/audio/tick.wav" data-start="68.693" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k39_11" class="clip" src="assets/audio/tick.wav" data-start="68.837" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k42_0" class="clip" src="assets/audio/tick.wav" data-start="73.95" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k42_1" class="clip" src="assets/audio/tick.wav" data-start="74.03" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k42_2" class="clip" src="assets/audio/tick.wav" data-start="74.115" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
@@ -155,19 +150,16 @@ html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; backgro
 <audio id="a-k42_7" class="clip" src="assets/audio/tick.wav" data-start="74.611" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k42_8" class="clip" src="assets/audio/tick.wav" data-start="74.724" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <audio id="a-k42_9" class="clip" src="assets/audio/tick.wav" data-start="74.843" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k42_10" class="clip" src="assets/audio/tick.wav" data-start="74.966" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k42_11" class="clip" src="assets/audio/tick.wav" data-start="75.094" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_0" class="clip" src="assets/audio/tick.wav" data-start="116.5" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_1" class="clip" src="assets/audio/tick.wav" data-start="116.6" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_2" class="clip" src="assets/audio/tick.wav" data-start="116.706" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_3" class="clip" src="assets/audio/tick.wav" data-start="116.818" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_4" class="clip" src="assets/audio/tick.wav" data-start="116.936" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_5" class="clip" src="assets/audio/tick.wav" data-start="117.06" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_6" class="clip" src="assets/audio/tick.wav" data-start="117.19" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_7" class="clip" src="assets/audio/tick.wav" data-start="117.326" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_8" class="clip" src="assets/audio/tick.wav" data-start="117.468" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_9" class="clip" src="assets/audio/tick.wav" data-start="117.616" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
-<audio id="a-k64_10" class="clip" src="assets/audio/tick.wav" data-start="117.77" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_0" class="clip" src="assets/audio/tick.wav" data-start="116.45" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_1" class="clip" src="assets/audio/tick.wav" data-start="116.55" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_2" class="clip" src="assets/audio/tick.wav" data-start="116.656" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_3" class="clip" src="assets/audio/tick.wav" data-start="116.768" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_4" class="clip" src="assets/audio/tick.wav" data-start="116.886" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_5" class="clip" src="assets/audio/tick.wav" data-start="117.01" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_6" class="clip" src="assets/audio/tick.wav" data-start="117.14" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_7" class="clip" src="assets/audio/tick.wav" data-start="117.276" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_8" class="clip" src="assets/audio/tick.wav" data-start="117.418" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
+<audio id="a-k64_9" class="clip" src="assets/audio/tick.wav" data-start="117.566" data-duration="0.06" data-media-start="0.0" data-volume="0.7" data-track-index="9"></audio>
 <div id="review" data-track-kind="captions" data-layout-allow-caption-zone>
 <div id="review-flag">BORRADOR · SIN NARRACIÓN</div>
 <div id="cap0" class="clip cap" data-start="0.0" data-duration="6.4" data-track-index="11"><span>Es la mañana del 22 de diciembre de 1992 en Lambaré, a cuatro kilómetros del centro de Asunción.</span></div>
