@@ -148,11 +148,11 @@ def grade(src, dst, kind, maxw=2200):
     a = np.asarray(im, np.float32) / 255
     lum = a @ np.array([0.299, 0.587, 0.114])
     if kind == "sepia":          # 1954: warm brown-cream, soft contrast
-        lo, hi = np.array([0.20, 0.12, 0.06]), np.array([0.98, 0.90, 0.72])
+        lo, hi = np.array([0.22, 0.12, 0.05]), np.array([0.97, 0.86, 0.62])
         l2 = np.clip((lum - 0.04) / 0.94, 0, 1) ** 1.05
         o = lo * (1 - l2[..., None]) + hi * l2[..., None]
     elif kind == "cool":         # 1992 recreations: desaturated, slate shadows
-        sat = 0.6
+        sat = 0.85
         o = lum[..., None] * (1 - sat) + a * sat
         o = o * np.array([0.92, 0.98, 1.04]) * 0.92 + np.array([0.0, 0.01, 0.02])
     elif kind == "doc":          # scanned documents: paper warmed slightly

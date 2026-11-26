@@ -430,10 +430,10 @@ box-shadow:0 40px 80px rgba(0,0,0,.5);transform:rotate(-3deg)">
 <div style="position:absolute;left:-40px;right:-40px;top:-18px;height:30px;display:flex;justify-content:space-around">{"".join('<span style="width:22px;height:46px;border-radius:11px;background:#9aa3a8;box-shadow:inset 0 -6px 8px rgba(0,0,0,.35)"></span>' for _ in range(8))}</div>
 </div>'''
     html = f'''<div id="{p}-cam" class="ao-cam ao-desk" data-layout-allow-overflow>
-<div class="ao-full" style="background:radial-gradient(ellipse at 20% 10%,rgba(255,250,235,.55),rgba(0,0,0,0) 60%)"></div>
+<div class="ao-full" style="background:radial-gradient(ellipse at 20% 10%,rgba(250,220,165,.6),rgba(0,0,0,0) 60%)"></div>
 {page}
 <div id="{p}-rays" style="position:absolute;left:-600px;top:-500px;width:3000px;height:2200px;mix-blend-mode:screen;opacity:.75;
-background:repeating-linear-gradient(115deg,rgba(255,252,240,0) 0px,rgba(255,252,240,0) 90px,rgba(255,252,240,.30) 150px,rgba(255,252,240,0) 230px);filter:blur(14px)"></div>
+background:repeating-linear-gradient(115deg,rgba(255,236,196,0) 0px,rgba(255,236,196,0) 90px,rgba(255,226,172,.38) 150px,rgba(255,236,196,0) 230px);filter:blur(14px)"></div>
 {smoke_html(p, 0, 0.22)}{smoke_html(p, 1, 0.18)}
 </div>{tag_html(p, "RECREACIÓN")}'''
     js = f"""shot('cam', 0, 0.9, [1.0,0,0], [1.05,-10,0], 'none'); shot('cam', 0.9, {d}, [1.75,-40,-260,-2], [1.85,-60,-280,-2], 'none');
@@ -497,7 +497,7 @@ shot('cam', 0, 1.2, [1.0,0,0], [1.03,0,0], 'none'); shot('cam', 1.2, {d}, [1.22,
 def exterior(p, d, figure="", label=None, name=None, role=None, dim=False, tagtxt="RECREACIÓN", extra=""):
     html = f'''<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>
 <div id="{p}-sky" class="ao-full" style="background:url(assets/tex/sky_morning.jpg) center/cover{";filter:brightness(.72) saturate(.8)" if dim else ""}"></div>
-<div class="ao-full" style="background:radial-gradient(circle at 14% 12%,rgba(255,253,244,.95) 0,rgba(255,250,235,.35) 12%,rgba(255,255,255,0) 40%)"></div>
+<div class="ao-full" style="background:radial-gradient(circle at 14% 12%,rgba(255,250,236,.98) 0,rgba(250,214,150,.55) 14%,rgba(240,200,140,.18) 34%,rgba(255,255,255,0) 52%)"></div>
 <div id="{p}-bld" class="ao-full">{svg_building(p, dim)}</div>
 <svg id="{p}-fig" viewBox="0 0 1920 1080" width="1920" height="1080" style="position:absolute;left:0;top:0;overflow:visible">{figure}</svg>
 {smoke_html(p, 2, 0.28)}
@@ -1337,7 +1337,7 @@ def origen_tl(p, d, mode):
     if mode == "periods":
         blocks = "".join(f'<div id="{p}-k{i}" style="position:absolute;left:{220 + i * 200}px;top:470px;width:186px;height:110px;background:{ACC};opacity:0;border:4px solid #0f5f58"></div>' for i in range(7))
     html = f'''<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow>
-<div class="ao-full" style="background:url(assets/tex/paper_cream.jpg) center/cover;filter:sepia(.45) brightness(.92)"></div>
+<div class="ao-full" style="background:url(assets/tex/paper_cream.jpg) center/cover;filter:sepia(.85) saturate(1.5) brightness(.9)"></div>
 <div id="{p}-ax" style="position:absolute;left:220px;top:592px;width:1400px;height:10px;background:#2e2820;transform-origin:0 50%"></div>
 <div id="{p}-fill" style="position:absolute;left:220px;top:592px;width:1400px;height:10px;background:{ACC};transform-origin:0 50%;transform:scaleX(0)"></div>
 {yrs}{lbls}<div class="tl-dot" style="left:220px;top:597px"></div>{blocks}
@@ -1396,16 +1396,16 @@ shot('cam', 0, 1.25, [1.0,0,0], [1.02,0,0], 'none'); shot('cam', 1.25, {d}, [1.1
 # Shot grade alternation: every shot (scene start or internal punch-in cut) alternates between the
 # open grade and a "close-up" grade (dark vignette on bright scenes, cool haze lift on dark ones), so
 # each cut reads as a new shot (reference opening: ~0.9 s shots). Mean luma per scene measured on the
-# first render; >= 88 counts as bright.
+# first render; >= 100 counts as bright (darkening grade), below gets the haze lift.
 LUMA = [40, 41, 138, 55, 109, 125, 122, 146, 110, 92, 120, 106, 112, 105, 94, 68, 152, 96, 160, 65, 70, 91, 127, 157, 82, 94,
         157, 83, 91, 76, 57, 50, 59, 52, 136, 100, 121, 76, 84, 74, 94, 91, 70, 69, 155, 156, 66, 98, 143, 155, 110, 110, 94,
         63, 119, 69, 101, 86, 67, 52, 159, 105, 157, 155, 154]
 NO_GRADE = {1, 2, 59}
 PARITY = [0]
 VG_DARK = ('<div id="{p}-vg" style="position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:30;opacity:0;pointer-events:none;'
-           'background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,0) 24%,rgba(0,0,0,.62) 58%,rgba(0,0,0,.92) 100%)"></div>')
+           'background:radial-gradient(ellipse at 50% 46%,rgba(0,0,0,.25) 30%,rgba(0,0,0,.58) 65%,rgba(0,0,0,.82) 100%)"></div>')
 VG_LIFT = ('<div id="{p}-vg" style="position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:30;opacity:0;pointer-events:none;'
-           'mix-blend-mode:screen;background:radial-gradient(ellipse at 50% 42%,rgba(222,234,236,.55),rgba(200,216,222,.18) 55%,rgba(0,0,0,0) 80%)"></div>')
+           'mix-blend-mode:screen;background:rgba(212,226,230,.36)"></div>')
 
 
 def write_scene(n):
@@ -1415,10 +1415,10 @@ def write_scene(n):
     if n not in NO_GRADE:
         import re as _re
         cuts = [0.0] + sorted({float(m[0] or m[1]) for m in _re.findall(r"shot\('cam', ([\d.]+),|/\*cut:([\d.]+)\*/", sc["js"]) if float(m[0] or m[1]) > 0.01})
-        sc["html"] += VG_DARK.replace("{p}", p) + VG_LIFT.replace("{p}-vg", "{p}-vl").replace("{p}", p)
+        sc["html"] += (VG_DARK if LUMA[n - 1] >= 100 else VG_LIFT).replace("{p}", p)
         for t in cuts:
             o = PARITY[0] % 2
-            sc["js"] += f"\ntl.set(q('vg'), {{ opacity: {o} }}, {t}); tl.set(q('vl'), {{ opacity: {o * (0.55 if LUMA[n - 1] >= 88 else 1)} }}, {t});"
+            sc["js"] += f"\ntl.set(q('vg'), {{ opacity: {o} }}, {t});"
             PARITY[0] += 1
     bg = f"background:{sc['bg']};" if sc.get("bg") else ""
     html = f"""<template>
@@ -1524,6 +1524,15 @@ def LANE(a):
     return 10
 
 
+# mix gains (measured with an offline ffmpeg sum of these cues: target about -15 LUFS, peaks under -1 dBFS)
+GAIN = {"bed": 2.4, "impact": 0.5, "lock": 0.55, "riser": 0.8, "whoosh": 1.0, "typewriter": 0.45, "tick": 1.0}
+
+
+def gain(f):
+    return next((g for k, g in GAIN.items() if k in f), 1.0)
+
+
+AUD = [(a, f, s_, du, ms, round(v * gain(f), 3)) for a, f, s_, du, ms, v in AUD]
 audio = "\n".join(f'<audio id="a-{a}" class="clip" src="{f}" data-start="{s}" data-duration="{du}" data-media-start="{ms}" data-volume="{v}" data-track-index="{LANE(a)}"></audio>'
                   for a, f, s, du, ms, v in AUD)
 
