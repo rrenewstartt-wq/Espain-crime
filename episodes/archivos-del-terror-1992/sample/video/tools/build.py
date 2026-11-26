@@ -153,9 +153,22 @@ def music_segments():
     return runs
 
 
-AUD = []
-for i, (a, b, l) in enumerate(music_segments()):
-    AUD.append((f"mus{i}", MUSIC, round(a, 3), round(b - a, 3), round(a if b <= 119.5 else max(0.0, 119.5 - (b - a)), 3), vol(l)))
+# music placement: sample/music-plan.md (scene-planner, 2026-11-26), tracks in assets/LICENSES.md §7.
+# volume = the plan's per-track "under narration" gain (narration assumed -16 LUFS → music about -44 LUFS).
+# The provisional timing has no narration pause >= 2 s, so the pause level (-20 dB) is not used yet; in /voice
+# music_segments() above gives the pause windows from the measured narration.
+M = "assets/music/"
+MUSIC_PLAN = [  # id, file, start, end, offset in the track, volume, fade in, fade out
+    ("m01", M + "M01_ondrosik_be_careful.wav", 0.0, 56.1, 0.0, 0.051, 0.8, 0.05),           # cut on «Por ahora…»
+    ("m03", M + "M03_isaiah658_unsolved_investigation.wav", 63.9, 87.8, 0.0, 0.071, 0.8, 1.0),  # the room; 1 s crossfade into M02
+    ("m02", M + "M02_ondrosik_calm_before_the_storm.wav", 86.8, 101.4, 0.0, 0.044, 1.0, 0.0),
+    ("m02r", M + "M02_ondrosik_calm_before_the_storm.wav", 101.4, 103.9, 14.6, 0.062, 0.0, 0.05),  # +3 dB rise into the title, cut
+    ("m05", M + "M05_ondrosik_waves_of_longing.wav", 108.1, END, 0.0, 0.050, 1.5, 0.8),
+]
+# synthesized drone (own work) only as a support layer where there is no music, about -40 LUFS
+DRONE = [("dr1", "assets/audio/bed.wav", 56.1, 65.0, 56.1, vol(-40.0), 0.05, 1.1),
+         ("dr2", "assets/audio/bed.wav", 103.9, 107.6, 103.9, vol(-40.0), 0.3, 0.5)]
+AUD = [(a, f, s_, round(e - s_, 3), ms, v, fi, fo) for a, f, s_, e, ms, v, fi, fo in MUSIC_PLAN + DRONE]
 SFX = [
     ("tw1", TW, 0.30, 1.85, 0.4, 0.9), ("tw2", TW, 2.42, 1.0, 5.2, 0.9),
     ("tw3", TW, 20.05, 0.85, 9.0, 0.6), ("tw4", TW, 23.98, 1.55, 12.0, 0.85),
@@ -188,15 +201,18 @@ def gain(f):
 
 
 def LANE(a):
-    for pre, ln in (("mus", 3), ("tw", 4), ("wh", 5), ("st", 6), ("pz", 6), ("q", 6), ("tt", 6), ("lki", 6), ("lk", 7), ("rs", 8), ("k", 9)):
+    if a in ("m03", "m02r"):
+        return 2
+    for pre, ln in (("m0", 3), ("dr", 12), ("tw", 4), ("wh", 5), ("st", 6), ("pz", 6), ("q", 6), ("tt", 6), ("lki", 6), ("lk", 7), ("rs", 8), ("k", 9)):
         if a.startswith(pre):
             return ln
     return 10
 
 
-AUD += [(a, f, s_, du, ms, round(v * gain(f), 3)) for a, f, s_, du, ms, v in SFX]
-audio = "\n".join(f'<audio id="a-{a}" class="clip" src="{f}" data-start="{s}" data-duration="{du}" data-media-start="{ms}" data-volume="{v}" data-track-index="{LANE(a)}"></audio>'
-                  for a, f, s, du, ms, v in AUD)
+AUD += [(a, f, s_, du, ms, round(v * gain(f), 3), 0, 0) for a, f, s_, du, ms, v in SFX]
+audio = "\n".join(f'<audio id="a-{a}" class="clip" src="{f}" data-start="{s}" data-duration="{du}" data-media-start="{ms}" data-volume="{v}"'
+                  + (f' data-fade-in="{fi}"' if fi else "") + (f' data-fade-out="{fo}"' if fo else "") + f' data-track-index="{LANE(a)}"></audio>'
+                  for a, f, s, du, ms, v, fi, fo in AUD)
 caps = []
 for i, (t0, txt) in enumerate(LINES):
     t1 = LINES[i + 1][0] if i + 1 < len(LINES) else END

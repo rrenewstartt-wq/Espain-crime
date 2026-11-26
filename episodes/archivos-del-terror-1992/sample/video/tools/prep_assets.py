@@ -265,14 +265,15 @@ ff("-i", os.path.join(SFX, "drone_ambient_120s.wav"), "-i", out("audio", "pad_hi
    "-filter_complex", "[0]volume=1.0[d];[1]volume=0.22[p];[d][p]amix=inputs=2:duration=first:normalize=0[o]",
    "-map", "[o]", out("audio", "bed_raw.wav"))
 norm(out("audio", "bed_raw.wav"), out("audio", "bed.wav"), -19)
-# licensed music (assets/music/, recorded in LICENSES.md) replaces the drone: first recorded file, normalized like the bed
-_mdir = os.path.join(SRC, "music")
-_lic2 = open(os.path.join(SRC, "LICENSES.md")).read()
-_tracks = [f for f in sorted(os.listdir(_mdir)) if f in _lic2] if os.path.isdir(_mdir) else []
-if _tracks:
-    norm(os.path.join(_mdir, _tracks[0]), out("audio", "music.wav"), -19)
-elif os.path.exists(out("audio", "music.wav")):
-    os.remove(out("audio", "music.wav"))
+# licensed tracks of assets/music/wav48k (48 kHz conversions, LICENSES.md §7): copied as they are (levels set in build.py)
+os.makedirs(out("music"), exist_ok=True)
+_wav = os.path.join(SRC, "music", "wav48k")
+_licm = open(os.path.join(SRC, "LICENSES.md")).read()
+for f in sorted(os.listdir(_wav)) if os.path.isdir(_wav) else []:
+    if os.path.splitext(f)[0] in _licm and f.split("_")[0] in ("M01", "M02", "M03", "M05"):
+        if not os.path.exists(out("music", f)):
+            shutil.copy(os.path.join(_wav, f), out("music", f))
+
 os.remove(out("audio", "bed_raw.wav"))
 os.remove(out("audio", "pad_high.wav"))
 norm(os.path.join(SFX, "impact_low_2s.wav"), out("audio", "impact.wav"), -11, "highpass=f=30,acompressor=threshold=-20dB:ratio=6:attack=5:release=250:makeup=4,alimiter=limit=0.6")

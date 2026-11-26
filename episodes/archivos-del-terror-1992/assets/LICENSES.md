@@ -156,3 +156,84 @@ Fragmentos editados y con volumen ajustado.
 | tachyon869 "inspiration" (ccMixter, CC BY 3.0) | I -10.8 LUFS, 꽉 찬 인더스트리얼 질감 |
 | Lee Rosevere, Kai Engel(대부분), Chris Zabriskie(대부분), Borrtex, Blue Dot Sessions 등 | CC BY-NC / NC-SA / NC-ND |
 | archive.org 의 "CC0" 표시 상업 음반 재업로드(영화 OST, 바이닐 립 등) | 업로더가 권리자가 아님. 표시 라이선스를 믿을 수 없음 |
+
+## 8. 실사 사진·문서 이미지 추가 (`photos/`, 2026-11-26 scene-planner)
+
+샘플 화면 검수 불합격("실사 비중 약 9%")에 따라 2.5D 사진 콜라주용 실사를 더 받았다. 파일은 `assets/photos/`(커밋 안 됨). 장면 배치 제안은 `sample/photo-plan.md`.
+라이선스는 원 소장 기관의 항목 페이지(LOC `rights_advisory`·`rights_information`, NASA Image Library, Internet Archive `ciareadingroom` 컬렉션)에서 확인했다. 해상도는 저장한 파일 기준.
+**표시 규칙:** 사건과 무관한 실물·장소 사진은 화면에 `Imagen ilustrativa`, 그 위에 인물 실루엣·소품을 합성하면 `RECREACIÓN`, 1차 문서는 `DOCUMENTO REAL` + 출처. HABS/HAER 사진 가장자리의 검은 필름 테와 `HABS No.` 글자는 잘라 내고 쓴다.
+
+### 8-1. 받음 (21개)
+
+| 파일 (`photos/`) | 해상도 | 내용 | 출처 URL | 저작자 | 라이선스·권리 상태 (미국 내) | 화면 표시 / 주의 | 크레딧 문구 |
+|---|---|---|---|---|---|---|---|
+| `doc_cia_1954-05-07_paraguayan_political_crisis_p1.png`, `_p2.png` | 2544×4118 (흑백) | CIA Information Report "Paraguayan Political Crisis", 배포 1954-05-07. 차베스 대통령 구금·사임서 제출, 아순시온 40대대가 경찰 본부 점거 | https://archive.org/details/cia-readingroom-document-02628708 (원 출처: CIA FOIA Reading Room, 문서 번호 C02628708, 2021-07-08 공개 승인) | Central Intelligence Agency | **퍼블릭 도메인**: 미국 연방정부 저작물(17 U.S.C. §105) | `DOCUMENTO REAL` · 스트로에스네르 이름은 문서에 **없다**. 내용이 facts.md #26 과 맞는지 fact-checker 가 각주로 연결해야 함 ⚠️ | "Informe CIA, 7 may. 1954 (desclasificado): CIA FOIA Reading Room / Internet Archive (dominio público)" |
+| `doc_cia_1976-07-21_condor_cable_p1.png`, `_p2.png` | 2544×3301 | CIA Intelligence Information Cable 1976-07-21 "CONDOR, a cooperative program of the intelligence services of Chile, Argentina, Bolivia, Paraguay, Uruguay and Brazil…" | https://archive.org/details/cia-readingroom-document-00513827 (CIA FOIA, C00513827, 2019-01-25 공개 승인) | Central Intelligence Agency | 퍼블릭 도메인(17 U.S.C. §105) | `DOCUMENTO REAL` · facts.md #16 은 **07-28 자** 전문을 인용 → 이 07-21 전문을 쓰려면 각주 추가 필요 ⚠️. 샘플보다 본편 escalada(콘도르 절)에 적합 | "Cable CIA, 21 jul. 1976 (desclasificado): CIA FOIA Reading Room / Internet Archive (dominio público)" |
+| `doc_state_1977-03-25_operation_condor_telegram_p1.png` | 2543×3301 | 국무부 전보 1977-03-25 "Operation Condor"(수신처에 Asunción 대사관 포함) | https://archive.org/details/cia-readingroom-document-05861527 (C05861527) | U.S. Department of State / CIA | 퍼블릭 도메인(17 U.S.C. §105) | `DOCUMENTO REAL` · 본편용 예비. facts 연결 없음 ⚠️ | "Telegrama del Departamento de Estado, 25 mar. 1977: CIA FOIA Reading Room / Internet Archive (dominio público)" |
+| `loc_asuncion_palacio_lopez_1908-1919_npco.jpg` | 5954×4289 (흑백, 유리 원판) | 아순시온 강변과 Palacio de los López, 1908~1919년 사이 | https://www.loc.gov/item/2016821420/ (TIFF 원본 `tile.loc.gov/.../npcc/19800/19841u.tif`) | National Photo Company (LOC 소장, LC-F81-2514) | LOC: **"No known restrictions on publication"**(National Photo Company Collection). 1919년 이전 촬영 → 미국·파라과이 모두 보호기간 만료로 판단 | `IMAGEN REAL · Asunción, c. 1910` 연도 라벨 필수(1954년 사진 아님) | "Asunción, c. 1908–1919: National Photo Company Collection, Library of Congress" |
+| `map_loc_1856_basin_la_plata_page_usn.jpg` | 4445×6060 (IIIF 50%) | "Map of the basin of La Plata", Thomas J. Page 미 해군 탐사대(1853~56) 결과, 손채색 석판 | https://www.loc.gov/item/2018588033/ | Thomas J. Page(U.S. Navy) 지도, Julius Bien 석판 | 1856년 간행 → 퍼블릭 도메인(미국 보호기간 만료). LOC 지도 컬렉션 | 지도 **질감용**. 1856년 국경은 오늘과 다르다 → 국경선은 Natural Earth 로 덮어 쓰고 이 지도는 바탕만. 라벨 `Mapa de 1856` | "Mapa: Thomas J. Page, U.S. Navy (1856), Library of Congress" |
+| `nasa_sts072-730-079_asuncion_1996.jpg` | 4598×4598 | 우주왕복선 STS-72 에서 찍은 아순시온과 파라과이강 굽이(1996-01) | https://images.nasa.gov/details/sts072-730-079 | NASA (JSC) | 퍼블릭 도메인(NASA 미디어 이용 지침, 17 U.S.C. §105). NASA 로고·보증 암시 금지 | `IMAGEN REAL · NASA, 1996` | "Imagen: NASA (STS-72, 1996)" |
+| `nasa_iss071e051833_asuncion_2024.jpg` | 8256×5504 | ISS 에서 찍은 아순시온(2024-05-06) | https://images.nasa.gov/details/iss071e051833 | NASA (JSC) | 퍼블릭 도메인(위와 같음) | `IMAGEN REAL · NASA, 2024` (오늘의 모습일 때만) | "Imagen: NASA (ISS, 2024)" |
+| `habs_az0060_tucson_comandancia_policia_1937.jpg` | 4993×3248 | 옛 경찰서 정면, 아치 문 위 스페인어 간판 "COMANDANCIA DE POLICÍA" (미국 애리조나 투손, 1937-08) | https://www.loc.gov/pictures/item/az0060.photos.008015p/ (HABS ARIZ,10-TUCSO,12--1) | Frederick D. Nichols, HABS | 퍼블릭 도메인: 미국 정부(HABS) 제작. LOC "No known restrictions on images made by the U.S. Government" | **파라과이 건물이 아니다.** 간판 글자를 그대로 두면 람바레 경찰서로 오해된다 → 간판을 잘라 내거나 흐리게, `RECREACIÓN`/`Imagen ilustrativa` 필수 | "Fotografía ilustrativa: Historic American Buildings Survey, Library of Congress (dominio público)" |
+| `habs_ma1170_record_storage_room_1982.jpg` | 3753×4718 | 서류·두루마리가 천장까지 쌓인 기록 보관실(매사추세츠, 1982) | https://www.loc.gov/pictures/item/ma1170.photos.075114p/ | Jet Lowe, HABS | 퍼블릭 도메인(HABS, 위와 같음) | `Imagen ilustrativa` / 합성 시 `RECREACIÓN`. 사람 없음 | 위 HABS 문구와 같음 |
+| `habs_pa2957_file_cabinets_record_vault_1994.jpg` | 5000×4063 | 기록 금고 안 나무 서류장, 서랍이 열려 있음(펜실베이니아 요크, 1994) | https://www.loc.gov/pictures/item/pa2957.photos.357679p/ | Lewis Tanner, HABS | 퍼블릭 도메인(HABS) | 위와 같음. 사람 없음 | 위와 같음 |
+| `habs_ca2248_card_catalog_drawers_1996.jpg` | 5000×3994 | 붙박이 카드 색인 서랍 벽(새크라멘토, 1996) | https://www.loc.gov/pictures/item/ca2248.photos.324587p/ | David G. De Vries, HABS | 퍼블릭 도메인(HABS) | 위와 같음. 아래 촬영 번호표(135/12)는 잘라 냄 | 위와 같음 |
+| `habs_ca2282_vault_forced_entry_1997.jpg` | 5000×4000 | 벽이 부서진 금고실, 열린 금고 문, 바닥의 잔해(1997) | https://www.loc.gov/pictures/item/ca2282.photos.324713p/ | Robert Hicks, HABS | 퍼블릭 도메인(HABS) | `RECREACIÓN`(문 따기 장면 합성). 사람 없음 | 위와 같음 |
+| `habs_pa1976_basement_stairway.jpg` | 5000×3613 | 돌벽 지하실과 나무 계단 | https://www.loc.gov/pictures/item/pa1976.photos.134294p/ | HABS(촬영자 기재 없음) | 퍼블릭 도메인(HABS) | `RECREACIÓN` | 위와 같음 |
+| `habs_il0937_basement_stairs_door_2008.jpg` | 3629×5000 | 지하 계단 옆 낡은 나무 문(2008) | https://www.loc.gov/pictures/item/il0937.photos.363421p/ | Robert Shymanski, HABS | 퍼블릭 도메인(HABS) | `RECREACIÓN`(A6 자물쇠 합성) | 위와 같음 |
+| `haer_ne0071_handwritten_ledger_1879.jpg` | 3639×5000 | 손글씨 회계 장부 첫 장(1879, 네브래스카 풍차 회사) | https://www.loc.gov/pictures/item/ne0071.photos.346092p/ | HAER | 퍼블릭 도메인(HAER 사진) · 장부 자체도 1879년 작성 | `Imagen ilustrativa` · 글씨가 영어라 매크로·흐림으로(읽히지 않게) | "Fotografía ilustrativa: Historic American Engineering Record, Library of Congress (dominio público)" |
+| `haer_pa0995_abandoned_office.jpg` | 5000×3974 | 버려진 사무실, 열린 캐비닛 문(해리스버그 역) | https://www.loc.gov/pictures/item/pa0995.photos.133456p/ | HAER | 퍼블릭 도메인(HAER) | `RECREACIÓN`/`Imagen ilustrativa` | 위와 같음 |
+| `owi_1942_battle_scarred_typewriter_liberman.jpg` | 5000×3848 | 폭격을 겪은 Underwood 타자기 정물(1942-10) | https://www.loc.gov/pictures/item/2017694250/ (LC-USE6-D-006648) | Howard Liberman, Office of War Information | 퍼블릭 도메인: 미국 정부(OWI) 사진 | `Imagen ilustrativa`. 사람 없음 | "Máquina de escribir (ilustrativa): Howard Liberman, OWI / Library of Congress (dominio público)" |
+| `hec_1932_filing_fingerprints_mugshots.jpg` | 3874×5000 | 지문·얼굴 사진 카드를 보관하는 긴 서류장 통로(워싱턴, 1932) | https://www.loc.gov/item/2016890128/ | Harris & Ewing | LOC: "No known restrictions on publication"(Harris & Ewing Collection, 1955 기증). 민간 사진관 작품이며 LOC 판단에 기댄다 | `Imagen ilustrativa` · **앞쪽 직원 얼굴 식별 가능**(1932년 일반인, 사건 무관) → 잘라 내거나 흐림 | "Fotografía ilustrativa: Harris & Ewing, Library of Congress" |
+| `hec_1930_fingerprint_sheet_file_cabinet.jpg` | 3874×5000 | 나무 서류장 앞에서 지문 카드("personal identification, right hand")를 든 남성(1930년경) | https://www.loc.gov/item/2016878709/ | Harris & Ewing | 위와 같음 | `Imagen ilustrativa` · **남성 얼굴 식별 가능** → 지문 카드·서랍만 크롭해서 씀(눈 가림 대신 얼굴 제외) | 위와 같음 |
+
+- 미국 정부 저작물(CIA·국무부·NASA·HABS/HAER·OWI)은 미국 내 퍼블릭 도메인이다. 파라과이 등 외국에서의 지위는 각국 법을 따르지만, 공식 문서·정부 사진이라 사용 위험이 낮다고 판단했다.
+- HABS/HAER·OWI·National Photo Company·Harris & Ewing 파일은 LOC 의 TIFF 원본(`tile.loc.gov/storage-services/master/...`)을 받아 긴 변 5000px JPEG(품질 92)로 줄였다. 원본 픽셀 비율·내용은 바꾸지 않았다.
+- CIA 문서는 Internet Archive 의 페이지 JP2 를 무손실 PNG 로 바꿨다(원본 해상도 그대로).
+
+### 8-2. 라이선스 확인했으나 다운로드 대기 (Flickr)
+
+Flickr 사진 페이지에서 라이선스 코드·라이선스 URL(`creativecommons.org/...`)·원본 크기·다운로드 허용 여부를 2026-11-26 06:20~06:30 에 확인했다. 그 뒤 www.flickr.com 과 live.staticflickr.com 이 이 환경 IP 에 **HTTP 429/403 을 4시간 넘게** 돌려줘 받지 못했다(06:38~10:57 사이 4분 간격 확인, 우회 안 함). `bash episodes/archivos-del-terror-1992/sample/fetch_pending_photos.sh` 로 나중에 받는다. 받은 뒤 **눈으로 내용을 확인**해야 한다(소품 후보 다수는 미리보기도 못 봤다).
+
+| 받을 파일 (`photos/`) | Flickr ID · 원본 크기 | 내용 | 저작자 | 라이선스 | 주의 |
+|---|---|---|---|---|---|
+| `flickr_lambare_bw_film_coconutgroove.jpg` | 5516184865 · 1700×1124 | 람바레 빈터·담장·나무, 흑백 필름 (미리보기 확인함) | coco ("film is no dead") | CC BY-SA 2.0 | 변경본도 CC BY-SA. 촬영 연도 미상 → 연도 표시 안 함 |
+| `flickr_comandancia_policia_nacional_ramalleira.jpg` | 53408803039 · 1920×1280 | 아순시온 국가경찰청 본부(Comandancia de la Policía Nacional) 야경 (미리보기 확인함, 우하단 서명) | David C. Ramalleira | CC BY 2.0 | 람바레 Departamento de Producciones 건물이 **아님** → 라벨 `Comandancia de la Policía Nacional, Asunción (foto 2023)` |
+| `flickr_comandancia_policia_nacional_chamorro.jpg` | 5728485597 · 1024×683 | 같은 건물 야경, 행인 실루엣 | Leticia Chamorro | CC BY 2.0 | 작음 → 배경·액자용 |
+| `flickr_palacio_lopez_night_ciuffo.jpg` | 8039941540 · 2896×1944 | Palacio de los López 야경 | Leandro Neumann Ciuffo | CC BY 2.0 | |
+| `flickr_asuncion_rio_nubes_solop.jpg` | 34520523923 · 5258×3505 | 아순시온 시가지와 파라과이강, 구름 | Nicolas Solop | CC BY-SA 2.0 | 작가가 크레딧 `www.unsellomas.com` 표기 요청 |
+| `flickr_asuncion_alturas_solop.jpg` | 35145466592 · 3661×5490 | 아순시온 옥상 전경(세로) | Nicolas Solop | CC BY-SA 2.0 | 위와 같음 |
+| `flickr_asuncion_fachada_dionisi_1.jpg`, `_2.jpg` | 4294838700, 4294096471 · 1632×1224 | 아순시온 옛 건물 정면 | Edgar Dionisi | CC BY 2.0 | 현대 간판 보임(1번) |
+| `flickr_puerto_stroessner_1986_hamilton.jpg` | 6193581414 · 1024×710 | 1986년 Puerto Stroessner(현 Ciudad del Este) 대성당 | Nathan Hughes Hamilton | CC BY 2.0 | 작음 → 액자용. 스트로에스네르 시대 실사 |
+| `flickr_typewriter_watkin.jpg` | 6073592478 · 2273×2692 | 옛 타자기(독일) | Berit Watkin | CC BY 2.0 | 내용 미확인 |
+| `flickr_typewriter_freestocks.jpg` | 28066454506 · 5184×3456 | 옛 타자기 | freestocks.org | CC0 1.0 | 내용 미확인 |
+| `flickr_typewriter_katz.jpg` | 22717806954 · 3822×2548 | 타자기 | Mussi Katz | Public Domain Mark 1.0(작가 본인 표시) | PDM 은 작가 포기 도구가 아님 → CC0/BY 대안이 있으면 그쪽 우선 |
+| `flickr_typewriter_taylor.jpg` | 4555309306 · 2000×1339 | 옛 타자기 | Andrew Taylor | CC BY 2.0 | 내용 미확인 |
+| `flickr_typewriter_keys_rumpleteaser.jpg` | 6651911895 · 2000×3008 | 타자기 자판 클로즈업 | rumpleteaser | CC BY 2.0 | 내용 미확인 |
+| `flickr_filing_cabinets_mee.jpg` | 15724296035 · 2532×3209 | 기록관 건물의 서류 캐비닛 | Daniel Mee | CC BY 2.0 | 내용 미확인 |
+| `flickr_fichiers_papier_marlenedd_1.jpg`, `_2.jpg` | 6890174394, 7036264955 · 4608×3456 | 종이 카드 색인함 | marlenedd | CC BY 2.0 | 카드 글씨 판독 여부 확인 후 흐림 |
+| `flickr_card_catalog_marygrove.jpg` | 6869133600 · 2048×1536 | 카드 목록함 | Marygrove College Library | CC BY 2.0 | |
+| `flickr_card_catalog_fulmer.jpg` | 4350629792 · 2272×1704 | 미시간대 도서관 카드 목록함 | David Fulmer | CC BY 2.0 | |
+| `flickr_card_catalog_levine.jpg` | 3597095794 · 1800×2400 | 카드 목록함 | Alan Levine | CC0 1.0 | |
+| `flickr_archive_boxes_jvl_1.jpg` ~ `_3.jpg` | 13091907654, 13091735873, 13091907034 · 2048×1151 | 빈 Haus-, Hof- und Staatsarchiv 의 기록 상자·서가 | -JvL- | CC BY 2.0 | 상자에 독일어 라벨 → 흐림 |
+| `flickr_shelves_documents_jones.jpg` | 37263585815 · 3264×2448 | 역사 문서가 가득한 서가 | Maggie Jones | Public Domain Mark 1.0(작가 본인) | 위 PDM 주의와 같음 |
+
+크레딧 문구(공통 형식): "Foto: <저작자> / Flickr, <라이선스>" — 예: "Comandancia de la Policía Nacional: David C. Ramalleira / Flickr, CC BY 2.0".
+
+### 8-3. 찾았으나 라이선스를 아직 못 본 후보 (Flickr 검색 결과만)
+
+Flickr 검색(라이선스 필터 BY/BY-SA/CC0/PDM/No known restrictions)에는 걸렸지만 사진 페이지가 429 라 저작자·원본 크기를 못 봤다. **쓰기 전에 사진 페이지에서 라이선스를 다시 확인할 것.**
+자물쇠: 50667254323, 40584461323(26344495@N05, BY), 2362067701(BY-SA), 46463223524(BY) · 어두운 계단: 39509845381, 4935157161, 2199902905, 25022844460(BY) · 녹슨 문: 3859947166, 2426883362(BY) · 마이크로필름: 13434414483, 2423586253(BY) · 낡은 책·서류: 17780050280(BY) · 경찰 박물관: 9313161512(CC0).
+
+### 8-4. 검토했으나 쓰지 않는 후보 (이유)
+
+| 후보 | 이유 |
+|---|---|
+| Flickr "Es mi informe. Los archivos secretos de la policía de Stroessner" 출판 행사(15857232988, Centro de Documentación y Estudios, CC BY 2.0, Luis Vera 촬영) | 라이선스는 맞지만 화면의 인물이 누구인지 캡션에 없다(공인 확인 불가). 같은 앨범의 다른 사진은 모두 저작권 보유(ARR) |
+| Flickr "Parque Caballero… Archivo Urbieta Valdovinos 1964", "Archivo M Codas"(203185702@N08, PDM) | 업로더가 촬영자가 아닌 듯한 1960년대 파라과이 사진에 PDM 을 붙였다. 파라과이 사진 보호기간(공표 후 70년)상 1964년 사진은 아직 보호 중일 수 있어 근거 부족 |
+| Internet Archive "Archivos del Terror de Uruguay – Archivo SID (Berrutti)" 마이크로필름(PDM) | **우루과이** 기록이라 파라과이 문서고 화면으로 쓰면 오해를 부른다. 실존 인물 실명·개인정보가 그대로 있다 |
+| Internet Archive `dr_*` 옛 지도(David Rumsey Map Collection) | David Rumsey 이미지는 CC BY-NC-SA → 비상업 조건 때문에 제외 |
+| pj.gov.py(Poder Judicial) CDyA 공개 PDF(`archivo_terror1~5.pdf`, `catalogo-museo-de-justicia.pdf`) | 사이트 하단 "© Derechos Reservados". 경찰 문서 원본은 Ley 1.328/98 art. 8(공식 행정 문서)로 볼 여지가 있으나 재사용 조건이 명시되지 않았고 피해자 실명이 있다 → 사람 판단 전 사용 안 함 ⚠️ |
+| UNESCO Memory of the World 등재 신청서 PDF(`paraguay_terror.pdf`) | 신청 기관(CDyA) 저작물로 재사용 조건 미표시 |
+| LOC "Paraguay. Inspection tour made by Percy Warner"(1957) 사진 묶음 | LOC "Rights status not evaluated" |
+| LOC "Paraguay: Unterdrückung, Folter, Gefangenenmord"(1965 포스터) 등 Yanker 포스터 | LOC "Publication may be restricted" |
