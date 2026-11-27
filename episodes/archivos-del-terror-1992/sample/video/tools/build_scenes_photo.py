@@ -42,6 +42,19 @@ def tag2(p, text, key="tag2", top=122, hidden=False):
 MAGS = {}
 
 
+def chip2(p, l1, l2, key="tag", hidden=False):
+    """One label chip, two lines (rule: one chip per screen)."""
+    h1, _, r1 = l1.partition("·")
+    h2, _, r2 = l2.partition("·")
+    st = ' style="opacity:0"' if hidden else ""
+    return (f'<div id="{p}-{key}" class="ao-tag src"{st}><i></i><span><b>{esc(h1.strip())}</b> · {esc(r1.strip())}<br>'
+            f'<b>{esc(h2.strip())}</b> · {esc(r2.strip())}</span></div>')
+
+
+HABS82 = "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)"
+CIFRA = "CIFRA · postulación UNESCO Memoria del Mundo (2008)"
+
+
 def check_mag(n, key, s):
     MAGS.setdefault(n, []).append((key, round(mag(key, s), 2)))
     m = mag(key, s)
@@ -196,7 +209,7 @@ if has("records", "records_tall"):
         js = base["js"].replace("shot('B', 1.1, {d}, [1.05,0,0,-3], [1.1,0,-40,-3]);".format(d=d), f"shot('B', 1.1, {d}, [1.2,0,0], [1.26,0,-20]);")
         check_mag(39, "records", 1.0); check_mag(39, "records_tall", 1.26)
         REAL_ROWS.add(39)
-        return S(a + b, js, fg=base["fg"] + tag2(p, "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)"))
+        return S(a + b, js, fg=base["fg"].replace(tag_html(p, UNESCO, src=True), "") + chip2(p, HABS82, CIFRA))
 
     @scene(40)
     def s40(p, d):
@@ -208,7 +221,7 @@ if has("records", "records_tall"):
         js = f"tl.fromTo(q('pl'), {{ y: {1080 - h:.0f} }}, {{ y: -120, duration: {d}, ease: 'none' }}, 0);"
         check_mag(40, "records_tall", 1.0)
         REAL_ROWS.add(40)
-        return S(html, js, fg=fg + tag_html(p, UNESCO, src=True) + tag2(p, "IMAGEN ILUSTRATIVA · Archivo de registros, EE. UU. (HABS, 1982)"))
+        return S(html, js, fg=fg + chip2(p, HABS82, CIFRA))
 
 if has("catalog"):
     @scene(37)
@@ -231,10 +244,12 @@ if has("catalog"):
 <div class="ao-full" style="background:radial-gradient(ellipse at 50% 50%,rgba(3,2,1,.85) 0,rgba(3,2,1,.4) 45%,rgba(3,2,1,.05) 80%)"></div></div>'''
         js = re.sub(r"tl\.set\(q\('g\d+'\), \{ opacity: 1 \}, [\d.]+\);", "", base["js"])
         js += f"shot('A', 0, 1.1, [1.0,0,0], [1.06,0,0]);"
-        js += "tl.set(q('tag2'), { opacity: 0 }, 1.1);"
+        js += "tl.set(q('tag'), { opacity: 0 }, 1.1); tl.set(q('tagb'), { opacity: 1 }, 1.1);"
         check_mag(42, "catalog", 1.06)
         REAL_ROWS.add(42)
-        return S(h[:i0] + a + h[i1:], js, fg=base["fg"] + tag2(p, "IMAGEN ILUSTRATIVA · Fichero, EE. UU. (HABS, 1996)"))
+        fgb = base["fg"].replace(tag_html(p, UNESCO, src=True), "")
+        return S(h[:i0] + a + h[i1:], js, fg=fgb + chip2(p, "IMAGEN ILUSTRATIVA · Fichero, EE. UU. (HABS, 1996)", CIFRA)
+                 + tag_html(p, UNESCO, src=True).replace(f'id="{p}-tag"', f'id="{p}-tagb" style="opacity:0"'))
 
     @scene(56)
     def s56(p, d):
@@ -281,10 +296,13 @@ if has("aisle"):
         js = base["js"].replace("tl.fromTo(q('tape'), { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: 'power2.inOut' }, 0.1);", "tl.to(q('tp'), { attr: { 'stroke-dashoffset': 0 }, duration: 1.0, ease: 'power2.inOut' }, 0.1);")
         js = js.replace("tl.fromTo(q('sh'), { x: 0 }, { x: -500, duration: 1.25, ease: 'none' }, 0);", "shot('A', 0, 1.25, [1.08,0,0], [1.16,-40,0]);")
         hb = h[i1:].replace(f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#060302">', f'<div id="{p}-B" class="ao-full" style="opacity:0;background:#060302">{cover(p, "aisle", "pb", "filter:blur(5px) brightness(.45)")}', 1)
-        js += "tl.set(q('tag2'), { opacity: 0 }, 1.25);"
+        js += "tl.set(q('tag'), { opacity: 0 }, 1.25); tl.set(q('tagb'), { opacity: 1 }, 1.25);"
         check_mag(41, "aisle", 1.16)
         REAL_ROWS.add(41)
-        return S(a + hb, js, fg=fg.replace('top:560px;text-align:center', 'top:660px;text-align:center') + tag2(p, "IMAGEN ILUSTRATIVA · Fichero dactiloscópico, EE. UU. (1932)"))
+        fg = fg.replace(tag_html(p, UNESCO, src=True), "")
+        return S(a + hb, js, fg=fg.replace('top:560px;text-align:center', 'top:660px;text-align:center')
+                 + chip2(p, "IMAGEN ILUSTRATIVA · Fichero dactiloscópico, EE. UU. (1932)", CIFRA)
+                 + tag_html(p, UNESCO, src=True).replace(f'id="{p}-tag"', f'id="{p}-tagb" style="opacity:0"'))
 
 if has("fpcab"):
     @scene(55)

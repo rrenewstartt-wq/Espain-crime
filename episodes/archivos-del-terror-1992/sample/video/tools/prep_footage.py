@@ -20,10 +20,10 @@ FX = {
     "f_roller": ("fx14_coronet1941_manos_maquina", 2.0, 2.3, (160, 0, 480, 300), "cold", [(220, 0, 260, 120, 6)], False, False),
     "f_write": ("fx07_fbi1969_mano_escribe_papeles", 1.0, 2.1, None, "cold", [(0, 120, 640, 360, 5)], False, False),
     "f_finger": ("fx06_fbi1969_dedo_recorre_archivo", 0.2, 2.2, None, "cold", [(0, 0, 640, 480, 3)], True, False),
-    "f_office": ("fx01_fbi1969_fichero_oficina", 0.2, 2.4, None, "cold", [(380, 140, 140, 90, 14), (220, 160, 60, 60, 12), (160, 0, 80, 70, 10)], True, False),
+    "f_office": ("fx01_fbi1969_fichero_oficina", 0.2, 2.4, None, "cold", [(370, 130, 170, 110, 14), (225, 135, 100, 105, 14), (150, 0, 100, 80, 10), (75, 112, 105, 45, 8), (240, 105, 90, 45, 8)], True, False),
     "f_card": ("fx02_fbi1969_mano_saca_ficha", 0.3, 2.4, None, "tung", [(250, 270, 190, 130, 10), (0, 0, 150, 480, 4)], False, False),
     "f_card_c": ("fx02_fbi1969_mano_saca_ficha", 1.2, 1.4, None, "cold", [(250, 270, 190, 130, 10), (0, 0, 150, 480, 4)], False, False),
-    "f_shadowdoc": ("fx19_army1941_documento_sombra", 0.1, 1.5, None, "cold", [(80, 40, 440, 360, 6)], False, False),
+    "f_shadowdoc": ("fx19_army1941_documento_sombra", 0.1, 1.5, None, "cold", [(80, 40, 440, 360, 6)], True, False),
     "f_flip": ("fx03_fbi1969_mano_hojea_fichas", 0.0, 2.6, None, "cold", [(250, 270, 190, 130, 10)], True, True),
     "f_wall": ("fx13_coronet1941_muro_ficheros", 0.0, 3.8, None, "tung", [(190, 0, 160, 130, 14), (380, 110, 130, 140, 14), (470, 290, 120, 140, 14), (500, 0, 140, 120, 12)], True, False),
     "f_torch": ("fx22_booked1960_linterna_oscuro", 0.0, 2.2, (380, 160, 260, 320), "tung", [], True, False),
@@ -34,15 +34,21 @@ FX = {
     "f_roofs2": ("fx29b_ociaa1945_asuncion_tejados2", 0.1, 1.4, None, "sepia", [], True, False),
     "f_horizon": ("fx28_ociaa1945_asuncion_horizonte", 0.2, 2.3, None, "sepia", [], True, False),
     "f_soldiers": ("fx34_ociaa1945_soldados_contrapicado", 0.3, 1.1, (0, 220, 640, 260), "sepia", [(0, 0, 640, 40, 8)], True, False),
-    "f_enter": ("fx17_army1941_abre_puerta_entra", 2.2, 1.2, None, "cold", [(330, 100, 120, 120, 14)], False, False),
+    "f_enter": ("fx17_army1941_abre_puerta_entra", 2.2, 1.2, None, "cold", [(330, 100, 120, 120, 14)], True, False),
     "f_guardhand": ("fx27_police1953_agente_prueba_puerta", 0.2, 1.4, (300, 170, 340, 310), "cold", [], True, False),
     "f_stairs": ("fx21_booked1960_escalera_policia", 0.95, 1.25, (200, 120, 440, 320), "tung", [(120, 0, 200, 70, 12)], False, False),
-    "f_knob": ("fx25_police1953_mano_pomo_cerradura", 0.2, 1.2, None, "tung", [], False, False),
+    "f_knob": ("fx25_police1953_mano_pomo_cerradura", 0.2, 1.2, None, "tung", [], True, False),
     "f_files": ("fx05_fbi1969_manos_hojean_archivo", 0.2, 1.3, None, "tung", [(60, 40, 560, 380, 4)], False, False),
-    "f_register": ("fx15_coronet1941_lapiz_registro", 0.4, 0.9, None, "sepia", [(0, 0, 640, 330, 5)], False, False),
+    "f_register": ("fx15_coronet1941_lapiz_registro", 0.4, 0.9, None, "sepia", [(0, 0, 640, 330, 5)], True, False),
+    "f_docs": ("fx04_fbi1969_manos_documento_mesa", 0.2, 1.7, None, "tung", [(60, 40, 560, 400, 4)], False, False),
     "f_orbit": ("fx37_nasa2011_sudamerica_amanecer", 0.0, 0.85, None, None, [], False, False),
 }
 FXINFO = {}
+# horizontal resolution of the ORIGINAL masters (LICENSES.md §9): the delivered 640x480 files are rescaled, so the
+# 1.5x limit is computed against these widths (Prelinger MPEG2 352/368 px, NARA 720 px, NASA 1616 px).
+ORIG_W = {**{f"fx{k:02d}": 720 for k in range(1, 8)}, **{f"fx{k:02d}": 368 for k in (13, 14, 15, 20, 21, 22, 23)},
+          **{f"fx{k:02d}": 352 for k in (8, 9, 10, 11, 12, 16, 17, 18, 19, 24, 25, 27)},
+          **{f"fx{k:02d}": 720 for k in range(28, 37)}, "fx37": 1616}
 
 
 def _lut(tone):
@@ -64,7 +70,10 @@ for key, (stem, ss, dur, crop, tone, blurs, mkbg, rev) in FX.items():
     last = "c0"
     for i, (bx, by, bw, bh, r) in enumerate(blurs):
         bw, bh = min(bw, cw - bx), min(bh, ch - by)
-        chain.append(f"[{last}]split[m{i}][s{i}];[s{i}]crop={bw}:{bh}:{bx}:{by},boxblur={r}:2[b{i}];[m{i}][b{i}]overlay={bx}:{by}[c{i + 1}]")
+        # soft elliptical blur patch (alpha fades to the edge), no hard rectangle
+        alpha = "255*clip((1-hypot((X-W/2)/(W/2),(Y-H/2)/(H/2)))*2.5,0,1)"
+        chain.append(f"[{last}]split[m{i}][s{i}];[s{i}]crop={bw}:{bh}:{bx}:{by},boxblur={r}:2,format=yuva444p,"
+                     f"geq=lum='lum(X,Y)':cb='cb(X,Y)':cr='cr(X,Y)':a='{alpha}'[b{i}];[m{i}][b{i}]overlay={bx}:{by}:format=auto[c{i + 1}]")
         last = f"c{i + 1}"
     tonef = (f"format=gray,eq=contrast=1.18,format=rgb24,{_lut(tone)}" if tone else "eq=contrast=1.08:saturation=0.75")
     revf = ",reverse" if rev else ""
@@ -74,6 +83,8 @@ for key, (stem, ss, dur, crop, tone, blurs, mkbg, rev) in FX.items():
     if mkbg:
         ff("-i", out("fx", key + ".mp4"), "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=18,eq=brightness=-0.12",
            "-an", "-c:v", "libx264", "-crf", "18", "-r", "30", "-pix_fmt", "yuv420p", out("fx", key + "_bg.mp4"))
-    FXINFO[key] = {"w": cw, "h": ch, "dur": dur, "src": stem + ".mp4", "bg": mkbg}
+    ow = ORIG_W[stem[:4]]
+    FXINFO[key] = {"w": cw, "h": ch, "dur": dur, "src": stem + ".mp4", "bg": mkbg,
+                   "orig_w": round(cw * ow / sw, 1), "orig_h": ch}   # crop size in original master pixels
 _json.dump(FXINFO, open(out("fx", "fx.json"), "w"), indent=1)
 print("footage:", sorted(FXINFO))

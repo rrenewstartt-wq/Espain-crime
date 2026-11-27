@@ -59,12 +59,16 @@ def map_svg(p, hi=(), extra="", labels=True):
         y = (8.0 - lat) * 72
         grat.append(f'<line x1="0" y1="{y:.0f}" x2="{MAP["w"]}" y2="{y:.0f}"/>')
     names = {"ARGENTINA": "Argentina", "URUGUAY": "Uruguay", "CHILE": "Chile", "PARAGUAY": "Paraguay", "BRASIL": "Brasil", "BOLIVIA": "Bolivia"}
-    lab = "".join(f'<text x="{x:.0f}" y="{y:.0f}" id="{p}-lb-{n.lower()}" class="{p}lb">{names[n]}</text>'
+    off = {"BOLIVIA": (-260, 120)}
+    lab = "".join(f'<text x="{x + off.get(n, (0, 0))[0]:.0f}" y="{y + off.get(n, (0, 0))[1]:.0f}" id="{p}-lb-{n.lower()}" class="{p}lb">{names[n]}</text>'
                   for n, (x, y) in MAP["labels"].items()) if labels else ""
     return f'''<svg viewBox="0 0 {MAP["w"]} {MAP["h"]}" width="{MAP["w"]}" height="{MAP["h"]}" style="position:absolute;left:0;top:0;overflow:visible">
 <defs><pattern id="{p}-pl" patternUnits="userSpaceOnUse" width="2048" height="2048"><image href="assets/tex/oldmap_land.jpg" width="2048" height="2048"/></pattern>
 <pattern id="{p}-ps" patternUnits="userSpaceOnUse" x="-4000" y="-4000" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}"><image href="assets/tex/oldmap_sea.jpg" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}" preserveAspectRatio="none"/></pattern>
-<pattern id="{p}-hatch" patternUnits="userSpaceOnUse" width="26" height="26" patternTransform="rotate(45)"><rect width="26" height="26" fill="#efe2c2"/><line x1="0" y1="0" x2="0" y2="26" stroke="{ACC}" stroke-width="5"/></pattern></defs>
+<pattern id="{p}-hatch" patternUnits="userSpaceOnUse" width="26" height="26" patternTransform="rotate(45)"><rect width="26" height="26" fill="#efe2c2"/><line x1="0" y1="0" x2="0" y2="26" stroke="{ACC}" stroke-width="5"/></pattern>
+<pattern id="{p}-hA" patternUnits="userSpaceOnUse" width="30" height="30" patternTransform="rotate(-45)"><rect width="30" height="30" fill="#e6dcc6"/><line x1="0" y1="0" x2="0" y2="30" stroke="{ACC}" stroke-width="4"/></pattern>
+<pattern id="{p}-hU" patternUnits="userSpaceOnUse" width="22" height="22"><rect width="22" height="22" fill="#f4ead2"/><circle cx="11" cy="11" r="4" fill="{ACC}"/></pattern>
+<pattern id="{p}-hC" patternUnits="userSpaceOnUse" width="24" height="24"><rect width="24" height="24" fill="#dfe6de"/><line x1="0" y1="12" x2="24" y2="12" stroke="{ACC}" stroke-width="4"/></pattern></defs>
 <rect x="-4000" y="-4000" width="{MAP["w"] + 8000}" height="{MAP["h"] + 8000}" fill="url(#{p}-ps)"/>
 <g stroke="rgba(30,40,44,.28)" stroke-width="2">{"".join(grat)}</g>
 <g style="filter:drop-shadow(0 0 6px rgba(20,30,34,.5))">{"".join(paths)}</g>
@@ -77,6 +81,7 @@ def map_css(p):
 .{p}ld,.{p}hi{{fill:url(#{p}-pl);stroke:#2f2a22;stroke-width:2.4;stroke-dasharray:10 6}}
 .{p}pg{{fill:url(#{p}-hatch);stroke:{ACC};stroke-width:6}}
 .{p}hi.on{{fill:url(#{p}-hatch);stroke:{ACC};stroke-width:5;stroke-dasharray:none}}
+#{p}-c-argentina.on{{fill:url(#{p}-hA)}} #{p}-c-uruguay.on{{fill:url(#{p}-hU)}} #{p}-c-chile.on{{fill:url(#{p}-hC)}}
 .{p}lb{{font:700 84px "Caveat",cursive;fill:#2b261e;text-anchor:middle;opacity:.85}}
 """
 

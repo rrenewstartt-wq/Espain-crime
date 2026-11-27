@@ -337,6 +337,7 @@ def conosur(p, d, lines, s, center):
         for i, c in enumerate(("Buenos Aires", "Montevideo", "Santiago")):
             x, y = map_pt(c)
             mx, my = (x + ax) / 2, (y + ay) / 2 - 160
+            extra += f'<text x="{x + (24 if c == "Montevideo" else -24):.0f}" y="{y + (64 if c != "Montevideo" else 90):.0f}" text-anchor="{"start" if c == "Montevideo" else "end"}" style="font:700 64px Caveat;fill:#1d1a15">{c}</text>'
             extra += (f'<circle cx="{x:.0f}" cy="{y:.0f}" r="13" fill="#1d1a15"/><path id="{p}-ln{i}" d="M{x:.0f},{y:.0f} Q{mx:.0f},{my:.0f} {ax:.0f},{ay:.0f}" fill="none" stroke="{ACC}" stroke-width="9" '
                       f'stroke-dasharray="4000" stroke-dashoffset="4000" stroke-linecap="round"/>')
         extra += f'<text x="{ax + 40:.0f}" y="{ay - 20:.0f}" style="font:700 86px Caveat;fill:#1d1a15">Asunción</text>'
@@ -469,7 +470,7 @@ def s60(p, d):
                      + "".join(f"<span style='display:block;height:1em'>{c}</span>" for c in seq) + "</span></span>"
                      for i, seq in enumerate(["1", "9", "98765", "2109876543210987654"]))
     html = f'''<div id="{p}-cam" class="ao-cam" data-layout-allow-overflow style="background:#050302">
-{f'<img src="assets/img/{NEWPH["palacio"]}" class="ao-full" style="object-fit:cover;filter:brightness(.45)" alt="">' if NEWOK["palacio"] else '<img src="assets/img/stroessner_sepia.jpg" style="position:absolute;left:0;top:-500px;width:1920px;height:2886px;object-fit:cover;filter:blur(34px) brightness(.38)" alt="">'}</div>'''
+<img src="assets/img/stroessner_sepia.jpg" style="position:absolute;left:-320px;top:-900px;width:2560px;height:3848px;object-fit:cover;filter:blur(34px) brightness(.38)" alt=""></div>'''
     fg = f'''<div id="{p}-roll" style="position:absolute;left:0;width:1920px;top:400px;text-align:center;font:700 200px/1 'Courier Prime';color:{ACC};height:200px;overflow:hidden">{digits}</div>
 <div id="{p}-card" style="opacity:0"><div class="dc-line dc-d" style="left:{x1:.0f}px;top:400px">{l1}</div>
 <div class="dc-line dc-p" style="left:{x1 + 8:.0f}px;top:570px">{l2}<span id="{p}-cur" class="dc-cur"></span></div></div>'''
